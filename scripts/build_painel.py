@@ -47,6 +47,7 @@ def carregar_edicao(ano: str, ed: dict, pasta: Path) -> dict:
         "designacao": ed["designacao"],
         "estado": ed.get("estado", ""),
         "nota": ed.get("_nota", ""),
+        "verificacao_externa": ed.get("verificacao_externa", ""),
         "inicio_registo": ed.get("inicio_registo", ""),
         "urls": {k: v for k, v in ed.items() if k.startswith("url_")},
         "calendario": ed.get("calendario", []),
@@ -619,8 +620,8 @@ function verificacoes(porEstado, votadas, dias) {
   const semEstadoComVoto = PA.filter(r=>r.estado==='em apreciação' && r.votos_por_partido);
   add(semEstadoComVoto.length?'at':'ok', `Registos «em apreciação» com votação publicada: ${fmtN(semEstadoComVoto.length)}.`);
   const nGP = votadas.map(r=>split(r.votos_por_partido).length);
-  const fora = votadas.filter(r=>{const n=split(r.votos_por_partido).length; return n<9||n>11;});
-  add(fora.length?'at':'ok', `Votações com um número de grupos parlamentares fora do esperado (9 a 11, com os deputados únicos): ${fmtN(fora.length)} em ${fmtN(votadas.length)}${nGP.length?` · mínimo ${Math.min(...nGP)}, máximo ${Math.max(...nGP)}`:''}.`);
+  const fora = votadas.filter(r=>{const n=split(r.votos_por_partido).length; return n<9||n>10;});
+  add(fora.length?'at':'ok', `Votações com um número de grupos parlamentares fora do esperado (9, ou 10 quando o deputado único do JPP vota): ${fmtN(fora.length)} em ${fmtN(votadas.length)}${nGP.length?` · mínimo ${Math.min(...nGP)}, máximo ${Math.max(...nGP)}`:''}.`);
   const outrosVot = new Set(); for (const r of votadas) for (const v of split(r.votos_por_partido)) { const g=v.split(':')[0].trim(); if (!D.partidos.includes(g)) outrosVot.add(g); }
   add(outrosVot.size?'at':'ok', `Entradas de voto fora da lista de grupos parlamentares: ${outrosVot.size?[...outrosVot].join(', ')+' (publicadas pela AR como votos individuais)':'nenhuma'}.`);
   const plen = PA.filter(r=>r.sede_votacao==='Plenário').length, avS = PA.filter(r=>r.avocacao==='S').length, req = PA.filter(r=>/avocação/.test(r.requerimentos||'')).length;
