@@ -4,8 +4,7 @@ Extração das propostas de alteração (PA) à PPL 110/XVII/2.ª (OE 2027) a pa
 da informação publicada pela Assembleia da República.
 
 Fonte principal — dados abertos da AR, categoria «Orçamento do Estado», pasta
-«XVII Legislatura»: ficheiro OEPropostasAlteracao<ano>Or_json.txt (estrutura
-confirmada com o ficheiro do OE 2026: 2 193 registos, 2 076 PA).
+«XVII Legislatura»: ficheiro OEPropostasAlteracao<ano>Or_json.txt.
 O ficheiro é localizado automaticamente em cada execução (os URL da AR têm
 tokens no parâmetro «path»).
 
@@ -13,7 +12,6 @@ Reserva — página de pesquisa de PA da PPL e páginas de detalhe de cada PA.
 
 Comandos:
   python scripts/fetch_pa.py opendata              # localiza o ficheiro do ano em config.json e extrai
-  python scripts/fetch_pa.py opendata --ano 2026   # idem para outro ano (teste; usar com --saida)
   python scripts/fetch_pa.py scrape                # reserva (portal)
   python scripts/fetch_pa.py normalize FICHEIRO    # extrai a partir de um JSON local (.json ou .json.gz)
   python scripts/fetch_pa.py listar                # lista os ficheiros da pasta XVII dos dados abertos

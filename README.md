@@ -3,7 +3,6 @@
 Extração automática e painel das propostas de alteração (PA) à Proposta de Lei n.º 110/XVII/2.ª (Orçamento do Estado para 2027), exclusivamente a partir da informação publicada pela Assembleia da República (AR).
 
 - Painel: https://celine-mestre.github.io/oe2027-pa/
-- Demonstração com os dados reais do OE 2026: https://celine-mestre.github.io/oe2027-pa/teste-oe2026.html
 
 ## Fontes
 
@@ -11,11 +10,13 @@ Extração automática e painel das propostas de alteração (PA) à Proposta de
 |---|---|---|
 | Dados abertos da AR, categoria «Orçamento do Estado», pasta «XVII Legislatura» — ficheiro `OEPropostasAlteracao<ano>Or` (JSON e XML) | Por PA: número, data e hora de entrada, título, artigo, tema, tipo, incidência, estado, proponentes (grupo parlamentar e deputados), PDF e todas as votações com o sentido de voto de cada grupo | Fonte principal. O ficheiro é localizado automaticamente em cada captura. |
 | Pesquisa de PA (`PesquisaPropAlteracao110XVII.aspx`) e detalhe de cada PA (`DetalhePropostaAlteracao.aspx?BID=…`) | O mesmo, página a página | Reserva, se o ficheiro dos dados abertos não estiver disponível ou atualizado. |
-| Calendário de apreciação do OE 2027 (PDF da AR, 8 de outubro de 2026) | Datas e horas oficiais | Transcrito em `config.json` e mostrado no painel. |
+| Calendário de apreciação do OE 2027 (PDF da AR, cópia em `data/calibracao/`) | Datas e horas oficiais | Transcrito em `config.json` e mostrado no painel. |
 
 A agenda parlamentar (e os respetivos dados abertos) tem as reuniões — audições, votações na Comissão de Orçamento, Finanças e Administração Pública (COFAP), debates em Plenário —, mas não as PA.
 
-Estrutura confirmada com o ficheiro do OE 2026 (`data/calibracao/OEPropostasAlteracao2026.json.gz`): 2 193 registos, correspondentes a 2 076 PA. Uma PA que incide sobre vários artigos ou alíneas é publicada em partes (`2046C-1`, `2046C-2`), com a mesma hora de entrada e votações separadas.
+Uma PA que incide sobre vários artigos ou alíneas é publicada pela AR em partes (por exemplo, `120C-1`, `120C-2`), com a mesma hora de entrada e votações separadas. O painel conta propostas pelo número-base e estados e votações por registo.
+
+As propostas de alteração começam a ser registadas a 29 de outubro de 2026, às 9h00 (início do prazo de inserção, segundo o calendário da AR). Até lá, o painel está vazio.
 
 ## Como funciona
 
@@ -26,7 +27,7 @@ python scripts/build_painel.py         # gera docs/index.html
 python scripts/fetch_pa.py listar      # lista os ficheiros publicados na pasta XVII
 ```
 
-O workflow `.github/workflows/atualizar.yml` corre segundo o calendário (de hora a hora no último dia do prazo e nos dias de votação), guarda em `data/raw/` uma cópia de cada captura, atualiza `data/pa.csv` e `data/historico.csv` e publica o painel. O workflow `calibracao.yml` (manual) volta a descarregar os dados de referência.
+O workflow `.github/workflows/atualizar.yml` corre segundo o calendário (de hora a hora no último dia do prazo e nos dias de votação), guarda em `data/raw/` uma cópia de cada captura, atualiza `data/pa.csv` e `data/historico.csv` e publica o painel. O workflow `calibracao.yml` (manual) lista os ficheiros publicados na pasta dos dados abertos e descarrega o calendário oficial.
 
 ## Base de dados (`data/pa.csv`, separador «;»)
 

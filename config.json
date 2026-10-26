@@ -13,10 +13,9 @@
   "dados_abertos_pagina_oe": "https://www.parlamento.pt/Cidadania/Paginas/DAOE.aspx",
   "dados_abertos_pasta_xvii": "https://www.parlamento.pt/Cidadania/Paginas/DAOE.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=FczuwLUwGj%2FcIKv74%2F2UJrK1XjyhWUGFPnVdydZ%2FV8AIyO7HX1E3UBBhXVXxza%2FSSL%2BUWl%2FWZnHYGxvaHqbKiiR5Iq2OWPzV1Qz8g6QH03ShI94HbSyOQve6B48Qxn95H%2FETQ7ws763DbzTHtheZTfUPxukQo1Ef0YI1yyqMdglztMw4pDpY8SThqFGHrI2chDaT6mnu3h9PL4tiwDW9vEaqjwevnEDffYhzpwGKscV%2Bbg2YsUnYgF1e7u2Hbyg1x7C50z8vtGF3PkpBIzUtX9cA%2F3REe5FbObNI6US%2FF8gPH6T1iheJ35uBtnBgP4iDg5HUFOkmEfJA5ur8jQrphcPGjnRcLoIUZQBY%2Fz0arvM%3D",
   "pesquisa_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx",
-  "detalhe_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/DetalhePropostaAlteracao.aspx?BID={bid}",
-  "pesquisa_pa_oe2026": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao37XVII.aspx"
+  "detalhe_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/DetalhePropostaAlteracao.aspx?BID={bid}"
  },
- "_calendario_fonte": "Calendário de apreciação do OE 2027 publicado pela Assembleia da República (PDF criado a 8 de outubro de 2026), em ppl.url_calendario. Datas, horas e designações transcritas do documento.",
+ "_calendario_fonte": "Calendário de apreciação do OE 2027 publicado pela Assembleia da República, em ppl.url_calendario. Datas, horas e designações transcritas do documento.",
  "calendario": [
   {
    "data": "2026-10-23",

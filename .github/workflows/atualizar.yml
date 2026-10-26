@@ -6,8 +6,8 @@ on:
     branches: [main]
     paths: ["scripts/**", "config.json", "data/taxonomia.json", "data/classificacao_manual.csv", "data/medidas_anunciadas.csv", "requirements.txt", ".github/workflows/atualizar.yml"]
   schedule:
-    # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao padrão de entrada
-    # das PA ao OE 2026 (dados abertos da AR) e ao calendário oficial do OE 2027.
+    # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao calendário oficial do OE 2027:
+    # mais capturas no último dia do prazo e nos dias de votação.
     # Prazo de entrega (29 out. – 6 nov.): 2 capturas por dia; 5 nov. de 2 em 2 horas; 6 nov. de hora a hora
     - cron: "15 7,19 29-31 10 *"
     - cron: "15 7,19 1-4 11 *"
@@ -51,11 +51,6 @@ jobs:
         if: steps.opendata.outcome != 'success'
         continue-on-error: true
         run: python scripts/fetch_pa.py scrape
-
-      - name: Página de teste com dados do OE 2026
-        run: |
-          python scripts/fetch_pa.py normalize data/calibracao/OEPropostasAlteracao2026.json.gz --saida /tmp/oe2026 > /dev/null
-          python scripts/build_painel.py --dados /tmp/oe2026 --saida docs/teste-oe2026.html --rotulo "TESTE COM DADOS REAIS DO OE 2026 (PPL 37/XVII/1.ª) — demonstração do painel; não corresponde ao OE 2027"
 
       - name: Gerar painel
         run: python scripts/build_painel.py

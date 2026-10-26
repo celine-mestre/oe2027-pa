@@ -4,8 +4,7 @@ Descoberta e calibração (corre no GitHub Actions, que chega ao parlamento.pt).
 
 1. Lista os ficheiros da pasta «XVII Legislatura» da categoria «Orçamento do
    Estado» dos dados abertos da AR (data/calibracao/descoberta.json).
-2. Descarrega o ficheiro de PA do OE 2026 (referência para testes) e, se já
-   existir, o do OE 2027.
+2. Descarrega o ficheiro de PA do ano em config.json, se já existir.
 3. Descarrega o calendário oficial de apreciação do OE 2027.
 
 Nada do que fica em data/calibracao/ entra na base de dados nem no painel do OE 2027.
@@ -33,7 +32,7 @@ def main() -> int:
     print("Pasta XVII:", *res["ficheiros_xvii"], sep="\n  ")
     for i in itens:
         m = re.match(r"OEPropostasAlteracao(\d{4})\w*_json", i["fich"], re.I)
-        if not m:
+        if not m or int(m.group(1)) != fp.CONFIG["ppl"]["ano_oe"]:
             continue
         txt = fp.http_get(i["url"], s).content.decode("utf-8-sig")
         with gzip.open(OUT / f"OEPropostasAlteracao{m.group(1)}.json.gz", "wt", encoding="utf-8") as fh:

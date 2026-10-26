@@ -43,7 +43,7 @@ def main(argv=None) -> int:
     global DATA
     ap = argparse.ArgumentParser()
     ap.add_argument("--dados", default=str(RAIZ / "data"), help="pasta com pa.json, historico.csv e ultima_execucao.json")
-    ap.add_argument("--rotulo", default="", help="faixa de aviso no topo (ex.: teste com dados do OE 2026)")
+    ap.add_argument("--rotulo", default="", help="faixa de aviso no topo")
     ap.add_argument("--saida", default=str(DOCS / "index.html"))
     args = ap.parse_args(argv)
     DATA = Path(args.dados)
@@ -93,12 +93,20 @@ TEMPLATE = r"""<!DOCTYPE html>
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Arial,sans-serif;font-size:14px;line-height:1.45}
 a{color:var(--azul)}
 header.topo{background:linear-gradient(90deg,var(--azul) 0%,var(--teal) 55%,var(--verde) 100%);color:#fff;border-bottom:4px solid var(--vermelho)}
-.topo .in{max-width:1380px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.topo .in{max-width:1380px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative}
 .pastilha{width:46px;height:46px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none}
 .pastilha img{width:38px;height:38px;display:block}
 .topo h1{font-size:19px;font-weight:600;margin:0;line-height:1.2}
 .topo .sub{font-size:12.5px;opacity:.92;font-weight:300}
-.topo .dir{margin-left:auto;text-align:right;font-size:12px;opacity:.95;line-height:1.35}
+.topo .org{font-size:12px;font-weight:500;letter-spacing:.03em;opacity:.95;margin-bottom:2px}
+.topo .dir{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.topo .meta{text-align:right;font-size:11.5px;opacity:.92;line-height:1.35}
+.acoes{display:flex;gap:6px}
+.ic{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.ic:hover{background:rgba(255,255,255,.22)}
+.ic svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ic .i-lua{display:none}
+:root[data-theme="dark"] .ic .i-sol{display:none}:root[data-theme="dark"] .ic .i-lua{display:block}
 .faixa-amostra{background:var(--dourado);color:#1c2630;font-weight:600;text-align:center;padding:8px 16px;font-size:13px}
 main{max-width:1380px;margin:0 auto;padding:16px}
 nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 14px}
@@ -111,6 +119,7 @@ section.tab{display:none}section.tab.on{display:block}
 .card h3{margin:0 0 10px;font-size:13px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
 .kpi .v{font-size:28px;font-weight:600;color:var(--azul);line-height:1.1}
 .kpi .l{font-size:12px;color:var(--ink3);margin-top:4px}
+:root[data-theme="dark"] .kpi .v{color:#8cc0e0}:root[data-theme="dark"] .kpi.ok .v{color:#7fd1ad}:root[data-theme="dark"] .kpi.nok .v{color:#f08a83}:root[data-theme="dark"] .kpi.neu .v{color:#9aa7b3}
 .kpi.ok .v{color:var(--ok)}.kpi.nok .v{color:var(--nok)}.kpi.neu .v{color:var(--neutro)}
 .duas{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
 .barras{display:grid;grid-template-columns:max-content 1fr max-content;gap:6px 10px;align-items:center;font-size:13px}
@@ -150,20 +159,33 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 details summary{cursor:pointer;color:var(--azul);font-size:12.5px}
 footer{max-width:1380px;margin:10px auto 24px;padding:0 16px;font-size:11.5px;color:var(--ink3)}
 footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--teal),var(--verde));border-bottom:2px solid var(--vermelho);margin-bottom:10px;border-radius:2px}
-.tema-btn{margin-left:8px;background:transparent;border:1px solid rgba(255,255,255,.6);color:#fff;border-radius:999px;padding:4px 10px;font:inherit;font-size:11.5px;cursor:pointer}
-@media print{nav.tabs,.filtros,.tema-btn,.btn{display:none}section.tab{display:block!important}.tabela-wrap{max-height:none}}
-@media (max-width:640px){.topo .dir{margin-left:0;text-align:left}.barras .k{max-width:150px}}
+@media print{nav.tabs,.filtros,.acoes,.btn{display:none}section.tab{display:block!important}.tabela-wrap{max-height:none}}
+@media (max-width:640px){.topo .dir{margin-left:0;align-items:flex-start}.topo .meta{text-align:left}.acoes{position:absolute;top:14px;right:16px}.barras .k{max-width:150px}}
 </style>
 </head>
 <body>
 <header class="topo"><div class="in">
   <div class="pastilha"><img src="data:image/png;base64,__LOGO__" alt="Secretaria-Geral do Governo"></div>
-  <div>
+  <div class="tit">
+    <div class="org">Secretaria-Geral do Governo · Suporte à Decisão</div>
     <h1>Propostas de alteração ao Orçamento do Estado para 2027</h1>
-    <div class="sub">Proposta de Lei n.º 110/XVII/2.ª · informação publicada pela Assembleia da República · Direção de Serviços de Suporte à Decisão</div>
+    <div class="sub">Proposta de Lei n.º 110/XVII/2.ª · informação publicada pela Assembleia da República</div>
   </div>
-  <div class="dir" id="meta"></div>
-  <button class="tema-btn" onclick="alternarTema()">claro / escuro</button>
+  <div class="dir">
+    <div class="acoes">
+      <button class="ic" id="b-tema" onclick="alternarTema()" title="Modo claro / escuro" aria-label="Modo claro / escuro">
+        <svg class="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-lua" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="ic" onclick="expandir()" title="Ecrã inteiro" aria-label="Ecrã inteiro">
+        <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+      <button class="ic" onclick="window.print()" title="Imprimir" aria-label="Imprimir">
+        <svg viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg>
+      </button>
+    </div>
+    <div class="meta" id="meta"></div>
+  </div>
 </div></header>
 <div class="faixa-amostra" id="faixa" hidden></div>
 <main>
@@ -233,7 +255,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   </div>
 </section>
 </main>
-<footer><div class="filete"></div><span id="rodape"></span> · Fonte: Assembleia da República (parlamento.pt e dados abertos). Tratamento: Direção de Serviços de Suporte à Decisão, Secretaria-Geral do Governo.</footer>
+<footer><div class="filete"></div><span id="rodape"></span> · Fonte: Assembleia da República (parlamento.pt e dados abertos). Tratamento: Área de Suporte à Decisão, Secretaria-Geral do Governo.</footer>
 
 <script id="dados" type="application/json">__DADOS__</script>
 <script>
@@ -242,8 +264,10 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmtN = n => Number(n).toLocaleString('pt-PT');
 const fmtData = d => d ? d.slice(0,10).split('-').reverse().join('-') : '';
+function expandir(){const d=document;try{if(!d.fullscreenElement){d.documentElement.requestFullscreen&&d.documentElement.requestFullscreen()}else{d.exitFullscreen&&d.exitFullscreen()}}catch(e){}}
 function alternarTema(){const r=document.documentElement;const atual=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');const novo=atual==='dark'?'light':'dark';r.setAttribute('data-theme',novo);try{localStorage.setItem('tema',novo)}catch(e){}}
 try{const t=localStorage.getItem('tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
+if(!document.documentElement.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.setAttribute('data-theme','dark');
 
 if (D.rotulo) { $('#faixa').hidden = false; $('#faixa').textContent = D.rotulo; }
 const ex = D.execucao || {};
@@ -266,7 +290,7 @@ const porEstado = Object.fromEntries(cont(PA, r=>[r.estado||'—']));
 const nBase = new Set(PA.map(r=>r.pa_base||r.n_pa)).size;
 if (!PA.length) {
   const av = $('#aviso-vazio'); av.hidden = false;
-  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">Segundo o calendário de apreciação, o prazo para inserção de PA abre a 29 de outubro às 9h00. O painel é atualizado automaticamente a partir dessa data.</span>`;
+  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">As propostas de alteração serão registadas a partir de 29 de outubro de 2026, às 9h00, data de início do prazo para a sua inserção, segundo o calendário de apreciação da AR. O painel é atualizado automaticamente a partir dessa data.</span>`;
 }
 $('#kpis').innerHTML = [
   ['Propostas de alteração', nBase, ''],
