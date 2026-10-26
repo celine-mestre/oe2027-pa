@@ -26,7 +26,7 @@ Uma PA que incide sobre vários artigos ou alíneas é publicada pela AR em part
 
 Contagens pela convenção da AR: cada registo numerado conta como uma proposta, incluindo as partes (120C-1, 120C-2). O número de propostas distintas (sem partes) é apresentado à parte. A base inclui também, por registo, a epígrafe do artigo, os diplomas alterados, os requerimentos (avocação), os pedidos de parecer às Regiões Autónomas e o campo «Ministerio» dos dados abertos (vazio em 2026).
 
-O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há classificações próprias. O separador «Por tema» usa o tema que a AR atribui a cada PA (em 2026, a comissão parlamentar competente) e a matriz de posições dos grupos parlamentares cruza esse tema com os sentidos de voto publicados.
+O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há classificações próprias. O separador «Propostas de alteração» agrupa as PA pelo tema que a AR lhes atribui (em 2026, a comissão parlamentar competente) e tem a lista completa, filtrável. Em «Votações», a matriz de posições dos grupos parlamentares cruza esse tema com os sentidos de voto publicados. O separador «Alterações entre capturas» só aparece na edição em curso: mostra o que mudou na publicação da AR desde a captura anterior.
 
 Os scripts `classificar.py` e `indice_ppl.py` e o ficheiro `data/areas_governativas.json` são material preparatório que não corre nos workflows nem entra no painel.
 

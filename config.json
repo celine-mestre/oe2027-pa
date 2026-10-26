@@ -87,8 +87,7 @@
    "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2026.aspx",
    "_nota": "Processo concluído (votação final global a 27 de novembro de 2025). Serve de base de comparação: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar. O calendário mostrado é o derivado dos próprios dados da AR (entradas e votações).",
    "calendario": [],
-   "calendario_nota": "",
-   "verificacao_externa": "Confronto externo: a 9 de novembro de 2025, 08h30, a imprensa contou 2 176 PA na página de pesquisa da AR (por partido: CH 614, PCP 532, L 330, BE 182, PAN 182, PS 117, IL 112, PSD/CDS-PP 57, JPP 50; fonte: ECO, «Partidos entregam 2.176 propostas de alteração ao OE2026», 9/11/2025). O ficheiro final dos dados abertos tem 2 193 registos (CH 616, PCP 532, L 335, PAN 184, BE 183, PS 123, IL 113, PSD 57, JPP 50, CDS-PP 41, com as PA conjuntas contadas em cada proponente): a diferença corresponde a inserções posteriores a essa hora e confirma que a AR conta cada registo numerado, incluindo as partes."
+   "calendario_nota": ""
   }
  },
  "fontes": {
