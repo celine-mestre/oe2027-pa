@@ -8,6 +8,9 @@ name: Calibração e carga do OE 2026
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/calibracao.yml"]   # corre também quando este ficheiro é alterado
 
 permissions:
   contents: write
