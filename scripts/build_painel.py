@@ -286,7 +286,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 </section>
 
 <section class="tab" id="t-areas">
-  <div class="aviso"><b>Classificação SGGov.</b> A área governativa não é informação publicada pela AR: é atribuída pela Secretaria-Geral do Governo segundo a orgânica do XXV Governo, por regra (artigo da proposta de lei, programa orçamental nos mapas ou palavras-chave) e validada pela DACDP quando assinalado. Cada registo indica o método e a confiança. Tudo o resto nesta página é informação da AR.</div>
+  <div class="aviso"><b>Classificação SGGov.</b> A área governativa não é informação publicada pela AR: é atribuída pela Secretaria-Geral do Governo segundo a orgânica do XXV Governo, por regra (tema da AR, artigo da proposta de lei, programa orçamental nos mapas ou palavras-chave) e validada pela DACDP quando assinalado. Cada registo indica o método e a confiança. Tudo o resto nesta página é informação da AR.</div>
   <div class="grid kpis" id="kpis-areas"></div>
   <div class="grid duas" style="margin-top:12px">
     <div class="card"><h3>PA por área governativa</h3><div class="barras" id="g-area"></div><div class="legenda">Por proposta (número-base). Clique numa área para filtrar a tabela abaixo.</div></div>
@@ -299,7 +299,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="legenda">Indicador histórico calculado a partir dos sentidos de voto publicados pela AR. Não é uma previsão. Inclui os deputados únicos representantes de partido.</div>
   </div>
   <div class="card" style="margin-top:12px"><h3>Registos por área (com método e confiança da classificação)</h3>
-    <div class="filtros"><select id="f-a-area"><option value="">Área governativa</option></select><select id="f-a-metodo"><option value="">Método</option><option value="dacdp">validada pela DACDP</option><option value="artigo">artigo da PPL</option><option value="mapa">programa orçamental (mapa)</option><option value="palavras">palavras-chave</option><option value="">—</option></select><span class="n" id="f-a-n"></span></div>
+    <div class="filtros"><select id="f-a-area"><option value="">Área governativa</option></select><select id="f-a-metodo"><option value="">Método</option><option value="dacdp">validada pela DACDP</option><option value="tema">tema da AR (comissão)</option><option value="artigo">artigo da PPL</option><option value="mapa">programa orçamental (mapa)</option><option value="palavras">palavras-chave</option><option value="">—</option></select><span class="n" id="f-a-n"></span></div>
     <div class="tabela-wrap"><table id="tab-areas"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo / mapa</th><th>Objeto</th><th>Tema (AR)</th><th>Área governativa</th><th>Método</th><th>Confiança</th><th>Estado</th></tr></thead><tbody></tbody></table></div>
   </div>
 </section>
@@ -363,7 +363,7 @@ const estadoChip = e => { const c = {aprovada:'ok','aprovada parcialmente':'ok',
 const numPA = s => { const m=/^(\d+)([A-Z]*)(?:-(\d+))?/.exec(s||''); return m ? [+m[1], m[2], +(m[3]||0)] : [1e9,'',0]; };
 const ordemPA = (x,y) => { const a=numPA(x.n_pa),b=numPA(y.n_pa); return a[0]-b[0]||a[1].localeCompare(b[1])||a[2]-b[2]; };
 const hm = m => m ? m.replace('T',' ').slice(0,16) : '—';
-const METODO = {dacdp:'validada pela DACDP', artigo:'artigo da PPL', mapa:'programa orçamental', palavras:'palavras-chave', '':'—'};
+const METODO = {dacdp:'validada pela DACDP', tema:'tema da AR (comissão)', artigo:'artigo da PPL', mapa:'programa orçamental', palavras:'palavras-chave', '':'—'};
 function barras(el, pares, onclick) {
   const max = Math.max(1, ...pares.map(p=>p[1]));
   el.innerHTML = pares.map(([k,v]) => `<div class="k" title="${esc(k)}" ${onclick?`style="cursor:pointer" data-k="${esc(k)}"`:''}>${esc(k)}</div><div><div class="b" style="width:${(v/max*100).toFixed(1)}%"></div></div><div class="n">${fmtN(v)}</div>`).join('') || '<div class="mini">Sem dados.</div>';
@@ -383,7 +383,7 @@ const INFO = {
   'Por votar': 'Registos ainda sem votação.',
   'Registos classificados': 'Registos com área governativa atribuída (classificação SGGov), por qualquer dos métodos.',
   'Validados pela DACDP': 'Registos cuja área governativa foi confirmada ou corrigida pela DACDP no ficheiro de registo.',
-  'Por regra (artigo ou mapa)': 'Área herdada do artigo da proposta de lei (tabela artigo → área, feita uma vez por edição) ou do programa orçamental, nas PA aos mapas.',
+  'Por regra (tema, artigo ou mapa)': 'Área atribuída pelo tema da AR (a comissão parlamentar competente, quando corresponde a uma área governativa), pelo artigo da proposta de lei (tabela artigo → área, feita uma vez por edição) ou pelo programa orçamental, nas PA aos mapas.',
   'Por palavras-chave': 'Área sugerida por expressões no tema da AR, na epígrafe do artigo ou no objeto da PA. Confiança média quando a correspondência é só no objeto.',
   'Por classificar': 'Registos sem área atribuída por nenhum método. Aguardam leitura.'
 };
@@ -479,7 +479,7 @@ function montar() {
   $('#kpis-areas').innerHTML = [
     ['Registos classificados', classificados.length, ''],
     ['Validados pela DACDP', PA.filter(r=>r.area_metodo==='dacdp').length, 'ok'],
-    ['Por regra (artigo ou mapa)', PA.filter(r=>r.area_metodo==='artigo'||r.area_metodo==='mapa').length, 'neu'],
+    ['Por regra (tema, artigo ou mapa)', PA.filter(r=>['tema','artigo','mapa'].includes(r.area_metodo)).length, 'neu'],
     ['Por palavras-chave', PA.filter(r=>r.area_metodo==='palavras').length, 'neu'],
     ['Por classificar', PA.length-classificados.length, 'nok'],
   ].map(kpi).join('');
