@@ -5,7 +5,7 @@ Exporta a base de dados das PA para o modelo Excel da DACDP (Registo_PA_OE<ano>.
 Estrutura igual ao modelo «Registo_PA_OE2027_v1» da DACDP (7 folhas), mais uma folha «Resposta UPE».
   - Colunas A–W de «Propostas de Alteração»: o modelo da DACDP. A UPE preenche, a partir da AR, as colunas
     B, C, E, F, G, L, S, T, U, V e as ligações em W; as restantes ficam para a DACDP.
-  - Colunas X em diante: informação adicional da UPE (tema da AR, sugestão de área governativa e de tipo,
+  - Colunas X em diante: informação adicional publicada pela AR (tema, incidência, natureza e estado da PA,
     avocação, identificadores e ligações).
   - «Registo de Consultas» e «Calendário e Documentos» são preenchidas automaticamente.
 
@@ -41,11 +41,10 @@ COLUNAS_DACDP = ["ID", "N.º PA", "Data Entrada", "Versão", "Partido", "Deputad
                  "Tema", "Área Governativa", "Ministério", "Descrição Sumária", "Impacto Receita (€)", "Impacto Despesa (€)",
                  "Fonte da Estimativa", "Medida Anunciada (S/N)", "Relevância", "Necessita Análise Jurídica (S/N)", "Estado",
                  "Resultado Votação", "Sentido de Voto", "Data Votação", "Observações"]
-COLUNAS_UPE = ["Tema AR", "Área Governativa (sugestão SGGov)", "Método da sugestão", "Confiança", "Tipo de PA (sugestão)",
-               "Incide", "Tipo (AR)", "Estado (AR)", "Avocação a Plenário", "Parte", "N.º de votações", "ID AR", "Ligação AR",
-               "PDF", "Primeira captura", "Última captura", "Ausente da fonte"]
+COLUNAS_UPE = ["Tema AR", "Incide", "Tipo (AR)", "Estado (AR)", "Avocação a Plenário", "Parte", "N.º de votações", "ID AR",
+               "Ligação AR", "PDF", "Primeira captura", "Última captura", "Ausente da fonte"]
 LARGURAS = [7, 10, 12, 13, 11, 24, 18, 22, 18, 22, 22, 50, 14, 14, 16, 12, 11, 14, 22, 18, 40, 12, 40] + \
-           [22, 26, 14, 11, 20, 11, 22, 24, 10, 7, 9, 9, 40, 40, 17, 17, 17]
+           [22, 11, 22, 24, 10, 7, 9, 9, 40, 40, 17, 17, 17]
 COLUNAS_MEDIDAS = ["ID", "Data do Anúncio", "Partido", "Quem Anunciou", "Natureza", "Medida Anunciada", "Tema", "Valor Anunciado",
                    "Canal Oficial", "Ligação", "Entregue como PA (S/N)", "N.º PA Associada", "Observações"]
 LISTAS = {
@@ -89,21 +88,21 @@ RESPOSTA = [
     ("ID", "Imediato", "Número sequencial atribuído na exportação.", ""),
     ("N.º PA", "Imediato", "AR (dados abertos; reserva: página de cada PA).", "Uma PA com várias partes (120C-1, 120C-2) ocupa uma linha por parte, porque a AR as vota separadamente."),
     ("Data Entrada", "Imediato", "AR: data e hora de entrada.", ""),
-    ("Versão", "Desenvolvimento", "A AR não liga uma PA à que ela substitui. A UPE assinala candidatas (mesmo proponente e artigo, uma retirada e outra posterior) em Observações.", "Confirmação pela DACDP."),
+    ("Versão", "Limitação", "A AR não publica a ligação entre uma PA e a que ela substitui. A coluna recebe «Retirada» quando a AR publica esse estado e «Original» nos restantes casos.", "Confirmação pela DACDP."),
     ("Partido", "Imediato", "AR: grupo(s) parlamentar(es) proponente(s). «Vários» quando há mais de um.", "Sigla normalizada (CDS-P → CDS-PP)."),
     ("Deputado/Proponente", "Imediato", "AR: deputados signatários.", ""),
     ("Artigo Alterado", "Imediato", "AR: artigo ou mapa e natureza (alteração, aditamento, eliminação).", ""),
-    ("Tipo de PA", "Desenvolvimento", "Sugestão por regra nos casos claros (mapas de receita e despesa, autorizações legislativas, alterações a códigos e leis avulsas), na coluna «Tipo de PA (sugestão)».", "Leitura humana nos restantes casos."),
+    ("Tipo de PA", "Limitação", "Sem fonte na AR (a AR publica a natureza da PA: aditamento, substituição, eliminação, na coluna «Tipo (AR)»).", "Classificação da DACDP. Fase posterior: sugestão automática a validar."),
     ("Tema", "Limitação", "A AR atribui um tema próprio (coluna «Tema AR»). A taxonomia da DACDP é preenchida pela DACDP.", ""),
-    ("Área Governativa", "Desenvolvimento", "Sugestão SGGov na coluna «Área Governativa (sugestão SGGov)»: tabela artigo → área (feita uma vez por ano), programa orçamental nos mapas e palavras-chave; método e confiança indicados.", "Validação pela DACDP. A classificação validada volta ao painel, assinalada como classificação DACDP."),
-    ("Ministério", "Desenvolvimento", "Decorre da área governativa.", ""),
+    ("Área Governativa", "Desenvolvimento (fase posterior)", "Sem fonte na AR. O tema atribuído pela AR (coluna «Tema AR», a comissão parlamentar competente) é a aproximação disponível. A classificação por área governativa será feita numa fase posterior, com validação humana.", "Nesta fase, o painel e o Excel só usam variáveis dos dados abertos da AR."),
+    ("Ministério", "Desenvolvimento (fase posterior)", "Decorre da área governativa.", ""),
     ("Descrição Sumária", "Imediato (parcial)", "AR: título da PA tal como publicado. A DACDP pode reescrever; a UPE não substitui texto já escrito.", ""),
     ("Impacto Receita (€)", "Limitação", "Sem fonte na AR. Só existe quando a UTAO ou o proponente publicam uma estimativa.", "A UPE pode extrair o texto da nota justificativa do PDF de cada PA para facilitar a leitura."),
     ("Impacto Despesa (€)", "Limitação", "Idem.", ""),
     ("Fonte da Estimativa", "Limitação", "Idem.", ""),
-    ("Medida Anunciada (S/N)", "Desenvolvimento", "Sugestão por semelhança entre o título da PA e as medidas da folha «Medidas Anunciadas».", "A ligação é juízo da DACDP."),
+    ("Medida Anunciada (S/N)", "Limitação", "Sem fonte na AR. Ligação à folha «Medidas Anunciadas» pelo n.º da PA, a cargo da DACDP.", ""),
     ("Relevância", "Limitação", "Juízo da DACDP.", ""),
-    ("Necessita Análise Jurídica (S/N)", "Desenvolvimento", "Sugestão «S» quando a PA altera legislação avulsa.", "Juízo da DACDP nos restantes casos."),
+    ("Necessita Análise Jurídica (S/N)", "Limitação", "Juízo da DACDP.", ""),
     ("Estado", "Imediato", "AR: estado publicado (coluna «Estado (AR)»); a coluna «Estado» recebe o estado da AR, que é o único verificável.", "A lista do modelo (Entregue, Admitida, …) não coincide com os estados que a AR publica."),
     ("Resultado Votação", "Imediato", "AR: resultado da última votação, nos valores do modelo (Aprovada, Rejeitada, Prejudicada, Retirada, Aprovada parcialmente).", ""),
     ("Sentido de Voto", "Imediato", "AR: sentido de voto de cada grupo parlamentar, no formato do modelo.", "Inclui os deputados únicos representantes de partido."),
@@ -159,15 +158,6 @@ def artigo_alterado(r: dict) -> str:
     return f"{art} ({nat})" if nat else art
 
 
-def tipo_sugerido(r: dict) -> str:
-    txt = f"{r.get('objeto', '')} {r.get('artigo', '')} {r.get('tipo_ar', '')}".lower()
-    if re.search(r"autoriza[çc][ãa]o legislativa", txt):
-        return "Autorização legislativa"
-    if re.search(r"mapa", (r.get("incide") or "").lower()):
-        return "Receita" if re.search(r"receita", txt) else "Despesa"
-    if re.search(r"c[óo]digo d[oa]|lei n\.?º|decreto-lei|estatuto d|regime jur[íi]dico", txt):
-        return "Alteração a legislação avulsa"
-    return ""
 
 
 def resultado_modelo(estado: str) -> str:
@@ -199,15 +189,14 @@ def observacoes(r: dict) -> str:
     return " ".join(notas)
 
 
-def linha_pa(i: int, r: dict, cl: dict) -> list:
+def linha_pa(i: int, r: dict) -> list:
     return [
         i, r.get("n_pa"), data(r.get("data_entrada") or ""), "Retirada" if r.get("estado") == "retirada" else "Original",
         partido(r.get("proponente")), r.get("proponente_deputados") or (r.get("proponente") or ""), artigo_alterado(r), None,
         None, None, None, r.get("objeto"), None, None, None, None, None, None, r.get("estado_ar") or "Em apreciação",
         resultado_modelo(r.get("estado")), sentido_modelo(r.get("votos_por_partido")), data(r.get("data_votacao") or ""), observacoes(r),
         # colunas UPE
-        r.get("tema_ar"), cl.get("area") or "", cl.get("metodo") or "", cl.get("confianca") or "", tipo_sugerido(r),
-        r.get("incide"), r.get("tipo_ar"), r.get("estado_ar"), r.get("avocacao"), r.get("parte"), r.get("n_votacoes"), r.get("id_ar"),
+        r.get("tema_ar"), r.get("incide"), r.get("tipo_ar"), r.get("estado_ar"), r.get("avocacao"), r.get("parte"), r.get("n_votacoes"), r.get("id_ar"),
         r.get("url_detalhe"), r.get("url_pdf"), data(r.get("primeira_captura") or ""), data(r.get("ultima_captura") or ""),
         (r.get("ausente_da_fonte") or "")[:10],
     ]
@@ -245,7 +234,6 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
     ed = CONFIG["edicoes"][ano]
     pasta = pasta or RAIZ / ed["pasta"]
     pa = sorted(ler_json(pasta / "pa.json", []), key=lambda r: (int(re.match(r"\d*", r["n_pa"]).group(0) or 0), r["n_pa"]))
-    classif = {c["n_pa"]: c for c in ler_csv(pasta / "classificacao.csv")}
     estado_fontes = ler_json(pasta / "estado_fontes.json", {})
     documentos = ler_json(pasta / "documentos.json", [])
     historico = ler_csv(pasta / "historico.csv")
@@ -257,11 +245,11 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
     ws.title = "Propostas de Alteração"
     cabecalho(ws, COLUNAS_DACDP + COLUNAS_UPE, LARGURAS, "C2")
     for i, r in enumerate(pa, 1):
-        ws.append(linha_pa(i, r, classif.get(r["n_pa"], {})))
+        ws.append(linha_pa(i, r))
     for row in ws.iter_rows(min_row=2, max_row=max(2, len(pa) + 1)):
         for c in row:
             c.font = Font(name=FONTE, size=10)
-        for idx in (3, 22, 38, 39):
+        for idx in (3, 22, 34, 35):
             row[idx - 1].number_format = "DD/MM/YYYY"
         for idx in (13, 14):
             row[idx - 1].number_format = "#,##0"
@@ -316,15 +304,6 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
         ws3[f"D{linha}"] = f"=SUMIF({rng_h},A{linha},'Propostas de Alteração'!$N$2:$N${LINHAS_MAX + 1})"
     linha += 2
     ws3[f"A{linha}"] = "Nota: os impactos somam apenas os valores registados; PA sem quantificação na fonte não são contabilizadas."
-    linha += 2
-    ws3[f"A{linha}"] = "Por área governativa (sugestão SGGov, coluna Y; substituir pela coluna J quando validada pela DACDP)"
-    linha += 1
-    ws3[f"A{linha}"], ws3[f"B{linha}"], ws3[f"C{linha}"], ws3[f"D{linha}"] = "Área governativa", "N.º PA", "Aprovadas", "Rejeitadas"
-    rng_y = f"'Propostas de Alteração'!$Y$2:$Y${LINHAS_MAX + 1}"
-    for ar in AREAS["areas"] + ["por classificar"]:
-        linha += 1
-        ws3[f"A{linha}"], ws3[f"B{linha}"] = ar, f"=COUNTIF({rng_y},A{linha})"
-        ws3[f"C{linha}"], ws3[f"D{linha}"] = f'=COUNTIFS({rng_y},A{linha},{rng_t},"Aprovada")', f'=COUNTIFS({rng_y},A{linha},{rng_t},"Rejeitada")'
     for row in ws3.iter_rows():
         for c in row:
             if not c.font.bold:
@@ -354,10 +333,10 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
     i = 5 + len(INSTRUCOES) + 1
     ws5[f"A{i}"] = "Preenchimento automático pela UPE"
     ws5[f"A{i}"].font = Font(name=FONTE, size=10, bold=True)
-    ws5[f"A{i + 1}"] = ("As colunas B, C, E, F, G, L, S, T, U e V e as ligações em W são preenchidas a partir da Assembleia da República em cada "
-                        "captura automática. As colunas X em diante são informação adicional da UPE: tema atribuído pela AR, sugestão de área "
-                        "governativa (classificação SGGov, com método e confiança), sugestão de tipo, avocação, identificadores e ligações. "
-                        "As restantes colunas do modelo (D, H a K, M a R e o texto de W) são da DACDP e nunca são alteradas pela sincronização.")
+    ws5[f"A{i + 1}"] = ("As colunas B, C, E, F, G, L, S, T, U e V e as ligações em W são preenchidas a partir dos dados abertos da Assembleia da "
+                        "República em cada captura automática. As colunas X em diante são informação adicional publicada pela AR: tema, incidência, "
+                        "natureza e estado da PA, avocação, identificadores e ligações. As restantes colunas do modelo (D, H a K, M a R e o texto de W) "
+                        "são da DACDP e nunca são alteradas pela sincronização.")
     ws5[f"A{i + 3}"] = "Fontes oficiais"
     ws5[f"A{i + 3}"].font = Font(name=FONTE, size=10, bold=True)
     fontes = [("Ficha da proposta de lei", ed.get("url_iniciativa", "")), ("Página do OE na COFAP", ed.get("url_cofap", "")),

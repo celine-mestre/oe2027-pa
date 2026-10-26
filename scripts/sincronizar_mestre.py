@@ -7,7 +7,7 @@ O que faz, na folha «Propostas de Alteração» (modelo da DACDP):
   - atualiza, nas linhas existentes (chave: N.º PA), só as colunas que vêm da AR:
       C Data Entrada · E Partido · F Deputado/Proponente · G Artigo Alterado · S Estado · T Resultado Votação ·
       U Sentido de Voto · V Data Votação · L Descrição Sumária (só se estiver vazia) · W Observações (só acrescenta as ligações)
-    e as colunas X em diante (informação adicional da UPE);
+    e as colunas X em diante (informação adicional publicada pela AR);
   - nunca altera as colunas de análise da DACDP (D, H a K, M a R, e o texto escrito em L e W);
   - preserva as outras folhas da DACDP («Medidas Anunciadas», …) e repõe as listas pendentes;
   - acrescenta à folha «Registo de Consultas» as verificações de fontes desde a última sincronização;
@@ -63,7 +63,6 @@ def main(argv=None) -> int:
         return 2
 
     pa = ex.ler_json(pasta / "pa.json", [])
-    classif = {c["n_pa"]: c for c in ex.ler_csv(pasta / "classificacao.csv")}
     wb = load_workbook(mestre)
     if FOLHA not in wb.sheetnames:
         print(f"a folha «{FOLHA}» não existe no mestre", file=sys.stderr)
@@ -93,7 +92,7 @@ def main(argv=None) -> int:
 
     novas, atualizadas = [], 0
     for reg in sorted(pa, key=lambda r: (ex.re.match(r"\d*", r["n_pa"]).group(0).zfill(6), r["n_pa"])):
-        valores = ex.linha_pa(0, reg, classif.get(reg["n_pa"], {}))
+        valores = ex.linha_pa(0, reg)
         n = reg["n_pa"]
         if n in linhas:
             r = linhas[n]
@@ -120,7 +119,7 @@ def main(argv=None) -> int:
             linhas[n] = ultima_linha
             novas.append(n)
     for r in range(2, ultima_linha + 1):
-        for idx in (3, 22, 38, 39):
+        for idx in (3, 22, 34, 35):
             ws.cell(row=r, column=idx).number_format = "DD/MM/YYYY"
         if novas and r > ultima_linha - len(novas):
             for c in ws[r]:

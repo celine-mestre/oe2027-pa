@@ -7,8 +7,6 @@ Gera o painel HTML autónomo (docs/index.html) com todas as edições configurad
   data/oe<ano>/ultima_execucao.json  metadados da última extração
   data/oe<ano>/estado_fontes.json    estado das fontes da AR
   data/oe<ano>/documentos.json       documentos publicados pela COFAP
-  data/oe<ano>/classificacao.csv     classificação SGGov por área governativa (scripts/classificar.py)
-  data/oe<ano>/analise.csv           classificações da DACDP vindas do ficheiro mestre (scripts/sincronizar_mestre.py)
   config.json                        ligações à AR e calendário oficial de apreciação
 
   python scripts/build_painel.py                       # docs/index.html
@@ -27,7 +25,6 @@ RAIZ = Path(__file__).resolve().parents[1]
 DOCS = RAIZ / "docs"
 CONFIG = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
 TAX = json.loads((RAIZ / "data" / "taxonomia.json").read_text(encoding="utf-8"))
-AREAS = json.loads((RAIZ / "data" / "areas_governativas.json").read_text(encoding="utf-8"))
 
 
 def ler_csv(f: Path) -> list[dict]:
@@ -43,16 +40,6 @@ def ler_json(f: Path, default):
 
 def carregar_edicao(ano: str, ed: dict, pasta: Path) -> dict:
     pa = ler_json(pasta / "pa.json", [])
-    classif = {c["n_pa"]: c for c in ler_csv(pasta / "classificacao.csv")}
-    analise = {a["n_pa"]: a for a in ler_csv(pasta / "analise.csv")}
-    for r in pa:
-        c = classif.get(r["n_pa"], {})
-        r["area"] = c.get("area") or "por classificar"
-        r["area_metodo"] = c.get("metodo") or ""
-        r["area_confianca"] = c.get("confianca") or ""
-        a = analise.get(r["n_pa"], {})
-        r["tipo_dacdp"] = a.get("tipo_pa") or ""
-        r["tema_dacdp"] = a.get("tema_dacdp") or ""
     historico = ler_csv(pasta / "historico.csv")
     agora = dt.datetime.now(dt.timezone.utc)
     return {
@@ -71,8 +58,6 @@ def carregar_edicao(ano: str, ed: dict, pasta: Path) -> dict:
         "estado_fontes": ler_json(pasta / "estado_fontes.json", {}),
         "documentos": ler_json(pasta / "documentos.json", []),
         "excel": f"Registo_PA_OE{ano}.xlsx" if (DOCS / f"Registo_PA_OE{ano}.xlsx").exists() else "",
-        "n_artigos_tabela": len(ler_csv(pasta / "classificacao_artigos.csv")),
-        "n_dacdp": len(analise),
     }
 
 
@@ -96,7 +81,6 @@ def main(argv=None) -> int:
         "edicoes": edicoes,
         "fontes": {k: v for k, v in CONFIG["fontes"].items() if str(v).startswith("http")},
         "partidos": list(TAX["partidos"].keys()),
-        "areas": AREAS["areas"],
     }
     html = TEMPLATE.replace("__LOGO__", logo_b64).replace("__DADOS__", json.dumps(payload, ensure_ascii=False).replace("</", "<\\/"))
     Path(args.saida).parent.mkdir(parents=True, exist_ok=True)
@@ -111,7 +95,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PA ao Orçamento do Estado — Levantamento</title>
-<meta name="description" content="Propostas de alteração às propostas de lei do Orçamento do Estado (OE 2027 em curso e OE 2026 concluído), a partir da informação publicada pela Assembleia da República">
+<meta name="description" content="Propostas de alteração às propostas de lei do Orçamento do Estado (OE 2027 em curso e OE 2026 concluído), exclusivamente a partir dos dados abertos da Assembleia da República">
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -189,11 +173,9 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .chip.ok{background:#e3f1ea;color:#145a44}.chip.nok{background:#f9e3e1;color:#8a1711}.chip.pre{background:#eee;color:#555}.chip.ret{background:#fdf1d6;color:#7a5200}
 .chip.alta{background:#f9e3e1;color:#8a1711}.chip.media{background:#fdf1d6;color:#7a5200}.chip.baixa{background:#e3f1ea;color:#145a44}
 .chip.sug{border:1px dashed var(--ink3);background:transparent;color:var(--ink3)}
-.chip.sggov{background:#e8eef4;color:#275673;border:1px dashed #275673}
 :root[data-theme="dark"] .chip.ok,:root[data-theme="dark"] .chip.baixa{background:#1b3a30;color:#9fdcc2}
 :root[data-theme="dark"] .chip.nok,:root[data-theme="dark"] .chip.alta{background:#4a1b18;color:#f5b3ad}
 :root[data-theme="dark"] .chip.ret,:root[data-theme="dark"] .chip.media{background:#4a3a12;color:#f3d27a}
-:root[data-theme="dark"] .chip.sggov{background:#1f3042;color:#8cc0e0;border-color:#8cc0e0}
 .tabela-wrap{overflow:auto;max-height:70vh;border-radius:12px}
 .cal{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;font-size:13px}
 .cal .d{font-variant-numeric:tabular-nums;color:var(--ink2);white-space:nowrap}
@@ -205,7 +187,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .calor td.q{color:#1c2630;font-variant-numeric:tabular-nums;min-width:62px}
 .calor td.q small{display:block;font-size:10px;opacity:.75}
 .mini{font-size:11.5px;color:var(--ink3)}
-#tab-pa{min-width:1760px}.obj{min-width:340px;max-width:460px}#tab-pa td:nth-child(7){max-width:150px}#tab-pa td:nth-child(8){max-width:170px}#tab-pa td:nth-child(9){max-width:190px}#tab-pa td:nth-child(8) .chip,#tab-pa td:nth-child(9) .chip,#tab-pa td:nth-child(10) .chip{white-space:normal}
+#tab-pa{min-width:1640px}.obj{min-width:340px;max-width:460px}#tab-pa td:nth-child(7){max-width:150px}#tab-pa td:nth-child(8){max-width:190px}#tab-pa td:nth-child(8) .chip,#tab-pa td:nth-child(9) .chip{white-space:normal}
 details summary{cursor:pointer;color:var(--azul);font-size:12.5px}
 footer{max-width:1380px;margin:10px auto 24px;padding:0 16px;font-size:11.5px;color:var(--ink3)}
 footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--teal),var(--verde));border-bottom:2px solid var(--vermelho);margin-bottom:10px;border-radius:2px}
@@ -243,7 +225,6 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 <nav class="tabs">
   <button data-t="sintese" class="on">Síntese</button>
   <button data-t="pa">Propostas de alteração</button>
-  <button data-t="areas">Por área governativa</button>
   <button data-t="votacoes">Votações</button>
   <button data-t="historico">Histórico de capturas</button>
   <button data-t="fontes">Fontes e método</button>
@@ -271,7 +252,6 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   <div class="filtros">
     <input type="search" id="f-q" placeholder="Pesquisar no objeto, artigo, n.º da PA, deputados…">
     <select id="f-partido"><option value="">Proponente</option></select>
-    <select id="f-area"><option value="">Área governativa</option></select>
     <select id="f-tema"><option value="">Tema (AR)</option></select>
     <select id="f-tipo"><option value="">Tipo</option></select>
     <select id="f-incide"><option value="">Incide</option></select>
@@ -281,27 +261,8 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <a class="btn" id="b-excel" hidden download>Excel (modelo DACDP)</a>
   </div>
   <div class="tabela-wrap"><table id="tab-pa"><thead><tr>
-    <th data-k="n_pa">N.º</th><th data-k="data_entrada">Entrada</th><th data-k="proponente">Proponente</th><th data-k="artigo">Artigo / mapa</th><th data-k="tipo_ar">Tipo</th><th>Objeto</th><th data-k="tema_ar">Tema (AR)</th><th data-k="area">Área governativa <span class="chip sggov">SGGov</span></th><th data-k="estado">Estado</th><th>Votação</th><th>Ligações</th>
+    <th data-k="n_pa">N.º</th><th data-k="data_entrada">Entrada</th><th data-k="proponente">Proponente</th><th data-k="artigo">Artigo / mapa</th><th data-k="tipo_ar">Tipo</th><th>Objeto</th><th data-k="tema_ar">Tema (AR)</th><th data-k="estado">Estado</th><th>Votação</th><th>Ligações</th>
   </tr></thead><tbody></tbody></table></div>
-</section>
-
-<section class="tab" id="t-areas">
-  <div class="aviso"><b>Classificação SGGov.</b> A área governativa não é informação publicada pela AR: é atribuída pela Secretaria-Geral do Governo segundo a orgânica do XXV Governo, por regra (tema da AR, artigo da proposta de lei, programa orçamental nos mapas ou palavras-chave) e validada pela DACDP quando assinalado. Cada registo indica o método e a confiança. Tudo o resto nesta página é informação da AR.</div>
-  <div class="grid kpis" id="kpis-areas"></div>
-  <div class="grid duas" style="margin-top:12px">
-    <div class="card"><h3>PA por área governativa</h3><div class="barras" id="g-area"></div><div class="legenda">Por proposta (número-base). Clique numa área para filtrar a tabela abaixo.</div></div>
-    <div class="card"><h3>Resultado por área governativa</h3><div class="tabela-wrap"><table class="matriz" id="m-area-res"></table></div></div>
-  </div>
-  <div class="card" style="margin-top:12px"><h3>PA por área governativa e proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-area-prop"></table></div></div>
-  <div class="card" style="margin-top:12px"><h3>Posição dos grupos parlamentares por área governativa</h3>
-    <div class="filtros"><label class="mini" for="f-pos-prop">PA apresentadas por</label><select id="f-pos-prop"><option value="">todos os proponentes</option></select><span class="mini">Percentagem de votos a favor de cada grupo parlamentar nas PA votadas de cada área; por baixo, favor · contra · abstenção.</span></div>
-    <div class="tabela-wrap"><table class="matriz calor" id="m-posicao"></table></div>
-    <div class="legenda">Indicador histórico calculado a partir dos sentidos de voto publicados pela AR. Não é uma previsão. Inclui os deputados únicos representantes de partido.</div>
-  </div>
-  <div class="card" style="margin-top:12px"><h3>Registos por área (com método e confiança da classificação)</h3>
-    <div class="filtros"><select id="f-a-area"><option value="">Área governativa</option></select><select id="f-a-metodo"><option value="">Método</option><option value="dacdp">validada pela DACDP</option><option value="tema">tema da AR (comissão)</option><option value="artigo">artigo da PPL</option><option value="mapa">programa orçamental (mapa)</option><option value="palavras">palavras-chave</option><option value="">—</option></select><span class="n" id="f-a-n"></span></div>
-    <div class="tabela-wrap"><table id="tab-areas"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo / mapa</th><th>Objeto</th><th>Tema (AR)</th><th>Área governativa</th><th>Método</th><th>Confiança</th><th>Estado</th></tr></thead><tbody></tbody></table></div>
-  </div>
 </section>
 
 <section class="tab" id="t-votacoes">
@@ -309,6 +270,11 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   <div class="grid duas" style="margin-top:12px">
     <div class="card"><h3>Resultado por proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-resultado"></table></div></div>
     <div class="card"><h3>Sentido de voto por grupo parlamentar (PA votadas)</h3><div class="tabela-wrap"><table class="matriz" id="m-sentido"></table></div><div class="legenda">Tal como publicado pela AR. Inclui os deputados únicos representantes de partido.</div></div>
+  </div>
+  <div class="card" style="margin-top:12px"><h3>Posição dos grupos parlamentares por tema (atribuído pela AR)</h3>
+    <div class="filtros"><label class="mini" for="f-pos-prop">PA apresentadas por</label><select id="f-pos-prop"><option value="">todos os proponentes</option></select><span class="mini">Percentagem de votos a favor de cada grupo parlamentar nas PA votadas de cada tema; por baixo, favor · contra · abstenção.</span></div>
+    <div class="tabela-wrap"><table class="matriz calor" id="m-posicao"></table></div>
+    <div class="legenda">Indicador histórico calculado a partir dos temas e dos sentidos de voto publicados pela AR. Não é uma previsão. Uma PA com vários temas conta em cada um deles. Inclui os deputados únicos representantes de partido.</div>
   </div>
   <div class="card" style="margin-top:12px"><h3>Como vota cada grupo parlamentar nas PA de cada proponente</h3><div class="tabela-wrap"><table class="matriz calor" id="m-cruzado"></table></div><div class="legenda">Linhas: proponente da PA. Colunas: grupo parlamentar que vota. Percentagem de votos a favor nas PA votadas; por baixo, favor · contra · abstenção.</div></div>
   <div class="card" style="margin-top:12px"><h3 id="h-docs">Documentos publicados pela COFAP</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões e resultados de votações, textos finais, relatórios e pareceres (por exemplo, da UTAO e do Conselho das Finanças Públicas) publicados na página do OE da Comissão de Orçamento, Finanças e Administração Pública. Não inclui os contributos de entidades e cidadãos.</div></div>
@@ -329,8 +295,8 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>Fontes (Assembleia da República)</h3><ul id="lista-fontes" style="margin:0;padding-left:18px;font-size:13px"></ul></div>
     <div class="card"><h3>Método</h3>
       <ol style="margin:0;padding-left:18px;font-size:13px">
-        <li>A informação sobre as propostas é publicada pela Assembleia da República: dados abertos (categoria «Orçamento do Estado», XVII Legislatura) e, em reserva, a página de detalhe de cada proposta no parlamento.pt. Tema, tipo, estado e sentido de voto são os registados pela AR.</li>
-        <li>A única informação acrescentada é a área governativa (separador «Por área governativa»), atribuída pela Secretaria-Geral do Governo e sempre assinalada como classificação SGGov, com método e confiança. A DACDP valida-a no ficheiro de registo.</li>
+        <li>Toda a informação do painel é publicada pela Assembleia da República: dados abertos (categoria «Orçamento do Estado», XVII Legislatura) e, em reserva, a página de detalhe de cada proposta no parlamento.pt.</li>
+        <li>O painel não acrescenta classificações próprias. Tema, tipo, estado e sentido de voto são os registados pela AR. A classificação por área governativa fica para uma fase posterior, com validação humana.</li>
         <li>Cada captura guarda uma cópia dos dados recebidos. A base mantém a última versão de cada proposta e regista, entre capturas, entradas, alterações de estado e votações.</li>
         <li>Uma proposta que deixe de constar da fonte é assinalada como «ausente da fonte» e deve ser confirmada no parlamento.pt.</li>
         <li>O OE 2026 (processo concluído) serve de base de comparação e de calibração: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar.</li>
@@ -363,7 +329,6 @@ const estadoChip = e => { const c = {aprovada:'ok','aprovada parcialmente':'ok',
 const numPA = s => { const m=/^(\d+)([A-Z]*)(?:-(\d+))?/.exec(s||''); return m ? [+m[1], m[2], +(m[3]||0)] : [1e9,'',0]; };
 const ordemPA = (x,y) => { const a=numPA(x.n_pa),b=numPA(y.n_pa); return a[0]-b[0]||a[1].localeCompare(b[1])||a[2]-b[2]; };
 const hm = m => m ? m.replace('T',' ').slice(0,16) : '—';
-const METODO = {dacdp:'validada pela DACDP', tema:'tema da AR (comissão)', artigo:'artigo da PPL', mapa:'programa orçamental', palavras:'palavras-chave', '':'—'};
 function barras(el, pares, onclick) {
   const max = Math.max(1, ...pares.map(p=>p[1]));
   el.innerHTML = pares.map(([k,v]) => `<div class="k" title="${esc(k)}" ${onclick?`style="cursor:pointer" data-k="${esc(k)}"`:''}>${esc(k)}</div><div><div class="b" style="width:${(v/max*100).toFixed(1)}%"></div></div><div class="n">${fmtN(v)}</div>`).join('') || '<div class="mini">Sem dados.</div>';
@@ -380,12 +345,7 @@ const INFO = {
   'PA votadas': 'Registos com pelo menos uma votação publicada pela AR.',
   'Prejudicadas': 'Registos que deixaram de poder ser votados porque uma votação anterior já decidiu a mesma matéria.',
   'Votadas em Plenário (avocação)': 'Registos votados em Plenário. Acontece quando um grupo parlamentar pede que a votação de uma proposta, normalmente feita na Comissão de Orçamento, Finanças e Administração Pública, seja feita (ou repetida) em Plenário.',
-  'Por votar': 'Registos ainda sem votação.',
-  'Registos classificados': 'Registos com área governativa atribuída (classificação SGGov), por qualquer dos métodos.',
-  'Validados pela DACDP': 'Registos cuja área governativa foi confirmada ou corrigida pela DACDP no ficheiro de registo.',
-  'Por regra (tema, artigo ou mapa)': 'Área atribuída pelo tema da AR (a comissão parlamentar competente, quando corresponde a uma área governativa), pelo artigo da proposta de lei (tabela artigo → área, feita uma vez por edição) ou pelo programa orçamental, nas PA aos mapas.',
-  'Por palavras-chave': 'Área sugerida por expressões no tema da AR, na epígrafe do artigo ou no objeto da PA. Confiança média quando a correspondência é só no objeto.',
-  'Por classificar': 'Registos sem área atribuída por nenhum método. Aguardam leitura.'
+  'Por votar': 'Registos ainda sem votação.'
 };
 const kpi = ([l,v,c]) => `<div class="card kpi ${c}">${INFO[l]?`<button class="info" aria-expanded="false" aria-label="O que significa «${esc(l)}»" title="O que significa?" onclick="const k=this.parentElement;k.classList.toggle('aberto');this.setAttribute('aria-expanded',k.classList.contains('aberto'))">i</button>`:''}<div class="v">${fmtN(v)}</div><div class="l">${l}</div>${INFO[l]?`<div class="tip">${esc(INFO[l])}</div>`:''}</div>`;
 const matrizCalor = (el, linhas, colunas, celula, vazio) => {
@@ -394,7 +354,7 @@ const matrizCalor = (el, linhas, colunas, celula, vazio) => {
 };
 const sentidos = (regs, chaveLinha) => { const m = {}; for (const r of regs) { if (!r.votos_por_partido) continue; for (const l of chaveLinha(r)) { m[l] = m[l]||{}; for (const v of split(r.votos_por_partido)) { const [gp,s]=v.split(':').map(x=>x.trim()); const k={Favor:'F',Contra:'C','Abstenção':'A'}[s]; if(!gp||!k) continue; m[l][gp]=m[l][gp]||{F:0,C:0,A:0}; m[l][gp][k]++; } } } return m; };
 
-let ANO = D.edicao_ativa, E = D.edicoes[ANO], PA = [], ordem = {k:'n_pa', asc:true}, segAtivo = 0, areaFiltro = '';
+let ANO = D.edicao_ativa, E = D.edicoes[ANO], PA = [], ordem = {k:'n_pa', asc:true}, segAtivo = 0;
 $('#edicoes').innerHTML = Object.keys(D.edicoes).sort((a,b)=>b.localeCompare(a)).map(a => `<button role="tab" data-ano="${a}" class="${a===ANO?'on':''}">OE ${a}</button>`).join('');
 $('#edicoes').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { ANO = b.dataset.ano; E = D.edicoes[ANO]; $('#edicoes').querySelectorAll('button').forEach(x=>x.classList.toggle('on', x===b)); montar(); }));
 
@@ -465,35 +425,18 @@ function montar() {
 
   // ----- tabela de PA
   opts('#f-partido', cont(PA, r=>split(r.proponente)).map(p=>p[0]));
-  opts('#f-area', D.areas.concat(['por classificar']).filter(a => PA.some(r=>r.area===a)));
   opts('#f-tema', cont(PA, r=>[temaDe(r)]).map(p=>p[0]).filter(Boolean));
   opts('#f-tipo', cont(PA, r=>[r.tipo_ar||'']).map(p=>p[0]).filter(Boolean));
   opts('#f-incide', cont(PA, r=>[r.incide||'']).map(p=>p[0]).filter(Boolean));
   opts('#f-estado', cont(PA, r=>[r.estado||'']).map(p=>p[0]).filter(Boolean));
-  $('#f-q').value = ''; ['#f-partido','#f-area','#f-tema','#f-tipo','#f-incide','#f-estado'].forEach(s=>$(s).value='');
+  $('#f-q').value = ''; ['#f-partido','#f-tema','#f-tipo','#f-incide','#f-estado'].forEach(s=>$(s).value='');
   const bx = $('#b-excel'); bx.hidden = !E.excel; if (E.excel) bx.href = E.excel;
   render();
 
-  // ----- por área governativa
-  const classificados = PA.filter(r=>r.area && r.area!=='por classificar');
-  $('#kpis-areas').innerHTML = [
-    ['Registos classificados', classificados.length, ''],
-    ['Validados pela DACDP', PA.filter(r=>r.area_metodo==='dacdp').length, 'ok'],
-    ['Por regra (tema, artigo ou mapa)', PA.filter(r=>['tema','artigo','mapa'].includes(r.area_metodo)).length, 'neu'],
-    ['Por palavras-chave', PA.filter(r=>r.area_metodo==='palavras').length, 'neu'],
-    ['Por classificar', PA.length-classificados.length, 'nok'],
-  ].map(kpi).join('');
-  areaFiltro = '';
-  barras($('#g-area'), cont(base1, r=>[r.area||'por classificar']), a => { $('#f-a-area').value = a; renderAreas(); document.getElementById('tab-areas').scrollIntoView({behavior:'smooth', block:'start'}); });
   const estadosV = ['aprovada','aprovada parcialmente','rejeitada','prejudicada','retirada','não admitida','em apreciação'];
-  const areasComPA = D.areas.concat(['por classificar']).filter(a => PA.some(r=>r.area===a));
-  $('#m-area-res').innerHTML = areasComPA.length ? `<tr><th>Área governativa</th>${estadosV.map(e=>`<th>${e}</th>`).join('')}<th>total</th></tr>` + areasComPA.map(a => { const rs = PA.filter(r=>r.area===a); return `<tr><td style="text-align:left"><b>${esc(a)}</b></td>${estadosV.map(e=>`<td class="num">${fmtN(rs.filter(r=>r.estado===e).length)}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
   const proponentes = cont(PA, r=>split(r.proponente)).map(p=>p[0]);
-  $('#m-area-prop').innerHTML = areasComPA.length ? `<tr><th>Área governativa</th>${proponentes.map(p=>`<th>${esc(p)}</th>`).join('')}<th>total</th></tr>` + areasComPA.map(a => { const rs = base1.filter(r=>r.area===a); return `<tr><td style="text-align:left"><b>${esc(a)}</b></td>${proponentes.map(p=>`<td class="num">${fmtN(rs.filter(r=>split(r.proponente).includes(p)).length)||'<span class="mini">·</span>'}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
   opts('#f-pos-prop', proponentes); $('#f-pos-prop').value = '';
   renderPosicao();
-  opts('#f-a-area', areasComPA); $('#f-a-area').value = ''; $('#f-a-metodo').value = '';
-  renderAreas();
 
   // ----- votações
   const votadas = PA.filter(r => r.resultado_votacao || ['aprovada','rejeitada','prejudicada'].includes(r.estado));
@@ -514,12 +457,11 @@ function montar() {
 }
 
 function filtrar() {
-  const q=$('#f-q').value.trim().toLowerCase(), p=$('#f-partido').value, ar=$('#f-area').value, t=$('#f-tema').value, tp=$('#f-tipo').value, inc=$('#f-incide').value, e=$('#f-estado').value;
+  const q=$('#f-q').value.trim().toLowerCase(), p=$('#f-partido').value, t=$('#f-tema').value, tp=$('#f-tipo').value, inc=$('#f-incide').value, e=$('#f-estado').value;
   return PA.filter(r =>
     (!q || [r.n_pa,r.objeto,r.artigo,r.proponente_deputados].join(' ').toLowerCase().includes(q)) &&
-    (!p || split(r.proponente).includes(p)) && (!ar || r.area===ar) && (!t || temaDe(r)===t) && (!tp || r.tipo_ar===tp) && (!inc || r.incide===inc) && (!e || r.estado===e));
+    (!p || split(r.proponente).includes(p)) && (!t || temaDe(r)===t) && (!tp || r.tipo_ar===tp) && (!inc || r.incide===inc) && (!e || r.estado===e));
 }
-const areaChip = r => r.area && r.area!=='por classificar' ? `<span class="chip ${r.area_metodo==='dacdp'?'ok':'sggov'}" title="${esc(METODO[r.area_metodo]||'')}${r.area_confianca?' · confiança '+esc(r.area_confianca):''}">${esc(r.area)}</span>` : '<span class="mini">por classificar</span>';
 function render() {
   const rows = filtrar().sort((x,y)=>{ if(ordem.k==='n_pa'){ const c=ordemPA(x,y); return ordem.asc?c:-c; } const c=String(x[ordem.k]||'').localeCompare(String(y[ordem.k]||''),'pt'); return ordem.asc?c:-c; });
   $('#f-n').textContent = `${fmtN(rows.length)} de ${fmtN(PA.length)} registos`;
@@ -531,16 +473,15 @@ function render() {
     <td class="mini">${esc(r.tipo_ar)}</td>
     <td class="obj">${esc(r.objeto)}</td>
     <td class="mini">${esc(temaDe(r))}</td>
-    <td>${areaChip(r)}</td>
     <td>${estadoChip(r.estado)}<br><span class="mini">${esc(r.estado_ar)}</span></td>
     <td class="mini">${r.resultado_votacao?`${esc(r.resultado_votacao)} · ${esc(fmtData(r.data_votacao))}<br>${esc(r.votos_por_partido)}`:'—'}</td>
     <td class="mini">${r.url_detalhe?`<a href="${esc(r.url_detalhe)}" target="_blank" rel="noopener">AR</a>`:''}${r.url_pdf?` · <a href="${esc(r.url_pdf)}" target="_blank" rel="noopener">PDF</a>`:''}</td>
-  </tr>`).join('') + (rows.length>3000?`<tr><td colspan="11" class="mini">Mostram-se 3 000 de ${fmtN(rows.length)} registos. Afine os filtros ou exporte.</td></tr>`:'') || '<tr><td colspan="11" class="mini">Sem registos.</td></tr>';
+  </tr>`).join('') + (rows.length>3000?`<tr><td colspan="10" class="mini">Mostram-se 3 000 de ${fmtN(rows.length)} registos. Afine os filtros ou exporte.</td></tr>`:'') || '<tr><td colspan="10" class="mini">Sem registos.</td></tr>';
 }
 document.querySelectorAll('#t-pa .filtros select, #t-pa .filtros input').forEach(el => el.addEventListener('input', render));
 document.querySelectorAll('#tab-pa th[data-k]').forEach(th => th.addEventListener('click', () => { const k=th.dataset.k; ordem = {k, asc: ordem.k===k ? !ordem.asc : true}; render(); }));
 function exportarCSV() {
-  const cols = ['n_pa','data_entrada','proponente','proponente_deputados','apresentada','incide','artigo','tipo_ar','objeto','tema_ar','area','area_metodo','area_confianca','estado','estado_ar','data_votacao','resultado_votacao','votos_por_partido','avocacao','url_detalhe','url_pdf','primeira_captura','ultima_captura','fonte'];
+  const cols = ['n_pa','data_entrada','proponente','proponente_deputados','apresentada','incide','artigo','tipo_ar','objeto','tema_ar','estado','estado_ar','data_votacao','resultado_votacao','votos_por_partido','avocacao','url_detalhe','url_pdf','primeira_captura','ultima_captura','fonte'];
   const linhas = [cols.join(';')].concat(filtrar().map(r => cols.map(c => '"'+String(r[c]??'').replace(/"/g,'""')+'"').join(';')));
   const blob = new Blob(['﻿'+linhas.join('\r\n')], {type:'text/csv;charset=utf-8'});
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `PA_OE${ANO}_${D.gerado_em.slice(0,10)}.csv`; a.click();
@@ -549,19 +490,12 @@ function exportarCSV() {
 function renderPosicao() {
   const p = $('#f-pos-prop').value;
   const votadas = PA.filter(r => r.votos_por_partido && (!p || split(r.proponente).includes(p)));
-  const m = sentidos(votadas, r=>[r.area||'por classificar']);
+  const m = sentidos(votadas, r=>split(r.tema_ar).length?split(r.tema_ar):['—']);
   const gps = D.partidos.filter(g => Object.values(m).some(l=>l[g]));
-  matrizCalor($('#m-posicao'), D.areas.concat(['por classificar']).filter(a=>m[a]), gps, (l,c)=>m[l]&&m[l][c], 'Ainda sem votações registadas pela AR.');
+  const temas = Object.keys(m).sort((a,b)=>Object.values(m[b]).reduce((s,x)=>s+x.F+x.C+x.A,0)-Object.values(m[a]).reduce((s,x)=>s+x.F+x.C+x.A,0));
+  matrizCalor($('#m-posicao'), temas, gps, (l,c)=>m[l]&&m[l][c], 'Ainda sem votações registadas pela AR.');
 }
 $('#f-pos-prop').addEventListener('input', renderPosicao);
-function renderAreas() {
-  const a=$('#f-a-area').value, mt=$('#f-a-metodo').value;
-  const rows = PA.filter(r => (!a || r.area===a) && (!mt || r.area_metodo===mt)).sort(ordemPA);
-  $('#f-a-n').textContent = `${fmtN(rows.length)} registos`;
-  $('#tab-areas tbody').innerHTML = rows.slice(0,1500).map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)||'—'}<br><span class="mini">${esc(r.incide)}</span></td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td>${areaChip(r)}</td><td class="mini">${esc(METODO[r.area_metodo]||'—')}</td><td class="mini">${esc(r.area_confianca||'—')}</td><td>${estadoChip(r.estado)}</td></tr>`).join('')
-    + (rows.length>1500?`<tr><td colspan="9" class="mini">Mostram-se 1 500 de ${fmtN(rows.length)} registos.</td></tr>`:'') || '<tr><td colspan="9" class="mini">Sem registos.</td></tr>';
-}
-$('#f-a-area').addEventListener('input', renderAreas); $('#f-a-metodo').addEventListener('input', renderAreas);
 
 const GRUPOS_RES = [
   ['Aprovadas', r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente'],

@@ -3,8 +3,8 @@ name: Calibração e carga do OE 2026
 # Manual, ou ao alterar este ficheiro. Faz o que não precisa de correr em cada captura:
 #   1. lista a pasta XVII dos dados abertos e descarrega o calendário e o texto das propostas de lei;
 #   2. carrega (ou atualiza) a base do OE 2026, processo concluído, a partir dos dados abertos da AR;
-#   3. constrói o índice dos artigos de cada PPL e a sugestão de área por artigo (a validar pela DACDP);
-#   4. reclassifica, exporta os Excel e publica o painel.
+#   3. exporta os Excel e publica o painel.
+# A classificação por área governativa (scripts/classificar.py, scripts/indice_ppl.py) não corre nesta fase.
 
 on:
   workflow_dispatch:
@@ -46,16 +46,8 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_pa.py documentos --ano 2026
 
-      - name: Índice dos artigos e sugestão de área por artigo
-        continue-on-error: true
+      - name: Excel e painel
         run: |
-          python scripts/indice_ppl.py --ano 2026
-          python scripts/indice_ppl.py --ano 2027
-
-      - name: Classificação, Excel e painel
-        run: |
-          python scripts/classificar.py --ano 2026
-          python scripts/classificar.py --ano 2027
           python scripts/exportar_excel.py --ano 2026
           python scripts/exportar_excel.py --ano 2027
           python scripts/build_painel.py
