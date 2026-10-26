@@ -124,6 +124,11 @@ section.tab{display:none}section.tab.on{display:block}
 .card h3{margin:0 0 10px;font-size:13px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
 .kpi .v{font-size:28px;font-weight:600;color:var(--azul);line-height:1.1}
 .kpi .l{font-size:12px;color:var(--ink3);margin-top:4px}
+.kpi{position:relative}
+.kpi .info{position:absolute;top:10px;right:10px;width:20px;height:20px;border-radius:50%;border:1px solid var(--linha);background:var(--card);color:var(--ink3);font:600 11px/18px Lexend,Arial,sans-serif;font-style:italic;cursor:pointer;padding:0;text-align:center}
+.kpi .info:hover,.kpi .info[aria-expanded="true"]{border-color:var(--azul);color:var(--azul)}
+.kpi .tip{display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--linha);font-size:11.5px;line-height:1.45;color:var(--ink2)}
+.kpi.aberto .tip{display:block}
 :root[data-theme="dark"] .kpi .v{color:#8cc0e0}:root[data-theme="dark"] .kpi.ok .v{color:#7fd1ad}:root[data-theme="dark"] .kpi.nok .v{color:#f08a83}:root[data-theme="dark"] .kpi.neu .v{color:#9aa7b3}
 .kpi.ok .v{color:var(--ok)}.kpi.nok .v{color:var(--nok)}.kpi.neu .v{color:var(--neutro)}
 .duas{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
@@ -204,12 +209,12 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 
 <section class="tab on" id="t-sintese">
   <div class="card" id="aviso-vazio" hidden style="margin-bottom:12px"></div>
-  <div class="grid duas" style="margin-bottom:12px">
+  <div class="grid kpis" id="kpis"></div>
+  <div class="legenda">Estados e votações contam registos publicados pela AR: as partes de uma mesma proposta são votadas separadamente.</div>
+  <div class="grid duas" style="margin-top:12px">
     <div class="card"><h3>Últimas 24 horas</h3><div class="barras" id="g-24h"></div></div>
     <div class="card"><h3>Estado das fontes da AR</h3><div id="fontes-estado" style="font-size:13px"></div></div>
   </div>
-  <div class="grid kpis" id="kpis"></div>
-  <div class="legenda">Estados e votações contam registos publicados pela AR: as partes de uma mesma proposta são votadas separadamente.</div>
   <div class="grid duas" style="margin-top:12px">
     <div class="card"><h3>PA por proponente</h3><div class="legenda" style="margin:-6px 0 8px">Contagem por proposta (número-base); uma proposta com várias partes conta uma vez.</div><div class="barras" id="g-partido"></div></div>
     <div class="card"><h3>PA por tema (atribuído pela AR)</h3><div class="barras" id="g-tema"></div><div class="legenda">Uma proposta com vários temas conta em cada um deles.</div></div>
@@ -300,6 +305,19 @@ function barras(el, pares) {
 const PA = D.pa;
 const porEstado = Object.fromEntries(cont(PA, r=>[r.estado||'—']));
 const nBase = new Set(PA.map(r=>r.pa_base||r.n_pa)).size;
+const INFO = {
+  'Propostas de alteração': 'Propostas entregues pelos grupos parlamentares e deputados para alterar a Proposta de Lei do Orçamento. Contam-se pelo número atribuído pela AR (por exemplo, 120C): uma proposta que altera vários artigos conta uma vez.',
+  'Registos publicados (inclui partes)': 'Linhas publicadas pela AR. Quando uma proposta altera vários artigos ou alíneas, a AR divide-a em partes (120C-1, 120C-2), cada uma votada separadamente. Por isso há mais registos do que propostas. Os estados e as votações contam-se por registo.',
+  'Em apreciação': 'Registos entregues que ainda não têm decisão: aguardam votação.',
+  'Aprovadas (total ou parcialmente)': 'Registos aprovados em Comissão ou em Plenário. Inclui as aprovações parciais, em que só parte do texto proposto foi aprovada.',
+  'Rejeitadas': 'Registos rejeitados em Comissão ou, depois de avocação, em Plenário.',
+  'Retiradas, prejudicadas ou não admitidas': 'Retirada: o proponente desistiu da proposta. Prejudicada: deixou de poder ser votada porque uma votação anterior já decidiu a mesma matéria. Não admitida: não foi aceite para apreciação.',
+  'PA votadas': 'Registos com pelo menos uma votação publicada pela AR.',
+  'Prejudicadas': 'Registos que deixaram de poder ser votados porque uma votação anterior já decidiu a mesma matéria.',
+  'Votadas em Plenário (avocação)': 'Registos votados em Plenário. Acontece quando um grupo parlamentar pede que a votação de uma proposta, normalmente feita na Comissão de Orçamento, Finanças e Administração Pública, seja feita (ou repetida) em Plenário.',
+  'Por votar': 'Registos ainda sem votação.'
+};
+const kpi = ([l,v,c]) => `<div class="card kpi ${c}">${INFO[l]?`<button class="info" aria-expanded="false" aria-label="O que significa «${esc(l)}»" title="O que significa?" onclick="const k=this.parentElement;k.classList.toggle('aberto');this.setAttribute('aria-expanded',k.classList.contains('aberto'))">i</button>`:''}<div class="v">${fmtN(v)}</div><div class="l">${l}</div>${INFO[l]?`<div class="tip">${esc(INFO[l])}</div>`:''}</div>`;
 if (!PA.length) {
   const av = $('#aviso-vazio'); av.hidden = false;
   av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">As propostas de alteração serão registadas a partir de 29 de outubro, às 9h00, data de início do prazo para a sua inserção, segundo o calendário de apreciação da AR. O painel é atualizado automaticamente a partir dessa data.</span>`;
@@ -311,7 +329,7 @@ $('#kpis').innerHTML = [
   ['Aprovadas (total ou parcialmente)', (porEstado['aprovada']||0)+(porEstado['aprovada parcialmente']||0), 'ok'],
   ['Rejeitadas', porEstado['rejeitada']||0, 'nok'],
   ['Retiradas, prejudicadas ou não admitidas', (porEstado['retirada']||0)+(porEstado['prejudicada']||0)+(porEstado['não admitida']||0), 'neu'],
-].map(([l,v,c])=>`<div class="card kpi ${c}"><div class="v">${fmtN(v)}</div><div class="l">${l}</div></div>`).join('');
+].map(kpi).join('');
 const base1 = [...new Map(PA.map(r=>[r.pa_base||r.n_pa, r])).values()];
 barras($('#g-partido'), cont(base1, r=>split(r.proponente).length?split(r.proponente):['—']));
 barras($('#g-tema'), cont(base1, r=>split(r.tema_ar).length?split(r.tema_ar):['—']).slice(0,16));
@@ -380,7 +398,7 @@ function exportarCSV() {
 
 // ----- votações
 const votadas = PA.filter(r => r.resultado_votacao || ['aprovada','rejeitada','prejudicada'].includes(r.estado));
-$('#kpis-vot').innerHTML = [['PA votadas', votadas.length,''],['Aprovadas (total ou parcialmente)', (porEstado['aprovada']||0)+(porEstado['aprovada parcialmente']||0),'ok'],['Rejeitadas', porEstado['rejeitada']||0,'nok'],['Prejudicadas', porEstado['prejudicada']||0,'neu'],['Votadas em Plenário (avocação)', PA.filter(r=>r.avocacao==='S').length,'neu'],['Por votar', porEstado['em apreciação']||0,'neu']].map(([l,v,c])=>`<div class="card kpi ${c}"><div class="v">${fmtN(v)}</div><div class="l">${l}</div></div>`).join('');
+$('#kpis-vot').innerHTML = [['PA votadas', votadas.length,''],['Aprovadas (total ou parcialmente)', (porEstado['aprovada']||0)+(porEstado['aprovada parcialmente']||0),'ok'],['Rejeitadas', porEstado['rejeitada']||0,'nok'],['Prejudicadas', porEstado['prejudicada']||0,'neu'],['Votadas em Plenário (avocação)', PA.filter(r=>r.avocacao==='S').length,'neu'],['Por votar', porEstado['em apreciação']||0,'neu']].map(kpi).join('');
 const proponentes = cont(PA, r=>split(r.proponente)).map(p=>p[0]);
 const estadosV = ['aprovada','aprovada parcialmente','rejeitada','prejudicada','retirada','não admitida','em apreciação'];
 $('#m-resultado').innerHTML = proponentes.length ? `<tr><th>Proponente</th>${estadosV.map(e=>`<th>${e}</th>`).join('')}<th>total</th></tr>` + proponentes.map(p => { const rs = PA.filter(r=>split(r.proponente).includes(p)); return `<tr><td style="text-align:left"><b>${esc(p)}</b></td>${estadosV.map(e=>`<td class="num">${fmtN(rs.filter(r=>r.estado===e).length)}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
