@@ -1,97 +1,74 @@
 {
-  "_comentario": "Taxonomia do exercício (ponto 6 do plano de ação). As regras automáticas produzem apenas uma SUGESTÃO, que a DACDP valida ou corrige na folha data/classificacao_manual.csv. Os temas correspondem às comissões parlamentares da XVII Legislatura, usados pela AR no campo 'Tema' de cada PA. O mapa tema → área governativa deve ser validado contra a orgânica do Governo em funções e corrigido aqui se necessário.",
-
-  "tipos_pa_ar": [
-    "Aditamento (Artigo PPL)",
-    "Substituição (Artigo PPL)",
-    "Eliminação (Artigo PPL)",
-    "Aditamento (Mapa)",
-    "Substituição (Mapa)",
-    "Eliminação (Mapa)"
+ "_comentario": "Normalização de valores publicados pela AR: siglas dos partidos (a AR usa a sigla nos proponentes e o nome por extenso nas votações) e agrupamento dos estados. Não contém classificações próprias.",
+ "partidos": {
+  "PSD": [
+   "Partido Social Democrata",
+   "PSD",
+   "PPD/PSD"
   ],
-
-  "natureza": {
-    "valores": ["receita", "despesa", "norma orçamental", "alteração a legislação avulsa", "autorização legislativa"],
-    "regras_sugestao": [
-      {"natureza": "autorização legislativa", "padrao": "autoriza(ção|do)? (legislativa|o governo)"},
-      {"natureza": "alteração a legislação avulsa", "padrao": "altera(ção)? (a|ao|à|do|da|dos|das)? ?(decreto-lei|lei n|código|estatuto|regime jurídico)|aditamento (ao|à) (decreto-lei|lei n|código)"},
-      {"natureza": "receita", "padrao": "\\b(irs|irc|iva|imi|imt|iuc|isp|iec|iabA|imposto|taxa|contribuição|isenção|benefício fiscal|dedução|escalão|tributa|coleta|selo)\\b"},
-      {"natureza": "despesa", "padrao": "\\b(reforço|dotação|transferência|verba|financiamento|apoio|subsídio|pensão|pensões|complemento|abono|prestação|investimento|contratação|valorização|atualização)\\b"}
-    ],
-    "por_defeito": "norma orçamental"
-  },
-
-  "relevancia": {
-    "valores": ["alta", "média", "baixa"],
-    "criterios": [
-      "impacto orçamental elevado ou não quantificado em matéria sensível",
-      "alteração de normas estruturais (carreiras, pensões, fiscalidade geral)",
-      "cavaleiro orçamental (alteração a legislação avulsa sem conexão orçamental)",
-      "impacto em áreas da Presidência do Conselho de Ministros e da SGGov",
-      "medida anunciada publicamente ou com cobertura mediática"
-    ],
-    "nota": "Atribuída manualmente pela DACDP/Flávio Lopes. O pipeline não sugere relevância."
-  },
-
-  "estados_ar": {
-    "em apreciação": ["Em apreciação", "Admitida", "Entrada"],
-    "aprovada": ["Aprovado(a)", "Aprovado(a) por Unanimidade", "Aprovado(a) em Comissão", "Aprovado(a) em Plenário", "Aprovado(a) por Unanimidade em Comissão", "Aprovado(a) por Unanimidade em Plenário"],
-    "rejeitada": ["Rejeitado(a)", "Rejeitado(a) em Comissão", "Rejeitado(a) em Plenário"],
-    "prejudicada": ["Prejudicado(a)", "Prejudicado(a) em Comissão", "Prejudicado(a) em Plenário"],
-    "retirada": ["Retirado(a)", "Retirada"],
-    "substituída": ["Substituído(a)", "Substituída"]
-  },
-
-  "tema_para_area_governativa": {
-    "Orçamento, Finanças e Administração Pública": ["Finanças", "Presidência do Conselho de Ministros"],
-    "Assuntos Constitucionais, Direitos, Liberdades e Garantias": ["Justiça", "Administração Interna", "Presidência do Conselho de Ministros"],
-    "Negócios Estrangeiros e Comunidades Portuguesas": ["Negócios Estrangeiros"],
-    "Defesa Nacional": ["Defesa Nacional"],
-    "Assuntos Europeus": ["Negócios Estrangeiros"],
-    "Economia e Coesão Territorial": ["Economia e Coesão Territorial"],
-    "Agricultura e Pescas": ["Agricultura e Mar"],
-    "Educação e Ciência": ["Educação, Ciência e Inovação"],
-    "Saúde": ["Saúde"],
-    "Trabalho, Segurança Social e Inclusão": ["Trabalho, Solidariedade e Segurança Social"],
-    "Ambiente e Energia": ["Ambiente e Energia"],
-    "Cultura, Comunicação, Juventude e Desporto": ["Cultura, Juventude e Desporto"],
-    "Reforma do Estado e Poder Local": ["Reforma do Estado", "Presidência do Conselho de Ministros"],
-    "Infraestruturas, Mobilidade e Habitação": ["Infraestruturas e Habitação"],
-    "Transparência e Estatuto dos Deputados": ["Assuntos Parlamentares"]
-  },
-
-  "areas_governativas": [
-    "Presidência do Conselho de Ministros",
-    "Finanças",
-    "Negócios Estrangeiros",
-    "Defesa Nacional",
-    "Administração Interna",
-    "Justiça",
-    "Reforma do Estado",
-    "Assuntos Parlamentares",
-    "Economia e Coesão Territorial",
-    "Cultura, Juventude e Desporto",
-    "Educação, Ciência e Inovação",
-    "Saúde",
-    "Trabalho, Solidariedade e Segurança Social",
-    "Infraestruturas e Habitação",
-    "Ambiente e Energia",
-    "Agricultura e Mar",
-    "Transversal / várias"
+  "CH": [
+   "Chega",
+   "CH"
   ],
-
-  "partidos": {
-    "PSD": ["Partido Social Democrata", "PSD", "PPD/PSD"],
-    "PS": ["Partido Socialista", "PS"],
-    "CH": ["Chega", "CH"],
-    "IL": ["Iniciativa Liberal", "IL"],
-    "L": ["Livre", "L"],
-    "PCP": ["Partido Comunista Português", "PCP"],
-    "CDS-PP": ["Centro Democrático Social - Partido Popular", "CDS-PP", "CDS"],
-    "BE": ["Bloco de Esquerda", "BE"],
-    "PAN": ["Pessoas-Animais-Natureza", "PAN"],
-    "JPP": ["Juntos pelo Povo", "JPP"]
-  },
-
-  "medidas_anunciadas_campos": ["id_medida", "partido", "data", "fonte", "url_fonte", "descricao", "custo_anunciado_eur", "tema", "area_governativa", "entregue_como_pa", "n_pa", "observacoes"]
+  "PS": [
+   "Partido Socialista",
+   "PS"
+  ],
+  "IL": [
+   "Iniciativa Liberal",
+   "IL"
+  ],
+  "L": [
+   "Livre",
+   "L"
+  ],
+  "PCP": [
+   "Partido Comunista Português",
+   "PCP"
+  ],
+  "CDS-PP": [
+   "Centro Democrático Social - Partido Popular",
+   "CDS-PP",
+   "CDS-P",
+   "CDS"
+  ],
+  "BE": [
+   "Bloco de Esquerda",
+   "BE"
+  ],
+  "PAN": [
+   "Pessoas-Animais-Natureza",
+   "PAN"
+  ],
+  "JPP": [
+   "Juntos pelo Povo",
+   "JPP"
+  ]
+ },
+ "estados": [
+  [
+   "parcialmente",
+   "aprovada parcialmente"
+  ],
+  [
+   "aprovad",
+   "aprovada"
+  ],
+  [
+   "rejeitad",
+   "rejeitada"
+  ],
+  [
+   "prejudicad",
+   "prejudicada"
+  ],
+  [
+   "retirad",
+   "retirada"
+  ],
+  [
+   "não admitid",
+   "não admitida"
+  ]
+ ]
 }

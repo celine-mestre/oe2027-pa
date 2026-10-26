@@ -6,13 +6,22 @@ on:
     branches: [main]
     paths: ["scripts/**", "config.json", "data/taxonomia.json", "data/classificacao_manual.csv", "data/medidas_anunciadas.csv", "requirements.txt", ".github/workflows/atualizar.yml"]
   schedule:
-    # Horários em UTC (Lisboa = UTC+0 a partir de 25 out. 2026).
-    # Rotina: 2 capturas por dia durante a apreciação (29 out. – 17 nov.)
-    - cron: "15 7,18 * 10,11 *"
-    # Pico 1 — fim do prazo de PA (6 nov.) e fim de semana de prorrogação (7–9 nov.): de hora a hora
-    - cron: "5 6-23 6-9 11 *"
-    # Pico 2 — votações na especialidade e votação final global (18–24 nov.): de 2 em 2 horas
-    - cron: "10 7-23/2 18-24 11 *"
+    # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao padrão de entrada
+    # das PA ao OE 2026 (dados abertos da AR) e ao calendário oficial do OE 2027.
+    # Prazo de entrega (29 out. – 6 nov.): 2 capturas por dia; 5 nov. de 2 em 2 horas; 6 nov. de hora a hora
+    - cron: "15 7,19 29-31 10 *"
+    - cron: "15 7,19 1-4 11 *"
+    - cron: "0 8-22/2 5 11 *"
+    - cron: "5 7-23 6 11 *"
+    # Depois do prazo: publicação dos registos continua no fim de semana; 9 nov. cobre o plano de contingência (+24 h úteis)
+    - cron: "20 0,2,5,8,11,14,17,20,23 7-8 11 *"
+    - cron: "5 7-23 9 11 *"
+    # Guiões e preparação das votações
+    - cron: "15 7,19 10-17 11 *"
+    # Votações na COFAP (15h00) e votação final global
+    - cron: "10 7,13,16-23 18-20,23-24 11 *"
+    - cron: "15 7,19 25-30 11 *"
+    - cron: "15 7 1-11 12 *"
 
 permissions:
   contents: write
@@ -42,6 +51,11 @@ jobs:
         if: steps.opendata.outcome != 'success'
         continue-on-error: true
         run: python scripts/fetch_pa.py scrape
+
+      - name: Página de teste com dados do OE 2026
+        run: |
+          python scripts/fetch_pa.py normalize data/calibracao/OEPropostasAlteracao2026.json.gz --saida /tmp/oe2026 > /dev/null
+          python scripts/build_painel.py --dados /tmp/oe2026 --saida docs/teste-oe2026.html --rotulo "TESTE COM DADOS REAIS DO OE 2026 (PPL 37/XVII/1.ª) — demonstração do painel; não corresponde ao OE 2027"
 
       - name: Gerar painel
         run: python scripts/build_painel.py
