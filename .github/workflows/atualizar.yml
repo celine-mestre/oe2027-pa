@@ -35,6 +35,7 @@ concurrency:
 jobs:
   extrair:
     runs-on: ubuntu-latest
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,15 +43,17 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
 
-      - name: Extrair dos dados abertos da AR
-        id: opendata
+      - name: Dados abertos da AR (fonte principal)
         continue-on-error: true
         run: python scripts/fetch_pa.py opendata
 
-      - name: Reserva — pesquisa de PA no parlamento.pt
-        if: steps.opendata.outcome != 'success'
+      - name: Verificação cruzada com a página de pesquisa da AR (recupera PA em falta)
         continue-on-error: true
-        run: python scripts/fetch_pa.py scrape
+        run: python scripts/fetch_pa.py verificar --max 900
+
+      - name: Documentos de votação na página da COFAP
+        continue-on-error: true
+        run: python scripts/fetch_pa.py documentos
 
       - name: Gerar painel
         run: python scripts/build_painel.py
@@ -72,3 +75,6 @@ jobs:
         with:
           path: docs
       - uses: actions/deploy-pages@v4
+
+      - name: Alerta (falha a vermelho se a captura não estiver a funcionar durante o processo)
+        run: python scripts/verificar_estado.py

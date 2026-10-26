@@ -12,7 +12,9 @@ Reserva — página de pesquisa de PA da PPL e páginas de detalhe de cada PA.
 
 Comandos:
   python scripts/fetch_pa.py opendata              # localiza o ficheiro do ano em config.json e extrai
-  python scripts/fetch_pa.py scrape                # reserva (portal)
+  python scripts/fetch_pa.py scrape                # reserva (portal): lê todas as PA da página de pesquisa
+  python scripts/fetch_pa.py verificar             # compara com a página de pesquisa e recupera as PA em falta
+  python scripts/fetch_pa.py documentos            # documentos de votação na página da COFAP (guiões, resultados, textos)
   python scripts/fetch_pa.py normalize FICHEIRO    # extrai a partir de um JSON local (.json ou .json.gz)
   python scripts/fetch_pa.py listar                # lista os ficheiros da pasta XVII dos dados abertos
 
@@ -21,6 +23,8 @@ Saídas (por defeito em data/):
   pa.json / pa.csv                      um registo por PA (ou parte de PA), última versão publicada
   historico.csv                         eventos entre capturas: nova, estado alterado, votada, ausente da fonte
   ultima_execucao.json                  metadados da última captura
+  estado_fontes.json                    estado de cada fonte (disponível, registos, atualização, PA em falta)
+  documentos.json                       documentos de votação publicados pela COFAP
 """
 from __future__ import annotations
 
@@ -333,7 +337,7 @@ def ler_bd(pasta: Path) -> dict[str, dict]:
     return {r["n_pa"]: r for r in json.loads(f.read_text(encoding="utf-8"))} if f.exists() else {}
 
 
-def fundir(bd: dict[str, dict], novos: list[dict], momento: str, fonte: str) -> list[dict]:
+def fundir(bd: dict[str, dict], novos: list[dict], momento: str, fonte: str, marcar_ausentes: bool = True) -> list[dict]:
     eventos, vistos = [], set()
     for r in novos:
         k = r["n_pa"]
@@ -358,14 +362,14 @@ def fundir(bd: dict[str, dict], novos: list[dict], momento: str, fonte: str) -> 
         antigo["ultima_captura"] = momento
         antigo.pop("ausente_da_fonte", None)
     for k, r in bd.items():
-        if k not in vistos and r.get("fonte") == fonte and not r.get("ausente_da_fonte"):
+        if marcar_ausentes and k not in vistos and r.get("fonte") == fonte and not r.get("ausente_da_fonte"):
             r["ausente_da_fonte"] = momento
             eventos.append({"momento": momento, "n_pa": k, "evento": "ausente da fonte",
                             "detalhe": "deixou de constar na publicação da AR — confirmar no parlamento.pt", "fonte": fonte})
     return eventos
 
 
-def gravar(pasta: Path, bd: dict[str, dict], eventos: list[dict], meta: dict) -> None:
+def gravar(pasta: Path, bd: dict[str, dict], eventos: list[dict], meta: dict | None) -> None:
     pasta.mkdir(parents=True, exist_ok=True)
     regs = sorted(bd.values(), key=ordem)
     (pasta / "pa.json").write_text(json.dumps(regs, ensure_ascii=False, indent=0), encoding="utf-8")
@@ -380,7 +384,31 @@ def gravar(pasta: Path, bd: dict[str, dict], eventos: list[dict], meta: dict) ->
         if novo:
             w.writeheader()
         w.writerows(eventos)
-    (pasta / "ultima_execucao.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    if meta is not None:
+        (pasta / "ultima_execucao.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def atualizar_estado(pasta: Path, fonte: str, dados: dict) -> None:
+    """Regista em estado_fontes.json o resultado mais recente de cada fonte."""
+    f = pasta / "estado_fontes.json"
+    estado = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    estado[fonte] = dados
+    f.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def ler_documentos(url: str, s=None) -> list[dict]:
+    """Ligações a documentos de votação na página do OE na COFAP (guiões, resultados, textos finais, relatórios)."""
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(http_get(url, s).text, "html.parser")
+    corpo = soup.find(id="contentBox") or soup
+    padrao = re.compile(r"gui[ãa]o|vota[çc]|s[úu]mula|texto final|relat[óo]rio|reda[çc][ãa]o final|avoca", re.I)
+    docs = []
+    for a in corpo.find_all("a", href=True):
+        titulo = _texto(a)
+        if titulo and padrao.search(titulo) and re.search(r"doc\.pdf|\.pdf|webutils", a["href"], re.I):
+            docs.append({"titulo": titulo, "url": urljoin(url, a["href"])})
+    return list({d["url"]: d for d in docs}.values())
 
 
 def resumo(bd: dict[str, dict]) -> dict:
@@ -399,7 +427,8 @@ def resumo(bd: dict[str, dict]) -> dict:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("comando", choices=["opendata", "scrape", "normalize", "listar"])
+    ap.add_argument("comando", choices=["opendata", "scrape", "verificar", "documentos", "normalize", "listar"])
+    ap.add_argument("--url", help="scrape/verificar: outra página de pesquisa (testes)")
     ap.add_argument("ficheiro", nargs="?")
     ap.add_argument("--ano", type=int, default=CONFIG["ppl"]["ano_oe"])
     ap.add_argument("--saida", default=str(RAIZ / "data"))
@@ -423,12 +452,15 @@ def main(argv=None) -> int:
             if not f:
                 meta["erros"].append(f"o ficheiro OEPropostasAlteracao{a.ano} ainda não consta da pasta XVII dos dados abertos da AR")
                 print(meta["erros"][-1], file=sys.stderr)
+                atualizar_estado(pasta, "dados_abertos", {"momento": momento, "disponivel": False})
                 bd = ler_bd(pasta)
                 meta["resumo"] = resumo(bd)
                 gravar(pasta, bd, [], meta)
                 return 3
             meta["ficheiro_ar"], meta["url"] = f["fich"], f["url"]
-            txt = http_get(f["url"], s).content.decode("utf-8-sig")
+            resp = http_get(f["url"], s)
+            meta["ultima_modificacao_ar"] = resp.headers.get("Last-Modified", "")
+            txt = resp.content.decode("utf-8-sig")
             with gzip.open(raw / f"{carimbo()}_opendata.json.gz", "wt", encoding="utf-8") as fh:
                 fh.write(txt)
             bruto = json.loads(txt)
@@ -443,12 +475,73 @@ def main(argv=None) -> int:
         eventos = fundir(bd, novos, momento, "opendata")
         meta.update({"capturados": len(novos), "eventos": len(eventos), "resumo": resumo(bd)})
         gravar(pasta, bd, eventos, meta)
+        if a.comando == "opendata":
+            atualizar_estado(pasta, "dados_abertos", {
+                "momento": momento, "disponivel": True, "ficheiro": meta["ficheiro_ar"],
+                "registos": len(novos), "pa": len({r["pa_base"] for r in novos}),
+                "ultima_entrada": max((r["data_entrada"] for r in novos), default=""),
+                "ultima_modificacao_ar": meta.get("ultima_modificacao_ar", ""),
+            })
         print(json.dumps({k: v for k, v in meta.items() if k != "resumo"} | {"pa": meta["resumo"]["pa"]}, ensure_ascii=False))
+        return 0
+
+    if a.comando == "verificar":
+        import requests
+
+        s = sessao()
+        url = a.url or CONFIG["fontes"]["pesquisa_pa"]
+        try:
+            ids = listar_ids_pesquisa(url, s)
+        except requests.HTTPError as e:
+            disponivel = not (e.response is not None and e.response.status_code == 404)
+            atualizar_estado(pasta, "pesquisa", {"momento": momento, "disponivel": False,
+                                                 "erro": "" if not disponivel else str(e)})
+            print(f"página de pesquisa indisponível: {e}", file=sys.stderr)
+            return 0 if not disponivel else 3
+        bd = ler_bd(pasta)
+        conhecidos = {r.get("id_ar") for r in bd.values()}
+        em_falta = [i for i in ids if i not in conhecidos]
+        limite = a.max or 600
+        novos, falhas = [], []
+        for bid in em_falta[:limite]:
+            try:
+                novos.append(ler_detalhe(bid, momento, s))
+            except Exception as e:  # noqa: BLE001
+                falhas.append({"id": bid, "erro": str(e)})
+        eventos = fundir(bd, novos, momento, "scrape", marcar_ausentes=False) if novos else []
+        gravar(pasta, bd, eventos, None)
+        if novos:
+            with gzip.open(raw / f"{carimbo()}_verificar.json.gz", "wt", encoding="utf-8") as fh:
+                json.dump(novos, fh, ensure_ascii=False)
+        conhecidos = {r.get("id_ar") for r in bd.values()}
+        restantes = sum(1 for i in ids if i not in conhecidos)
+        atualizar_estado(pasta, "pesquisa", {"momento": momento, "disponivel": True, "registos": len(ids),
+                                             "em_falta_na_base": len(em_falta), "recuperados": len(novos),
+                                             "por_recuperar": restantes, "falhas": len(falhas)})
+        print(json.dumps({"pesquisa": len(ids), "em_falta": len(em_falta), "recuperados": len(novos),
+                          "por_recuperar": restantes, "falhas": falhas[:5]}, ensure_ascii=False))
+        return 0
+
+    if a.comando == "documentos":
+        s = sessao()
+        f = pasta / "documentos.json"
+        antigos = {d["url"]: d for d in json.loads(f.read_text(encoding="utf-8"))} if f.exists() else {}
+        try:
+            docs = ler_documentos(CONFIG["ppl"]["url_cofap"], s)
+        except Exception as e:  # noqa: BLE001
+            print(f"página da COFAP indisponível: {e}", file=sys.stderr)
+            return 0
+        for d in docs:
+            if d["url"] not in antigos:
+                antigos[d["url"]] = d | {"primeira_captura": momento}
+        f.write_text(json.dumps(sorted(antigos.values(), key=lambda d: d["primeira_captura"], reverse=True),
+                                ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"{len(docs)} documentos de votação na página da COFAP ({len(antigos)} registados)")
         return 0
 
     if a.comando == "scrape":
         s = sessao()
-        url = CONFIG["fontes"]["pesquisa_pa"]
+        url = a.url or CONFIG["fontes"]["pesquisa_pa"]
         try:
             ids = listar_ids_pesquisa(url, s)
         except Exception as e:  # noqa: BLE001

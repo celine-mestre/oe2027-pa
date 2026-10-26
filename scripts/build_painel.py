@@ -51,6 +51,8 @@ def main(argv=None) -> int:
     pa = ler_json("pa.json", [])
     historico = ler_csv("historico.csv")
     execucao = ler_json("ultima_execucao.json", {})
+    estado_fontes = ler_json("estado_fontes.json", {})
+    documentos = ler_json("documentos.json", [])
 
     logo_b64 = base64.b64encode((RAIZ / "assets" / "logo-sggov.png").read_bytes()).decode()
     payload = {
@@ -64,6 +66,9 @@ def main(argv=None) -> int:
         "partidos": list(TAX["partidos"].keys()),
         "pa": pa,
         "historico": historico[-400:][::-1],
+        "historico_24h": [h for h in historico if h.get("momento", "") >= (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M")],
+        "estado_fontes": estado_fontes,
+        "documentos": documentos,
     }
     html = TEMPLATE.replace("__LOGO__", logo_b64).replace("__DADOS__", json.dumps(payload, ensure_ascii=False).replace("</", "<\\/"))
     Path(args.saida).parent.mkdir(parents=True, exist_ok=True)
@@ -199,6 +204,10 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 
 <section class="tab on" id="t-sintese">
   <div class="card" id="aviso-vazio" hidden style="margin-bottom:12px"></div>
+  <div class="grid duas" style="margin-bottom:12px">
+    <div class="card"><h3>Últimas 24 horas</h3><div class="barras" id="g-24h"></div></div>
+    <div class="card"><h3>Estado das fontes da AR</h3><div id="fontes-estado" style="font-size:13px"></div></div>
+  </div>
   <div class="grid kpis" id="kpis"></div>
   <div class="legenda">Estados e votações contam registos publicados pela AR: as partes de uma mesma proposta são votadas separadamente.</div>
   <div class="grid duas" style="margin-top:12px">
@@ -233,6 +242,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>Resultado por proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-resultado"></table></div></div>
     <div class="card"><h3>Sentido de voto por partido (PA votadas)</h3><div class="tabela-wrap"><table class="matriz" id="m-sentido"></table></div></div>
   </div>
+  <div class="card" style="margin-top:12px"><h3>Documentos de votação publicados pela COFAP</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões, resultados de votações, textos finais e relatórios publicados na página do OE 2027 da Comissão de Orçamento, Finanças e Administração Pública.</div></div>
   <div class="card" style="margin-top:12px"><h3>PA aprovadas</h3><div class="tabela-wrap"><table id="tab-aprov"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo</th><th>Objeto</th><th>Tema</th><th>Data</th><th>Sentido de voto</th><th>Avocação</th></tr></thead><tbody></tbody></table></div></div>
 </section>
 
@@ -312,6 +322,21 @@ const hoje = new Date().toISOString().slice(0,10);
 $('#cal').innerHTML = D.calendario.map(c => { const cls = c.data===hoje?'hoje':(c.data<hoje?'passado':''); return `<div class="d ${cls}">${diaMes(c.data)}</div><div class="${cls}">${esc(c.momento)}</div>`; }).join('');
 $('#cal-fonte').innerHTML = (D.calendario_nota ? esc(D.calendario_nota)+'<br>' : '') + (D.ppl.url_calendario ? `Fonte: <a href="${esc(D.ppl.url_calendario)}" target="_blank" rel="noopener">calendário de apreciação do OE 2027 (Assembleia da República)</a>` : '');
 
+// ----- últimas 24 h e estado das fontes
+const ev24 = cont(D.historico_24h || [], h=>[h.evento]);
+barras($('#g-24h'), ev24.length ? ev24.map(([k,v])=>[({nova:'PA novas','estado alterado':'Alterações de estado',votada:'Votações registadas','ausente da fonte':'Ausentes da fonte'})[k]||k, v]) : []);
+if (!ev24.length) $('#g-24h').innerHTML = '<div class="mini">Sem alterações nas últimas 24 horas.</div>';
+const EF = D.estado_fontes || {};
+const hm = m => m ? m.replace('T',' ').slice(0,16) : '—';
+const linhaFonte = (nome, f, corpo) => `<div style="margin-bottom:10px"><b>${nome}</b><br><span class="mini">${f ? corpo(f) : 'Ainda não verificada.'}</span></div>`;
+$('#fontes-estado').innerHTML =
+  linhaFonte('Dados abertos (fonte principal)', EF.dados_abertos, f => f.disponivel
+    ? `${fmtN(f.pa||0)} PA (${fmtN(f.registos||0)} registos) · última entrada: ${esc(hm(f.ultima_entrada))} · ficheiro atualizado pela AR: ${esc(f.ultima_modificacao_ar||'—')} · verificado: ${esc(hm(f.momento))}`
+    : `Ficheiro do OE 2027 ainda não publicado · verificado: ${esc(hm(f.momento))}`) +
+  linhaFonte('Página de pesquisa de PA (verificação cruzada)', EF.pesquisa, f => f.disponivel
+    ? `${fmtN(f.registos||0)} registos listados · recuperados nesta verificação: ${fmtN(f.recuperados||0)} · por recuperar: <b>${fmtN(f.por_recuperar||0)}</b> · verificado: ${esc(hm(f.momento))}`
+    : `Página ainda não criada pela AR · verificado: ${esc(hm(f.momento))}`);
+
 // ----- tabela de PA
 const opts = (id, vals) => { const s=$(id); for (const v of vals) { const o=document.createElement('option'); o.value=v; o.textContent=v; s.appendChild(o);} };
 opts('#f-partido', cont(PA, r=>split(r.proponente)).map(p=>p[0]));
@@ -362,6 +387,9 @@ $('#m-resultado').innerHTML = proponentes.length ? `<tr><th>Proponente</th>${est
 const sent = {}; for (const r of votadas) for (const v of split(r.votos_por_partido)) { const [gp, s] = v.split(':').map(x=>x.trim()); if(!gp||!s) continue; sent[gp] = sent[gp]||{Favor:0,Contra:0,'Abstenção':0}; if (sent[gp][s]!==undefined) sent[gp][s]++; }
 $('#m-sentido').innerHTML = Object.keys(sent).length ? `<tr><th>Partido</th><th>Favor</th><th>Contra</th><th>Abstenção</th></tr>` + D.partidos.concat(Object.keys(sent).filter(g=>!D.partidos.includes(g))).filter(g=>sent[g]).map(g => `<tr><td style="text-align:left"><b>${esc(g)}</b></td><td class="num f">${fmtN(sent[g].Favor)}</td><td class="num c">${fmtN(sent[g].Contra)}</td><td class="num a">${fmtN(sent[g]['Abstenção'])}</td></tr>`).join('') : '<tr><td class="mini">Ainda sem votações registadas pela AR.</td></tr>';
 $('#tab-aprov tbody').innerHTML = PA.filter(r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente').map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)}</td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td class="num">${esc(fmtData(r.data_votacao))}</td><td class="mini">${esc(r.votos_por_partido)}</td><td>${r.avocacao==='S'?'S':''}</td></tr>`).join('') || '<tr><td colspan="8" class="mini">Ainda sem PA aprovadas.</td></tr>';
+
+// ----- documentos
+$('#tab-docs tbody').innerHTML = (D.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos de votação publicados.</td></tr>';
 
 // ----- histórico
 $('#tab-hist tbody').innerHTML = D.historico.map(h => `<tr><td class="num">${esc((h.momento||'').replace('T',' ').slice(0,16))}</td><td class="num"><b>${esc(h.n_pa)}</b></td><td><span class="chip ${({nova:'ok','ausente da fonte':'ret'})[h.evento]||''}">${esc(h.evento)}</span></td><td>${esc(h.detalhe)}</td><td class="mini">${esc(h.fonte)}</td></tr>`).join('') || '<tr><td colspan="5" class="mini">Sem eventos.</td></tr>';
