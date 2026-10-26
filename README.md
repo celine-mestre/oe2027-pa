@@ -23,11 +23,11 @@ A agenda parlamentar (e os respetivos dados abertos) tem as reuniões — audiç
 
 Uma PA que incide sobre vários artigos ou alíneas é publicada pela AR em partes (por exemplo, `120C-1`, `120C-2`), com a mesma hora de entrada e votações separadas. O painel conta propostas pelo número-base e estados e votações por registo.
 
-## Só dados abertos da AR nesta fase
+## Só dados abertos da AR
 
-O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há classificações próprias. A posição de cada grupo parlamentar por matéria usa o tema que a AR atribui a cada PA (a comissão parlamentar competente) e os sentidos de voto publicados.
+O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há classificações próprias. O separador «Por tema» usa o tema que a AR atribui a cada PA (em 2026, a comissão parlamentar competente) e a matriz de posições dos grupos parlamentares cruza esse tema com os sentidos de voto publicados.
 
-A classificação por área governativa (orgânica do Governo) fica para uma fase posterior, com validação humana. O repositório guarda o material preparatório, que não corre nos workflows nem entra no painel: `scripts/classificar.py` (regras: validação da DACDP, tema da AR, artigo da PPL, programa orçamental, palavras-chave), `scripts/indice_ppl.py` (índice dos artigos de cada PPL a partir de `data/oe<ano>/ppl.html`) e `data/areas_governativas.json` (áreas e expressões).
+Os scripts `classificar.py` e `indice_ppl.py` e o ficheiro `data/areas_governativas.json` são material preparatório que não corre nos workflows nem entra no painel.
 
 ## Registo no modelo da DACDP e sincronização do ficheiro mestre
 

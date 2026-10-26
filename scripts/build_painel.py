@@ -125,8 +125,8 @@ header.topo{background:linear-gradient(90deg,var(--azul) 0%,var(--teal) 55%,var(
 .ic{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
 .ic:hover{background:rgba(255,255,255,.22)}
 .ic svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ic .i-lua{display:none}
-:root[data-theme="dark"] .ic .i-sol{display:none}:root[data-theme="dark"] .ic .i-lua{display:block}
+.ic .i-sol{display:none}
+:root[data-theme="dark"] .ic .i-lua{display:none}:root[data-theme="dark"] .ic .i-sol{display:block}
 .faixa-amostra{background:var(--dourado);color:#1c2630;font-weight:600;text-align:center;padding:8px 16px;font-size:13px}
 main{max-width:1380px;margin:0 auto;padding:16px}
 nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 14px}
@@ -206,7 +206,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   <div class="dir">
     <div class="acoes">
       <div class="edicoes" id="edicoes" role="tablist" aria-label="Edição do Orçamento"></div>
-      <button class="ic" id="b-tema" onclick="alternarTema()" title="Modo claro / escuro" aria-label="Modo claro / escuro">
+      <button class="ic" id="b-tema" onclick="alternarTema()" title="Mudar para modo escuro / claro" aria-label="Mudar para modo escuro / claro">
         <svg class="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="i-lua" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
@@ -225,6 +225,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 <nav class="tabs">
   <button data-t="sintese" class="on">Síntese</button>
   <button data-t="pa">Propostas de alteração</button>
+  <button data-t="temas">Por tema</button>
   <button data-t="votacoes">Votações</button>
   <button data-t="historico">Histórico de capturas</button>
   <button data-t="fontes">Fontes e método</button>
@@ -265,16 +266,30 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   </tr></thead><tbody></tbody></table></div>
 </section>
 
+<section class="tab" id="t-temas">
+  <div class="legenda" style="margin:0 0 12px">Tema atribuído pela AR a cada proposta. Uma proposta com vários temas conta em cada um deles. Contagens por proposta (número-base), salvo indicação em contrário.</div>
+  <div class="grid kpis" id="kpis-temas"></div>
+  <div class="grid duas" style="margin-top:12px">
+    <div class="card"><h3>PA por tema</h3><div class="barras" id="g-tema-2"></div><div class="legenda">Clique num tema para filtrar a tabela abaixo.</div></div>
+    <div class="card"><h3>Resultado por tema</h3><div class="tabela-wrap"><table class="matriz" id="m-tema-res"></table></div><div class="legenda">Por registo publicado pela AR.</div></div>
+  </div>
+  <div class="card" style="margin-top:12px"><h3>PA por tema e proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-tema-prop"></table></div></div>
+  <div class="card" style="margin-top:12px"><h3>Posição dos grupos parlamentares por tema</h3>
+    <div class="filtros"><label class="mini" for="f-pos-prop">PA apresentadas por</label><select id="f-pos-prop"><option value="">todos os proponentes</option></select><span class="mini">Percentagem de votos a favor de cada grupo parlamentar nas PA votadas de cada tema; por baixo, favor · contra · abstenção.</span></div>
+    <div class="tabela-wrap"><table class="matriz calor" id="m-posicao"></table></div>
+    <div class="legenda">Indicador histórico calculado a partir dos temas e dos sentidos de voto publicados pela AR. Não é uma previsão. Inclui os deputados únicos representantes de partido.</div>
+  </div>
+  <div class="card" style="margin-top:12px"><h3>Registos por tema</h3>
+    <div class="filtros"><select id="f-t-tema"><option value="">Tema</option></select><select id="f-t-estado"><option value="">Estado</option></select><span class="n" id="f-t-n"></span></div>
+    <div class="tabela-wrap"><table id="tab-temas"><thead><tr><th>N.º</th><th>Entrada</th><th>Proponente</th><th>Artigo / mapa</th><th>Objeto</th><th>Tema (AR)</th><th>Estado</th><th>Votação</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
 <section class="tab" id="t-votacoes">
   <div class="grid kpis" id="kpis-vot"></div>
   <div class="grid duas" style="margin-top:12px">
     <div class="card"><h3>Resultado por proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-resultado"></table></div></div>
     <div class="card"><h3>Sentido de voto por grupo parlamentar (PA votadas)</h3><div class="tabela-wrap"><table class="matriz" id="m-sentido"></table></div><div class="legenda">Tal como publicado pela AR. Inclui os deputados únicos representantes de partido.</div></div>
-  </div>
-  <div class="card" style="margin-top:12px"><h3>Posição dos grupos parlamentares por tema (atribuído pela AR)</h3>
-    <div class="filtros"><label class="mini" for="f-pos-prop">PA apresentadas por</label><select id="f-pos-prop"><option value="">todos os proponentes</option></select><span class="mini">Percentagem de votos a favor de cada grupo parlamentar nas PA votadas de cada tema; por baixo, favor · contra · abstenção.</span></div>
-    <div class="tabela-wrap"><table class="matriz calor" id="m-posicao"></table></div>
-    <div class="legenda">Indicador histórico calculado a partir dos temas e dos sentidos de voto publicados pela AR. Não é uma previsão. Uma PA com vários temas conta em cada um deles. Inclui os deputados únicos representantes de partido.</div>
   </div>
   <div class="card" style="margin-top:12px"><h3>Como vota cada grupo parlamentar nas PA de cada proponente</h3><div class="tabela-wrap"><table class="matriz calor" id="m-cruzado"></table></div><div class="legenda">Linhas: proponente da PA. Colunas: grupo parlamentar que vota. Percentagem de votos a favor nas PA votadas; por baixo, favor · contra · abstenção.</div></div>
   <div class="card" style="margin-top:12px"><h3 id="h-docs">Documentos publicados pela COFAP</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões e resultados de votações, textos finais, relatórios e pareceres (por exemplo, da UTAO e do Conselho das Finanças Públicas) publicados na página do OE da Comissão de Orçamento, Finanças e Administração Pública. Não inclui os contributos de entidades e cidadãos.</div></div>
@@ -296,7 +311,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>Método</h3>
       <ol style="margin:0;padding-left:18px;font-size:13px">
         <li>Toda a informação do painel é publicada pela Assembleia da República: dados abertos (categoria «Orçamento do Estado», XVII Legislatura) e, em reserva, a página de detalhe de cada proposta no parlamento.pt.</li>
-        <li>O painel não acrescenta classificações próprias. Tema, tipo, estado e sentido de voto são os registados pela AR. A classificação por área governativa fica para uma fase posterior, com validação humana.</li>
+        <li>O painel não acrescenta classificações próprias. Tema, tipo, estado e sentido de voto são os registados pela AR. O tema é o atribuído pelos serviços da AR a cada proposta (em 2026, corresponde à comissão parlamentar competente).</li>
         <li>Cada captura guarda uma cópia dos dados recebidos. A base mantém a última versão de cada proposta e regista, entre capturas, entradas, alterações de estado e votações.</li>
         <li>Uma proposta que deixe de constar da fonte é assinalada como «ausente da fonte» e deve ser confirmada no parlamento.pt.</li>
         <li>O OE 2026 (processo concluído) serve de base de comparação e de calibração: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar.</li>
@@ -345,7 +360,12 @@ const INFO = {
   'PA votadas': 'Registos com pelo menos uma votação publicada pela AR.',
   'Prejudicadas': 'Registos que deixaram de poder ser votados porque uma votação anterior já decidiu a mesma matéria.',
   'Votadas em Plenário (avocação)': 'Registos votados em Plenário. Acontece quando um grupo parlamentar pede que a votação de uma proposta, normalmente feita na Comissão de Orçamento, Finanças e Administração Pública, seja feita (ou repetida) em Plenário.',
-  'Por votar': 'Registos ainda sem votação.'
+  'Por votar': 'Registos ainda sem votação.',
+  'Temas atribuídos pela AR': 'Temas distintos que os serviços da AR atribuíram às propostas desta edição. Em 2026 correspondem às comissões parlamentares competentes.',
+  'PA com tema': 'Propostas (número-base) com pelo menos um tema atribuído pela AR.',
+  'PA com mais de um tema': 'Propostas a que a AR atribuiu vários temas. Contam em cada um deles.',
+  'PA sem tema': 'Propostas publicadas sem tema. Aparecem como «—».',
+  'Registos votados': 'Registos com sentido de voto publicado, base da matriz de posições por tema.'
 };
 const kpi = ([l,v,c]) => `<div class="card kpi ${c}">${INFO[l]?`<button class="info" aria-expanded="false" aria-label="O que significa «${esc(l)}»" title="O que significa?" onclick="const k=this.parentElement;k.classList.toggle('aberto');this.setAttribute('aria-expanded',k.classList.contains('aberto'))">i</button>`:''}<div class="v">${fmtN(v)}</div><div class="l">${l}</div>${INFO[l]?`<div class="tip">${esc(INFO[l])}</div>`:''}</div>`;
 const matrizCalor = (el, linhas, colunas, celula, vazio) => {
@@ -365,7 +385,7 @@ function montar() {
   const fonteNome = {opendata:'dados abertos da AR', scrape:'parlamento.pt (página de cada PA)', normalize:'ficheiro local'}[ex.comando] || '—';
   $('#titulo').textContent = `Propostas de alteração ao Orçamento do Estado para ${ANO}`;
   $('#subtitulo').textContent = `${E.designacao} · informação publicada pela Assembleia da República` + (concluido ? ' · processo concluído' : '');
-  $('#meta').innerHTML = `Última captura: <b>${esc(ex.momento ? ex.momento.replace('T',' ').slice(0,16) : '—')}</b><br>Fonte: ${esc(fonteNome)} · painel gerado em ${esc(D.gerado_em)}`;
+  $('#meta').innerHTML = `Última captura: <b>${esc(ex.momento ? ex.momento.replace('T',' ').slice(0,16) : '—')}</b><br>Fonte: <a href="${esc(D.fontes.dados_abertos_pagina_oe)}" target="_blank" rel="noopener" style="color:#fff">${esc(fonteNome)}</a> · painel gerado em ${esc(D.gerado_em)}`;
   $('#rodape').textContent = `PA ao OE ${ANO} · ${fmtN(PA.length)} registos · painel gerado em ${D.gerado_em}`;
   $('#h-cal').textContent = `Calendário de apreciação do OE ${ANO} na AR`;
   $('#h-docs').textContent = `Documentos publicados pela COFAP sobre o OE ${ANO}`;
@@ -416,8 +436,10 @@ function montar() {
   }
   const EF = E.estado_fontes || {};
   const linhaFonte = (nome, f, corpo) => `<div style="margin-bottom:10px"><b>${nome}</b><br><span class="mini">${f ? corpo(f) : 'Ainda não verificada.'}</span></div>`;
+  const ligDA = `<a href="${esc(D.fontes.dados_abertos_pagina_oe)}" target="_blank" rel="noopener">dados abertos da AR, categoria «Orçamento do Estado»</a> · <a href="${esc(D.fontes.dados_abertos_pasta_xvii)}" target="_blank" rel="noopener">pasta «XVII Legislatura»</a> · ficheiro <code>OEPropostasAlteracao${ANO}Or_json.txt</code> (também em XML)`;
   $('#fontes-estado').innerHTML =
-    linhaFonte('Dados abertos (fonte principal)', EF.dados_abertos, f => f.disponivel
+    `<div style="margin-bottom:10px"><b>De onde vêm os dados</b><br><span class="mini">${ligDA}. Um registo por PA (ou parte de PA): número, data e hora de entrada, título, artigo, tema, tipo, incidência, estado, proponentes e todas as votações com o sentido de voto de cada grupo parlamentar.</span></div>` +
+    linhaFonte('Estado dos dados abertos (fonte principal)', EF.dados_abertos, f => f.disponivel
       ? `${fmtN(f.pa||0)} PA (${fmtN(f.registos||0)} registos) · última entrada: ${esc(hm(f.ultima_entrada))} · ficheiro atualizado pela AR: ${esc(f.ultima_modificacao_ar||'—')} · verificado: ${esc(hm(f.momento))}`
       : `Ficheiro do OE ${ANO} ainda não publicado · verificado: ${esc(hm(f.momento))}`) +
     (concluido ? '' : linhaFonte('Portal da AR, página de cada proposta (reserva)', EF.portal, f =>
@@ -438,6 +460,23 @@ function montar() {
   opts('#f-pos-prop', proponentes); $('#f-pos-prop').value = '';
   renderPosicao();
 
+  // ----- por tema (atribuído pela AR)
+  const temasPA = r => split(r.tema_ar).length ? split(r.tema_ar) : ['—'];
+  const temasLista = cont(base1, temasPA).map(p=>p[0]);
+  const votadasT = PA.filter(r => r.votos_por_partido);
+  $('#kpis-temas').innerHTML = [
+    ['Temas atribuídos pela AR', temasLista.filter(x=>x!=='—').length, ''],
+    ['PA com tema', base1.filter(r=>split(r.tema_ar).length).length, 'neu'],
+    ['PA com mais de um tema', base1.filter(r=>split(r.tema_ar).length>1).length, 'neu'],
+    ['PA sem tema', base1.filter(r=>!split(r.tema_ar).length).length, 'neu'],
+    ['Registos votados', votadasT.length, 'ok'],
+  ].map(kpi).join('');
+  barras($('#g-tema-2'), cont(base1, temasPA), tm => { $('#f-t-tema').value = tm; renderTemas(); document.getElementById('tab-temas').scrollIntoView({behavior:'smooth', block:'start'}); });
+  $('#m-tema-res').innerHTML = temasLista.length ? `<tr><th>Tema</th>${estadosV.map(e=>`<th>${e}</th>`).join('')}<th>total</th></tr>` + temasLista.map(tm => { const rs = PA.filter(r=>temasPA(r).includes(tm)); return `<tr><td style="text-align:left"><b>${esc(tm)}</b></td>${estadosV.map(e=>`<td class="num">${fmtN(rs.filter(r=>r.estado===e).length)}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
+  $('#m-tema-prop').innerHTML = temasLista.length ? `<tr><th>Tema</th>${proponentes.map(p=>`<th>${esc(p)}</th>`).join('')}<th>total</th></tr>` + temasLista.map(tm => { const rs = base1.filter(r=>temasPA(r).includes(tm)); return `<tr><td style="text-align:left"><b>${esc(tm)}</b></td>${proponentes.map(p=>`<td class="num">${fmtN(rs.filter(r=>split(r.proponente).includes(p)).length)||'<span class="mini">·</span>'}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
+  opts('#f-t-tema', temasLista); opts('#f-t-estado', cont(PA, r=>[r.estado||'']).map(p=>p[0]).filter(Boolean)); $('#f-t-tema').value = ''; $('#f-t-estado').value = '';
+  renderTemas();
+
   // ----- votações
   const votadas = PA.filter(r => r.resultado_votacao || ['aprovada','rejeitada','prejudicada'].includes(r.estado));
   $('#kpis-vot').innerHTML = [['PA votadas', votadas.length,''],['Aprovadas (total ou parcialmente)', (porEstado['aprovada']||0)+(porEstado['aprovada parcialmente']||0),'ok'],['Rejeitadas', porEstado['rejeitada']||0,'nok'],['Prejudicadas', porEstado['prejudicada']||0,'neu'],['Votadas em Plenário (avocação)', PA.filter(r=>r.avocacao==='S').length,'neu'],['Por votar', porEstado['em apreciação']||0,'neu']].map(kpi).join('');
@@ -453,7 +492,7 @@ function montar() {
   $('#tab-docs tbody').innerHTML = (E.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos publicados.</td></tr>';
   $('#tab-hist tbody').innerHTML = E.historico.map(h => `<tr><td class="num">${esc((h.momento||'').replace('T',' ').slice(0,16))}</td><td class="num"><b>${esc(h.n_pa)}</b></td><td><span class="chip ${({nova:'ok','ausente da fonte':'ret'})[h.evento]||''}">${esc(h.evento)}</span></td><td>${esc(h.detalhe)}</td><td class="mini">${esc(h.fonte)}</td></tr>`).join('') || '<tr><td colspan="5" class="mini">Sem eventos.</td></tr>';
   const nomes = {pesquisa_pa:'Pesquisa de propostas de alteração', url_iniciativa:`${E.designacao} — detalhe da iniciativa`, url_texto_ppl:'Texto da proposta de lei com legislação citada', url_calendario:`Calendário de apreciação do OE ${ANO} (COFAP)`, url_cofap:`Página do OE ${ANO} na Comissão de Orçamento, Finanças e Administração Pública`, dados_abertos_pagina_oe:'Dados abertos — categoria Orçamento do Estado', dados_abertos_pasta_xvii:'Dados abertos — pasta XVII Legislatura'};
-  $('#lista-fontes').innerHTML = Object.entries({...E.urls, ...D.fontes}).filter(([k,v])=>nomes[k] && String(v).startsWith('http')).map(([k,v])=>`<li><a href="${esc(v)}" target="_blank" rel="noopener">${esc(nomes[k])}</a></li>`).join('') + (E.excel ? `<li><a href="${esc(E.excel)}" download>Registo das PA no modelo da DACDP (Excel), gerado em cada captura</a></li>` : '');
+  $('#lista-fontes').innerHTML = `<li><b>Fonte principal:</b> ${ligDA}.</li>` + Object.entries({...D.fontes, ...E.urls}).filter(([k,v])=>nomes[k] && String(v).startsWith('http')).map(([k,v])=>`<li><a href="${esc(v)}" target="_blank" rel="noopener">${esc(nomes[k])}</a></li>`).join('') + (E.excel ? `<li><a href="${esc(E.excel)}" download>Registo das PA no modelo da DACDP (Excel), gerado em cada captura</a></li>` : '');
 }
 
 function filtrar() {
@@ -496,6 +535,14 @@ function renderPosicao() {
   matrizCalor($('#m-posicao'), temas, gps, (l,c)=>m[l]&&m[l][c], 'Ainda sem votações registadas pela AR.');
 }
 $('#f-pos-prop').addEventListener('input', renderPosicao);
+function renderTemas() {
+  const tm=$('#f-t-tema').value, e=$('#f-t-estado').value;
+  const rows = PA.filter(r => (!tm || split(r.tema_ar).includes(tm)) && (!e || r.estado===e)).sort(ordemPA);
+  $('#f-t-n').textContent = `${fmtN(rows.length)} registos`;
+  $('#tab-temas tbody').innerHTML = rows.slice(0,1500).map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td class="num">${esc(fmtData(r.data_entrada))}</td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)||'—'}<br><span class="mini">${esc(r.incide)}</span></td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td>${estadoChip(r.estado)}</td><td class="mini">${r.resultado_votacao?`${esc(fmtData(r.data_votacao))}<br>${esc(r.votos_por_partido)}`:'—'}</td></tr>`).join('')
+    + (rows.length>1500?`<tr><td colspan="8" class="mini">Mostram-se 1 500 de ${fmtN(rows.length)} registos. Use o separador «Propostas de alteração» para filtrar e exportar.</td></tr>`:'') || '<tr><td colspan="8" class="mini">Sem registos.</td></tr>';
+}
+$('#f-t-tema').addEventListener('input', renderTemas); $('#f-t-estado').addEventListener('input', renderTemas);
 
 const GRUPOS_RES = [
   ['Aprovadas', r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente'],

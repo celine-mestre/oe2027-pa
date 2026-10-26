@@ -30,7 +30,6 @@ from openpyxl.worksheet.datavalidation import DataValidation
 RAIZ = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
 TAX = json.loads((RAIZ / "data" / "taxonomia.json").read_text(encoding="utf-8"))
-AREAS = json.loads((RAIZ / "data" / "areas_governativas.json").read_text(encoding="utf-8"))
 
 AZUL = "1F3864"
 FONTE = "Arial"
@@ -55,7 +54,6 @@ LISTAS = {
     "Relevância": ["Alta", "Média", "Baixa"],
     "Estado": ["Entregue", "Admitida", "Substituída", "Retirada", "Em votação", "Votada", "Avocada a Plenário"],
     "Resultado": ["Aprovada", "Rejeitada", "Prejudicada", "Retirada", "Aprovada parcialmente"],
-    "Área Governativa": AREAS["areas"],
 }
 INSTRUCOES = [
     ("ID", "Número sequencial interno do registo.", "Inteiro (1, 2, 3…)"),
@@ -92,10 +90,10 @@ RESPOSTA = [
     ("Partido", "Imediato", "AR: grupo(s) parlamentar(es) proponente(s). «Vários» quando há mais de um.", "Sigla normalizada (CDS-P → CDS-PP)."),
     ("Deputado/Proponente", "Imediato", "AR: deputados signatários.", ""),
     ("Artigo Alterado", "Imediato", "AR: artigo ou mapa e natureza (alteração, aditamento, eliminação).", ""),
-    ("Tipo de PA", "Limitação", "Sem fonte na AR (a AR publica a natureza da PA: aditamento, substituição, eliminação, na coluna «Tipo (AR)»).", "Classificação da DACDP. Fase posterior: sugestão automática a validar."),
+    ("Tipo de PA", "Limitação", "Sem fonte na AR (a AR publica a natureza da PA: aditamento, substituição, eliminação, na coluna «Tipo (AR)»).", "Classificação da DACDP."),
     ("Tema", "Limitação", "A AR atribui um tema próprio (coluna «Tema AR»). A taxonomia da DACDP é preenchida pela DACDP.", ""),
-    ("Área Governativa", "Desenvolvimento (fase posterior)", "Sem fonte na AR. O tema atribuído pela AR (coluna «Tema AR», a comissão parlamentar competente) é a aproximação disponível. A classificação por área governativa será feita numa fase posterior, com validação humana.", "Nesta fase, o painel e o Excel só usam variáveis dos dados abertos da AR."),
-    ("Ministério", "Desenvolvimento (fase posterior)", "Decorre da área governativa.", ""),
+    ("Área Governativa", "Limitação", "Sem fonte na AR. O tema atribuído pela AR (coluna «Tema AR»; em 2026, a comissão parlamentar competente) é a aproximação disponível.", "Classificação da DACDP."),
+    ("Ministério", "Limitação", "Sem fonte na AR.", "Classificação da DACDP."),
     ("Descrição Sumária", "Imediato (parcial)", "AR: título da PA tal como publicado. A DACDP pode reescrever; a UPE não substitui texto já escrito.", ""),
     ("Impacto Receita (€)", "Limitação", "Sem fonte na AR. Só existe quando a UTAO ou o proponente publicam uma estimativa.", "A UPE pode extrair o texto da nota justificativa do PDF de cada PA para facilitar a leitura."),
     ("Impacto Despesa (€)", "Limitação", "Idem.", ""),
@@ -223,8 +221,8 @@ def titulo(ws, texto: str, linha: int = 1) -> None:
 def validacoes(ws) -> None:
     """Listas pendentes nas colunas do modelo (ligadas à folha «Listas»)."""
     n = LINHAS_MAX + 1
-    for col, lista in (("D", "A"), ("E", "B"), ("H", "C"), ("P", "D"), ("Q", "E"), ("R", "D"), ("T", "G"), ("J", "H")):
-        tam = len(list(LISTAS.values())["ABCDEFGH".index(lista)])
+    for col, lista in (("D", "A"), ("E", "B"), ("H", "C"), ("P", "D"), ("Q", "E"), ("R", "D"), ("T", "G")):
+        tam = len(list(LISTAS.values())["ABCDEFG".index(lista)])
         dv = DataValidation(type="list", formula1=f"=Listas!${lista}$2:${lista}${tam + 1}", allow_blank=True)
         dv.add(f"{col}2:{col}{n}")
         ws.add_data_validation(dv)

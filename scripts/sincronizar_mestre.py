@@ -127,7 +127,7 @@ def main(argv=None) -> int:
     ws.data_validations.dataValidation = []
     if "Listas" in wb.sheetnames:
         wl = wb["Listas"]
-        for i, (k, vals) in enumerate(ex.LISTAS.items(), 1):  # listas em falta no mestre (p. ex. «Área Governativa»)
+        for i, (k, vals) in enumerate(ex.LISTAS.items(), 1):  # listas em falta no mestre
             if wl.cell(row=1, column=i).value != k:
                 wl.cell(row=1, column=i, value=k).font = Font(name=ex.FONTE, size=10, bold=True)
                 for j, v in enumerate(vals, 2):
