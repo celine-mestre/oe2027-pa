@@ -1,0 +1,773 @@
+[
+ {
+  "ID": "78356",
+  "ID_Pai": "-1",
+  "Tipo": "Diplomas a Modificar",
+  "Numero": "Decreto-Lei n.º 498/72, de 9 de dezembro",
+  "Titulo": "Estatuto da Aposentação",
+  "Texto": null,
+  "Estado": "Entrada",
+  "Artigos": {
+   "Artigo": [
+    {
+     "ID_Art": "78357",
+     "ID_Pai": "78356",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 37.º-A",
+     "Titulo": "Aposentação antecipada",
+     "Texto": "1 - Podem requerer a aposentação antecipada, independentemente de submissão a junta médica e sem prejuízo da aplicação do regime de pensão unificada, os subscritores que tenham, pelo menos, 60 anos de idade e que, enquanto tiverem essa idade, tenham completado, pelo menos, 40 anos de exercício efetivo de funções.\r\n\r\n2 - O valor da pensão de aposentação antecipada prevista no número anterior é calculado nos termos gerais e reduzido pela aplicação de um factor de redução determinado pela fórmula 1 - x, em que x é igual à taxa de redução do valor da pensão.\r\n\r\n3 - A taxa global de redução é o produto do número de meses de antecipação em relação à idade normal de acesso à pensão de velhice que sucessivamente estiver estabelecida no sistema previdencial do regime geral de segurança social ou à idade pessoal de acesso à pensão de velhice pela taxa mensal de 0,5 %.\r\n\r\n4 - (Revogado).\r\n\r\n5 - Às pensões atribuídas ao abrigo do n.º 1 não é aplicado o fator de sustentabilidade.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "78486",
+     "ID_Pai": "78356",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 37.º-B",
+     "Titulo": "Aposentação por carreira longa",
+     "Texto": "1 - Podem requerer a aposentação, independentemente de submissão a junta médica e sem prejuízo da aplicação do regime da pensão unificada, os subscritores da CGA com, pelo menos, 60 anos de idade e que:\r\na) Tendo sido inscritos na CGA ou no regime geral de segurança social em idade igual ou inferior a 16 anos, tenham, pelo menos, 46 anos de serviço;\r\nb) Independentemente do momento em que tenham sido inscritos na CGA ou no regime geral de segurança social, tenham, pelo menos, 48 anos de serviço.\r\n2 - Para efeitos do disposto no número anterior, releva apenas o tempo de exercício efetivo de funções.\r\n3 - O valor da pensão de aposentação atribuída ao abrigo do n.º 1 é calculado nos termos gerais, sem redução por aplicação do fator de sustentabilidade ou de penalizações por antecipação relativamente à idade normal de acesso à pensão de velhice.\r\n4 - A modalidade de aposentação por carreira longa prevista no presente artigo não é aplicável aos subscritores da CGA que beneficiam de regimes especiais em matéria de condições de aposentação ou reforma ou em matéria de regras de cálculo ou atualização da pensão, nomeadamente os profissionais abrangidos pelos Decretos-Leis n.os 3/2017 e 4/2017, de 6 de janeiro, os magistrados e os embaixadores e ministros plenipotenciários.",
+     "Estado": "Entrada"
+    }
+   ]
+  },
+  "PropostasDeAlteracao": null,
+  "DiplomasaModificar": null,
+  "IniciativasMapas": null,
+  "RequerimentosDeAvocacao": null
+ },
+ {
+  "ID": "79278",
+  "ID_Pai": "-1",
+  "Tipo": "Diplomas a Modificar",
+  "Numero": "Decreto-Lei n.º 118/83, de 25 de fevereiro",
+  "Titulo": "Estabelece o funcionamento e o esquema de benefícios da Direcção-Geral de Protecção Social aos Funcionários e Agentes da Administração Pública (ADSE)",
+  "Texto": null,
+  "Estado": "Entrada",
+  "Artigos": {
+   "Artigo": [
+    {
+     "ID_Art": "79287",
+     "ID_Pai": "79278",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 46.º",
+     "Titulo": "Descontos nas remunerações",
+     "Texto": "1 - A remuneração base dos beneficiários titulares fica sujeita ao desconto de 3,50 % nos termos do n.º 1 do artigo 8.º-A da Lei n.º 53-D/2006, de 29 de dezembro, alterado pela Lei n.º 3-B/2010, de 28 de abril, e pelos Decretos-Leis n.os 29-A/2011, de 1 de março, e 105/2013, de 30 de julho.\r\n2 - A receita proveniente dos descontos referidos no número anterior é consignada ao pagamento dos benefícios concedidos pela ADSE aos seus beneficiários nos domínios da promoção da saúde, prevenção da doença, tratamento e reabilitação.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "79296",
+     "ID_Pai": "79278",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 47.º",
+     "Titulo": "Descontos nas pensões",
+     "Texto": "1 - As pensões de aposentação e de reforma dos beneficiários titulares, quando o seu montante for superior a (euro) 635,00, ficam sujeitas ao desconto de 3,50 %.\r\n2 - Da aplicação do desconto previsto no número anterior não pode resultar pensão de valor inferior a (euro) 635,00.\r\n3 - As dotações equivalentes aos descontos que seriam devidos mensalmente pelos beneficiários titulares isentos, total ou parcialmente, a que se referem os números anteriores são suportados pelo Orçamento do Estado, nos termos a definir por portaria dos membros do Governo responsáveis pelas áreas da Administração Pública e das finanças.",
+     "Estado": "Entrada"
+    }
+   ]
+  },
+  "PropostasDeAlteracao": null,
+  "DiplomasaModificar": null,
+  "IniciativasMapas": null,
+  "RequerimentosDeAvocacao": null
+ },
+ {
+  "ID": "74117",
+  "ID_Pai": "-1",
+  "Tipo": "Diplomas a Modificar",
+  "Numero": "Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+  "Titulo": "Aprova o Código do Imposto sobre o Valor Acrescentado (IVA)",
+  "Texto": null,
+  "Estado": "Entrada",
+  "Artigos": {
+   "Artigo": [
+    {
+     "ID_Art": "76628",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 9.º",
+     "Titulo": "Isenções nas operações internas",
+     "Texto": "Estão isentas do imposto:\r\n\r\n1) As prestaç?ões de serviços efetuadas no exercício das profissões de médico, odontologista, psicólogo, parteiro, enfermeiro e outras profissões paramédicas; (Redação da Lei n.º 2/2020, de 31 de março)\r\n\r\n2) As prestações de serviços médicos e sanitários e as operações com elas estreitamente conexas efectuadas por estabelecimentos hospitalares, clínicas, dispensários e similares;\r\n\r\n3) As prestações de serviços efetuadas no exercício da sua atividade por protésicos dentários bem como as transmissões de próteses dentárias efetuadas por dentistas e protésicos dentários; (Redação da Lei n.º 42/2016, de 28 de dezembro)\r\n\r\n4) As transmissões de órgãos, sangue e leite humanos;\r\n\r\n5) O transporte de doentes ou feridos em ambulâncias ou outros veículos apropriados efectuado por organismos devidamente autorizados;\r\n\r\n6) As transmissões de bens e as prestações de serviços ligadas à segurança e assistência sociais e as transmissões de bens com elas conexas, efectuadas pelo sistema de segurança social, incluindo as instituições particulares de solidariedade social. Da mesma isenção beneficiam as pessoas físicas ou jurídicas que efectuem prestações de segurança ou assistência social por conta do respectivo sistema nacional, desde que não recebam em troca das mesmas qualquer contraprestação dos adquirentes dos bens ou destinatários dos serviços;\r\n\r\n7) As prestações de serviços e as transmissões de bens estreitamente conexas, efetuadas no exercício da sua atividade habitual por creches, jardins-de-infância, centros de atividade de tempos livres, estabelecimentos para crianças e jovens desprovidos de meio familiar normal, lares residenciais, casas de trabalho, estabelecimentos para crianças e jovens deficientes, centros de reabilitação de inválidos, lares de idosos, centros de dia e centros de convívio para idosos, colónias de férias, albergues de juventude ou outros equipamentos sociais pertencentes a pessoas coletivas de direito público ou instituições particulares de solidariedade social ou cuja utilidade social seja, em qualquer caso, reconhecida pelas autoridades competentes, ainda que os serviços sejam prestados fora das suas instalações; (Redacção da Lei n.º 83-C/2013, de 31 de dezembro)\r\n\r\n8) As prestações de serviços efectuadas por organismos sem finalidade lucrativa que explorem estabelecimentos ou instalações destinados à prática de actividades artísticas, desportivas, recreativas e de educação física a pessoas que pratiquem essas actividades;\r\n\r\n9) As prestações de serviços que tenham por objecto o ensino, bem como as transmissões de bens e prestações de serviços conexas, como sejam o fornecimento de alojamento e alimentação, efectuadas por estabelecimentos integrados no Sistema Nacional de Educação ou reconhecidos como tendo fins análogos pelos ministérios competentes;\r\n\r\n10) As prestações de serviços que tenham por objecto a formação profissional, bem como as transmissões de bens e prestações de serviços conexas, como sejam o fornecimento de alojamento, alimentação e material didáctico, efectuadas por organismos de direito público ou por entidades reconhecidas como tendo competência nos domínios da formação e reabilitação profissionais pelos ministérios competentes;\r\n\r\n11) As prestações de serviços que consistam em lições ministradas sobre matérias do ensino escolar ou superior; (Redação da Lei n.º 82/2023, de 29 de dezembro)\r\n\r\n12) As locações de livros e outras publicações, partituras musicais, discos, bandas magnéticas e outros suportes de cultura e, em geral, as prestações de serviços e transmissões de bens com aquelas estreitamente conexas, desde que efectuadas por organismos sem finalidade lucrativa;\r\n\r\n13) As prestações de serviços que consistam em proporcionar a visita, guiada ou não, a bibliotecas, arquivos, museus, galerias de arte, castelos, palácios, monumentos, parques, perímetros florestais, jardins botânicos, zoológicos e semelhantes, pertencentes ao Estado, outras pessoas coletivas de direito público ou organismos sem finalidade lucrativa, desde que efetuadas única e exclusivamente por intermédio dos seus próprios agentes. A presente isenção abrange também as transmissões de bens estreitamente conexas com as prestações de serviços referidas; (Redação da Lei n.º 83-C/2013, de 31 de dezembro)\r\n\r\n14) As prestações de serviços e as transmissões de bens com elas conexas, efectuadas por pessoas colectivas de direito público e organismos sem finalidade lucrativa, relativas a congressos, colóquios, conferências, seminários, cursos e manifestações análogas de natureza científica, cultural, educativa ou técnica;\r\n\r\n15) As prestações de serviços efectuadas aos respectivos promotores:\r\n\r\na) Por actores, chefes de orquestra, músicos e outros artistas, actuando quer individualmente quer integrados em conjuntos, para a execução de espectáculos teatrais, cinematográficos, coreográficos, musicais, de music-hall, de circo e outros, para a realização de filmes, e para a edição de discos e de outros suportes de som ou imagem;\r\n\r\nb) Por desportistas e artistas tauromáquicos, actuando quer individualmente quer integrados em grupos, em competições desportivas e espectáculos tauromáquicos;\r\n\r\n16) A transmissão do direito de autor ou de direitos conexos e a autorização para a utilização da obra intelectual ou prestação, definidas no Código dos Direitos de Autor e dos Direitos Conexos, quando efetuadas pelos próprios titulares, seus herdeiros ou legatários, ou ainda por terceiros, por conta deles, ainda que o titular do direito seja pessoa coletiva, incluindo a consignação ou afetação, imposta por lei, dos montantes recebidos pelas respetivas entidades de gestão coletiva, a fins sociais, culturais e de investigação e divulgação dos direitos de autor e direitos conexos; (Redação da Lei n.º 7-A/2016 de 30 de março)\r\n\r\n17) A transmissão de exemplares de qualquer obra literária, científica, técnica ou artística editada sob forma bibliográfica pelo autor, quando efectuada por este, seus herdeiros ou legatários, ou ainda por terceiros, por conta deles, salvo quando o autor for pessoa colectiva;\r\n\r\n18) A cedência de pessoal por instituições religiosas ou filosóficas para a realização de actividades isentas nos termos deste diploma ou para fins de assistência espiritual;\r\n\r\n19) As prestações de serviços e as transmissões de bens com elas conexas efectuadas no interesse colectivo dos seus associados por organismos sem finalidade lucrativa, desde que esses organismos prossigam objectivos de natureza política, sindical, religiosa, humanitária, filantrópica, recreativa, desportiva, cultural, cívica ou de representação de interesses económicos e a única contraprestação seja uma quota fixada nos termos dos estatutos;\r\n\r\n20) As transmissões de bens e as prestações de serviços efectuadas por entidades cujas actividades habituais se encontram isentas nos termos dos n.os 2), 6), 7), 8), 9), 10), 12), 13), 14) e 19) deste artigo, aquando de manifestações ocasionais destinadas à angariação de fundos em seu proveito exclusivo, desde que esta isenção não provoque distorções de concorrência;\r\n\r\n21) As prestações de serviços fornecidas aos seus membros por grupos autónomos de pessoas que exerçam uma actividade isenta, desde que tais serviços sejam directamente necessários ao exercício da actividade e os grupos se limitem a exigir dos seus membros o reembolso exacto da parte que lhes incumbe nas despesas comuns, desde que, porém, esta isenção não seja susceptível de provocar distorções de concorrência;\r\n\r\n22) Para efeitos do disposto no número anterior considera-se que os membros do grupo autónomo ainda exercem uma actividade isenta, desde que a percentagem de dedução determinada nos termos do artigo 23.º não seja superior a 10 %;\r\n\r\n23) As prestações de serviços e as transmissões de bens conexas efectuadas pelos serviços públicos postais, com excepção das telecomunicações;\r\n\r\n24) As transmissões, pelo seu valor facial, de selos do correio em circulação ou de valores selados, e bem assim as respectivas comissões de venda;\r\n\r\n25) (Revogado pela Lei n.º 82-D/2014, de 31 de dezembro)\r\n\r\n26) As prestações de serviços? efectuadas por empresas funerárias e de cremação, bem como as transmissões de bens acessórias aos mesmos serviços;\r\n\r\n27) As operações seguintes: (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\na) A concessão e a negociação de créditos, sob qualquer forma, compreendendo operações de desconto e redesconto, bem como a sua administração ou gestão efectuada por quem os concedeu; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nb) A negociação e a prestação de fianças, avales, cauções e outras garantias, bem como a administração ou gestão de garantias de créditos efectuada por quem os concedeu; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nc) As operações, compreendendo a negociação, relativas a depósitos de fundos, contas correntes, pagamentos, transferências, recebimentos, cheques, efeitos de comércio e afins, com excepção das operações de simples cobrança de dívidas; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nd) As operações, incluindo a negociação, que tenham por objecto divisas, notas bancárias e moedas, que sejam meios legais de pagamento, com excepção das moedas e notas que não sejam normalmente utilizadas como tal, ou que tenham interesse numismático; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\ne) As operações e serviços, incluindo a negociação, mas com exclusão da simples guarda e administração ou gestão, relativos a acções, outras participações em sociedades ou associações, obrigações e demais títulos, com exclusão dos títulos representativos de mercadorias e dos títulos representativos de operações sobre bens imóveis quando efectuadas por um prazo inferior a 20 anos; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nf) Os serviços e operações relativos à colocação, tomada e compra firmes de emissões de títulos públicos ou privados; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\ng) A administração ou gestão de fundos de investimento; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n28) As operações de seguro e resseguro, bem como as prestações de serviços conexas efectuadas pelos corretores e intermediários de seguro; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n29) A locação de bens imóveis. Esta isenção não abrange: (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\na) As prestações de serviços de alojamento, efectuadas no âmbito da actividade hoteleira ou de outras com funções análogas, incluindo parques de campismo;\r\n\r\nb) A locação de áreas para recolha ou estacionamento colectivo de veículos;\r\n\r\nc) A locação de máquinas e outros equipamentos de instalação fixa, bem como qualquer outra locação de bens imóveis de que resulte a transferência onerosa da exploração de estabelecimento comercial ou industrial;\r\n\r\nd) A locação de cofres-fortes;\r\n\r\ne) A locação de espaços para exposições ou publicidade;\r\n\r\n30) As operações sujeitas a imposto municipal sobre as transmissões onerosas de imóveis; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n31) A lotaria da Santa Casa da Misericórdia, as apostas mútuas, o bingo, os sorteios e as lotarias instantâneas devidamente autorizados, bem como as respectivas comissões e todas as actividades sujeitas a impostos especiais sobre o jogo; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n32) As transmissões de bens afectos exclusivamente a uma actividade isenta, quando não tenham sido objecto do direito à dedução e bem assim as transmissões de bens cuja aquisição ou afectação tenha sido feita com exclusão do direito à dedução nos termos do n.º 1 do artigo 21.º; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n33) (Revogada.) (Redação da Lei n.º 66-B/2012, de 31 de dezembro, a vigorar a partiir de 1/04/2013)\r\n\r\n34) As prestações de serviços efectuadas por cooperativas que, não sendo de produção agrícola, desenvolvam uma actividade de prestação de serviços aos seus associados agricultores; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n35) As prestações de serviços a seguir indicadas quando levadas a cabo por organismos sem finalidade lucrativa que sejam associações de cultura e recreio: (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\na) Cedência de bandas de música; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nb) Sessões de teatro; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\nc) Ensino de ballet e de música; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)?\r\n\r\n36) Os serviços de alimentação e bebidas fornecidos pelas entidades patronais aos seus empregados; (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n37) As actividades das empresas públicas de rádio e televisão que não tenham carácter comercial. (Redação da Declaração de Rectificação nº 44-A/2008, de 13 de agosto)\r\n\r\n38) As prestações de serviços efetuadas por intérprete de língua gestual portuguesa. (Redação da Lei n.º 2/2020, de 31 de março)\r\n\r\n39) As prestações de serviços previstas no n.º 13, bem como as previstas na verba 2.32 da lista i anexa ao Código do IVA, quando efetuadas a título gratuito, a pessoas que acompanhem outras com grau de incapacidade permanente, devidamente comprovado mediante atestado médico de incapacidade multiúso emitido nos termos da legislação aplicável, igual ou superior a 60 %, e das quais dependam para a respetiva visita. (Redação da Lei n.º 82/2023, de 29 de dezembro)",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "77379",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 15.º",
+     "Titulo": "Isenções nas operações relacionadas com regimes suspensivos",
+     "Texto": "1 - Estão isentas do imposto as operações a seguir indicadas, desde que os bens a que se referem não se destinem a utilização definitiva ou consumo final e enquanto estes se mantiverem nas respectivas situações:\r\n\r\na) As importações de bens que se destinem a ser colocados em regime de entreposto não aduaneiro;\r\n\r\nb) As transmissões de bens que se destinem a ser:\r\n\r\ni) Apresentados na alfândega e colocados eventualmente em depósito provisório;\r\n\r\nii) Colocados numa zona franca ou entreposto franco;\r\n\r\niii) Colocados em regime de entreposto aduaneiro ou de aperfeiçoamento activo;\r\n\r\niv) Incorporados para efeitos de construção, reparação, manutenção, transformação, equipamento ou abastecimento das plataformas de perfuração ou de exploração situadas em águas territoriais ou em trabalhos de ligação dessas plataformas ao continente;\r\n\r\nv) Colocados em regime de entreposto não aduaneiro;\r\n\r\nc) As prestações de serviços conexas com as transmissões a que se refere a alínea anterior;\r\n\r\nd) As transmissões de bens e as prestações de serviços a eles directamente ligadas, efectuadas nos locais ou sob os regimes referidos na alínea b), enquanto se mantiverem numa das situações ali mencionadas;\r\n\r\ne) As transmissões de bens efectuadas enquanto se mantiverem os regimes de importação temporária com isenção total de direitos ou de trânsito externo, ou o procedimento de trânsito comunitário interno, bem como as prestações de serviços conexas com tais transmissões.\r\n\r\n2 - As situações referidas nos n.os i), ii), iii) e iv) da alínea b) do n.º 1 do presente artigo são as definidas nas disposições aduaneiras em vigor.\r\n\r\n3 - Para efeitos do disposto no n.º v) da alínea b) do n.º 1, consideram-se entrepostos não aduaneiros:\r\n\r\na) Os locais autorizados nos termos do artigo 21.º do Código dos Impostos Especiais sobre o Consumo, relativamente aos bens sujeitos a impostos especiais de consumo;\r\n\r\nb) Os locais autorizados de acordo com a legislação aplicável, relativamente aos bens não abrangidos pelo disposto na alínea anterior.\r\n\r\n4 - Tratando-se de bens não sujeitos a impostos especiais de consumo, previstos no Código dos Impostos Especiais sobre o Consumo, só pode ser concedida autorização para a colocação em regime de entreposto não aduaneiro a bens mencionados no anexo C ao presente Código que não se destinem a ser transmitidos no estádio do comércio a retalho e desde que o mesmo tipo de bens beneficie já do regime de entreposto aduaneiro, nos termos da legislação aplicável.\r\n\r\n5 - Não obstante o disposto no número anterior, podem beneficiar do regime de entreposto não aduaneiro os bens cuja transmissão se destine a ser efectuada:\r\n\r\na) Em balcões de venda situados no interior do aeroporto ou de uma gare marítima, a viajantes que se dirijam para outro Estado membro ou para um país terceiro;\r\n\r\nb) A bordo de uma aeronave ou de um navio, durante um voo ou uma travessia marítima cujo local de chegada se situe noutro Estado membro ou fora do território da Comunidade;\r\n\r\nc) Por um sujeito passivo, nos termos previstos nas alíneas l), m) e n) do n.º 1 do artigo 14.º\r\n\r\n6 - O imposto é devido e exigível à saída dos bens do regime de entreposto não aduaneiro a quem os faça sair, devendo o valor tributável incluir o valor das operações isentas, eventualmente realizadas enquanto os bens se mantiverem naquele regime.\r\n\r\n7 - O disposto nos números anteriores é igualmente aplicável às aquisições intracomunitárias de bens, efectuadas nos termos do Regime do IVA nas Transacções Intracomunitárias, quando os bens se destinem a ser colocados num dos regimes ou das situações referidos na alínea b) do n.º 1.\r\n\r\n8 - São também isentas de imposto as transmissões de triciclos, cadeiras de rodas, com ou sem motor, automóveis ligeiros de passageiros ou mistos para uso próprio de pessoas com deficiência, de acordo com os condicionalismos previstos no Código do Imposto sobre Veículos, devendo o benefício ser requerido nos termos estabelecidos naquele Código.\r\n\r\n9 - Se os proprietários dos veículos adquiridos com a isenção conferida pelo número anterior ou importados com isenção ao abrigo da alínea j) do n.º 1 do artigo 13.º pretenderem proceder à sua alienação antes de decorridos cinco anos sobre a data de aquisição ou de importação, devem pagar, junto das entidades competentes para a cobrança do imposto sobre veículos, o imposto sobre o valor acrescentado correspondente ao preço de venda, que não pode ser inferior ao que resulta da aplicação ao preço do veículo novo à data de venda, com exclusão do IVA, das percentagens referidas no n.º 2 do artigo 3.º-A do Decreto-Lei n.º 143/86, de 16 de Junho.\r\n\r\n10 - Estão isentas de imposto: \r\n\r\na) As transmissões de bens a título gratuito, para posterior distribuição a pessoas carenciadas ou animais abandonados ou em risco, efetuadas ao Estado, a instituições particulares de solidariedade social e a organizações não-governamentais sem fins lucrativos; \r\n\r\nb) As transmissões de livros a título gratuito efetuadas aos departamentos governamentais nas áreas da cultura e da educação, a instituições de caráter cultural e educativo, a centros educativos de reinserção social e a estabelecimentos prisionais; \r\n\r\nc) As transmissões de bens a título gratuito efetuadas a entidades integradas na Rede Portuguesa de Museus e destinadas a integrar as respetivas coleções.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "79132",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 16.º",
+     "Titulo": "Valor tributável nas operações internas",
+     "Texto": "1 - Sem prejuízo do disposto nos n.ºs 2 e 10, o valor tributável das transmissões de bens e das prestações de serviços sujeitas a imposto é o valor da contraprestação obtida ou a obter do adquirente, do destinatário ou de um terceiro. (Redacção dada pelo artigo 119.º da Lei n.º 64-B/2011, de 30 de Dezembro)\r\n\r\n2 - Nos casos das transmissões de bens e das prestações de serviços a seguir enumeradas, o valor tributável é:\r\n\r\na) Para as operações referidas na alínea d) do n.º 3 do artigo 3.º, o valor constante da factura a emitir nos termos da alínea a) do n.º 1 do artigo 38.º;\r\n\r\nb) Para as operações referidas nas alíneas f) e g) do n.º 3 do artigo 3.º, o preço de aquisição dos bens ou de bens similares, ou, na sua falta, o preço de custo, reportados ao momento da realização das operações;\r\n\r\nc) Para as operações referidas nas alíneas a) e b) do n.º 2 do artigo 4.º, o valor normal do serviço, definido no n.º 4 do presente artigo;\r\n\r\nd) Para as transmissões de bens e prestações de serviços resultantes de actos de autoridades públicas, a indemnização ou qualquer outra forma de compensação;\r\n\r\ne) Para as transmissões de bens entre o comitente e o comissário ou entre o comissário e o comitente, respectivamente, o preço de venda acordado pelo comissário, diminuído da comissão, e o preço de compra acordado pelo comissário, aumentado da comissão;\r\n\r\nf) Para as transmissões de bens em segunda mão, de objectos de arte, de colecção ou antiguidades, efectuadas de acordo com o disposto em legislação especial, a diferença, devidamente justificada, entre o preço de venda e o preço de compra;\r\n\r\ng) Para as transmissões de bens resultantes de actos de arrematação ou venda judicial ou administrativa, de conciliação ou de contratos de transacção, o valor por que as arrematações ou vendas tiverem sido efectuadas ou, se for caso disso, o valor normal dos bens transmitidos;\r\n\r\nh) Para as operações resultantes de um contrato de locação financeira, o valor da renda recebida ou a receber do locatário.\r\n\r\n3 - Nos casos em que a contraprestação não seja definida, no todo ou em parte, em dinheiro, o valor tributável é o montante recebido ou a receber, acrescido do valor normal dos bens ou serviços dados em troca.\r\n\r\n4 - Para efeitos do imposto sobre o valor acrescentado, entende-se por valor normal de um bem ou serviço:\r\n\r\na) O preço, aumentado dos elementos referidos no n.º 5, na medida em que nele não estejam incluídos, que um adquirente ou destinatário, no estádio de comercialização em que é efectuada a operação e em condições normais de concorrência, teria de pagar a um fornecedor ou prestador independente, no tempo e lugar em que é efectuada a operação ou no tempo e lugar mais próximos, para obter o bem ou o serviço ou um bem ou serviço similar;\r\n\r\nb) Na falta de bem similar, o valor normal não pode ser inferior ao preço de aquisição do bem ou, na sua falta, ao preço de custo, reportados ao momento em que a transmissão de bens se realiza;\r\n\r\nc) Na falta de serviço similar, o valor normal não pode ser inferior ao custo suportado pelo sujeito passivo na execução da prestação de serviços.\r\n\r\n5 - O valor tributável das transmissões de bens e das prestações de serviços sujeitas a imposto, inclui:\r\n\r\na) Os impostos, direitos, taxas e outras imposições, com excepção do próprio imposto sobre o valor acrescentado;\r\n\r\nb) As despesas acessórias debitadas, como sejam as respeitantes a comissões, embalagem, transporte, seguros e publicidade efectuadas por conta do cliente;\r\n\r\nc) As subvenções directamente conexas com o preço de cada operação, considerando como tais as que são estabelecidas em função do número de unidades transmitidas ou do volume dos serviços prestados e sejam fixadas anteriormente à realização das operações. \r\n\r\n6 - Do valor tributável referido no número anterior são excluídos:\r\n\r\na) Os juros pelo pagamento diferido da contraprestação e as quantias recebidas a título de indemnização declarada judicialmente, por incumprimento total ou parcial de obrigações;\r\n\r\nb) Os descontos, abatimentos e bónus concedidos;\r\n\r\nc) As quantias pagas em nome e por conta do adquirente dos bens ou do destinatário dos serviços, registadas pelo sujeito passivo em contas de terceiros apropriadas;\r\n\r\nd) As quantias respeitantes a embalagens, desde que as mesmas não tenham sido efetivamente transacionadas e da fatura constem os elementos referidos na parte final da alínea b) do n.º 5 do artigo 36.º. (Redacção do D.L.nº 197/2012, de 24 de Agosto, com entrada em vigor em 1 de Janeiro de 2013)\r\n\r\n7 - Em legislação especial é regulamentado o apuramento do imposto quando o valor tributável for determinado de harmonia com o disposto na alínea f) do n.º 2.\r\n\r\n8 - Quando os elementos necessários à determinação do valor tributável sejam expressos em moeda diferente da moeda nacional, a taxa de câmbio a utilizar é a última divulgada pelo Banco Central Europeu ou a de venda praticada por qualquer banco estabelecido no território nacional.(Redacção do D.L.nº 197/2012, de 24 de Agosto, com entrada em vigor em 1 de Janeiro de 2013)\r\n\r\n9 - Para os efeitos previstos no número anterior, os sujeitos passivos podem ainda optar entre considerar a taxa do dia em que se verificou a exigibilidade do imposto ou a do 1.º dia útil do respectivo mês.\r\n\r\n10 - O disposto no n.º 1 não tem aplicação nas transmissões de bens ou prestações de serviços efectuadas por sujeitos passivos que tenham relações especiais, nos termos do n.º 4 do artigo 63.º do Código do IRC, com os respectivos adquirentes ou destinatários, independentemente de estes serem ou não sujeitos passivos, caso em que o valor tributável é o valor normal determinado nos termos do n.º 4, quando se verifique qualquer uma das seguintes situações: (O n.º 10 foi aditado pelo artigo 119.º da Lei n.º 64-B/2011, de 30 de Dezembro)\r\n\r\na) A contraprestação seja inferior ao valor normal e o adquirente ou destinatário não tenha direito a deduzir integralmente o imposto;\r\n\r\nb) A contraprestação seja inferior ao valor normal e o transmitente dos bens ou o prestador dos serviços não tenha direito a deduzir integralmente o imposto e a operação esteja isenta ao abrigo do artigo 9.º;\r\n\r\nc) A contraprestação seja superior ao valor normal e o transmitente dos bens ou o prestador dos serviços não tenha direito a deduzir integralmente o IVA.\r\n\r\n11 - A derrogação prevista no número anterior não será aplicada sempre que seja feita prova de que a diferença entre a contraprestação e o valor normal não se deve à existência de uma relação especial entre o sujeito passivo e o adquirente dos bens ou serviços. (aditado pelo artigo 119.º da Lei n.º 64-B/2011, de 30 de Dezembro)\r\n\r\n12 - Para efeitos do n.º 10, consideram-se ainda relações especiais as relações estabelecidas entre um empregador e um empregado, a família deste ou qualquer pessoa com ele estreitamente relacionada. (aditado pelo artigo 119.º da Lei n.º 64-B/2011, de 30 de Dezembro)\r\n\r\n13 - Em relação a vales de finalidade múltipla, sem prejuízo do disposto no n.º 1, o valor tributável da transmissão de bens ou prestação de serviços a que o vale diz respeito é constituído pela contraprestação paga, quando da cessão do vale, pelo adquirente, pelo destinatário ou por um terceiro em seu lugar, deduzido do montante do imposto devido por essa transmissão de bens ou prestação de serviços. (aditado pela Lei n.º 71/2018, de 31 de dezembro)\r\n\r\n14 - Quando o transmitente dos bens ou prestador dos serviços não tenha sido o próprio cedente do vale de finalidade múltipla e não lhe seja possível aceder a informação segura acerca da contraprestação referida no número anterior, sem prejuízo do disposto no n.º 1, o valor tributável da transmissão de bens ou prestação de serviços a que o vale diz respeito é constituído pelo valor monetário indicado no próprio vale ou resultante de informação contratual relacionada, deduzido do montante do imposto devido por essa transmissão de bens ou prestação de serviços. (aditado pela Lei n.º 71/2018, de 31 de dezembro)\r\n\r\n15 - No caso previsto no número anterior, não havendo indicação no próprio vale do respetivo valor monetário, nem resultando este de informação contratual relacionada, o valor tributável da transmissão de bens ou prestação de serviços a que o vale diz respeito é determinado nos termos do n.º 4. (aditado pela Lei n.º 71/2018, de 31 de dezembro)",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "76069",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 18.º",
+     "Titulo": "Taxas do imposto",
+     "Texto": "1 - As taxas do imposto são as seguintes:\r\n\r\na) Para as importações, transmissões de bens e prestações de serviços constantes da lista I anexa a este diploma, a taxa de 6%;\r\n\r\nb) Para as importações, transmissões de bens e prestações de serviços constantes da lista II anexa a este diploma, a taxa de 13%;\r\n\r\nc) Para as restantes importações, transmissões de bens e prestações de serviços, a taxa de 23%. (Redação da Lei n.º 55-A/2010, de 31 de dezembro)  \r\n\r\n2 - Estão sujeitas à taxa a que se refere a alínea a) do n.º 1 as importações e transmissões de objectos de arte previstas em legislação especial.\r\n\r\n3 - As Assembleias Legislativas das Regiões Autónomas dos Açores e da Madeira podem, nos termos previstos na Lei das Finanças das Regiões Autónomas, aprovada pela Lei Orgânica n.º 2/2013, de 2 de setembro, fixar taxas diminuídas do IVA aplicáveis às transmissões de bens e prestações de serviços que se considerem efetuadas nas regiões autónomas e às importações cujo desembaraço alfandegário tenha lugar nessas mesmas regiões. (Redação da Lei n.º 12/2022, de 27 de junho)?\r\n\r\n4 - Nas transmissões de bens constituídos pelo agrupamento de várias mercadorias, formando um produto comercial distinto, aplicam-se as seguintes taxas:\r\n\r\na) Quando as mercadorias que compõem a unidade de venda não sofram alterações da sua natureza nem percam a sua individualidade, a taxa aplicável ao valor global das mercadorias é a que lhes corresponder ou, se lhes couberem taxas diferentes, a mais elevada;\r\n\r\nb) Quando as mercadorias que compõem a unidade de venda sofram alterações da sua natureza e qualidade ou percam a sua individualidade, a taxa aplicável ao conjunto é a que, como tal, lhe corresponder. (Redação da Lei n.º 82-B/2014, de 31 de dezembro)\r\n\r\n5 - Nas prestações de serviços respeitantes a contratos de locação financeira, o imposto é aplicado com a mesma taxa que seria aplicável no caso de transmissão dos bens dados em locação financeira.\r\n\r\n6 - Revogado. (Redação do Decreto-Lei n.º 33/2025, de 24 de março)\r\n\r\n7 - Sem prejuízo do disposto na verba 2.1. da Lista I anexa ao presente Código, às prestações de serviços por via eletrónica, nomeadamente as descritas no anexo D, aplica-se a taxa referida na alínea c) do n.º 1. (Redação da Lei n.º 71/2018, de 31 de dezembro)\r\n\r\n8 - Às importações de bens a que seja aplicável o regime de declaração e pagamento do IVA referido nos n.os 10 e 11 do artigo 28.º, bem como, quando não isentas ao abrigo do artigo 13.º ou de outros diplomas, às importações de mercadorias que sejam objeto de pequenas remessas enviadas a particulares ou que sejam contidas nas bagagens pessoais dos viajantes, sujeitas ao direito aduaneiro forfetário previsto nas disposições preliminares da Pauta Aduaneira Comum, aplica-se a taxa referida na alínea c) do n.º 1, independentemente da sua natureza.(Redação da Lei n.º 47/2020, de 24 de agosto)\r\n\r\n9 - A taxa aplicável é a que vigora no momento em que o imposto se torna exigível.\r\n\r\n10 - Às transmissões de objetos de arte e de coleção ou de antiguidades sujeitas ao regime especial de tributação dos bens em segunda mão, objetos de arte, de coleção e antiguidades, aplica-se a taxa referida na alínea c) do n.º 1. (Redação do Decreto-Lei n.º 33/2025, de 24 de março)\r\n\r\nNota : As alterações introduzidas pela Lei n.º 47/2020, de 24 de agosto, de acordo com artigo 10º, entra em vigor a 1 de janeiro de 2021.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "77137",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 21.º",
+     "Titulo": "Exclusões do direito à dedução",
+     "Texto": "1 - Exclui-se, todavia, do direito à dedução o imposto contido nas seguintes despesas:\r\n\r\na*) Despesas relativas à aquisição, fabrico ou importação, à locação, à utilização, à transformação e reparação de viaturas de turismo, de barcos de recreio, helicópteros, aviões, motos e motociclos, não se enquadrando os velocípedes, com ou sem motor, em nenhuma destas categorias de veículos. É considerado viatura de turismo qualquer veículo automóvel, com inclusão do reboque, que, pelo seu tipo de construção e equipamento, não seja destinado unicamente ao transporte de mercadorias ou a uma utilização com caráter agrícola, comercial ou industrial ou que, sendo misto ou de transporte de passageiros, não tenha mais de nove lugares, com inclusão do condutor; (Redação da Lei n.º 45-A/2024, de 31 de dezembro)\r\n\r\nb) Despesas respeitantes a combustíveis normalmente utilizáveis em viaturas automóveis, com exceção das aquisições de gasóleo, de gases de petróleo liquefeitos (GPL), gás natural e biocombustíveis, cujo imposto é dedutível na proporção de 50 %, a menos que se trate dos bens a seguir indicados, caso em que o imposto relativo aos consumos de gasóleo, gasolina, GPL, gás natural e biocombustíveis é totalmente dedutível: (Redação da Lei n.º 2/2020, de 31 de março)\r\n\r\ni) Veículos pesados de passageiros;\r\n\r\nii) Veículos licenciados para transportes públicos, exceptuando-se os rent-a-car;\r\n\r\niii) Máquinas consumidoras de gasóleo, GPL, gás natural ou biocombustíveis, bem como as máquinas que possuam matrícula atribuída pelas autoridades competentes, desde que, em qualquer dos casos, não sejam veículos matriculados; (Redação da Lei n.º 66-B/2012, de 31 de dezembro)\r\niv) Tractores com emprego exclusivo ou predominante na realização de operações culturais inerentes à actividade agrícola;\r\n\r\nv) Veículos de transporte de mercadorias com peso superior a 3500 kg;\r\n\r\nc) Despesas de transportes e viagens de negócios do sujeito passivo do imposto e do seu pessoal, incluindo as portagens;\r\n\r\nd) Despesas respeitantes a alojamento, alimentação, bebidas e tabacos e despesas de recepção, incluindo as relativas ao acolhimento de pessoas estranhas à empresa e as despesas relativas a imóveis ou parte de imóveis e seu equipamento, destinados principalmente a tais recepções;\r\n\r\ne) Despesas de divertimento e de luxo, sendo consideradas como tal as que, pela sua natureza ou pelo seu montante, não constituam despesas normais de exploração.\r\n\r\n2 - Não se verifica, contudo, a exclusão do direito à dedução nos seguintes casos:\r\n\r\na) Despesas mencionadas na alínea a) do número anterior, quando respeitem a bens cuja venda ou exploração constitua objecto de actividade do sujeito passivo, sem prejuízo do disposto na alínea b) do mesmo número, relativamente a combustíveis que não sejam adquiridos para revenda;\r\n\r\nb) Despesas relativas a fornecimento ao pessoal da empresa, pelo próprio sujeito passivo, de alojamento, refeições, alimentação e bebidas, em cantinas, economatos, dormitórios e similares;\r\n\r\nc) Despesas mencionadas nas alíneas a) a d) do número anterior, quando efectuadas por um sujeito passivo do imposto agindo em nome próprio mas por conta de um terceiro, desde que a este sejam debitadas com vista a obter o respectivo reembolso;\r\n\r\nd) Despesas mencionadas nas alíneas c) e d), com excepção de tabacos, ambas do número anterior, efectuadas para as necessidades directas dos participantes, relativas à organização de congressos, feiras, exposições, seminários, conferências e similares, quando resultem de contratos celebrados directamente com o prestador de serviços ou através de entidades legalmente habilitadas para o efeito e comprovadamente contribuam para a realização de operações tributáveis, cujo imposto é dedutível na proporção de 50 %;\r\n\r\ne) Despesas mencionadas na alínea c) e despesas de alojamento, alimentação e bebidas previstas na alínea d), ambas do número anterior, relativas à participação em congressos, feiras, exposições, seminários, conferências e similares, quando resultem de contratos celebrados directamente com as entidades organizadoras dos eventos e comprovadamente contribuam para a realização de operações tributáveis, cujo imposto é dedutível na proporção de 25 %.\r\n\r\nf) Despesas relativas à aquisição, fabrico ou importação, à locação e à transformação em viaturas elétricas ou híbridas plug-in, de viaturas ligeiras de passageiros ou mistas elétricas ou híbridas plug-in, quando consideradas viaturas de turismo, cujo custo de aquisição não exceda o definido na portaria a que se refere a alínea e) do n.º 1 do artigo 34.º do Código do IRC; (Aditada pela Lei n.º 82-D/2014, de 31 de dezembro)\r\n\r\ng) Despesas relativas à aquisição, fabrico ou importação, à locação e à transformação em viaturas movidas a GPL ou a GNV, de viaturas ligeiras de passageiros ou mistas movidas a GPL ou a GNV, quando consideradas viaturas de turismo, cujo custo de aquisição não exceda o definido na portaria a que se refere a alínea e) do n.º 1 do artigo 34.º do Código do IRC, na proporção de 50 %. (Aditada pela Lei n.º 82-D/2014, de 31 de dezembro)\r\n\r\nh) Despesas respeitantes a eletricidade utilizada em viaturas elétricas ou híbridas plug-in. (Aditada pela Lei n.º 2-D/2020, de 31 de março)\r\n\r\n3 - Não conferem também direito à dedução do imposto as aquisições de bens referidos na alínea f) do n.º 2 do artigo 16.º, quando o valor da sua transmissão posterior, de acordo com legislação especial, for a diferença entre o preço de venda e o preço de compra.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "77597",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 53.º",
+     "Titulo": "Âmbito de aplicação no território nacional",
+     "Texto": "1(*) - Beneficiam da isenção do imposto os sujeitos passivos com sede ou domicílio em território nacional que, não praticando operações de exportação ou atividades conexas, não tenham atingido, no ano civil anterior, um volume de negócios anual em território nacional superior a 15 000 €.\r\n\r\n2(*) - A isenção prevista no número anterior é igualmente aplicável a sujeitos passivos com sede ou domicílio em outros Estados-Membros que reúnam ainda as seguintes condições adicionais:\r\n\r\na) (*)O volume de negócios anual na União Europeia desse sujeito passivo não exceda 100 000 €;\r\n\r\nb)(*) O sujeito passivo tenha notificado previamente o Estado-Membro onde está estabelecido de que pretende beneficiar da isenção no território nacional, de acordo com procedimento equivalente ao previsto no artigo 58.º-A;\r\n\r\nc)(*) O sujeito passivo, no Estado-Membro onde está estabelecido, tenha obtido para a aplicação do regime de isenção, um número individual de identificação com o sufixo 'EX'.\r\n\r\n3(*) - Os sujeitos passivos que beneficiem da isenção do imposto nos termos dos números anteriores, nas operações abrangidas pelo regime, estão excluídos do direito à dedução previsto nos artigos 19.º e 20.º e do direito ao reembolso do imposto, nos termos do regime de reembolso do IVA a sujeitos passivos não estabelecidos no Estado-Membro de reembolso, aprovado em anexo ao Decreto-Lei n.º 186/2009, de 12 de agosto, alterado pela Lei n.º 114/2017, de 29 de dezembro.\r\n\r\n4(*) - Nas situações referidas no n.º 2, a isenção é aplicável a partir da data em que o sujeito passivo é informado do número individual de identificação que lhe foi atribuído pelo Estado-Membro de estabelecimento ou, em caso de atualização de notificação prévia anterior, da data em que o número individual de identificação é confirmado pelo Estado-Membro de estabelecimento.\r\n\r\n5(*) - No caso de sujeitos passivos que iniciem a sua atividade, o volume de negócios referido na alínea a) do artigo 52.º-A a tomar em consideração é o estimado pelo sujeito passivo para o ano civil corrente.\r\n\r\n6(*) - O regime de isenção previsto neste artigo não é aplicável:\r\n\r\na)(*) Aos sujeitos passivos que pratiquem uma só operação tributável, nas condições referidas na alínea a) do n.º 1 do artigo 2.º;\r\n\r\nb)(*) Às transmissões intracomunitárias de meios de transporte novos.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "78545",
+     "ID_Pai": "74117",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Alínea f)",
+     "Titulo": null,
+     "Texto": null,
+     "Estado": "Entrada"
+    }
+   ]
+  },
+  "PropostasDeAlteracao": {
+   "Proposta": [
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23872",
+     "Objeto": "N.º 40, Artigo 9.º",
+     "Data": "05/11/2025 17:28:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338354d54466c4d6a45774d69316d595749314c5452695a5751745954566a4f433077597a4a685a6d466b4d544935596d49756347526d&Fich=911e2102-fab5-4bed-a5c8-0c2afad129bb.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24461",
+     "Objeto": "Alínea c), N.º 1, Artigo 18.º",
+     "Data": "07/11/2025 01:43:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338795932466c4e446b354e43307a595745344c5451774f5755744f546c6a596931695a445532595459335a574e6b59546b756347526d&Fich=2cae4994-3aa8-409e-99cb-bd56a67ecda9.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24160",
+     "Objeto": "Verba 1, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "06/11/2025 16:20:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396b597a49354e5459315953316d4e6a55304c54517a4f54557459574e694e79316b4e444e6b597a55334d6a597a4d7a41756347526d&Fich=dc29565a-f654-4395-acb7-d43dc5726330.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 1.1.7, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 1.2, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "25001",
+     "Objeto": "Verba 1.6.4, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 16:33:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338784d474e6a4d5467334d5330315a4456684c54526a5a4467744f544e684d6930354d5756684e6a63784d5752685a5459756347526d&Fich=10cc1871-5d5a-4cd8-93a2-91ea6711dae6.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23702",
+     "Objeto": "Verba 1.6.6, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "05/11/2025 10:14:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396c4f57566d5a6a5a6859693169595445784c5452695a545974596a6c6d4d7931694e7a55335a6a41314d44426a596d59756347526d&Fich=e9eff6ab-ba11-4be6-b9f3-b757f0500cbf.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 1.7, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 1.14, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23478",
+     "Objeto": "Verba 1.15, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 17:17:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339694d446735596d59325a5330304e5759334c54526a4d5467744f544a6a5a43316b5a5445345a545a684e6d59794e7a67756347526d&Fich=b089bf6e-45f7-4c18-92cd-de18e6a6f278.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 1.15, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 1.16, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 1.5.3, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23477",
+     "Objeto": "Verba 2.12, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 17:14:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339694e444d354f57526b4e6930334d544d324c5451334e4451744f57453059533077595755794d6d49334d546b334e5441756347526d&Fich=b4399dd6-7136-4744-9a4a-0ae22b719750.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 2.12, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24733",
+     "Objeto": "Verba 2.14, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 14:58:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344f44426b5a6a52684f5330334d6a526b4c5452685a6d4d744f4455354d5330334e54526c4f445a6c596a6b30595455756347526d&Fich=880df4a9-724d-4afc-8591-754e86eb94a5.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23477",
+     "Objeto": "Verba 2.16, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 17:14:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339694e444d354f57526b4e6930334d544d324c5451334e4451744f57453059533077595755794d6d49334d546b334e5441756347526d&Fich=b4399dd6-7136-4744-9a4a-0ae22b719750.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 2.16, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23272",
+     "Objeto": "Verba 2.27, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "31/10/2025 11:18:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338354d6a4d334d546b334e53316c4d4749324c5451314e545174596a6b344d69307a4f444e6c596a67794d5449345a474d756347526d&Fich=92371975-e0b6-4554-b982-383eb82128dc.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "25258",
+     "Objeto": "Verba 2.31, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 18:32:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338794e57566b4d4751324d53316c4d57566d4c545130596a4174595745345979316c5954426a5a545931596a45304e4467756347526d&Fich=25ed0d61-e1ef-44b0-aa8c-ea0ce65b1448.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24572",
+     "Objeto": "Verba 2.31, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 13:07:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396d4d4459324e4463334d4330324e324d314c5451774d544d74596d59344e7930304f4445314d57466a4d446c6a4e7a59756347526d&Fich=f0664770-67c5-4013-bf87-48151ac09c76.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "25088",
+     "Objeto": "Verba 2.32, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 17:03:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338784d7a426b4d574e684e4330315957566b4c5451794e544174596d557a595331695954597a4d6a6b314f544d3059544d756347526d&Fich=130d1ca4-5aed-4250-be3a-ba63295934a3.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24561",
+     "Objeto": "Verba 2.32, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 12:37:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338315a5463794d6d55344d5330795a44457a4c54526b4f4745744f5749354e5330334f5451785a6d49344e546b34596a6b756347526d&Fich=5e722e81-2d13-4d8a-9b95-7941fb8598b9.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24474",
+     "Objeto": "Verba 2.33, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 10:26:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338324f5442684d5445324e53307a597a41304c545132597a6374595755344d7930334e444e6c4e4467784f546b775a5755756347526d&Fich=690a1165-3c04-46c7-ae83-743e481990ee.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24222",
+     "Objeto": "Verba 2.33, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "06/11/2025 18:51:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338314e545a6d5a4467774d693033596d55794c545179597a4d744f4755324f43316a5a5456694f544534595751344e3259756347526d&Fich=556fd802-7be2-42c3-8e68-ce5b918ad87f.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 2.33, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24686",
+     "Objeto": "Verba 2.36, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 14:26:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344e545a6c4f5455305a6930325a4749334c5451344d5759744f5755344d6931684d6a41774e57526a4e3256694d4755756347526d&Fich=856e954f-6db7-481f-9e82-a2005dc7eb0e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23684",
+     "Objeto": "Verba 2.36, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "04/11/2025 21:05:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338335a474a6a5954526c5969307a4e6a41774c5451774e546774596a67785a533078595459324f5751784e7a4a6b5a6a67756347526d&Fich=7dbca4eb-3600-4058-b81e-1a669d172df8.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23195",
+     "Objeto": "Verba 2.37, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "29/10/2025 09:03:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344e6d45334d3259304f5330354d7a63324c5451344d6d5974596a49344e6930785a5459314d7a6335595467324f4449756347526d&Fich=86a73f49-9376-482f-b286-1e65379a8682.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24474",
+     "Objeto": "Verba 2.38, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 10:26:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338324f5442684d5445324e53307a597a41304c545132597a6374595755344d7930334e444e6c4e4467784f546b775a5755756347526d&Fich=690a1165-3c04-46c7-ae83-743e481990ee.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24223",
+     "Objeto": "Verba 2.38, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "06/11/2025 18:54:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338794e7a5a6d5a474d7a4e4330314e6d55354c5451354d6a4974596a4d354e793078597a59774e6d4d784e5441354d574d756347526d&Fich=276fdc34-56e9-4922-b397-1c606c15091c.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23421",
+     "Objeto": "Verba 2.38, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338774e6a45354f444a6b4d53307859544e6c4c5451774f5745744f5449774e6930314e6a466a59544978597a6b304f4755756347526d&Fich=061982d1-1a3e-409a-9206-561ca21c948e.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23195",
+     "Objeto": "Verba 2.40, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "29/10/2025 09:03:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344e6d45334d3259304f5330354d7a63324c5451344d6d5974596a49344e6930785a5459314d7a6335595467324f4449756347526d&Fich=86a73f49-9376-482f-b286-1e65379a8682.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23195",
+     "Objeto": "Verba 2.41, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "29/10/2025 09:03:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344e6d45334d3259304f5330354d7a63324c5451344d6d5974596a49344e6930785a5459314d7a6335595467324f4449756347526d&Fich=86a73f49-9376-482f-b286-1e65379a8682.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "25076",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 16:57:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e5751774e4467345953316b4e475a694c5451334f546b744f444e695a53316d5a54646d597a466b4d6a4a6a4d4467756347526d&Fich=a5d0488a-d4fb-4799-83be-fe7fc1d22c08.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "25072",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 16:55:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338784e5449324e474e6c5a433169597a6b354c5451304f4751744f5451354d7930335a6a557a4d5445794d6a6c6c4d324d756347526d&Fich=15264ced-bc99-448d-9493-7f5311229e3c.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24884",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 15:55:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396c4d5445774e6d56684e69316859324d774c5451334e5751744f54517a4e5331694e575a694d3259794d44686d5a446b756347526d&Fich=e1106ea6-acc0-475d-9435-b5fb3f208fd9.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24459",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 01:40:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153383259324e684d7a517a5a6930794d6d52684c54526d4e4449744f4445334d6930344d44677a5a6d4e6a4d474e694d6a4d756347526d&Fich=6cca343f-22da-4f42-8172-8083fcc0cb23.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23688",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "04/11/2025 21:49:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338784e6a686b5a6a55334f43307a595755324c5451324e474574596a6b7959533031596a6b344e4756694e6d5178596a41756347526d&Fich=168df578-3ae6-464a-b92a-5b984eb6d1b0.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23666",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "04/11/2025 19:05:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396c4f544e6a4f47557a4e433168596a67304c54526b4f474d74596a4a6a5a4331695954497a4d57526c596d4d314e444d756347526d&Fich=e93c8e34-ab84-4d8c-b2cd-ba231debc543.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23665",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "04/11/2025 19:04:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344d54517a4e6d51325a43316b4d6a52684c5451355a444d744f575a6b595330305954557a596a49304f44686d4d5451756347526d&Fich=81436d6d-d24a-49d3-9fda-4a53b2488f14.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 2.42, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 2.43, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24470",
+     "Objeto": "Verba 2.44, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "03/11/2025 14:09:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515339684e6a6b7a4e54517a5979316b5954566b4c54526c4d6a4d7459544e684d43316b4d32466d4e7a45324e475533596a45756347526d&Fich=a693543c-da5d-4e23-a3a0-d3af7164e7b1.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23871",
+     "Objeto": "Alínea g), Verba 2.5, LISTA I, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "05/11/2025 17:26:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338354e54646c596a6b774d793034596d5a6d4c5451344e7a51744f4455314d6930334d3259794e6a46694e546c6b593259756347526d&Fich=957eb903-8bff-4874-8552-73f261b59dcf.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24845",
+     "Objeto": "Verba 1.3.4, LISTA II, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 15:41:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f53395151533832593245774d6a6c685a4330794f54526a4c5451324d574d744f5749324f4331685a444e6a4e5459774e6d526c4e4749756347526d&Fich=6ca029ad-294c-461c-9b68-ad3c5606de4b.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24457",
+     "Objeto": "Verba 1.13, LISTA II, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 01:39:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338334e6a5a6c4f5751334f4330774d6a41354c5451314e574d744f575934596931684d6a4533597a42695a57557a4d6d49756347526d&Fich=766e9d78-0209-455c-9f8b-a217c0bee32b.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23895",
+     "Objeto": "Verba 3.1, LISTA II, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "05/11/2025 18:39:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338344e7a59304e7a686c4f5330304e6a526a4c5451774e3249744f54526d4f53316d4e544d334e444a6d4d4451334f5745756347526d&Fich=876478e9-464c-407b-94f9-f53742f0479a.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "23703",
+     "Objeto": "Verba 3.1, LISTA II, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "05/11/2025 10:16:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Substituição",
+     "Estado": "Rejeitado(a) em Plenário",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396b597a41794f57466a596930784e7a646a4c54526b4d4749744f444d334f53316b4d7a566b4d7a6c684d6a63794f4451756347526d&Fich=dc029acb-177c-4d0b-8379-d35d39a27284.pdf&Inline=true"
+    },
+    {
+     "ID_Pai": "74117",
+     "ID_PA": "24456",
+     "Objeto": "Verba 3.2, LISTA II, Decreto-Lei n.º 394-B/84, de 26 de dezembro",
+     "Data": "07/11/2025 01:38:00",
+     "Apresentado": "Comissão",
+     "Incide": "Articulado",
+     "Tipo": "Aditamento (Números e Alíneas)",
+     "Estado": "Rejeitado(a) em Comissão",
+     "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396d4d5751334e4441314d5330334d5467314c545130596a63744f54497a4d4330314e7a426d4e32466b4e6d55334e4751756347526d&Fich=f1d74051-7185-44b7-9230-570f7ad6e74d.pdf&Inline=true"
+    }
+   ]
+  },
+  "DiplomasaModificar": null,
+  "IniciativasMapas": null,
+  "RequerimentosDeAvocacao": null
+ },
+ {
+  "ID": "76671",
+  "ID_Pai": "-1",
+  "Tipo": "Diplomas a Modificar",
+  "Numero": "Decreto-Lei n.º 63/85, de 14 de março",
+  "Titulo": "Aprova o Código do Direito de Autor e dos Direitos Conexos",
+  "Texto": null,
+  "Estado": "Entrada",
+  "Artigos": {
+   "Artigo": {
+    "ID_Art": "76673",
+    "ID_Pai": "76671",
+    "Tipo": "Diplomas a Modificar",
+    "Numero": "Artigo 82.º",
+    "Titulo": "Compensação pela fixação e reprodução",
+    "Texto": "1 - No preço de venda ao público de todos e quaisquer aparelhos mecânicos, químicos, eléctricos, electrónicos ou outros que permitam a fixação e reprodução de obras e, bem assim, de todos e quaisquer suportes materiais das fixações e reproduções que por qualquer desses meios possam obter-se, incluir-se-á uma quantia destinada a beneficiar os autores, os artistas, intérpretes ou executantes, os editores e os produtores fonográficos e videográficos.\r\n\r\n2 - (Revogado).\r\n\r\n3 - O disposto no n.º 1 não se aplica quando os aparelhos e suportes ali mencionados sejam adquiridos por órgãos de comunicação social e organismos de comunicação audiovisual ou produtores de fonogramas e videogramas exclusivamente para as suas próprias produções ou por organismos que os utilizem para fins exclusivos de auxílio a diminuídos físicos visuais ou auditivos.",
+    "Estado": "Entrada"
+   }
+  },
+  "PropostasDeAlteracao": null,
+  "DiplomasaModificar": null,
+  "IniciativasMapas": null,
+  "RequerimentosDeAvocacao": null
+ },
+ {
+  "ID": "79157",
+  "ID_Pai": "-1",
+  "Tipo": "Diplomas a Modificar",
+  "Numero": "Decreto-Lei n.º 403/86, de 3 de dezembro",
+  "Titulo": "Código do Registo Comercial - CRC",
+  "Texto": null,
+  "Estado": "Entrada",
+  "Artigos": {
+   "Artigo": [
+    {
+     "ID_Art": "79159",
+     "ID_Pai": "79157",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 42.º",
+     "Titulo": "Prestação de contas",
+     "Texto": "1 - O registo da prestação de contas consiste no depósito, por transmissão electrónica de dados e de acordo com os modelos oficiais previstos em legislação especial, da informação constante dos seguintes documentos:\r\na) Acta de aprovação das contas do exercício e da aplicação dos resultados;\r\nb) Balanço;\r\nc) Demonstração dos resultados;\r\nd) Demonstração das alterações no capital próprio/património líquido;\r\ne) Demonstração de fluxos de caixa;\r\nf) Anexo às demonstrações financeiras;\r\ng) Certificação legal das contas;\r\nh) Parecer do órgão de fiscalização, quando exista.\r\n2 - O registo da prestação de contas consolidadas consiste no depósito, por transmissão electrónica de dados e de acordo com os modelos oficiais previstos em legislação especial, da informação constante dos seguintes documentos:\r\na) Acta da deliberação de aprovação das contas consolidadas do exercício, de onde conste o montante dos resultados consolidados;\r\nb) Balanço consolidado, demonstração consolidada dos resultados, demonstração das alterações no capital próprio/património líquido, demonstração consolidada de fluxos de caixa e anexo às demonstrações financeiras;\r\nc) Certificação legal das contas consolidadas;\r\nd) Parecer do órgão de fiscalização, quando exista.\r\n3 - Relativamente às empresas públicas, a informação respeitante à deliberação da assembleia geral é substituída pela informação referente aos despachos de aprovação do ministro das Finanças e do ministro da tutela e a respeitante à certificação legal das contas é substituída pela referente ao parecer da Inspecção-Geral de Finanças.\r\n4 - (Revogado.)\r\n5 - (Revogado.)\r\n6 - Relativamente às representações permanentes em Portugal de sociedades com sede no estrangeiro, a acta de aprovação é substituída por declaração da entidade representada, de onde conste que os documentos referidos no n.º 1 lhe foram apresentados.\r\n7 - O preenchimento dos modelos oficiais com a informação constante dos documentos referidos nos números anteriores permite a utilização dessa informação para fins de investigação científica ou de estatística, ainda que o registo não possa ser efetuado por falta de pagamento da taxa devida.\r\n8 - O acesso por meios electrónicos, nos termos legalmente previstos, à informação constante dos documentos referidos nos n.os 1 e 2, substitui, para todos os efeitos legais, os correspondentes documentos em suporte de papel.\r\n9 - Quando, nos termos da legislação especial, não forem exigíveis os documentos referidos nas alíneas d), e) e f) do n.º 1, os mesmos não integram o registo da prestação de contas.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "79163",
+     "ID_Pai": "79157",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 45.º",
+     "Titulo": "Anotação da apresentação",
+     "Texto": "1 - A apresentação de documentos para registo pode ser feita pessoalmente, pelo correio ou ainda por via electrónica, nos termos a regulamentar por portaria do membro do Governo responsável pela área da justiça.\r\n2 - Os documentos apresentados pessoalmente são anotados pela ordem de entrega dos pedidos.\r\n3 - (Revogado.)\r\n4 - Os documentos apresentados pelo correio são anotados com a observação de «correspondência» no dia da recepção e imediatamente após a última apresentação pessoal.\r\n5 - A anotação dos documentos apresentados por via eletrónica, que ocorre apenas com a comunicação do pagamento das quantias que forem devidas, é efetuada pela ordem fixada pela portaria referida no n.º 1.\r\n6 - O pedido de registo por depósito não está sujeito a anotação de apresentação, sem prejuízo da aplicação das regras constantes nos números anteriores à ordenação dos pedidos.",
+     "Estado": "Entrada"
+    },
+    {
+     "ID_Art": "79165",
+     "ID_Pai": "79157",
+     "Tipo": "Diplomas a Modificar",
+     "Numero": "Artigo 55.º",
+     "Titulo": "Âmbito e data do registo",
+     "Texto": "1 - O registo por transcrição compreende a matrícula das entidades sujeitas a registo, bem como as inscrições, averbamentos e anotações de factos a elas respeitantes.\r\n2 - Sem prejuízo do disposto no número seguinte, o registo por depósito abrange os documentos arquivados e a respectiva menção na ficha de registo.\r\n3 - O registo por depósito dos factos relativos a participações sociais e respectivos titulares pode ser efectuado de modo diverso do previsto no número anterior, nos termos a definir por portaria do Ministro da Justiça.\r\n4 - A data do registo por transcrição é a da apresentação ou, se desta não depender, a data em que tiver lugar.\r\n5 - A data do registo por depósito é a do respectivo pedido.\r\n6 - Para efeitos do disposto no número anterior, a data do pedido de registo da prestação de contas é a do respectivo pagamento por via electrónica.",
+     "Estado": "Entrada"
+    }
+   ]
+  },
+  "PropostasDeAlteracao": null,
+  "DiplomasaModificar": null,
+  "IniciativasMapas": null,
+  "RequerimentosDeAvocacao": null
+ }
+]

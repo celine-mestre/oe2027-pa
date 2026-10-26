@@ -1,0 +1,517 @@
+[
+ {
+  "ID": "25333",
+  "Numero": "2076C",
+  "Data": "07/11/2025 20:00:00",
+  "Titulo": "Artigo 112.º-A (Estratégia Nacional Anticorrupção)",
+  "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias; Orçamento, Finanças e Administração Pública; ",
+  "Apresentada": "Comissão",
+  "Incide": "Articulado",
+  "Tipo": "Aditamento (Artigo PPL)",
+  "Estado": "Aprovado(a) Parcialmente em Comissão",
+  "NumeroArtigoNovo": "Artigo 112.º-A",
+  "Conteudo": null,
+  "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338794e6a426c4d4455355a4330305a4459794c5451304e44457459544530597930324d4749784d7a526b4f44686d4f5759756347526d&Fich=260e059d-4d62-4441-a14c-60b134d88f9f.pdf&Inline=true",
+  "GrupoParlamentar_Partido": "L",
+  "Proponentes": {
+   "Proponente": [
+    {
+     "GP_Partido": "L",
+     "Deputado": "Filipa Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Isabel Mendes Lopes"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Jorge Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Patrícia Gonçalves"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Paulo Muacho"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Rui Tavares"
+    }
+   ]
+  },
+  "PedidoParecerRAA": "False",
+  "PedidoParecerRAM": "False",
+  "SugeridoParecerRAA": "False",
+  "SugeridoParecerRAM": "False",
+  "ParecerDasRegioesAutonomas": null,
+  "Iniciativas_Artigos": {
+   "Iniciativa_Artigo": {
+    "Artigo": "Artigo 112.º-A",
+    "Titulo": "Estratégia Nacional Anticorrupção",
+    "Texto": "1 - Em 2026, o Governo adota a Estratégia Nacional Anticorrupção e o respetivo Plano de Ação para o período 2025-2028, bem como um plano de prevenção de riscos de corrupção para cargos executivos, assegurando a implementação e monitorização da Estratégia através do referido Plano de Ação, nomeadamente:\r\na) Pe",
+    "Estado": "Aprovado(a) Parcialmente em Comissão"
+   }
+  },
+  "ProgramasMedidas": null,
+  "DiplomasMedidas": null,
+  "Requerimentos": null,
+  "Ministerio": null,
+  "Medidas_Programas": null,
+  "NUTS": null,
+  "Votacoes": {
+   "Votacao": {
+    "Descricoes": {
+     "Descricao": "Artigo 112.º-A"
+    },
+    "DiplomasTerceirosouPropostasDeLeiMapas": null,
+    "SubDescricao": "Estratégia Nacional Anticorrupção",
+    "Data": "21/11/2025 00:00:00",
+    "ResultadoCompleto": "Aprovado(a) Parcialmente em Comissão",
+    "Resultado": "Aprovado(a)",
+    "GruposParlamentares": {
+     "GrupoParlamentar": [
+      "Partido Social Democrata",
+      "Chega",
+      "Partido Socialista",
+      "Iniciativa Liberal",
+      "Livre",
+      "Partido Comunista Português",
+      "Centro Democrático Social - Partido Popular",
+      "Bloco de Esquerda",
+      "Pessoas-Animais-Natureza"
+     ],
+     "Voto": [
+      "Abstenção",
+      "Favor",
+      "Abstenção",
+      "Favor",
+      "Favor",
+      "Favor",
+      "Abstenção",
+      "Favor",
+      "Favor"
+     ]
+    }
+   }
+  }
+ },
+ {
+  "ID": "25332",
+  "Numero": "2075C",
+  "Data": "07/11/2025 19:59:00",
+  "Titulo": "Artigo 112.º-A (Revisão do regime jurídico do Apoio Extraordinário à Renda)",
+  "Tema": "Infraestruturas, Mobilidade e Habitação; ",
+  "Apresentada": "Comissão",
+  "Incide": "Articulado",
+  "Tipo": "Aditamento (Artigo PPL)",
+  "Estado": "Rejeitado(a) em Comissão",
+  "NumeroArtigoNovo": "Artigo 112.º-A",
+  "Conteudo": null,
+  "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338324d475a6a5a6a59795a533031595441784c5451354e444d744f574d33597930345a44566b597a41785a4449324d7a45756347526d&Fich=60fcf62e-5a01-4943-9c7c-8d5dc01d2631.pdf&Inline=true",
+  "GrupoParlamentar_Partido": "L",
+  "Proponentes": {
+   "Proponente": [
+    {
+     "GP_Partido": "L",
+     "Deputado": "Filipa Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Isabel Mendes Lopes"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Jorge Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Patrícia Gonçalves"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Paulo Muacho"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Rui Tavares"
+    }
+   ]
+  },
+  "PedidoParecerRAA": "False",
+  "PedidoParecerRAM": "False",
+  "SugeridoParecerRAA": "False",
+  "SugeridoParecerRAM": "False",
+  "ParecerDasRegioesAutonomas": null,
+  "Iniciativas_Artigos": {
+   "Iniciativa_Artigo": {
+    "Artigo": "Artigo 112.º-A",
+    "Titulo": "Revisão do regime jurídico do Apoio Extraordinário à Renda",
+    "Texto": null,
+    "Estado": "Entrada"
+   }
+  },
+  "ProgramasMedidas": null,
+  "DiplomasMedidas": null,
+  "Requerimentos": null,
+  "Ministerio": null,
+  "Medidas_Programas": null,
+  "NUTS": null,
+  "Votacoes": {
+   "Votacao": {
+    "Descricoes": {
+     "Descricao": "Artigo 112.º-A"
+    },
+    "DiplomasTerceirosouPropostasDeLeiMapas": null,
+    "SubDescricao": "Revisão do regime jurídico do Apoio Extraordinário à Renda",
+    "Data": "21/11/2025 00:00:00",
+    "ResultadoCompleto": "Rejeitado(a) em Comissão",
+    "Resultado": "Rejeitado(a)",
+    "GruposParlamentares": {
+     "GrupoParlamentar": [
+      "Partido Social Democrata",
+      "Chega",
+      "Partido Socialista",
+      "Iniciativa Liberal",
+      "Livre",
+      "Partido Comunista Português",
+      "Centro Democrático Social - Partido Popular",
+      "Bloco de Esquerda",
+      "Pessoas-Animais-Natureza"
+     ],
+     "Voto": [
+      "Contra",
+      "Abstenção",
+      "Abstenção",
+      "Abstenção",
+      "Favor",
+      "Favor",
+      "Contra",
+      "Favor",
+      "Favor"
+     ]
+    }
+   }
+  }
+ },
+ {
+  "ID": "25331",
+  "Numero": "2074C",
+  "Data": "07/11/2025 19:58:00",
+  "Titulo": "Artigo 38.º-A (Alteração ao Decreto-Lei n.º 74/2024, de 21 de outubro)",
+  "Tema": "Trabalho, Segurança Social e Inclusão; ",
+  "Apresentada": "Comissão",
+  "Incide": "Articulado",
+  "Tipo": "Aditamento (Artigo PPL)",
+  "Estado": "Rejeitado(a) em Comissão",
+  "NumeroArtigoNovo": "Artigo 38.º-A",
+  "Conteudo": null,
+  "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396d4d6a417a4d5746685979316a5932566c4c5451774d6d49744f5441334f53316c4f5467324e6a41774d6a466a597a4d756347526d&Fich=f2031aac-ccee-402b-9079-e98660021cc3.pdf&Inline=true",
+  "GrupoParlamentar_Partido": "L",
+  "Proponentes": {
+   "Proponente": [
+    {
+     "GP_Partido": "L",
+     "Deputado": "Filipa Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Isabel Mendes Lopes"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Jorge Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Patrícia Gonçalves"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Paulo Muacho"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Rui Tavares"
+    }
+   ]
+  },
+  "PedidoParecerRAA": "False",
+  "PedidoParecerRAM": "False",
+  "SugeridoParecerRAA": "False",
+  "SugeridoParecerRAM": "False",
+  "ParecerDasRegioesAutonomas": null,
+  "Iniciativas_Artigos": {
+   "Iniciativa_Artigo": {
+    "Artigo": "Artigo 38.º-A",
+    "Titulo": "Alteração ao Decreto-Lei n.º 74/2024, de 21 de outubro",
+    "Texto": null,
+    "Estado": "Entrada"
+   }
+  },
+  "ProgramasMedidas": null,
+  "DiplomasMedidas": null,
+  "Requerimentos": null,
+  "Ministerio": null,
+  "Medidas_Programas": null,
+  "NUTS": null,
+  "Votacoes": {
+   "Votacao": {
+    "Descricoes": {
+     "Descricao": "Artigo 38.º-A"
+    },
+    "DiplomasTerceirosouPropostasDeLeiMapas": null,
+    "SubDescricao": "Alteração ao Decreto-Lei n.º 74/2024, de 21 de outubro",
+    "Data": "20/11/2025 00:00:00",
+    "ResultadoCompleto": "Rejeitado(a) em Comissão",
+    "Resultado": "Rejeitado(a)",
+    "GruposParlamentares": {
+     "GrupoParlamentar": [
+      "Partido Social Democrata",
+      "Chega",
+      "Partido Socialista",
+      "Iniciativa Liberal",
+      "Livre",
+      "Partido Comunista Português",
+      "Centro Democrático Social - Partido Popular",
+      "Bloco de Esquerda",
+      "Pessoas-Animais-Natureza"
+     ],
+     "Voto": [
+      "Contra",
+      "Abstenção",
+      "Abstenção",
+      "Contra",
+      "Favor",
+      "Favor",
+      "Contra",
+      "Favor",
+      "Favor"
+     ]
+    }
+   }
+  }
+ },
+ {
+  "ID": "25330",
+  "Numero": "2073C",
+  "Data": "07/11/2025 19:58:00",
+  "Titulo": "Artigo 136.º-A (Modelo de Apoio à Vida Independente)",
+  "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias; Trabalho, Segurança Social e Inclusão; ",
+  "Apresentada": "Comissão",
+  "Incide": "Articulado",
+  "Tipo": "Aditamento (Artigo PPL)",
+  "Estado": "Aprovado(a) em Comissão",
+  "NumeroArtigoNovo": "Artigo 136.º-A",
+  "Conteudo": null,
+  "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f5339515153396b4d444d785a4749314f4330324e7a45304c5452685a574974596a686a59693031597a6c694d446c6b4f474e69595745756347526d&Fich=d031db58-6714-4aeb-b8cb-5c9b09d8cbaa.pdf&Inline=true",
+  "GrupoParlamentar_Partido": "L",
+  "Proponentes": {
+   "Proponente": [
+    {
+     "GP_Partido": "L",
+     "Deputado": "Filipa Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Isabel Mendes Lopes"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Jorge Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Patrícia Gonçalves"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Paulo Muacho"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Rui Tavares"
+    }
+   ]
+  },
+  "PedidoParecerRAA": "False",
+  "PedidoParecerRAM": "False",
+  "SugeridoParecerRAA": "False",
+  "SugeridoParecerRAM": "False",
+  "ParecerDasRegioesAutonomas": null,
+  "Iniciativas_Artigos": {
+   "Iniciativa_Artigo": {
+    "Artigo": "Artigo 136.º-A",
+    "Titulo": "Modelo de Apoio à Vida Independente",
+    "Texto": "Em 2026, o Governo implementa o modelo definitivo de Apoio à Vida Independente em Portugal através de um processo contínuo de auscultação às pessoas com deficiência e às entidades que as representam, eliminando o carácter temporário e piloto da assistência pessoal e assegurando o respeito pelo princípio da de",
+    "Estado": "Aprovado(a) em Comissão"
+   }
+  },
+  "ProgramasMedidas": null,
+  "DiplomasMedidas": null,
+  "Requerimentos": null,
+  "Ministerio": null,
+  "Medidas_Programas": null,
+  "NUTS": null,
+  "Votacoes": {
+   "Votacao": {
+    "Descricoes": {
+     "Descricao": "Artigo 136.º-A"
+    },
+    "DiplomasTerceirosouPropostasDeLeiMapas": null,
+    "SubDescricao": "Modelo de Apoio à Vida Independente",
+    "Data": "26/11/2025 00:00:00",
+    "ResultadoCompleto": "Aprovado(a) em Comissão",
+    "Resultado": "Aprovado(a)",
+    "GruposParlamentares": {
+     "GrupoParlamentar": [
+      "Partido Social Democrata",
+      "Chega",
+      "Partido Socialista",
+      "Iniciativa Liberal",
+      "Livre",
+      "Partido Comunista Português",
+      "Centro Democrático Social - Partido Popular",
+      "Bloco de Esquerda",
+      "Pessoas-Animais-Natureza"
+     ],
+     "Voto": [
+      "Contra",
+      "Favor",
+      "Favor",
+      "Abstenção",
+      "Favor",
+      "Favor",
+      "Contra",
+      "Favor",
+      "Favor"
+     ]
+    }
+   }
+  }
+ },
+ {
+  "ID": "25329",
+  "Numero": "2072C",
+  "Data": "07/11/2025 19:57:00",
+  "Titulo": "N.º 1, N.º 2, Artigo 68.º-A do Código do IRS",
+  "Tema": "Orçamento, Finanças e Administração Pública; ",
+  "Apresentada": "Comissão",
+  "Incide": "Articulado",
+  "Tipo": "Substituição",
+  "Estado": "Rejeitado(a) em Comissão",
+  "NumeroArtigoNovo": null,
+  "Conteudo": null,
+  "Ficheiro": "http://app.parlamento.pt/webutils/docs/doc.pdf?path=6148523063484d364c793942556b356c6443397a6158526c63793959566b6c4a544556484c3039464c7a49774d6a59794d4449314d5441774f533951515338345a574e6c4e44466a5a6930355a6a426b4c5451304d4459744f4464694e6930794e544179597a4d344e5449334d4749756347526d&Fich=8ece41cf-9f0d-4406-87b6-2502c385270b.pdf&Inline=true",
+  "GrupoParlamentar_Partido": "L",
+  "Proponentes": {
+   "Proponente": [
+    {
+     "GP_Partido": "L",
+     "Deputado": "Filipa Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Isabel Mendes Lopes"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Jorge Pinto"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Patrícia Gonçalves"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Paulo Muacho"
+    },
+    {
+     "GP_Partido": "L",
+     "Deputado": "Rui Tavares"
+    }
+   ]
+  },
+  "PedidoParecerRAA": "False",
+  "PedidoParecerRAM": "False",
+  "SugeridoParecerRAA": "False",
+  "SugeridoParecerRAM": "False",
+  "ParecerDasRegioesAutonomas": null,
+  "Iniciativas_Artigos": {
+   "Iniciativa_Artigo": {
+    "Artigo": "Artigo 60.º",
+    "Titulo": "Alteração ao Código do Imposto sobre o Rendimento das Pessoas Singulares",
+    "Texto": "Os artigos 68.º e 70.º do Código do Imposto sobre o Rendimento das Pessoas Singulares (Código do IRS), aprovado pelo Decreto-Lei n.º 442-A/88, de 30 de novembro, na sua redação atual, passam a ter a seguinte redação:\r\n«Artigo 68.º\r\n[…]\r\n1 -  […]: (Ver TABELA Alteração ao Código do Imposto sobre o Rendimento d",
+    "Estado": "Aprovado(a) em Comissão com Alterações"
+   }
+  },
+  "ProgramasMedidas": null,
+  "DiplomasMedidas": {
+   "DiplomaMedida": {
+    "Titulo": "Aprova o Código do Imposto sobre o Rendimento das Pessoas Singulares (IRS)",
+    "NumerosMedidas": {
+     "NumeroMedida": [
+      {
+       "Designacao": "Decreto-Lei n.º 442-A/88, de 30 de novembro"
+      },
+      {
+       "Designacao": "Artigo 68.º-A - Taxa adicional de solidariedade"
+      },
+      {
+       "Designacao": "N.º 1 - "
+      },
+      {
+       "Designacao": "N.º 2 - "
+      }
+     ]
+    },
+    "Texto": "1 - Sem prejuízo do disposto no artigo 68.º, ao quantitativo do rendimento coletável superior a (euro) 80 000 incidem as taxas adicionais de solidariedade constantes da tabela seguinte:\r\n \r\n   Rendimento coletável (euros)\t\r\n                                                                                      "
+   }
+  },
+  "Requerimentos": null,
+  "Ministerio": null,
+  "Medidas_Programas": null,
+  "NUTS": null,
+  "Votacoes": {
+   "Votacao": {
+    "Descricoes": null,
+    "DiplomasTerceirosouPropostasDeLeiMapas": {
+     "Diploma": [
+      "S1VP41312",
+      "N.º 1, Artigo 68.º-A do Decreto-Lei n.º 442-A/88, de 30 de novembro (Aprova o Código do Imposto sobre o Rendimento das Pessoas Singulares (IRS))",
+      "N.º 2, Artigo 68.º-A do Decreto-Lei n.º 442-A/88, de 30 de novembro (Aprova o Código do Imposto sobre o Rendimento das Pessoas Singulares (IRS))"
+     ]
+    },
+    "SubDescricao": null,
+    "Data": "20/11/2025 00:00:00",
+    "ResultadoCompleto": "Rejeitado(a) em Comissão",
+    "Resultado": "Rejeitado(a)",
+    "GruposParlamentares": {
+     "GrupoParlamentar": [
+      "Partido Social Democrata",
+      "Chega",
+      "Partido Socialista",
+      "Iniciativa Liberal",
+      "Livre",
+      "Partido Comunista Português",
+      "Centro Democrático Social - Partido Popular",
+      "Bloco de Esquerda",
+      "Pessoas-Animais-Natureza"
+     ],
+     "Voto": [
+      "Contra",
+      "Contra",
+      "Contra",
+      "Contra",
+      "Favor",
+      "Abstenção",
+      "Contra",
+      "Favor",
+      "Favor"
+     ]
+    }
+   }
+  }
+ }
+]
