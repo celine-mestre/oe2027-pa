@@ -266,8 +266,7 @@ const porEstado = Object.fromEntries(cont(PA, r=>[r.estado||'—']));
 const nBase = new Set(PA.map(r=>r.pa_base||r.n_pa)).size;
 if (!PA.length) {
   const av = $('#aviso-vazio'); av.hidden = false;
-  const erro = (ex.erros||[]).join(' · ');
-  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">${erro ? 'Resultado da última captura: '+esc(erro) : ''}</span>`;
+  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">Segundo o calendário de apreciação, o prazo para inserção de PA abre a 29 de outubro às 9h00. O painel é atualizado automaticamente a partir dessa data.</span>`;
 }
 $('#kpis').innerHTML = [
   ['Propostas de alteração', nBase, ''],
