@@ -400,6 +400,17 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
             c.font = Font(name=FONTE, size=10)
             c.alignment = Alignment(wrap_text=True, vertical="top")
 
+    folha_resposta(wb, agora)
+
+    saida.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(saida)
+    return {"ficheiro": str(saida), "registos": len(pa), "pa": len({r["pa_base"] for r in pa}), "consultas": ws6.max_row - 1}
+
+
+def folha_resposta(wb, agora: dt.datetime) -> None:
+    """Folha «Resposta UPE»: o que a captura assegura, o que exige desenvolvimento e as limitações (refeita a cada exportação)."""
+    if "Resposta UPE" in wb.sheetnames:
+        del wb["Resposta UPE"]
     ws8 = wb.create_sheet("Resposta UPE")
     ws8.column_dimensions["A"].width, ws8.column_dimensions["B"].width, ws8.column_dimensions["C"].width, ws8.column_dimensions["D"].width = 30, 18, 80, 60
     titulo(ws8, "Resposta da UPE ao modelo da DACDP: o que a captura automática assegura, o que exige desenvolvimento e as limitações")
@@ -417,9 +428,6 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
                 c.font = Font(name=FONTE, size=10)
             c.alignment = Alignment(wrap_text=True, vertical="top")
 
-    saida.parent.mkdir(parents=True, exist_ok=True)
-    wb.save(saida)
-    return {"ficheiro": str(saida), "registos": len(pa), "pa": len({r["pa_base"] for r in pa}), "consultas": ws6.max_row - 1}
 
 
 def consultas(pasta: Path, estado_fontes: dict, historico: list[dict], ed: dict) -> list[list]:

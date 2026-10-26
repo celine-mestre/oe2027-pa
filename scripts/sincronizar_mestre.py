@@ -149,6 +149,8 @@ def main(argv=None) -> int:
         wc.append([dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "Sincronização UPE do ficheiro mestre", "",
                    f"{len(novas)} PA novas acrescentadas; {atualizadas} linhas atualizadas a partir da AR.", len(novas)])
 
+    ex.folha_resposta(wb, dt.datetime.now(dt.timezone.utc))
+
     # classificações da DACDP para o painel (só as que podem ser públicas)
     analise = []
     for n, r in linhas.items():
