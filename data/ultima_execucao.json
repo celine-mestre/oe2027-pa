@@ -1,0 +1,18 @@
+{
+ "momento": "2026-10-26T02:41:16+0000",
+ "comando": "scrape",
+ "erros": [
+  "pesquisa: 404 Client Error: Not Found for url: https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx"
+ ],
+ "url": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx",
+ "listadas": 0,
+ "capturadas": 0,
+ "falhas": [],
+ "eventos": 0,
+ "resumo": {
+  "total": 0,
+  "por_partido": {},
+  "por_estado": {},
+  "por_tema": {}
+ }
+}
