@@ -31,6 +31,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Trazer o estado mais recente do repositório (o checkout é feito ao commit que disparou o workflow)
+        run: git pull --ff-only origin main || true
 
       - name: Pasta XVII, calendário e texto das propostas de lei
         continue-on-error: true
