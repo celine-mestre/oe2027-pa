@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/**", "config.json", "data/taxonomia.json", "data/classificacao_manual.csv", "data/medidas_anunciadas.csv", "requirements.txt", ".github/workflows/atualizar.yml"]
+    paths: ["scripts/**", "config.json", "data/taxonomia.json", "requirements.txt", ".github/workflows/atualizar.yml"]
   schedule:
     # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao calendário oficial do OE 2027:
     # mais capturas no último dia do prazo e nos dias de votação.

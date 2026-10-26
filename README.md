@@ -2,7 +2,8 @@
 
 Extração automática e painel das propostas de alteração (PA) à Proposta de Lei n.º 110/XVII/2.ª (Orçamento do Estado para 2027), exclusivamente a partir da informação publicada pela Assembleia da República (AR).
 
-- Painel: https://celine-mestre.github.io/oe2027-pa/
+- Painel: https://upe-sggov.github.io/oe2027-pa/
+- Repositório: https://github.com/upe-sggov/oe2027-pa
 
 ## Fontes
 

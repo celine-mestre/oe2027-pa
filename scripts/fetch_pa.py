@@ -454,8 +454,9 @@ def main(argv=None) -> int:
                 novos.append(ler_detalhe(bid, momento, s))
             except Exception as e:  # noqa: BLE001
                 falhas.append({"id": bid, "erro": str(e)})
-        with gzip.open(raw / f"{carimbo()}_scrape.json.gz", "wt", encoding="utf-8") as fh:
-            json.dump(novos, fh, ensure_ascii=False)
+        if novos:
+            with gzip.open(raw / f"{carimbo()}_scrape.json.gz", "wt", encoding="utf-8") as fh:
+                json.dump(novos, fh, ensure_ascii=False)
         bd = ler_bd(pasta)
         eventos = fundir(bd, novos, momento, "scrape") if novos else []
         meta.update({"url": url, "listados": len(ids), "capturados": len(novos), "falhas": falhas,
