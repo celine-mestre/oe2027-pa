@@ -1,0 +1,3425 @@
+{
+ "_AVISO": "AMOSTRA SINTÉTICA — dados fictícios para teste do pipeline",
+ "PropostasAlteracao": [
+  {
+   "Numero": "1C",
+   "BID": "90001",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 5.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "2C",
+   "BID": "90002",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 154.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "3C",
+   "BID": "90003",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 89.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "4C",
+   "BID": "90004",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 3 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "5C",
+   "BID": "90005",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 99.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "6C",
+   "BID": "90006",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 51.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "7C",
+   "BID": "90007",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 100.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 100.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "8C",
+   "BID": "90008",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 158.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "9C",
+   "BID": "90009",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 31.º-A (Atualização extraordinária das pensões) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 31.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "10C",
+   "BID": "90010",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 158.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "11C",
+   "BID": "90011",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 87.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "12C",
+   "BID": "90012",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 99.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Social Democrata"
+    },
+    {
+     "GP": "Partido Social Democrata"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "13C",
+   "BID": "90013",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 68.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "14C",
+   "BID": "90014",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 61.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "15C",
+   "BID": "90015",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 67.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "16C",
+   "BID": "90016",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 93.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 93.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "17C",
+   "BID": "90017",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 52.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 52.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "18C",
+   "BID": "90018",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 79.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 79.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "19C",
+   "BID": "90019",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 67.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 67.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "20C",
+   "BID": "90020",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 107.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 107.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "21C",
+   "BID": "90021",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 172.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 172.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "22C",
+   "BID": "90022",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 169.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Socialista"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Socialista"
+    },
+    {
+     "GP": "Partido Socialista"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "23C",
+   "BID": "90023",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 6 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "24C",
+   "BID": "90024",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 87.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "25C",
+   "BID": "90025",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 114.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 114.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "26C",
+   "BID": "90026",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 121.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "27C",
+   "BID": "90027",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 123.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 123.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "28C",
+   "BID": "90028",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 9 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "29C",
+   "BID": "90029",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 167.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "30C",
+   "BID": "90030",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 176.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 176.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "31C",
+   "BID": "90031",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 76.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 76.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "32C",
+   "BID": "90032",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 147.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 147.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "33C",
+   "BID": "90033",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 156.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 156.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "34C",
+   "BID": "90034",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 39.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 39.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "35C",
+   "BID": "90035",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 11 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "36C",
+   "BID": "90036",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 95.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "37C",
+   "BID": "90037",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 171.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 171.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "38C",
+   "BID": "90038",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 119.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "39C",
+   "BID": "90039",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 155.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "40C",
+   "BID": "90040",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 94.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "41C",
+   "BID": "90041",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 114.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "42C",
+   "BID": "90042",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 136.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "43C",
+   "BID": "90043",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 95.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "44C",
+   "BID": "90044",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 35.º-A (Atualização extraordinária das pensões) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 35.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "45C",
+   "BID": "90045",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 7 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "46C",
+   "BID": "90046",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 3 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "47C",
+   "BID": "90047",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 153.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "48C",
+   "BID": "90048",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 126.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 126.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "49C",
+   "BID": "90049",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 8 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "50C",
+   "BID": "90050",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 134.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 134.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "51C",
+   "BID": "90051",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 98.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "52C",
+   "BID": "90052",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 136.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Chega"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Chega"
+    },
+    {
+     "GP": "Chega"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "53C",
+   "BID": "90053",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 153.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "54C",
+   "BID": "90054",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 5.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 5.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "55C",
+   "BID": "90055",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 150.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 150.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "56C",
+   "BID": "90056",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 71.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 71.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "57C",
+   "BID": "90057",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 52.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "58C",
+   "BID": "90058",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 102.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Iniciativa Liberal"
+    },
+    {
+     "GP": "Iniciativa Liberal"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "59C",
+   "BID": "90059",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 111.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "60C",
+   "BID": "90060",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 127.º-A (Atualização extraordinária das pensões) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 127.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "61C",
+   "BID": "90061",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 74.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Saúde",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 74.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "62C",
+   "BID": "90062",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 79.º-A (Atualização extraordinária das pensões) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 79.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "63C",
+   "BID": "90063",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 97.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "64C",
+   "BID": "90064",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 110.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 110.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "65C",
+   "BID": "90065",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 127.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "66C",
+   "BID": "90066",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 121.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "67C",
+   "BID": "90067",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 26.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 26.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "68C",
+   "BID": "90068",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 162.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 162.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "69C",
+   "BID": "90069",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 18.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "70C",
+   "BID": "90070",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 133.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 133.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Livre"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Livre"
+    },
+    {
+     "GP": "Livre"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "71C",
+   "BID": "90071",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 85.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 85.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "72C",
+   "BID": "90072",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 90.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "73C",
+   "BID": "90073",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 9.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 9.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "74C",
+   "BID": "90074",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 153.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 153.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "75C",
+   "BID": "90075",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 46.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 46.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "76C",
+   "BID": "90076",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 30.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 30.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "77C",
+   "BID": "90077",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 135.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "78C",
+   "BID": "90078",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 12 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "79C",
+   "BID": "90079",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 5 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "80C",
+   "BID": "90080",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 69.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "81C",
+   "BID": "90081",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 175.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 175.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "82C",
+   "BID": "90082",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 103.º-B (Reforço da dotação do programa de habitação acessível) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 103.º-B",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "83C",
+   "BID": "90083",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 84.º (Autorização legislativa em matéria de benefícios fiscais) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "84C",
+   "BID": "90084",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 102.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 102.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "85C",
+   "BID": "90085",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 147.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 147.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "86C",
+   "BID": "90086",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 147.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "87C",
+   "BID": "90087",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 46.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "88C",
+   "BID": "90088",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 130.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 130.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "89C",
+   "BID": "90089",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 103.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Eliminação (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "90C",
+   "BID": "90090",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 26.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 26.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Partido Comunista Português"
+    },
+    {
+     "GP": "Partido Comunista Português"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "91C",
+   "BID": "90091",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 86.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 86.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "GP": "Centro Democrático Social - Partido Popular"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "92C",
+   "BID": "90092",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 118.º-A (Abono de família — majoração) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 118.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "GP": "Centro Democrático Social - Partido Popular"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "93C",
+   "BID": "90093",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 73.º (Isenção de IMI para primeira habitação) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "GP": "Centro Democrático Social - Partido Popular"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "94C",
+   "BID": "90094",
+   "Data": "2026-11-03",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 136.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 136.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Centro Democrático Social - Partido Popular"
+    },
+    {
+     "GP": "Centro Democrático Social - Partido Popular"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "95C",
+   "BID": "90095",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 5 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "96C",
+   "BID": "90096",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 12 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "97C",
+   "BID": "90097",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 42.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 42.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "98C",
+   "BID": "90098",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 17.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "99C",
+   "BID": "90099",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 115.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Trabalho, Segurança Social e Inclusão",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 115.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "100C",
+   "BID": "90100",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 51.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Defesa Nacional",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 51.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "101C",
+   "BID": "90101",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 95.º (Contratação de profissionais de saúde) [FICTÍCIO]",
+   "Tema": "Agricultura e Pescas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "102C",
+   "BID": "90102",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 122.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 122.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Bloco de Esquerda"
+    },
+    {
+     "GP": "Bloco de Esquerda"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "103C",
+   "BID": "90103",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 73.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Negócios Estrangeiros e Comunidades Portuguesas",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "104C",
+   "BID": "90104",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 99.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Orçamento, Finanças e Administração Pública",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 99.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "105C",
+   "BID": "90105",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 62.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 62.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "B. Costa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "106C",
+   "BID": "90106",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 38.º (Redução da taxa de IVA aplicável à eletricidade) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "D. Martins",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "107C",
+   "BID": "90107",
+   "Data": "2026-11-04",
+   "Apresentada": "Comissão",
+   "Incide": "Mapa",
+   "Objecto": "Mapa 1 (Reforço da dotação da missão de base orgânica) [FICTÍCIO]",
+   "Tema": "Economia e Coesão Territorial",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "A. Silva",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "108C",
+   "BID": "90108",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 174.º (Descida do imposto sobre produtos petrolíferos) [FICTÍCIO]",
+   "Tema": "Ambiente e Energia",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "F. Rocha",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "109C",
+   "BID": "90109",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 173.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Infraestruturas, Mobilidade e Habitação",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 173.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "110C",
+   "BID": "90110",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 130.º-D (Passe de mobilidade nacional) [FICTÍCIO]",
+   "Tema": "Educação e Ciência",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 130.º-D",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "111C",
+   "BID": "90111",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 166.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Assuntos Constitucionais, Direitos, Liberdades e Garantias",
+   "Tipo": "Aditamento (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 166.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "D. Martins",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "112C",
+   "BID": "90112",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 32.º-A (Transferência de verbas para as autarquias locais) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 32.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "A. Silva",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Pessoas-Animais-Natureza"
+    },
+    {
+     "GP": "Pessoas-Animais-Natureza"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "113C",
+   "BID": "90113",
+   "Data": "2026-11-05",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 71.º-A (Atualização extraordinária das pensões) [FICTÍCIO]",
+   "Tema": "Reforma do Estado e Poder Local",
+   "Tipo": "Substituição (Artigo PPL)",
+   "NumeroArtigoNovo": "Artigo 71.º-A",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "C. Pereira",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "Deputado": "H. Lopes",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "GP": "Juntos pelo Povo"
+    }
+   ],
+   "Votacoes": []
+  },
+  {
+   "Numero": "114C",
+   "BID": "90114",
+   "Data": "2026-11-06",
+   "Apresentada": "Comissão",
+   "Incide": "Articulado",
+   "Objecto": "Artigo 96.º-C (Alteração ao Decreto-Lei n.º 000/2000 — regime de carreiras) [FICTÍCIO]",
+   "Tema": "Cultura, Comunicação, Juventude e Desporto",
+   "Tipo": "Aditamento (Mapa)",
+   "NumeroArtigoNovo": "Artigo 96.º-C",
+   "Estado": "Em apreciação",
+   "Proponentes": [
+    {
+     "Deputado": "G. Nunes",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "Deputado": "B. Costa",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "Deputado": "E. Sousa",
+     "GP": "Juntos pelo Povo"
+    },
+    {
+     "GP": "Juntos pelo Povo"
+    }
+   ],
+   "Votacoes": []
+  }
+ ]
+}

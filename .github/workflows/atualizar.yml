@@ -1,0 +1,62 @@
+name: Atualizar PA ao OE 2027
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "config.json", "data/taxonomia.json", "data/classificacao_manual.csv", "data/medidas_anunciadas.csv", "requirements.txt", ".github/workflows/atualizar.yml"]
+  schedule:
+    # Horários em UTC (Lisboa = UTC+0 a partir de 25 out. 2026).
+    # Rotina: 2 capturas por dia durante a apreciação (29 out. – 17 nov.)
+    - cron: "15 7,18 * 10,11 *"
+    # Pico 1 — fim do prazo de PA (6 nov.) e fim de semana de prorrogação (7–9 nov.): de hora a hora
+    - cron: "5 6-23 6-9 11 *"
+    # Pico 2 — votações na especialidade e votação final global (18–24 nov.): de 2 em 2 horas
+    - cron: "10 7-23/2 18-24 11 *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar-pa
+  cancel-in-progress: false
+
+jobs:
+  extrair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Extrair dos dados abertos da AR
+        id: opendata
+        continue-on-error: true
+        run: python scripts/fetch_pa.py opendata
+
+      - name: Reserva — pesquisa de PA no parlamento.pt
+        if: steps.opendata.outcome != 'success'
+        continue-on-error: true
+        run: python scripts/fetch_pa.py scrape
+
+      - name: Gerar painel
+        run: python scripts/build_painel.py
+
+      - name: Guardar dados e painel no repositório
+        run: |
+          git config user.name "upe-sggov-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "captura $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
+
+      - name: Publicar no GitHub Pages
+        uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4
