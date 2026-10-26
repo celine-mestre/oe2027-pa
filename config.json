@@ -81,7 +81,7 @@
  "calendario_nota": "(*) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
  "http": {
   "user_agent": "SGGov-DSSD-UPE/1.0 (levantamento PA OE2027; contacto institucional)",
-  "timeout": 60,
+  "timeout": 180,
   "pausa_entre_pedidos_seg": 1.0
  }
 }

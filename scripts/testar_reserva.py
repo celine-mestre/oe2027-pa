@@ -43,3 +43,4 @@ res["amostra"] = len(amostra); res["falhas"] = falhas[:5]
 res["concordancia"] = conc; res["exemplos_diferencas"] = difs
 Path("teste_reserva.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
 print(json.dumps(res, ensure_ascii=False, indent=1))
+# rerun 0430

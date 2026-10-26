@@ -157,6 +157,16 @@ def iso(data_ar: str) -> str:
         return (data_ar or "").strip()
 
 
+def limpo(txt: str) -> str:
+    """Espaços, quebras de linha e tabulações reduzidos a um espaço."""
+    return re.sub(r"\s+", " ", txt or "").strip()
+
+
+def artigo_de_texto(txt: str) -> str:
+    m = re.search(r"Artigo\s+\d+\.?º(?:-[A-Z]+)?", txt or "")
+    return m.group(0) if m else ""
+
+
 def como_lista(v):
     if v is None:
         return []
@@ -229,8 +239,8 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
             "incide": p.get("Incide") or "",
             "artigo": p.get("NumeroArtigoNovo") or "; ".join(a for a in artigos if a),
             "tipo_ar": p.get("Tipo") or "",
-            "objeto": p.get("Titulo") or "",
-            "tema_ar": "; ".join(t.strip() for t in (p.get("Tema") or "").split(";") if t.strip()),
+            "objeto": limpo(p.get("Titulo")),
+            "tema_ar": "; ".join(limpo(t) for t in (p.get("Tema") or "").split(";") if t.strip()),
             "estado_ar": p.get("Estado") or "",
             "estado": estado_agrupado(p.get("Estado") or ""),
             "data_votacao": iso(ult.get("Data", ""))[:10] if ult else "",
@@ -292,12 +302,12 @@ def ler_detalhe(bid: str, momento: str, s=None) -> dict:
     rotulos = ["Número", "Data", "Apresentada", "Incide", "Objecto", "Objeto", "Tema", "Tipo", "Número Artigo Novo", "Estado"]
 
     def campo(r):
-        m = re.search(rf"\b{r}:\s*(.*?)(?=\s(?:{'|'.join(rotulos)}|Deputado|Grupo Parlamentar|Iniciativas|Votaç)\b:?|$)", t)
+        m = re.search(rf"\b{r}:\s*(.*?)(?=\s(?:{'|'.join(rotulos)}|Proponentes|Deputado|Grupo Parlamentar|Iniciativas|Votaç)\b:?|$)", t)
         return m.group(1).strip().rstrip(";") if m else ""
 
     n = campo("Número")
     m = re.match(r"^(.*?)(?:-(\d+))?$", n)
-    deps = re.findall(r"Deputado\s+(.+?)\s+Grupo Parlamentar/Partido\s+([A-Z][A-Z\-/ ,]*)", t)
+    deps = re.findall(r"Deputado\s+(.+?)\s+Grupo Parlamentar/Partido\s+([A-Z]{1,6}(?:-[A-Z]{1,3})?)\b", t)
     votos = []
     for s_, variantes in TAX["partidos"].items():
         for v in variantes:
@@ -312,8 +322,9 @@ def ler_detalhe(bid: str, momento: str, s=None) -> dict:
         "n_pa": n, "pa_base": m.group(1) if m else n, "parte": (m.group(2) or "") if m else "", "id_ar": bid,
         "data_entrada": campo("Data"), "proponente": "; ".join(dict.fromkeys(sigla(g.strip()) for _, g in deps)),
         "proponente_deputados": "; ".join(dict.fromkeys(d for d, _ in deps)), "apresentada": campo("Apresentada"),
-        "incide": campo("Incide"), "artigo": campo("Número Artigo Novo"), "tipo_ar": campo("Tipo"),
-        "objeto": campo("Objecto") or campo("Objeto"), "tema_ar": campo("Tema"), "estado_ar": estado_ar,
+        "incide": campo("Incide"), "artigo": campo("Número Artigo Novo") or artigo_de_texto(campo("Objecto") or campo("Objeto")),
+        "tipo_ar": campo("Tipo"), "objeto": limpo(campo("Objecto") or campo("Objeto")),
+        "tema_ar": "; ".join(x.strip() for x in campo("Tema").split(";") if x.strip()), "estado_ar": estado_ar,
         "estado": estado_agrupado(estado_ar), "data_votacao": mdata.group(1) if mdata else "",
         "sede_votacao": "Plenário" if "plenário" in estado_ar.lower() else ("Comissão" if "comissão" in estado_ar.lower() else ""),
         "resultado_votacao": estado_ar if votos else "", "votos_por_partido": "; ".join(votos),
