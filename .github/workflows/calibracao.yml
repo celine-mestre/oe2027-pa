@@ -1,0 +1,27 @@
+name: Descoberta e calibração (dados de referência)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  descobrir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/descobrir.py
+      - name: Guardar resultados
+        run: |
+          git config user.name "upe-sggov-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/calibracao
+          git diff --cached --quiet || git commit -m "calibração $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push
