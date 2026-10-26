@@ -125,6 +125,9 @@ section.tab{display:none}section.tab.on{display:block}
 .kpi .v{font-size:28px;font-weight:600;color:var(--azul);line-height:1.1}
 .kpi .l{font-size:12px;color:var(--ink3);margin-top:4px}
 .kpi{position:relative}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.seg button{font:inherit;font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--linha);background:var(--card);color:var(--ink2);cursor:pointer}
+.seg button.on{background:var(--azul);border-color:var(--azul);color:#fff}
 .kpi .info{position:absolute;top:10px;right:10px;width:20px;height:20px;border-radius:50%;border:1px solid var(--linha);background:var(--card);color:var(--ink3);font:600 11px/18px Lexend,Arial,sans-serif;font-style:italic;cursor:pointer;padding:0;text-align:center}
 .kpi .info:hover,.kpi .info[aria-expanded="true"]{border-color:var(--azul);color:var(--azul)}
 .kpi .tip{display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--linha);font-size:11.5px;line-height:1.45;color:var(--ink2)}
@@ -248,7 +251,11 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>Sentido de voto por grupo parlamentar (PA votadas)</h3><div class="tabela-wrap"><table class="matriz" id="m-sentido"></table></div><div class="legenda">Tal como publicado pela AR. Inclui os deputados únicos representantes de partido.</div></div>
   </div>
   <div class="card" style="margin-top:12px"><h3>Documentos publicados pela COFAP sobre o OE 2027</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões e resultados de votações, textos finais, relatórios e pareceres (por exemplo, da UTAO e do Conselho das Finanças Públicas) publicados na página do OE 2027 da Comissão de Orçamento, Finanças e Administração Pública. Não inclui os contributos de entidades e cidadãos.</div></div>
-  <div class="card" style="margin-top:12px"><h3>PA aprovadas</h3><div class="tabela-wrap"><table id="tab-aprov"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo</th><th>Objeto</th><th>Tema</th><th>Data</th><th>Sentido de voto por grupo parlamentar</th><th>Avocação</th></tr></thead><tbody></tbody></table></div></div>
+  <div class="card" style="margin-top:12px"><h3>Detalhe das votações</h3>
+    <div class="seg" id="seg-res"></div>
+    <div class="tabela-wrap"><table id="tab-res"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo</th><th>Objeto</th><th>Tema</th><th>Resultado</th><th>Data</th><th>Sentido de voto por grupo parlamentar</th></tr></thead><tbody></tbody></table></div>
+    <div class="legenda">Por registo publicado pela AR. «Em Plenário» assinala as votações feitas em Plenário por avocação.</div>
+  </div>
 </section>
 
 <section class="tab" id="t-historico">
@@ -403,7 +410,24 @@ const estadosV = ['aprovada','aprovada parcialmente','rejeitada','prejudicada','
 $('#m-resultado').innerHTML = proponentes.length ? `<tr><th>Proponente</th>${estadosV.map(e=>`<th>${e}</th>`).join('')}<th>total</th></tr>` + proponentes.map(p => { const rs = PA.filter(r=>split(r.proponente).includes(p)); return `<tr><td style="text-align:left"><b>${esc(p)}</b></td>${estadosV.map(e=>`<td class="num">${fmtN(rs.filter(r=>r.estado===e).length)}</td>`).join('')}<td class="num"><b>${fmtN(rs.length)}</b></td></tr>`; }).join('') : '<tr><td class="mini">Sem dados.</td></tr>';
 const sent = {}; for (const r of votadas) for (const v of split(r.votos_por_partido)) { const [gp, s] = v.split(':').map(x=>x.trim()); if(!gp||!s) continue; sent[gp] = sent[gp]||{Favor:0,Contra:0,'Abstenção':0}; if (sent[gp][s]!==undefined) sent[gp][s]++; }
 $('#m-sentido').innerHTML = Object.keys(sent).length ? `<tr><th>Grupo parlamentar</th><th>Favor</th><th>Contra</th><th>Abstenção</th></tr>` + D.partidos.concat(Object.keys(sent).filter(g=>!D.partidos.includes(g))).filter(g=>sent[g]).map(g => `<tr><td style="text-align:left"><b>${esc(g)}</b></td><td class="num f">${fmtN(sent[g].Favor)}</td><td class="num c">${fmtN(sent[g].Contra)}</td><td class="num a">${fmtN(sent[g]['Abstenção'])}</td></tr>`).join('') : '<tr><td class="mini">Ainda sem votações registadas pela AR.</td></tr>';
-$('#tab-aprov tbody').innerHTML = PA.filter(r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente').map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)}</td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td class="num">${esc(fmtData(r.data_votacao))}</td><td class="mini">${esc(r.votos_por_partido)}</td><td>${r.avocacao==='S'?'S':''}</td></tr>`).join('') || '<tr><td colspan="8" class="mini">Ainda sem PA aprovadas.</td></tr>';
+const GRUPOS_RES = [
+  ['Aprovadas', r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente'],
+  ['Rejeitadas', r=>r.estado==='rejeitada'],
+  ['Prejudicadas', r=>r.estado==='prejudicada'],
+  ['Retiradas ou não admitidas', r=>r.estado==='retirada'||r.estado==='não admitida'],
+  ['Votadas em Plenário (avocação)', r=>r.avocacao==='S'],
+  ['Por votar', r=>r.estado==='em apreciação'],
+  ['Todas', r=>true]
+];
+let segAtivo = 0;
+function renderRes() {
+  $('#seg-res').innerHTML = GRUPOS_RES.map(([l,f],i)=>`<button class="${i===segAtivo?'on':''}" onclick="segAtivo=${i};renderRes()">${esc(l)} (${fmtN(PA.filter(f).length)})</button>`).join('');
+  const rows = PA.filter(GRUPOS_RES[segAtivo][1]).sort((x,y)=>{const a=numPA(x.n_pa),b=numPA(y.n_pa);return a[0]-b[0]||a[1].localeCompare(b[1])||a[2]-b[2];});
+  $('#tab-res tbody').innerHTML = rows.slice(0,1500).map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)}</td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td>${estadoChip(r.estado)}${r.sede_votacao==='Plenário'?'<br><span class="mini">em Plenário</span>':''}</td><td class="num">${esc(fmtData(r.data_votacao))}</td><td class="mini">${esc(r.votos_por_partido)||'—'}</td></tr>`).join('')
+    + (rows.length>1500?`<tr><td colspan="8" class="mini">Mostram-se 1 500 de ${fmtN(rows.length)} registos. Use o separador «Propostas de alteração» para filtrar e exportar.</td></tr>`:'')
+    || `<tr><td colspan="8" class="mini">Sem registos neste grupo.</td></tr>`;
+}
+renderRes();
 
 // ----- documentos
 $('#tab-docs tbody').innerHTML = (D.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos publicados.</td></tr>';
