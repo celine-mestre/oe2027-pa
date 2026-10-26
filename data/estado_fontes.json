@@ -1,11 +1,20 @@
 {
  "dados_abertos": {
-  "momento": "2026-10-26T04:39:02Z",
+  "momento": "2026-10-26T04:46:21Z",
   "disponivel": false
  },
  "pesquisa": {
   "momento": "2026-10-26T04:39:05Z",
   "disponivel": false,
+  "erro": ""
+ },
+ "portal": {
+  "momento": "2026-10-26T04:46:23Z",
+  "primeiro_id_testado": 25391,
+  "ultimo_id_testado": 25415,
+  "novos": 0,
+  "relidos": 0,
+  "falhas": 0,
   "erro": ""
  }
 }
