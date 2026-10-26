@@ -10,7 +10,8 @@ Extração automática e painel das propostas de alteração (PA) à Proposta de
 | Fonte | O que dá | Uso |
 |---|---|---|
 | Dados abertos da AR, categoria «Orçamento do Estado», pasta «XVII Legislatura» — ficheiro `OEPropostasAlteracao<ano>Or` (JSON e XML) | Por PA: número, data e hora de entrada, título, artigo, tema, tipo, incidência, estado, proponentes (grupo parlamentar e deputados), PDF e todas as votações com o sentido de voto de cada grupo | Fonte principal. O ficheiro é localizado automaticamente em cada captura. |
-| Pesquisa de PA (`PesquisaPropAlteracao110XVII.aspx`) e detalhe de cada PA (`DetalhePropostaAlteracao.aspx?BID=…`) | O mesmo, página a página | Reserva, se o ficheiro dos dados abertos não estiver disponível ou atualizado. |
+| Página de cada PA no portal da AR (`DetalhePropostaAlteracao.aspx?BID=…`) | Os mesmos campos, proposta a proposta | Reserva e verificação cruzada, em cada captura: procura PA novas a seguir ao maior identificador conhecido (a AR atribui-os por ordem de entrada) e relê as que ainda não foram votadas. Deteta um ficheiro de dados abertos desatualizado. |
+| Página do OE 2027 na COFAP | Resultados de votações, textos finais, relatórios e pareceres | Lista de documentos no painel (sem os contributos). |
 | Calendário de apreciação do OE 2027 (PDF da AR, cópia em `data/calibracao/`) | Datas e horas oficiais | Transcrito em `config.json` e mostrado no painel. |
 
 A agenda parlamentar (e os respetivos dados abertos) tem as reuniões — audições, votações na Comissão de Orçamento, Finanças e Administração Pública (COFAP), debates em Plenário —, mas não as PA.
@@ -23,10 +24,15 @@ As propostas de alteração começam a ser registadas a 29 de outubro, às 9h00 
 
 ```
 python scripts/fetch_pa.py opendata    # fonte principal
-python scripts/fetch_pa.py scrape      # reserva
+python scripts/fetch_pa.py verificar   # reserva incremental pelo portal
+python scripts/fetch_pa.py documentos  # documentos da página da COFAP
 python scripts/build_painel.py         # gera docs/index.html
 python scripts/fetch_pa.py listar      # lista os ficheiros publicados na pasta XVII
 ```
+
+A página de pesquisa de PA (`PesquisaPropAlteracao110XVII.aspx`) não é usada nas capturas automáticas: demora cerca de um minuto por página de 20 resultados.
+
+Se, durante o processo, a captura não estiver a funcionar (nenhuma PA três horas depois de abrir o prazo, ou erros repetidos no portal), o último passo do workflow termina a vermelho e o GitHub envia um aviso por e-mail.
 
 O workflow `.github/workflows/atualizar.yml` corre segundo o calendário (de hora a hora no último dia do prazo e nos dias de votação), guarda em `data/raw/` uma cópia de cada captura, atualiza `data/pa.csv` e `data/historico.csv` e publica o painel. O workflow `calibracao.yml` (manual) lista os ficheiros publicados na pasta dos dados abertos e descarrega o calendário oficial.
 
