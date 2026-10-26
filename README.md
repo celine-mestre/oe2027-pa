@@ -3,7 +3,7 @@
 Extração automática, base de dados, registo no modelo da DACDP e painel das propostas de alteração (PA) às propostas de lei do Orçamento do Estado, a partir da informação publicada pela Assembleia da República (AR):
 
 - **OE 2027** — Proposta de Lei n.º 110/XVII/2.ª, em curso (PA a partir de 29 de outubro de 2026, 9h00).
-- **OE 2026** — Proposta de Lei n.º 37/XVII/1.ª, processo concluído. Base de comparação e de calibração: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar.
+- **OE 2026** — Proposta de Lei n.º 37/XVII/1.ª, processo concluído. Base de comparação: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar.
 
 - Painel: https://upe-sggov.github.io/oe2027-pa/ (seletor de edição no canto superior direito)
 - Registo no modelo da DACDP (Excel, gerado em cada captura): https://upe-sggov.github.io/oe2027-pa/Registo_PA_OE2027.xlsx
@@ -17,13 +17,14 @@ Extração automática, base de dados, registo no modelo da DACDP e painel das p
 | Página de cada PA no portal da AR (`DetalhePropostaAlteracao.aspx?BID=…`) | Os mesmos campos, proposta a proposta | Reserva e verificação cruzada, em cada captura: procura PA novas a seguir ao maior identificador conhecido (a AR atribui-os por ordem de entrada) e relê as que ainda não foram votadas. Deteta um ficheiro de dados abertos desatualizado. |
 | Página do OE na COFAP | Resultados de votações, textos finais, relatórios e pareceres | Lista de documentos no painel (sem os contributos). |
 | Calendário de apreciação do OE 2027 (PDF da AR, cópia em `data/calibracao/`) | Datas e horas oficiais | Transcrito em `config.json` e mostrado no painel. |
-| Texto de cada proposta de lei (app.parlamento.pt) | Índice dos artigos, epígrafes e capítulos | Guardado em `data/oe<ano>/ppl.html` para a fase posterior. |
 
 A agenda parlamentar (e os respetivos dados abertos) tem as reuniões — audições, votações na Comissão de Orçamento, Finanças e Administração Pública (COFAP), debates em Plenário —, mas não as PA.
 
 Uma PA que incide sobre vários artigos ou alíneas é publicada pela AR em partes (por exemplo, `120C-1`, `120C-2`), com a mesma hora de entrada e votações separadas. O painel conta propostas pelo número-base e estados e votações por registo.
 
 ## Só dados abertos da AR
+
+Contagens pela convenção da AR: cada registo numerado conta como uma proposta, incluindo as partes (120C-1, 120C-2). O número de propostas distintas (sem partes) é apresentado à parte. A base inclui também, por registo, a epígrafe do artigo, os diplomas alterados, os requerimentos (avocação), os pedidos de parecer às Regiões Autónomas e o campo «Ministerio» dos dados abertos (vazio em 2026).
 
 O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há classificações próprias. O separador «Por tema» usa o tema que a AR atribui a cada PA (em 2026, a comissão parlamentar competente) e a matriz de posições dos grupos parlamentares cruza esse tema com os sentidos de voto publicados.
 
@@ -33,7 +34,6 @@ Os scripts `classificar.py` e `indice_ppl.py` e o ficheiro `data/areas_governati
 
 `scripts/exportar_excel.py` gera, em cada captura, `docs/Registo_PA_OE<ano>.xlsx` com a estrutura do modelo da DACDP (folhas «Propostas de Alteração», «Medidas Anunciadas», «Ponto de Situação», «Listas», «Instruções», «Registo de Consultas», «Calendário e Documentos») e uma folha «Resposta UPE» que diz, coluna a coluna, o que a captura assegura, o que exige desenvolvimento e o que não tem fonte na AR. Nas colunas A–W do modelo, a UPE preenche as que vêm da AR (B, C, E, F, G, L, S, T, U, V e as ligações em W); as colunas X em diante são informação adicional publicada pela AR (tema, incidência, natureza e estado, avocação, identificadores e ligações).
 
-`scripts/sincronizar_mestre.py MESTRE.xlsx` atualiza o ficheiro mestre da DACDP (no SharePoint) a partir da base: acrescenta PA novas, atualiza as colunas da AR, nunca toca nas colunas de análise da DACDP, preserva as outras folhas, repõe as listas pendentes, regista a consulta e guarda uma cópia de segurança. Exporta para `data/oe<ano>/analise.csv` só as classificações da DACDP que poderão ir ao painel na fase posterior (área governativa, ministério, tipo de PA e tema). Relevância, impactos, análise jurídica e observações ficam apenas no mestre, porque o repositório e o painel são públicos. Corre na UPE, porque o GitHub não chega ao SharePoint:
 
 ```
 python scripts/sincronizar_mestre.py "C:/…/Registo_PA_OE2027.xlsx" --ensaio   # mostra o que faria
@@ -62,7 +62,7 @@ Workflows:
 
 ## Base de dados (`data/oe<ano>/`)
 
-`pa.csv` (separador «;»): `n_pa`, `pa_base`, `parte`, `id_ar`, `data_entrada`, `proponente`, `proponente_deputados`, `apresentada`, `incide`, `artigo`, `tipo_ar`, `objeto`, `tema_ar`, `estado_ar`, `estado`, `data_votacao`, `sede_votacao`, `resultado_votacao`, `votos_por_partido`, `avocacao`, `n_votacoes`, `url_detalhe`, `url_pdf`, `primeira_captura`, `ultima_captura`, `fonte`, `ausente_da_fonte`. Todos os campos vêm da AR, exceto os de captura. `estado` agrupa o `estado_ar` publicado (por exemplo, «Rejeitado(a) em Comissão» → rejeitada).
+`pa.csv` (separador «;»): `n_pa`, `pa_base`, `parte`, `id_ar`, `data_entrada`, `proponente`, `proponente_deputados`, `apresentada`, `incide`, `artigo`, `artigo_epigrafe`, `diplomas`, `tipo_ar`, `objeto`, `tema_ar`, `estado_ar`, `estado`, `data_votacao`, `sede_votacao`, `resultado_votacao`, `votos_por_partido`, `avocacao`, `requerimentos`, `parecer_ra`, `ministerio_ar`, `n_votacoes`, `url_detalhe`, `url_pdf`, `primeira_captura`, `ultima_captura`, `fonte`, `ausente_da_fonte`. Todos os campos vêm da AR, exceto os de captura. `estado` agrupa o `estado_ar` publicado (por exemplo, «Rejeitado(a) em Comissão» → rejeitada).
 
 `analise.csv` (quando existir): classificações da DACDP vindas do mestre. `historico.csv`: eventos entre capturas (PA novas, alterações de estado, votações, PA que deixam de constar da publicação). `consultas.csv`: registo das verificações de fontes. `estado_fontes.json`, `documentos.json`, `ultima_execucao.json`: estado da última captura.
 

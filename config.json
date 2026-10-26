@@ -85,7 +85,7 @@
    "estado": "concluído",
    "url_texto_ppl": "https://app.parlamento.pt/OE2026/HTML/corpo.html",
    "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2026.aspx",
-   "_nota": "Processo concluído (votação final global a 27 de novembro de 2025). Serve de base de comparação e de calibração da classificação. O calendário mostrado é o derivado dos próprios dados da AR (entradas e votações).",
+   "_nota": "Processo concluído (votação final global a 27 de novembro de 2025). Serve de base de comparação: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar. O calendário mostrado é o derivado dos próprios dados da AR (entradas e votações).",
    "calendario": [],
    "calendario_nota": ""
   }

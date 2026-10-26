@@ -77,6 +77,8 @@ CAMPOS = [
     "apresentada",          # Comissão / Plenário
     "incide",               # Articulado / Mapas
     "artigo",               # artigo da PPL ou de outro diploma
+    "artigo_epigrafe",      # epígrafe do artigo, tal como a AR a publica
+    "diplomas",             # diplomas alterados pela PA (ex.: Código do IRS), publicados pela AR
     "tipo_ar",              # Aditamento (Artigo PPL), Substituição, Eliminação, ...
     "objeto",               # título publicado
     "tema_ar",              # tema(s) atribuído(s) pela AR
@@ -86,7 +88,10 @@ CAMPOS = [
     "sede_votacao",         # Comissão / Plenário (última votação)
     "resultado_votacao",    # resultado completo da última votação
     "votos_por_partido",    # sentido de voto na última votação ("PSD:Contra; PS:Abstenção; ...")
-    "avocacao",             # S quando houve votação em Plenário (avocação)
+    "avocacao",             # S quando houve requerimento de avocação ou votação em Plenário
+    "requerimentos",        # requerimentos publicados pela AR (avocação): grupo, data, aprovado
+    "parecer_ra",           # pedido de parecer às Regiões Autónomas (RAA, RAM), conforme a AR
+    "ministerio_ar",        # campo «Ministerio» dos dados abertos (vazio em 2026; a confirmar em 2027)
     "n_votacoes",           # número de votações registadas
     "url_detalhe",
     "url_pdf",
@@ -232,7 +237,18 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
         if not gps:
             gps = [sigla(x) for x in re.split(r",\s*", p.get("GrupoParlamentar_Partido") or "") if x]
         deps = [x.get("Deputado", "") for x in props if x.get("Deputado")]
-        artigos = [a.get("Artigo", "") for a in como_lista((p.get("Iniciativas_Artigos") or {}).get("Iniciativa_Artigo")) if a]
+        inic = [a for a in como_lista((p.get("Iniciativas_Artigos") or {}).get("Iniciativa_Artigo")) if a]
+        artigos = [a.get("Artigo", "") for a in inic]
+        epigrafes = [limpo(a.get("Titulo")) for a in inic if a.get("Titulo")]
+        diplomas = [limpo(d.get("Titulo")) for d in como_lista((p.get("DiplomasMedidas") or {}).get("DiplomaMedida")) if d and d.get("Titulo")]
+        reqs = []
+        for q in como_lista((p.get("Requerimentos") or {}).get("Requerimento")):
+            if not q:
+                continue
+            mg = re.search(r"\(([A-Z][A-Z\-/ ]{0,8})\)", q.get("Titulo") or "")
+            reqs.append(f"{'avocação' if re.search('avoca', q.get('Titulo') or '', re.I) else limpo(q.get('Titulo'))[:40]} · {mg.group(1) if mg else '—'} · {iso(q.get('Data', ''))[:10]}"
+                        + (" · aprovado" if str(q.get("Aprovado")) == "True" else "") + (" · substituído" if re.search(r"substitu", q.get("Titulo") or "", re.I) else ""))
+        ra = [s for s, k in (("RAA", "PedidoParecerRAA"), ("RAM", "PedidoParecerRAM")) if str(p.get(k)) == "True"]
         votacoes = sorted(como_lista((p.get("Votacoes") or {}).get("Votacao")), key=lambda v: iso(v.get("Data", "")))
         ult = votacoes[-1] if votacoes else {}
         g = ult.get("GruposParlamentares") or {}
@@ -250,6 +266,8 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
             "apresentada": p.get("Apresentada") or "",
             "incide": p.get("Incide") or "",
             "artigo": p.get("NumeroArtigoNovo") or "; ".join(a for a in artigos if a),
+            "artigo_epigrafe": "; ".join(dict.fromkeys(epigrafes)),
+            "diplomas": "; ".join(dict.fromkeys(diplomas)),
             "tipo_ar": p.get("Tipo") or "",
             "objeto": limpo(p.get("Titulo")),
             "tema_ar": "; ".join(limpo(t) for t in (p.get("Tema") or "").split(";") if t.strip()),
@@ -259,7 +277,10 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
             "sede_votacao": "Plenário" if "plenário" in rc.lower() else ("Comissão" if "comissão" in rc.lower() else ""),
             "resultado_votacao": rc,
             "votos_por_partido": "; ".join(votos),
-            "avocacao": "S" if any("plenário" in (v.get("ResultadoCompleto") or "").lower() for v in votacoes) else "",
+            "avocacao": "S" if (reqs and any("avocação" in q and "substituído" not in q for q in reqs)) or any("plenário" in (v.get("ResultadoCompleto") or "").lower() for v in votacoes) else "",
+            "requerimentos": "; ".join(reqs),
+            "parecer_ra": ", ".join(ra),
+            "ministerio_ar": limpo(p.get("Ministerio")) if isinstance(p.get("Ministerio"), str) else "",
             "n_votacoes": str(len(votacoes)),
             "url_detalhe": CONFIG["fontes"]["detalhe_pa"].format(bid=bid) if bid else "",
             "url_pdf": (p.get("Ficheiro") or "").replace("http://", "https://"),
@@ -334,13 +355,13 @@ def ler_detalhe(bid: str, momento: str, s=None) -> dict:
         "n_pa": n, "pa_base": m.group(1) if m else n, "parte": (m.group(2) or "") if m else "", "id_ar": bid,
         "data_entrada": campo("Data"), "proponente": "; ".join(dict.fromkeys(sigla(g.strip()) for _, g in deps)),
         "proponente_deputados": "; ".join(dict.fromkeys(d for d, _ in deps)), "apresentada": campo("Apresentada"),
-        "incide": campo("Incide"), "artigo": campo("Número Artigo Novo") or artigo_de_texto(campo("Objecto") or campo("Objeto")),
+        "incide": campo("Incide"), "artigo": campo("Número Artigo Novo") or artigo_de_texto(campo("Objecto") or campo("Objeto")), "artigo_epigrafe": "", "diplomas": "",
         "tipo_ar": campo("Tipo"), "objeto": limpo(campo("Objecto") or campo("Objeto")),
         "tema_ar": "; ".join(x.strip() for x in campo("Tema").split(";") if x.strip()), "estado_ar": estado_ar,
         "estado": estado_agrupado(estado_ar), "data_votacao": mdata.group(1) if mdata else "",
         "sede_votacao": "Plenário" if "plenário" in estado_ar.lower() else ("Comissão" if "comissão" in estado_ar.lower() else ""),
         "resultado_votacao": estado_ar if votos else "", "votos_por_partido": "; ".join(votos),
-        "avocacao": "S" if "plenário" in estado_ar.lower() else "", "n_votacoes": "",
+        "avocacao": "S" if "plenário" in estado_ar.lower() else "", "requerimentos": "", "parecer_ra": "", "ministerio_ar": "", "n_votacoes": "",
         "url_detalhe": url, "url_pdf": a["href"] if a else "", "primeira_captura": momento,
         "ultima_captura": momento, "fonte": "scrape",
     }
@@ -382,6 +403,7 @@ def fundir(bd: dict[str, dict], novos: list[dict], momento: str, fonte: str, mar
         for c in CAMPOS:
             if c != "primeira_captura" and r.get(c) not in (None, ""):
                 antigo[c] = r[c]
+            antigo.setdefault(c, "")  # campos acrescentados em versões posteriores do extrator
         antigo["ultima_captura"] = momento
         antigo.pop("ausente_da_fonte", None)
     for k, r in bd.items():

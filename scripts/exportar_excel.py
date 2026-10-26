@@ -5,8 +5,8 @@ Exporta a base de dados das PA para o modelo Excel da DACDP (Registo_PA_OE<ano>.
 Estrutura igual ao modelo «Registo_PA_OE2027_v1» da DACDP (7 folhas), mais uma folha «Resposta UPE».
   - Colunas A–W de «Propostas de Alteração»: o modelo da DACDP. A UPE preenche, a partir da AR, as colunas
     B, C, E, F, G, L, S, T, U, V e as ligações em W; as restantes ficam para a DACDP.
-  - Colunas X em diante: informação adicional publicada pela AR (tema, incidência, natureza e estado da PA,
-    avocação, identificadores e ligações).
+  - Colunas X em diante: informação adicional publicada pela AR (tema, epígrafe, diplomas alterados, incidência,
+    natureza e estado da PA, avocação, requerimentos, pareceres das Regiões Autónomas, identificadores e ligações).
   - «Registo de Consultas» e «Calendário e Documentos» são preenchidas automaticamente.
 
   python scripts/exportar_excel.py                 # edição ativa → docs/Registo_PA_OE2027.xlsx
@@ -40,10 +40,11 @@ COLUNAS_DACDP = ["ID", "N.º PA", "Data Entrada", "Versão", "Partido", "Deputad
                  "Tema", "Área Governativa", "Ministério", "Descrição Sumária", "Impacto Receita (€)", "Impacto Despesa (€)",
                  "Fonte da Estimativa", "Medida Anunciada (S/N)", "Relevância", "Necessita Análise Jurídica (S/N)", "Estado",
                  "Resultado Votação", "Sentido de Voto", "Data Votação", "Observações"]
-COLUNAS_UPE = ["Tema AR", "Incide", "Tipo (AR)", "Estado (AR)", "Avocação a Plenário", "Parte", "N.º de votações", "ID AR",
+COLUNAS_UPE = ["Tema AR", "Epígrafe do artigo (AR)", "Diplomas alterados (AR)", "Incide", "Tipo (AR)", "Estado (AR)", "Avocação a Plenário",
+               "Requerimentos (AR)", "Parecer Regiões Autónomas (AR)", "Ministério (AR)", "Parte", "N.º de votações", "ID AR",
                "Ligação AR", "PDF", "Primeira captura", "Última captura", "Ausente da fonte"]
 LARGURAS = [7, 10, 12, 13, 11, 24, 18, 22, 18, 22, 22, 50, 14, 14, 16, 12, 11, 14, 22, 18, 40, 12, 40] + \
-           [22, 11, 22, 24, 10, 7, 9, 9, 40, 40, 17, 17, 17]
+           [22, 30, 30, 11, 22, 24, 10, 30, 12, 16, 7, 9, 9, 40, 40, 17, 17, 17]
 COLUNAS_MEDIDAS = ["ID", "Data do Anúncio", "Partido", "Quem Anunciou", "Natureza", "Medida Anunciada", "Tema", "Valor Anunciado",
                    "Canal Oficial", "Ligação", "Entregue como PA (S/N)", "N.º PA Associada", "Observações"]
 LISTAS = {
@@ -194,7 +195,8 @@ def linha_pa(i: int, r: dict) -> list:
         None, None, None, r.get("objeto"), None, None, None, None, None, None, r.get("estado_ar") or "Em apreciação",
         resultado_modelo(r.get("estado")), sentido_modelo(r.get("votos_por_partido")), data(r.get("data_votacao") or ""), observacoes(r),
         # colunas UPE
-        r.get("tema_ar"), r.get("incide"), r.get("tipo_ar"), r.get("estado_ar"), r.get("avocacao"), r.get("parte"), r.get("n_votacoes"), r.get("id_ar"),
+        r.get("tema_ar"), r.get("artigo_epigrafe"), r.get("diplomas"), r.get("incide"), r.get("tipo_ar"), r.get("estado_ar"), r.get("avocacao"),
+        r.get("requerimentos"), r.get("parecer_ra"), r.get("ministerio_ar"), r.get("parte"), r.get("n_votacoes"), r.get("id_ar"),
         r.get("url_detalhe"), r.get("url_pdf"), data(r.get("primeira_captura") or ""), data(r.get("ultima_captura") or ""),
         (r.get("ausente_da_fonte") or "")[:10],
     ]
@@ -247,7 +249,7 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
     for row in ws.iter_rows(min_row=2, max_row=max(2, len(pa) + 1)):
         for c in row:
             c.font = Font(name=FONTE, size=10)
-        for idx in (3, 22, 34, 35):
+        for idx in (3, 22, 39, 40):
             row[idx - 1].number_format = "DD/MM/YYYY"
         for idx in (13, 14):
             row[idx - 1].number_format = "#,##0"
@@ -332,8 +334,8 @@ def construir(ano: str, saida: Path, pasta: Path | None = None) -> dict:
     ws5[f"A{i}"] = "Preenchimento automático pela UPE"
     ws5[f"A{i}"].font = Font(name=FONTE, size=10, bold=True)
     ws5[f"A{i + 1}"] = ("As colunas B, C, E, F, G, L, S, T, U e V e as ligações em W são preenchidas a partir dos dados abertos da Assembleia da "
-                        "República em cada captura automática. As colunas X em diante são informação adicional publicada pela AR: tema, incidência, "
-                        "natureza e estado da PA, avocação, identificadores e ligações. As restantes colunas do modelo (D, H a K, M a R e o texto de W) "
+                        "República em cada captura automática. As colunas X em diante são informação adicional publicada pela AR: tema, epígrafe, diplomas "
+                        "alterados, incidência, natureza e estado da PA, avocação, requerimentos, pareceres das Regiões Autónomas, identificadores e ligações. As restantes colunas do modelo (D, H a K, M a R e o texto de W) "
                         "são da DACDP e nunca são alteradas pela sincronização.")
     ws5[f"A{i + 3}"] = "Fontes oficiais"
     ws5[f"A{i + 3}"].font = Font(name=FONTE, size=10, bold=True)

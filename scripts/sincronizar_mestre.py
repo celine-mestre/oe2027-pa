@@ -119,7 +119,7 @@ def main(argv=None) -> int:
             linhas[n] = ultima_linha
             novas.append(n)
     for r in range(2, ultima_linha + 1):
-        for idx in (3, 22, 34, 35):
+        for idx in (3, 22, 39, 40):
             ws.cell(row=r, column=idx).number_format = "DD/MM/YYYY"
         if novas and r > ultima_linha - len(novas):
             for c in ws[r]:

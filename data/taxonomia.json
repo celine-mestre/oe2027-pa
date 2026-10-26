@@ -70,5 +70,18 @@
    "não admitid",
    "não admitida"
   ]
- ]
+ ],
+ "_cores": "Cores convencionais dos partidos, usadas só para identificação visual nos gráficos.",
+ "cores": {
+  "PSD": "#F58220",
+  "CH": "#1F2A5A",
+  "PS": "#E8336D",
+  "IL": "#00A9E0",
+  "L": "#8DC63F",
+  "PCP": "#C8102E",
+  "CDS-PP": "#0070C0",
+  "BE": "#7A1E2B",
+  "PAN": "#0B7A5E",
+  "JPP": "#F2C400"
+ }
 }

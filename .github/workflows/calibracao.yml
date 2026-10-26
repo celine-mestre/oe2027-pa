@@ -4,7 +4,6 @@ name: Calibração e carga do OE 2026
 #   1. lista a pasta XVII dos dados abertos e descarrega o calendário e o texto das propostas de lei;
 #   2. carrega (ou atualiza) a base do OE 2026, processo concluído, a partir dos dados abertos da AR;
 #   3. exporta os Excel e publica o painel.
-# A classificação por área governativa (scripts/classificar.py, scripts/indice_ppl.py) não corre nesta fase.
 
 on:
   workflow_dispatch:
