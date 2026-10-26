@@ -1,5 +1,5 @@
 {
- "momento": "2026-10-26T18:41:01Z",
+ "momento": "2026-10-26T18:44:25Z",
  "ficheiros_xvii": [
   "OE_Tutorial.pdf",
   "OEPropostasAlteracao_Tutorial.pdf",
@@ -19,8 +19,8 @@
    "bytes": 4031729
   },
   "2026": {
-   "url": "https://app.parlamento.pt/OE2026/HTML/OrcamentoEstado2026.html",
-   "bytes": 576
+   "url": "https://app.parlamento.pt/OE2026/HTML/corpo.html",
+   "bytes": 4723422
   }
  }
 }

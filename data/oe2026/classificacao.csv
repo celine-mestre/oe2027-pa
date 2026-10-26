@@ -19,7 +19,7 @@
 15C;Estado e Finanças;tema;alta;tema da AR · Assuntos Constitucionais, Direitos, Liberdades e Garantias
 16C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
 17C;Infraestruturas e Habitação;tema;alta;tema da AR · Infraestruturas, Mobilidade e Habitação
-18C;por classificar;;;
+18C;Estado e Finanças;artigo;alta;artigo 8 · Alterações orçamentais
 19C;Trabalho, Solidariedade e Segurança Social;tema;alta;tema da AR · Assuntos Constitucionais, Direitos, Liberdades e Garantias
 20C;Infraestruturas e Habitação;tema;alta;tema da AR · Infraestruturas, Mobilidade e Habitação
 21C-1;Assuntos Parlamentares;tema;alta;tema da AR · Transparência e Estatuto dos Deputados
@@ -66,17 +66,17 @@
 57C;Trabalho, Solidariedade e Segurança Social;tema;alta;tema da AR · Trabalho, Segurança Social e Inclusão
 58C-1;Trabalho, Solidariedade e Segurança Social;tema;alta;tema da AR · Trabalho, Segurança Social e Inclusão
 58C-2;Trabalho, Solidariedade e Segurança Social;tema;alta;tema da AR · Trabalho, Segurança Social e Inclusão
-59C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-60C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-61C;por classificar;;;
-62C;por classificar;;;
-63C;por classificar;;;
+59C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+60C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+61C;Estado e Finanças;artigo;alta;artigo 8 · Alterações orçamentais
+62C;Estado e Finanças;artigo;alta;artigo 8 · Alterações orçamentais
+63C;Estado e Finanças;artigo;alta;artigo 8 · Alterações orçamentais
 64C;Educação, Ciência e Inovação;palavras;média;objeto · «escola»
 65C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «trabalhadores?\b(?! em funções)»
 66C;por classificar;;;
-67C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-68C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-69C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+67C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+68C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+69C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
 70C;por classificar;;;
 71C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
 72C;Saúde;tema;alta;tema da AR · Saúde
@@ -183,9 +183,9 @@
 167C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
 168C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
 169C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
-170C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+170C;Cultura, Juventude e Desporto;artigo;alta;artigo 73 · Não atualização da contribuição para o audiovisual
 171C;Presidência;palavras;média;objeto · «mutila[çc][ãa]o genital»
-172C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+172C;Estado e Finanças;artigo;alta;artigo 93 · Fundo de Financiamento da
 173C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
 174C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
 175C;Educação, Ciência e Inovação;tema;alta;tema da AR · Educação e Ciência
@@ -556,11 +556,11 @@
 513C;Economia e Coesão Territorial;tema;alta;tema da AR · Comissão de Economia e Coesão Territorial
 514C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 515C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
-516C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+516C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
 517C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
-518C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+518C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
 519C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
-520C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+520C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
 521C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «abono»
 522C;Justiça;palavras;média;objeto · «tribuna»
 523C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
@@ -582,7 +582,7 @@
 539C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
 540C;Estado e Finanças;palavras;média;objeto · «fiscal»
 541C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
-542C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+542C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
 543C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
 544C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
 545C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
@@ -692,7 +692,7 @@
 645C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 646C;Estado e Negócios Estrangeiros;tema;alta;tema da AR · Negócios Estrangeiros e Comunidades Portuguesas
 647C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
-648C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+648C;Economia e Coesão Territorial;artigo;alta;artigo 89 · Obrigações assumidas pelos municípios no
 649C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 650C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 651C;Infraestruturas e Habitação;tema;alta;tema da AR · Infraestruturas, Mobilidade e Habitação
@@ -858,7 +858,7 @@
 801C;Justiça;palavras;média;objeto · «justi[çc]a»
 802C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «aposenta»
 803C;Cultura, Juventude e Desporto;tema;alta;tema da AR · Cultura, Comunicação, Juventude e Desporto
-804C;por classificar;;;
+804C;Trabalho, Solidariedade e Segurança Social;artigo;alta;artigo 28 · Suspensão da passagem às situações de reserva, pré-aposentação ou
 805C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 806C;Administração Interna;palavras;média;objeto · «prote[çc][ãa]o civil»
 807C;Educação, Ciência e Inovação;tema;alta;tema da AR · Educação e Ciência
@@ -876,8 +876,8 @@
 819C;Administração Interna;palavras;média;objeto · «prote[çc][ãa]o civil»
 820C;por classificar;;;
 821C;Saúde;tema;alta;tema da AR · Saúde
-822C-1;por classificar;;;
-822C-2;por classificar;;;
+822C-1;Administração Interna;artigo;alta;artigo 113 · Missões de proteção civil e formação de
+822C-2;Administração Interna;artigo;alta;artigo 113 · Missões de proteção civil e formação de
 823C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
 824C;Educação, Ciência e Inovação;tema;alta;tema da AR · Educação e Ciência
 825C;Trabalho, Solidariedade e Segurança Social;tema;alta;tema da AR · Trabalho, Segurança Social e Inclusão
@@ -1024,15 +1024,15 @@
 960C;Cultura, Juventude e Desporto;tema;alta;tema da AR · Cultura, Comunicação, Juventude e Desporto
 961C;Cultura, Juventude e Desporto;tema;alta;tema da AR · Cultura, Comunicação, Juventude e Desporto
 962C;Infraestruturas e Habitação;tema;alta;tema da AR · Infraestruturas, Mobilidade e Habitação
-963C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-964C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-965C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-966C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-967C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-968C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-969C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-970C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
-971C;por classificar;;;
+963C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+964C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+965C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+966C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+967C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+968C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+969C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+970C;Estado e Finanças;artigo;alta;artigo 7 · Transferências orçamentais
+971C;Estado e Finanças;artigo;alta;artigo 8 · Alterações orçamentais
 972C;Estado e Negócios Estrangeiros;tema;alta;tema da AR · Negócios Estrangeiros e Comunidades Portuguesas
 973C;Presidência;palavras;média;objeto · «direitos humanos»
 974C;Infraestruturas e Habitação;tema;alta;tema da AR · Infraestruturas, Mobilidade e Habitação
@@ -1276,13 +1276,13 @@
 1206C;Ambiente e Energia;tema;alta;tema da AR · Ambiente e Energia
 1207C;Educação, Ciência e Inovação;tema;alta;tema da AR · Educação e Ciência
 1208C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
-1209C-1;por classificar;;;
-1209C-2;por classificar;;;
+1209C-1;Administração Interna;artigo;alta;artigo 113 · Missões de proteção civil e formação de
+1209C-2;Administração Interna;artigo;alta;artigo 113 · Missões de proteção civil e formação de
 1210C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 1211C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 1212C;Agricultura e Mar;tema;alta;tema da AR · Agricultura e Pescas
 1213C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
-1214C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1214C;Economia e Coesão Territorial;artigo;baixa;artigo 105 · Acordos de regularização de dívidas das
 1215C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 1216C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
 1217C;Estado e Finanças;tema;alta;tema da AR · Orçamento, Finanças e Administração Pública
