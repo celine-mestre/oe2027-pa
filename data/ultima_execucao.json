@@ -1,5 +1,5 @@
 {
- "momento": "2026-10-26T02:41:58+0000",
+ "momento": "2026-10-26T02:46:50+0000",
  "comando": "scrape",
  "erros": [
   "pesquisa: 404 Client Error: Not Found for url: https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx"
