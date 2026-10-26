@@ -1,6 +1,6 @@
 name: Calibração e carga do OE 2026
 
-# Manual (ou ao alterar este ficheiro). Faz o que não precisa de correr em cada captura:
+# Manual, ou ao alterar este ficheiro. Faz o que não precisa de correr em cada captura:
 #   1. lista a pasta XVII dos dados abertos e descarrega o calendário e o texto das propostas de lei;
 #   2. carrega (ou atualiza) a base do OE 2026, processo concluído, a partir dos dados abertos da AR;
 #   3. constrói o índice dos artigos de cada PPL e a sugestão de área por artigo (a validar pela DACDP);

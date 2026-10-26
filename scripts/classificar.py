@@ -7,11 +7,12 @@ da classificação, e o painel e o Excel assinalam-na como «classificação SGG
 
 Ordem de aplicação, por PA:
   1. dacdp     classificação da DACDP no ficheiro mestre (data/oe<ano>/analise.csv, coluna «Área Governativa»)
-  2. artigo    tabela artigo → área da edição (data/oe<ano>/classificacao_artigos.csv), quando a PA altera,
+  2. tema      tema atribuído pela AR (comissão parlamentar competente) quando corresponde a uma área
+  3. artigo    tabela artigo → área da edição (data/oe<ano>/classificacao_artigos.csv), quando a PA altera,
                substitui ou elimina um artigo da PPL
-  3. mapa      PA aos mapas: o programa orçamental identifica o ministério (areas_governativas.json → mapas)
-  4. palavras  expressões no tema da AR e na epígrafe do artigo (confiança alta) ou só no objeto (média)
-  5. —         «por classificar»
+  4. mapa      PA aos mapas: o programa orçamental identifica o ministério (areas_governativas.json → mapas)
+  5. palavras  expressões no tema da AR e na epígrafe do artigo (confiança alta) ou só no objeto (média)
+  6. —         «por classificar»
 
   python scripts/classificar.py              # edição ativa → data/oe2027/classificacao.csv
   python scripts/classificar.py --ano 2026
@@ -63,6 +64,11 @@ def classificar(regs: list[dict], tabela: dict[str, dict], dacdp: dict[str, str]
         n = r["n_pa"]
         if dacdp.get(n):
             saida.append({"n_pa": n, "area": dacdp[n], "metodo": "dacdp", "confianca": "validada", "justificacao": "ficheiro mestre da DACDP"})
+            continue
+        temas = [x.strip() for x in (r.get("tema_ar") or "").split(";") if x.strip()]
+        area_tema = next((AREAS["temas_ar"][x] for x in temas if x in AREAS["temas_ar"]), "")
+        if area_tema:
+            saida.append({"n_pa": n, "area": area_tema, "metodo": "tema", "confianca": "alta", "justificacao": f"tema da AR · {temas[0]}"})
             continue
         ch = chave_artigo(r.get("artigo", ""))
         novo = bool(re.search(r"novo", r.get("tipo_ar", ""), re.I))

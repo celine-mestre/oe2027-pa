@@ -32,7 +32,7 @@ CAPITULOS = [
     (r"finan[çc]as (locais|regionais)|autarquias|regi[õo]es aut[óo]nomas|transfer[êe]ncias para", "Economia e Coesão Territorial"),
     (r"trabalhadores|fun[çc][õo]es p[úu]blicas|administra[çc][ãa]o p[úu]blica", "Estado e Finanças"),
     (r"impostos?|fiscal|benef[íi]cios fiscais|tribut", "Estado e Finanças"),
-    (r"disposi[çc][õo]es gerais|disciplina or[çc]amental|opera[çc][õo]es|d[íi]vida|tesouraria|financiamento|finais", "Estado e Finanças"),
+    (r"disposi[çc][õo]es gerais|preliminares|disciplina or[çc]amental|execu[çc][ãa]o or[çc]amental|opera[çc][õo]es|d[íi]vida|tesouraria|financiamento|endividamento|empresas p[úu]blicas|entidades p[úu]blicas reclassificadas|aquisi[çc][ãa]o de servi[çc]os|consigna|car[áa]ter fiscal", "Estado e Finanças"),
     (r"sa[úu]de", "Saúde"),
     (r"educa[çc][ãa]o|ensino|ci[êe]ncia", "Educação, Ciência e Inovação"),
     (r"habita[çc][ãa]o|infraestruturas", "Infraestruturas e Habitação"),
@@ -60,12 +60,15 @@ def texto_de_html(html: str) -> list[str]:
 
 
 def indexar(linhas: list[str]) -> list[dict]:
-    capitulo = seccao = ""
+    titulo = capitulo = seccao = ""
     artigos: list[dict] = []
     i = 0
     while i < len(linhas):
         l = linhas[i]
-        if re.match(r"^CAP[ÍI]TULO\s+[IVXLC]+\b", l, re.I):
+        if re.match(r"^T[ÍI]TULO\s+[IVXLC]+\b", l, re.I):
+            titulo = l + ((" " + linhas[i + 1]) if i + 1 < len(linhas) and not re.match(r"^(CAP[ÍI]TULO|SEC[ÇC][ÃA]O|Artigo)\b", linhas[i + 1], re.I) else "")
+            capitulo = seccao = ""
+        elif re.match(r"^CAP[ÍI]TULO\s+[IVXLC]+\b", l, re.I):
             capitulo = l + ((" " + linhas[i + 1]) if i + 1 < len(linhas) and not re.match(r"^(SEC[ÇC][ÃA]O|Artigo)\b", linhas[i + 1], re.I) else "")
             seccao = ""
         elif re.match(r"^(SEC[ÇC][ÃA]O|SUBSEC[ÇC][ÃA]O)\s+[IVXLC]+\b", l, re.I):
@@ -73,15 +76,18 @@ def indexar(linhas: list[str]) -> list[dict]:
         m = re.match(r"^Artigo\s+(\d{1,3})\.?\s*º(?:\s*-\s*([A-Z]{1,3}))?\s*$", l)
         if m:
             chave = m.group(1) + (f"-{m.group(2)}" if m.group(2) else "")
-            epigrafe = linhas[i + 1] if i + 1 < len(linhas) else ""
+            epigrafe = re.sub(r"^[\s\-–—]+", "", linhas[i + 1]) if i + 1 < len(linhas) else ""
+            cap = (titulo + " · " + capitulo).strip(" ·")
             if not any(a["artigo"] == chave for a in artigos):  # o índice e o texto repetem os artigos
-                artigos.append({"artigo": chave, "epigrafe": epigrafe[:160], "capitulo": capitulo[:120], "seccao": seccao[:120]})
+                artigos.append({"artigo": chave, "epigrafe": epigrafe[:160], "capitulo": cap[:160], "seccao": seccao[:120]})
         i += 1
     return artigos
 
 
 def sugerir(a: dict) -> tuple[str, str, str]:
     """Área pela epígrafe (confiança alta), pela secção (média) ou pelo capítulo (baixa)."""
+    if not a.get("epigrafe") or a["epigrafe"].startswith("["):
+        return "", "", ""
     for campo, conf in (("epigrafe", "alta"), ("seccao", "média")):
         for area, padroes in AREAS["palavras_chave"].items():
             for p in padroes:
