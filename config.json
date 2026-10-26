@@ -43,15 +43,15 @@
   },
   {
    "data": "2026-11-11",
-   "momento": "18h00 · distribuição e análise do 1.º guião de votação (¹)"
+   "momento": "18h00 · distribuição e análise do 1.º guião de votação (*)"
   },
   {
    "data": "2026-11-12",
-   "momento": "13h00 · 2.º guião de votação · 18h00 · 3.º guião de votação (¹)"
+   "momento": "13h00 · 2.º guião de votação · 18h00 · 3.º guião de votação (*)"
   },
   {
    "data": "2026-11-13",
-   "momento": "13h00 · 4.º guião de votação · 16h00 · reunião COFAP M&C (¹)"
+   "momento": "13h00 · 4.º guião de votação · 16h00 · reunião COFAP M&C (*)"
   },
   {
    "data": "2026-11-18",
@@ -78,7 +78,7 @@
    "momento": "Prazo da redação final"
   }
  ],
- "calendario_nota": "(¹) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
+ "calendario_nota": "(*) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
  "http": {
   "user_agent": "SGGov-DSSD-UPE/1.0 (levantamento PA OE2027; contacto institucional)",
   "timeout": 60,

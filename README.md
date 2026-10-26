@@ -16,7 +16,7 @@ A agenda parlamentar (e os respetivos dados abertos) tem as reuniões — audiç
 
 Uma PA que incide sobre vários artigos ou alíneas é publicada pela AR em partes (por exemplo, `120C-1`, `120C-2`), com a mesma hora de entrada e votações separadas. O painel conta propostas pelo número-base e estados e votações por registo.
 
-As propostas de alteração começam a ser registadas a 29 de outubro de 2026, às 9h00 (início do prazo de inserção, segundo o calendário da AR). Até lá, o painel está vazio.
+As propostas de alteração começam a ser registadas a 29 de outubro, às 9h00 (início do prazo de inserção, segundo o calendário da AR). Até lá, o painel está vazio.
 
 ## Como funciona
 

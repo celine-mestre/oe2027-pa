@@ -206,7 +206,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>PA por tema (atribuído pela AR)</h3><div class="barras" id="g-tema"></div><div class="legenda">Uma proposta com vários temas conta em cada um deles.</div></div>
     <div class="card"><h3>PA por data de entrada</h3><div class="barras" id="g-data"></div><div class="legenda">Data de entrada registada pela AR, por proposta.</div></div>
     <div class="card"><h3>PA por tipo</h3><div class="barras" id="g-tipo"></div></div>
-    <div class="card"><h3>Calendário de apreciação</h3><div class="cal" id="cal"></div><div class="legenda" id="cal-fonte"></div></div>
+    <div class="card"><h3>Calendário de apreciação do OE 2027 na AR</h3><div class="cal" id="cal"></div><div class="legenda" id="cal-fonte"></div></div>
     <div class="card"><h3>PA por estado</h3><div class="barras" id="g-estado"></div></div>
   </div>
 </section>
@@ -264,6 +264,8 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmtN = n => Number(n).toLocaleString('pt-PT');
 const fmtData = d => d ? d.slice(0,10).split('-').reverse().join('-') : '';
+const MESES = ['jan.','fev.','mar.','abr.','mai.','jun.','jul.','ago.','set.','out.','nov.','dez.'];
+const diaMes = d => { const [a,m,dd] = d.slice(0,10).split('-'); return `${+dd} ${MESES[+m-1]}`; };
 function expandir(){const d=document;try{if(!d.fullscreenElement){d.documentElement.requestFullscreen&&d.documentElement.requestFullscreen()}else{d.exitFullscreen&&d.exitFullscreen()}}catch(e){}}
 function alternarTema(){const r=document.documentElement;const atual=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');const novo=atual==='dark'?'light':'dark';r.setAttribute('data-theme',novo);try{localStorage.setItem('tema',novo)}catch(e){}}
 try{const t=localStorage.getItem('tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
@@ -290,7 +292,7 @@ const porEstado = Object.fromEntries(cont(PA, r=>[r.estado||'—']));
 const nBase = new Set(PA.map(r=>r.pa_base||r.n_pa)).size;
 if (!PA.length) {
   const av = $('#aviso-vazio'); av.hidden = false;
-  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">As propostas de alteração serão registadas a partir de 29 de outubro de 2026, às 9h00, data de início do prazo para a sua inserção, segundo o calendário de apreciação da AR. O painel é atualizado automaticamente a partir dessa data.</span>`;
+  av.innerHTML = `<b>Ainda não há propostas de alteração publicadas pela AR para a PPL 110/XVII/2.ª.</b><br><span class="mini">As propostas de alteração serão registadas a partir de 29 de outubro, às 9h00, data de início do prazo para a sua inserção, segundo o calendário de apreciação da AR. O painel é atualizado automaticamente a partir dessa data.</span>`;
 }
 $('#kpis').innerHTML = [
   ['Propostas de alteração', nBase, ''],
@@ -307,7 +309,7 @@ barras($('#g-data'), cont(base1, r=>[(r.data_entrada||'').slice(0,10)||'—']).s
 barras($('#g-tipo'), cont(PA, r=>[r.tipo_ar||'—']));
 barras($('#g-estado'), cont(PA, r=>[r.estado||'—']));
 const hoje = new Date().toISOString().slice(0,10);
-$('#cal').innerHTML = D.calendario.map(c => { const cls = c.data===hoje?'hoje':(c.data<hoje?'passado':''); return `<div class="d ${cls}">${fmtData(c.data)}</div><div class="${cls}">${esc(c.momento)}</div>`; }).join('');
+$('#cal').innerHTML = D.calendario.map(c => { const cls = c.data===hoje?'hoje':(c.data<hoje?'passado':''); return `<div class="d ${cls}">${diaMes(c.data)}</div><div class="${cls}">${esc(c.momento)}</div>`; }).join('');
 $('#cal-fonte').innerHTML = (D.calendario_nota ? esc(D.calendario_nota)+'<br>' : '') + (D.ppl.url_calendario ? `Fonte: <a href="${esc(D.ppl.url_calendario)}" target="_blank" rel="noopener">calendário de apreciação do OE 2027 (Assembleia da República)</a>` : '');
 
 // ----- tabela de PA
