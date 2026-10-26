@@ -1,0 +1,35 @@
+{
+ "momento": "2026-10-26T18:41:06Z",
+ "comando": "opendata",
+ "ano": 2026,
+ "erros": [],
+ "ficheiro_ar": "OEPropostasAlteracao2026Or_json.txt",
+ "url": "https://app.parlamento.pt/webutils/docs/doc.txt?path=l%2bpevIVbB4OJ%2fPkUQUcEQme4o0KQjMVv3NjxeeU1xW8hbDU8rgL3%2f%2fSNO0FGdm12STy2jJU0i9h5MP%2f9vqN55sNVr92vMnD8uyQiIaZ3X0by5aG3ntz%2fOgV9N61zpVPcMfv4JntLaYPXFBQoyRXUdz2kyIIjFujhUMyr9QdQrjSq58rMatZYYZL2OxTRRsZ8HkMwXHviYuESviI%2fBFU6Q25%2fUED6zm8q47On0Gev5%2fTDqvjQ2XSBbmgl0qFQ3BOC1MYdT4pfpSOJoAQq5x3BshBM%2f3SD8gVipUeqi6wsv2izB%2f3v4hqxxn%2b7AtauDaCqpKosnDlCzX8V%2fIymUgRoHFiDIpU%2f6PSWPM5pjadyHcWdY5EbRXcGfrJeUU5mAq%2fx6x74YY9j0prDPo%2bZ4xyhE9EBLYEeLmFYjNf44QR6OOQ%3d&fich=OEPropostasAlteracao2026Or_json.txt&Inline=true",
+ "ultima_modificacao_ar": "",
+ "capturados": 2193,
+ "eventos": 2193,
+ "resumo": {
+  "registos": 2193,
+  "pa": 2076,
+  "por_proponente": {
+   "CH": 616,
+   "PCP": 532,
+   "L": 335,
+   "PAN": 184,
+   "BE": 183,
+   "PS": 123,
+   "IL": 113,
+   "PSD": 57,
+   "JPP": 50,
+   "CDS-PP": 41
+  },
+  "por_estado": {
+   "rejeitada": 1978,
+   "aprovada": 150,
+   "retirada": 37,
+   "aprovada parcialmente": 20,
+   "não admitida": 7,
+   "prejudicada": 1
+  }
+ }
+}

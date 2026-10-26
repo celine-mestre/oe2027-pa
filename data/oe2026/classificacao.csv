@@ -1,1 +1,2194 @@
 ﻿n_pa;area;metodo;confianca;justificacao
+1C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+3C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+4C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+5C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+6C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+7C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+8C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+8C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+9C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+10C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+11C-1;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+11C-2;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+12C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+13C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+14C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+15C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+16C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+17C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+18C;por classificar;;;
+19C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+20C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+21C-1;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+21C-2;por classificar;;;
+22C;por classificar;;;
+23C;por classificar;;;
+24C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+25C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+26C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+27C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+28C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+29C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+30C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+31C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+32C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+33C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+34C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+35C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+36C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+37C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+38C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+39C-1;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+39C-2;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+40C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+40C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+40C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+41C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+42C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+43C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+44C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+45C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+46C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+47C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+48C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+49C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+50C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+51C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+52C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+53C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+54C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+55C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+55C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+56C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+57C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+58C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+58C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+59C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+60C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+61C;por classificar;;;
+62C;por classificar;;;
+63C;por classificar;;;
+64C;Educação, Ciência e Inovação;palavras;média;objeto · «escola»
+65C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «trabalhadores?\b(?! em funções)»
+66C;por classificar;;;
+67C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+68C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+69C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+70C;por classificar;;;
+71C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+72C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+73C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+74C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+75C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+76C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+77C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+78C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+79C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+79C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+80C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+81C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+82C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+83C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+83C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+83C-3;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+84C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+85C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+86C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+87C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+88C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+89C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+90C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+91C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+92C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+93C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+94C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+95C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+96C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+97C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+98C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+99C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+100C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+101C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+102C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+103C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+104C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+105C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+106C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+107C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+108C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+109C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+110C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+111C;por classificar;;;
+112C;Administração Interna;palavras;média;objeto · «fronteiras»
+113C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+114C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+115C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+116C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+117C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+118C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+119C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+120C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+121C;por classificar;;;
+122C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+123C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+124C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+125C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+126C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «trabalhadores?\b(?! em funções)»
+127C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+127C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+128C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+129C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+130C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+131C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+132C;Administração Interna;palavras;média;objeto · «bombeiros»
+133C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+134C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+135C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+135C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+135C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+136C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+137C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+138C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+139C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+140C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+141C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+142C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+143C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+144C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+145C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+146C;Justiça;palavras;média;objeto · «advogad»
+147C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+148C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+149C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+150C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+151C;por classificar;;;
+152C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+153C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+154C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+155C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+156C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+157C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+158C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+159C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+160C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+161C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+162C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+163C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+164C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+165C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+166C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+167C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+168C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+169C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+170C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+171C;por classificar;;;
+172C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+173C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+174C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+175C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+176C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+177C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+178C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+179C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+180C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+181C;por classificar;;;
+182C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+183C;Justiça;palavras;média;objeto · «magistrad»
+184C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+185C;por classificar;;;
+186C;Defesa Nacional;palavras;média;objeto · «militar»
+187C;Justiça;palavras;média;objeto · «tribuna»
+188C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+189C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+190C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+191C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+192C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+193C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+194C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+195C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+196C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+197C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+198C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+199C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+200C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+201C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+202C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+203C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+204C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+205C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+206C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+207C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+208C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+209C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+210C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+211C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+212C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+213C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+214C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+215C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+216C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+217C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+218C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+219C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+220C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+221C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+222C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+223C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+224C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+225C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+225C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+226C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+227C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+228C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+228C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+228C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+229C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+229C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+229C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+229C-4;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+230C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+231C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+231C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+232C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+232C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+233C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+233C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+234C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+234C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+235C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+236C;por classificar;;;
+237C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+237C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+237C-3;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+237C-4;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+238C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+239C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+240C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+241C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+242C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+243C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+244C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+244C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+245C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+246C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+247C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+248C;por classificar;;;
+249C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+250C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+251C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+252C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+253C;Estado e Negócios Estrangeiros;palavras;média;objeto · «emigra»
+254C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+254C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+255C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+256C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+256C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+256C-3;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+256C-4;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+257C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+258C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+259C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+260C;Justiça;palavras;média;objeto · «tribuna»
+261C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+262C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+263C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+264C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+265C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+266C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+267C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+268C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+269C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+270C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+271C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+272C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+273C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+274C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+275C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+275C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+276C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+277C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+278C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+279C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+280C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+280C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+281C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+282C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+283C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+284C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+285C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+286C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+287C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+287C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+288C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+289C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+290C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+291C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+292C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+293C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+294C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+295C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+296C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+297C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+298C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+299C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+300C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+301C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+302C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+303C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+304C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+305C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+306C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+307C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+308C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+309C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+310C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+311C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+312C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+313C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+314C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+315C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+316C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+317C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+318C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+319C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+320C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+321C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+322C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+323C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+324C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+325C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+326C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+327C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+328C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+329C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+330C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+331C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+332C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+333C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+334C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+335C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+336C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+337C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «assuntos europeus»
+338C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+339C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+340C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+341C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+342C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+343C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+344C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+345C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+346C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+347C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+348C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+349C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+350C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+351C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+352C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+353C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+354C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+355C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+356C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+357C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+358C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+359C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+360C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+361C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+362C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+363C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+364C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+365C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+366C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+367C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+368C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+369C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+370C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+371C;por classificar;;;
+372C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+373C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+374C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+375C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+376C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+377C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+378C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+379C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+380C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+381C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+382C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+383C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+384C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+385C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+386C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+387C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+388C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+389C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+390C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+391C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+392C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+393C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+394C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+394C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+394C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+395C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+395C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+396C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+397C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+398C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+399C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+400C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+401C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+402C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+403C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+404C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+405C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+406C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+407C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+408C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+409C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+410C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+411C-1;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+411C-2;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+412C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+413C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+414C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+415C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+416C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+417C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+418C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+419C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+420C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+421C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+422C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+423C;Justiça;palavras;média;objeto · «tribuna»
+424C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+425C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+426C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+427C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+428C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+429C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+430C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+431C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+432C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+433C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+434C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+435C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+436C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+437C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+438C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+439C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+440C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+441C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+441C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+442C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+442C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+443C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+444C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+445C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+446C;por classificar;;;
+447C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+448C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+449C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+450C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+451C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+452C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+453C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+454C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+455C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+456C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+457C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+458C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+459C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+460C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+461C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+462C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+463C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+464C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+465C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+466C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+467C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+468C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+469C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+470C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+471C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+472C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+473C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+474C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+475C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+476C;por classificar;;;
+477C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+478C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+479C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+480C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+481C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+482C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+483C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+484C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+485C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+486C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+487C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+488C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+489C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+490C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+491C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+492C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+493C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+494C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+495C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+496C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+497C;Administração Interna;palavras;média;objeto · «bombeiros»
+498C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+499C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+500C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+501C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+502C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+503C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+504C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+505C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+506C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+507C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+508C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+509C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+510C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+511C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+512C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+513C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+514C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+515C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+516C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+517C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+518C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+519C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+520C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+521C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «abono»
+522C;Justiça;palavras;média;objeto · «tribuna»
+523C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+524C;Justiça;palavras;média;objeto · «reinser[çc][ãa]o»
+525C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+526C;Saúde;palavras;média;objeto · «enfermeir»
+527C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+528C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+529C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+530C;por classificar;;;
+531C;por classificar;;;
+532C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+533C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+534C;por classificar;;;
+535C;Justiça;palavras;média;objeto · «registos? e notariado»
+536C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+537C;Justiça;palavras;média;objeto · «tribuna»
+538C;por classificar;;;
+539C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+540C;Estado e Finanças;palavras;média;objeto · «fiscal»
+541C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+542C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+543C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+544C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+545C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+546C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+547C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+548C;por classificar;;;
+549C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+550C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+551C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+552C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+553C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+554C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+555C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+556C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+557C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+558C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+559C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+560C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+561C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+562C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+563C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+564C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+565C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+566C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+567C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+568C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+569C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+570C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+571C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+572C-1;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+572C-2;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+573C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+574C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+575C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+576C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+577C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+578C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+579C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+580C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+581C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+582C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+583C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+584C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+585C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+586C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+587C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+588C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+589C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+590C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+591C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+592C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+593C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+594C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+595C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+596C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+597C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+598C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+599C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+600C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+601C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+602C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+603C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+604C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+605C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+606C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+607C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+608C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+609C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+610C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+611C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+612C;por classificar;;;
+613C;por classificar;;;
+614C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+615C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+616C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+617C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+618C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+619C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+620C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+621C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+622C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+623C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+624C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+625C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+626C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+627C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+628C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+629C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+630C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+631C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+632C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+633C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+634C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+635C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+635C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+636C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+637C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+638C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+639C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+639C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+640C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+641C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+642C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+643C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+644C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+644C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+645C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+646C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+647C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+648C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+649C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+650C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+651C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+652C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+652C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+653C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+654C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+655C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+655C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+655C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+656C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+656C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+657C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+658C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+659C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+660C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+661C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+662C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+662C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+663C-1;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+663C-2;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+664C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+665C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+666C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+667C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+668C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+669C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+670C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+671C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+671C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+672C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+673C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+674C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+675C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+676C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+677C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+678C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+679C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+680C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+681C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+682C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+683C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+684C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+685C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+686C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+687C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+688C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+689C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+690C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+691C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+692C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+693C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+694C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+695C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+696C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+697C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+698C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+699C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+700C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+701C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+702C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+703C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+704C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+705C;Justiça;palavras;média;objeto · «justi[çc]a»
+706C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+707C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+708C;Justiça;palavras;média;objeto · «tribuna»
+709C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+710C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+711C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+712C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+713C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+714C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+715C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+716C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+717C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+718C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+719C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+720C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+721C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+722C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+723C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+724C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+725C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+726C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+727C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+728C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+729C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+730C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+731C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+732C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+733C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+734C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+735C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+736C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+737C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+738C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+739C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+740C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+741C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+742C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+743C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+744C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+745C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+746C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+747C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+748C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+749C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+750C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+751C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+752C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+753C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+754C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+755C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+756C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+757C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+758C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+758C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+759C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+760C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+760C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+761C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+762C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+763C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+764C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+765C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+766C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+767C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+768C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+769C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+770C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+771C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+772C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+773C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+774C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+775C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+776C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+777C;Presidência;palavras;média;objeto · «igualdade»
+778C;por classificar;;;
+779C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+780C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+781C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+782C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «pens[õo]es?\b»
+783C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+784C;Saúde;palavras;média;objeto · «sa[úu]de»
+785C;por classificar;;;
+786C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+787C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+788C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+789C;Saúde;palavras;média;objeto · «sa[úu]de»
+790C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+791C;por classificar;;;
+792C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «trabalhadores?\b(?! em funções)»
+793C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+794C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+795C;por classificar;;;
+796C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+797C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+798C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+799C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+800C-1;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+800C-2;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+801C;Justiça;palavras;média;objeto · «justi[çc]a»
+802C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «aposenta»
+803C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+804C;por classificar;;;
+805C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+806C;Administração Interna;palavras;média;objeto · «prote[çc][ãa]o civil»
+807C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+808C;por classificar;;;
+809C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+810C;por classificar;;;
+811C;por classificar;;;
+812C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+813C;Saúde;palavras;média;objeto · «INEM»
+814C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+815C;Estado e Finanças;palavras;média;objeto · «fundo de»
+816C;Administração Interna;palavras;média;objeto · «bombeiros»
+817C;Administração Interna;palavras;média;objeto · «bombeiros»
+818C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+819C;Administração Interna;palavras;média;objeto · «prote[çc][ãa]o civil»
+820C;por classificar;;;
+821C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+822C-1;por classificar;;;
+822C-2;por classificar;;;
+823C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+824C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+825C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+826C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+827C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+828C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+829C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+830C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+831C;Presidência;palavras;média;objeto · «igualdade»
+832C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+833C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+834C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+835C;Educação, Ciência e Inovação;palavras;média;objeto · «ci[êe]ncia»
+836C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+837C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+838C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+839C;Cultura, Juventude e Desporto;palavras;média;objeto · «cultura»
+840C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+841C;Justiça;palavras;média;objeto · «justi[çc]a»
+842C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+843C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+844C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+845C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+846C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+847C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+848C;Justiça;palavras;média;objeto · «justi[çc]a»
+849C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+850C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+851C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+852C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+853C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+854C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+855C;Justiça;palavras;média;objeto · «justi[çc]a»
+856C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+857C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+858C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+859C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+860C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+861C;Justiça;palavras;média;objeto · «tribuna»
+862C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+863C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+864C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+865C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+866C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+867C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+868C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+869C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+870C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+871C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+872C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+873C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+874C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+875C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+876C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+877C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+878C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+879C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+880C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+881C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+882C;Administração Interna;palavras;média;objeto · «bombeiros»
+883C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+884C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+885C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+886C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+887C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+888C;por classificar;;;
+889C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+890C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+891C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+892C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+893C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+894C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+895C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+896C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+897C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+898C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+899C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+900C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+901C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+902C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+903C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+904C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+904C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+905C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+906C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+907C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+907C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+908C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+909C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+910C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+911C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+912C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+913C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+914C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+915C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+916C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+917C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+918C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+919C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+920C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+921C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+921C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+922C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+923C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+924C-1;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+924C-2;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+925C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+926C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+927C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+928C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+929C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+930C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+931C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+932C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+932C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+932C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+933C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+934C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+935C;Educação, Ciência e Inovação;palavras;média;objeto · «ensino»
+936C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+937C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+938C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+939C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+940C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+941C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+942C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+943C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+944C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+945C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+946C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+947C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+948C;Presidência;palavras;média;objeto · «viol[êe]ncia dom[ée]stica»
+949C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+950C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+951C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+952C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+953C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+954C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+955C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+956C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+957C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+958C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+959C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+960C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+961C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+962C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+963C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+964C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+965C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+966C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+967C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+968C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+969C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+970C;Estado e Finanças;palavras;média;objeto · «transfer[êe]ncias? or[çc]amentais»
+971C;por classificar;;;
+972C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+973C;por classificar;;;
+974C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+975C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+976C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+977C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+978C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+979C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+980C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+981C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+982C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+983C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+984C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+985C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+986C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+986C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+987C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+988C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+989C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+990C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+991C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+992C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+993C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+994C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+995C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+996C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+997C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+998C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+999C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1000C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1001C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1002C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1003C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1004C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1005C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1006C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1007C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1008C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1009C;Administração Interna;palavras;média;objeto · «bombeiros»
+1010C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1011C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1012C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1013C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1014C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1015C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1016C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1017C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1018C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1019C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1020C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1021C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1022C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1023C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1024C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1025C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1026C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1027C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1028C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1029C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1030C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1031C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1032C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1033C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1034C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1035C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1036C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1037C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1038C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1039C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1040C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1041C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1042C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1043C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1044C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1045C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1046C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1047C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1048C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1049C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1049C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1050C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1051C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1052C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1053C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1054C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1055C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1056C;por classificar;;;
+1057C-1;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1057C-2;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1058C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1059C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1060C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1061C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1062C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1063C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1064C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1065C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1066C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1067C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1068C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1069C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1070C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1071C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+1072C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1073C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1074C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1075C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1076C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+1077C;Administração Interna;palavras;média;objeto · «\bGNR\b»
+1078C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1079C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1080C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1081C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1082C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1083C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1084C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1085C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1086C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1087C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1088C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1089C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1090C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1091C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1092C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1093C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1094C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1095C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1096C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1097C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1098C;por classificar;;;
+1099C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1100C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+1101C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1102C;Justiça;palavras;média;objeto · «registos? e notariado»
+1103C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1104C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1105C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1106C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1107C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1108C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1109C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1110C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1111C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1112C;Administração Interna;palavras;média;objeto · «bombeiros»
+1113C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1114C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1115C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1116C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1117C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1118C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1119C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1120C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1121C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1122C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1123C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1124C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1125C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+1126C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+1127C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1128C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1129C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1130C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1131C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1132C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1133C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1134C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1135C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1136C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1137C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1138C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1139C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1140C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1141C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1142C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1143C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1144C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1145C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1146C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1147C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1148C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1149C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1150C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1151C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1152C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1153C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1154C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1155C;Justiça;palavras;média;objeto · «tribuna»
+1156C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1157C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1158C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1159C;por classificar;;;
+1160C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1161C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1162C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1163C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1164C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1165C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1166C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1167C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1168C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1169C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1170C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1171C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1172C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1173C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1174C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1175C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1176C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1177C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1178C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1179C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1180C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1181C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1182C;por classificar;;;
+1183C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1184C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1185C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1186C;Ambiente e Energia;palavras;média;objeto · «florest»
+1187C-1;por classificar;;;
+1187C-2;por classificar;;;
+1187C-3;por classificar;;;
+1187C-4;por classificar;;;
+1188C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1189C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1190C;por classificar;;;
+1191C;por classificar;;;
+1192C;por classificar;;;
+1193C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1194C;por classificar;;;
+1195C;Justiça;palavras;média;objeto · «estabelecimentos? prisiona»
+1196C;por classificar;;;
+1197C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1198C;por classificar;;;
+1199C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1200C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1201C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1202C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1203C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1204C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1205C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1206C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1207C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1208C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1209C-1;por classificar;;;
+1209C-2;por classificar;;;
+1210C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1211C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1212C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1213C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1214C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1215C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1216C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1217C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1218C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1219C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1220C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1221C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1222C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1223C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1224C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1225C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1226C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1227C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1228C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1229C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1230C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1231C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1232C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1233C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1234C-1;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1234C-2;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1234C-3;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1235C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1236C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1237C-1;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1237C-2;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1238C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1239C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1240C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1241C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1242C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1242C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1243C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1244C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1245C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1246C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1247C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1248C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1249C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1250C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1251C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1252C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1253C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1254C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1255C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1256C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1257C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1258C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1259C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1260C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1261C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1262C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1263C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1264C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1265C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1266C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1267C;por classificar;;;
+1268C;Administração Interna;palavras;média;objeto · «bombeiros»
+1269C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1270C;por classificar;;;
+1271C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1272C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1273C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1274C;por classificar;;;
+1275C;por classificar;;;
+1276C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1277C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1278C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1279C;por classificar;;;
+1280C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1281C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1282C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1283C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1284C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1285C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1286C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1287C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1288C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1289C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1290C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1291C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1292C;por classificar;;;
+1293C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1294C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1295C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1296C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1297C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1298C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1299C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1300C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1301C;Infraestruturas e Habitação;palavras;média;objeto · «habita[çc][ãa]o»
+1302C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1303C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1304C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1305C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1306C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1307C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1308C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1309C;Administração Interna;palavras;média;objeto · «pol[íi]cia»
+1310C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1311C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1312C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1313C;por classificar;;;
+1314C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1315C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1316C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «pobreza»
+1317C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1318C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1319C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1320C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1321C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1322C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1323C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1324C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1325C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1326C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1327C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1328C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1329C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1330C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1331C;por classificar;;;
+1332C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1333C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1334C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1335C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1336C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1337C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1338C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1339C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1340C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1341C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1342C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1343C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1344C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1345C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1346C;por classificar;;;
+1347C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1348C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1349C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1350C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1351C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1352C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1352C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1352C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1353C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1354C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1355C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1356C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1357C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1358C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1359C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1360C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1361C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1362C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1363C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1364C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1365C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1366C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1367C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1368C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1369C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1370C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1371C-1;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1371C-2;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1371C-3;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1372C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1373C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1373C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1374C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1375C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1376C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1377C;Justiça;palavras;média;objeto · «ordem dos»
+1378C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1379C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1379C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1379C-3;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1380C;Justiça;palavras;média;objeto · «advogad»
+1381C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1382C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1383C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1384C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1385C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1386C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1387C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1388C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1389C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1389C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1390C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1391C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1392C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1393C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1394C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1395C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1396C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1397C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1397C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1398C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1399C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1400C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1401C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1402C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1403C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1404C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1405C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1405C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1406C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1407C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1408C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1409C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1410C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1411C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1412C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1413C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1414C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1415C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1416C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1417C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1418C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1418C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1419C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1420C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1421C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1422C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1423C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1424C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1425C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1426C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1427C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1428C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1428C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1429C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1430C;por classificar;;;
+1431C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1432C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1433C-1;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1433C-2;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1434C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1434C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1435C;Presidência;palavras;média;objeto · «viol[êe]ncia dom[ée]stica»
+1436C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1437C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1438C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1439C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1440C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1441C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1442C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1443C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1444C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1445C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1446C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1447C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1448C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1448C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1449C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1450C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1451C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1452C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1453C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1453C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1454C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1455C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1456C-1;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1456C-2;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1457C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1458C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1459C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1460C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1461C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1462C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1463C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1464C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1465C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1466C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1467C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1468C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1469C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1470C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1471C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1472C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1473C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1474C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1475C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1476C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1477C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1478C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1479C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1480C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1481C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1482C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1483C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1484C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1485C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1486C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1487C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1488C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1489C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1490C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1491C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1492C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1493C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1494C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1495C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1496C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1497C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1498C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1499C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1500C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1501C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1502C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1503C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1504C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1505C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1506C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1507C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1508C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1509C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1510C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1511C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1511C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1512C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «trabalhadores?\b(?! em funções)»
+1513C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1514C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1515C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1516C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1517C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1518C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1519C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1520C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1521C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1522C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1523C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1524C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1525C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1526C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1527C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1528C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1529C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1530C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1531C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1532C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1533C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1534C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1535C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1536C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1537C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1538C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1539C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1540C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1541C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1542C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1543C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1544C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1545C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1546C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1547C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1548C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1549C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1550C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1551C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1552C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1553C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1554C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1555C;por classificar;;;
+1556C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1557C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1558C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1559C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1560C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1561C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1562C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1563C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1564C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1565C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1566C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1567C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1568C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1569C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1570C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1571C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1572C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1573C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1574C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1575C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1576C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1577C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1578C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1579C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1580C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1581C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1582C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1583C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1584C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1585C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1586C;Administração Interna;palavras;média;objeto · «bombeiros»
+1587C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1588C-1;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1588C-2;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1589C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1590C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1591C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1592C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1593C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1594C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1595C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1596C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1597C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1598C;Assuntos Parlamentares;palavras;média;objeto · «partidos pol[íi]ticos»
+1599C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1600C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1600C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1601C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1602C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «aposenta»
+1603C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1604C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1605C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1605C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1606C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1607C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1608C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1609C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1610C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1611C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1612C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1613C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1614C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1615C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1616C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1617C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1618C;Defesa Nacional;palavras;alta;tema/epígrafe · «defesa nacional»
+1619C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1619C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1620C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1621C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1622C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1623C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1624C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1625C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1626C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1627C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1628C;Educação, Ciência e Inovação;palavras;média;objeto · «escola»
+1629C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1630C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1631C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1632C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1633C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1634C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1635C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1636C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1637C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1638C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1639C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1640C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1641C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1642C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1643C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1644C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1645C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1646C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1647C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1648C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1648C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1649C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1650C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1650C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1651C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1652C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1653C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1654C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1655C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1656C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1657C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1658C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1659C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1660C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1661C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1662C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1663C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1664C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1665C;por classificar;;;
+1666C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1667C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1668C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1669C;Trabalho, Solidariedade e Segurança Social;palavras;média;objeto · «solidariedade»
+1670C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1671C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1672C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1673C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1674C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1675C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1676C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1677C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1678C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1679C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1680C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1681C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1682C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1683C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1684C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1685C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+1686C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1687C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1688C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1689C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1690C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1691C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1692C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1693C;por classificar;;;
+1694C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1695C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1696C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1697C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1698C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1699C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1700C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1701C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1702C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1703C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1704C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1705C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1706C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1707C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1708C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1709C-1;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1709C-2;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1710C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1711C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1712C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1713C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1714C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1715C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1716C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1717C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1718C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1719C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1720C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1721C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1722C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1723C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1724C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1725C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1726C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1727C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1728C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1729C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1730C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1731C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1732C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1733C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1734C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1735C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1736C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1737C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1738C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1739C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1740C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1741C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1742C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1743C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1744C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1745C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1746C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1747C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1748C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1749C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1750C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1751C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1752C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1753C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1754C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1755C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1756C;Administração Interna;palavras;média;objeto · «bombeiros»
+1757C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1758C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1759C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1760C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1761C-1;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1761C-2;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1762C;Administração Interna;palavras;média;objeto · «for[çc]as de seguran[çc]a»
+1763C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1764C;por classificar;;;
+1765C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1766C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1767C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1768C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1769C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1770C;por classificar;;;
+1771C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1772C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1773C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1774C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1775C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1776C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1777C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1778C-1;por classificar;;;
+1778C-2;por classificar;;;
+1779C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1780C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1781C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1782C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1783C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1784C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1785C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1786C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1787C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1788C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1789C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1790C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1791C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1792C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1793C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1794C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1795C-1;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1795C-2;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1796C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1797C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1798C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1799C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1800C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1801C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1802C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1803C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1804C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1805C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1806C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1807C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1808C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1809C;por classificar;;;
+1810C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1811C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1812C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1813C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1814C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1814C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1815C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1816C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1817C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1818C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1819C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1820C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1821C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1822C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1823C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1824C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1825C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1826C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1827C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1828C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1829C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1830C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1831C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1832C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1833C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1834C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1835C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1836C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1837C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1838C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1839C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1840C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1841C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1842C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1843C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1844C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1844C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1845C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1846C;Economia e Coesão Territorial;palavras;alta;tema/epígrafe · «economia»
+1847C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1848C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1849C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1850C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1851C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1852C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1853C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1854C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1855C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1856C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1857C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1858C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1858C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1859C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1860C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1861C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1862C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1863C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1864C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1865C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1866C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1867C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1868C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1869C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1870C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1871C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1872C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1873C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1874C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1875C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1876C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1877C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+1878C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1879C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1880C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1881C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1882C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1883C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1884C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1884C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1885C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1886C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1887C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1888C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1889C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1890C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1891C;por classificar;;;
+1892C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1893C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1894C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1895C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1896C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1896C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1897C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1898C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1899C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1900C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1901C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1902C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1903C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1904C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1905C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1906C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1907C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1908C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1909C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1909C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1910C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1911C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1912C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1913C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1914C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1915C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1915C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1916C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1917C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1918C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1919C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1920C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1920C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1921C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1921C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1922C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1923C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1924C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1925C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1926C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1927C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1928C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1929C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1930C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1931C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1932C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1933C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1934C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1935C;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1936C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1937C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1938C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1939C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1940C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1941C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1942C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1943C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1944C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1945C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1946C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+1947C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1948C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1949C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1950C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1951C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1952C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1953C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1954C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1955C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1956C;Administração Interna;palavras;média;objeto · «\bPSP\b»
+1957C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1958C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1959C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1960C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1961C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1962C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1963C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1964C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1965C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1966C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+1967C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1968C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1969C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1970C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1971C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1972C;por classificar;;;
+1973C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1974C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1975C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1976C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+1977C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1978C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1979C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1980C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1981C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+1982C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+1983C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1984C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1985C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1986C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1987C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1988C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1989C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1990C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1991C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1992C-1;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1992C-2;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1992C-3;Agricultura e Mar;palavras;alta;tema/epígrafe · «agricultura»
+1993C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1994C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+1995C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1996C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1997C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+1998C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1998C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+1999C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2000C;Ambiente e Energia;palavras;média;objeto · «incêndio»
+2001C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+2002C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2003C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2004C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+2005C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2006C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2007C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+2008C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «reform(a|ados)\b»
+2009C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2010C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2011C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2012C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2013C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2014C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2015C-1;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2015C-2;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2016C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2017C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2018C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2019C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2020C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2021C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2022C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2023C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2024C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2025C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2026C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2027C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2028C;Educação, Ciência e Inovação;palavras;alta;tema/epígrafe · «educa[çc][ãa]o»
+2029C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2030C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2031C-1;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2031C-2;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2032C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2033C;por classificar;;;
+2034C;Administração Interna;palavras;média;objeto · «\bAIMA\b»
+2035C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2036C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2037C;por classificar;;;
+2038C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2039C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2040C;por classificar;;;
+2041C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2042C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2043C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2044C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2045C;por classificar;;;
+2046C-1;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2046C-2;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2047C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2048C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2049C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2050C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2051C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+2052C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2053C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2054C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2055C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2056C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2057C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+2058C;Saúde;palavras;alta;tema/epígrafe · «sa[úu]de»
+2059C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2060C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2061C;Estado e Negócios Estrangeiros;palavras;alta;tema/epígrafe · «neg[óo]cios estrangeiros»
+2062C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2063C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2064C;Ambiente e Energia;palavras;alta;tema/epígrafe · «ambiente»
+2065C;Administração Interna;palavras;média;objeto · «\bAIMA\b»
+2066C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2067C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2068C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2069C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+2070C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2071C;Cultura, Juventude e Desporto;palavras;alta;tema/epígrafe · «cultura»
+2072C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
+2073C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2074C;Trabalho, Solidariedade e Segurança Social;palavras;alta;tema/epígrafe · «seguran[çc]a social»
+2075C;Infraestruturas e Habitação;palavras;alta;tema/epígrafe · «habita[çc][ãa]o»
+2076C;Estado e Finanças;palavras;alta;tema/epígrafe · «administra[çc][ãa]o p[úu]blica»
