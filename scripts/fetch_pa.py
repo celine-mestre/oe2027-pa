@@ -12,8 +12,8 @@ Reserva — página de pesquisa de PA da PPL e páginas de detalhe de cada PA.
 
 Comandos:
   python scripts/fetch_pa.py opendata              # localiza o ficheiro do ano em config.json e extrai
-  python scripts/fetch_pa.py scrape                # reserva (portal): lê todas as PA da página de pesquisa
-  python scripts/fetch_pa.py verificar             # compara com a página de pesquisa e recupera as PA em falta
+  python scripts/fetch_pa.py scrape                # lê todas as PA da página de pesquisa (lento: cerca de 1 minuto por página)
+  python scripts/fetch_pa.py verificar             # reserva incremental pelo portal: PA novas pelo identificador e releitura das existentes
   python scripts/fetch_pa.py documentos            # documentos de votação na página da COFAP (guiões, resultados, textos)
   python scripts/fetch_pa.py normalize FICHEIRO    # extrai a partir de um JSON local (.json ou .json.gz)
   python scripts/fetch_pa.py listar                # lista os ficheiros da pasta XVII dos dados abertos
@@ -302,7 +302,7 @@ def ler_detalhe(bid: str, momento: str, s=None) -> dict:
     rotulos = ["Número", "Data", "Apresentada", "Incide", "Objecto", "Objeto", "Tema", "Tipo", "Número Artigo Novo", "Estado"]
 
     def campo(r):
-        m = re.search(rf"\b{r}:\s*(.*?)(?=\s(?:{'|'.join(rotulos)}|Proponentes|Deputado|Grupo Parlamentar|Iniciativas|Votaç)\b:?|$)", t)
+        m = re.search(rf"\b{r}:\s*(.*?)(?=\s(?:(?:{'|'.join(rotulos)}):|Proponentes\b|Deputado\b|Grupo Parlamentar\b|Iniciativas\b|Votaç)|$)", t)
         return m.group(1).strip().rstrip(";") if m else ""
 
     n = campo("Número")
@@ -445,7 +445,9 @@ def resumo(bd: dict[str, dict]) -> dict:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("comando", choices=["opendata", "scrape", "verificar", "documentos", "normalize", "listar"])
-    ap.add_argument("--url", help="scrape/verificar: outra página de pesquisa (testes)")
+    ap.add_argument("--url", help="scrape: outra página de pesquisa (testes)")
+    ap.add_argument("--reler", type=int, default=300, help="verificar: n.º de PA do portal a reler para atualizar estado e votações")
+    ap.add_argument("--so-novos", action="store_true", help="verificar: só procurar PA novas")
     ap.add_argument("ficheiro", nargs="?")
     ap.add_argument("--ano", type=int, default=CONFIG["ppl"]["ano_oe"])
     ap.add_argument("--saida", default=str(RAIZ / "data"))
@@ -503,40 +505,47 @@ def main(argv=None) -> int:
         return 0
 
     if a.comando == "verificar":
-        import requests
-
+        # Reserva incremental pelo portal: as PA têm identificadores (BID) praticamente seguidos.
+        # 1) procura PA novas a seguir ao maior identificador conhecido;
+        # 2) relê as PA obtidas pelo portal há mais tempo, para atualizar estado e votações.
         s = sessao()
-        url = a.url or CONFIG["fontes"]["pesquisa_pa"]
-        try:
-            ids = listar_ids_pesquisa(url, s)
-        except requests.HTTPError as e:
-            disponivel = not (e.response is not None and e.response.status_code == 404)
-            atualizar_estado(pasta, "pesquisa", {"momento": momento, "disponivel": False,
-                                                 "erro": "" if not disponivel else str(e)})
-            print(f"página de pesquisa indisponível: {e}", file=sys.stderr)
-            return 0 if not disponivel else 3
         bd = ler_bd(pasta)
-        conhecidos = {r.get("id_ar") for r in bd.values()}
-        em_falta = [i for i in ids if i not in conhecidos]
+        ids_conhecidos = {int(r["id_ar"]) for r in bd.values() if str(r.get("id_ar", "")).isdigit()}
+        inicio = (max(ids_conhecidos) + 1) if ids_conhecidos else int(CONFIG["fontes"]["id_ar_inicial"])
         limite = a.max or 600
-        novos, falhas = [], []
-        for bid in em_falta[:limite]:
+        novos, falhas, falhas_seguidas, bid = [], [], 0, inicio
+        while len(novos) < limite and falhas_seguidas < 25:
             try:
-                novos.append(ler_detalhe(bid, momento, s))
+                d = ler_detalhe(str(bid), momento, s)
+                if d["n_pa"]:
+                    novos.append(d)
+                    falhas_seguidas = 0
+                else:
+                    falhas_seguidas += 1
             except Exception as e:  # noqa: BLE001
-                falhas.append({"id": bid, "erro": str(e)})
-        eventos = fundir(bd, novos, momento, "scrape", marcar_ausentes=False) if novos else []
+                falhas_seguidas += 1
+                if not re.search(r"\b4\d\d\b", str(e)):
+                    falhas.append({"id": bid, "erro": str(e)[:150]})
+            bid += 1
+        atualizados = []
+        if not a.so_novos:
+            antigos = sorted((r for r in bd.values() if r.get("fonte") == "scrape" and r.get("estado") == "em apreciação"),
+                             key=lambda r: r.get("ultima_captura", ""))[: a.reler]
+            for r in antigos:
+                try:
+                    atualizados.append(ler_detalhe(r["id_ar"], momento, s))
+                except Exception as e:  # noqa: BLE001
+                    falhas.append({"id": r["id_ar"], "erro": str(e)[:150]})
+        eventos = fundir(bd, novos + atualizados, momento, "scrape", marcar_ausentes=False) if (novos or atualizados) else []
         gravar(pasta, bd, eventos, None)
-        if novos:
-            with gzip.open(raw / f"{carimbo()}_verificar.json.gz", "wt", encoding="utf-8") as fh:
-                json.dump(novos, fh, ensure_ascii=False)
-        conhecidos = {r.get("id_ar") for r in bd.values()}
-        restantes = sum(1 for i in ids if i not in conhecidos)
-        atualizar_estado(pasta, "pesquisa", {"momento": momento, "disponivel": True, "registos": len(ids),
-                                             "em_falta_na_base": len(em_falta), "recuperados": len(novos),
-                                             "por_recuperar": restantes, "falhas": len(falhas)})
-        print(json.dumps({"pesquisa": len(ids), "em_falta": len(em_falta), "recuperados": len(novos),
-                          "por_recuperar": restantes, "falhas": falhas[:5]}, ensure_ascii=False))
+        if novos or atualizados:
+            with gzip.open(raw / f"{carimbo()}_portal.json.gz", "wt", encoding="utf-8") as fh:
+                json.dump(novos + atualizados, fh, ensure_ascii=False)
+        atualizar_estado(pasta, "portal", {"momento": momento, "primeiro_id_testado": inicio, "ultimo_id_testado": bid - 1,
+                                           "novos": len(novos), "relidos": len(atualizados), "falhas": len(falhas),
+                                           "erro": falhas[0]["erro"] if len(falhas) > 5 else ""})
+        print(json.dumps({"inicio": inicio, "fim": bid - 1, "novos": len(novos), "relidos": len(atualizados),
+                          "falhas": falhas[:5]}, ensure_ascii=False))
         return 0
 
     if a.comando == "documentos":

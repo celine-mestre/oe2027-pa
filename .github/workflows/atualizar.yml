@@ -47,7 +47,7 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_pa.py opendata
 
-      - name: Verificação cruzada com a página de pesquisa da AR (recupera PA em falta)
+      - name: Reserva e verificação cruzada no portal da AR (PA novas pelo identificador)
         continue-on-error: true
         run: python scripts/fetch_pa.py verificar --max 900
 

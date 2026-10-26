@@ -351,9 +351,8 @@ $('#fontes-estado').innerHTML =
   linhaFonte('Dados abertos (fonte principal)', EF.dados_abertos, f => f.disponivel
     ? `${fmtN(f.pa||0)} PA (${fmtN(f.registos||0)} registos) · última entrada: ${esc(hm(f.ultima_entrada))} · ficheiro atualizado pela AR: ${esc(f.ultima_modificacao_ar||'—')} · verificado: ${esc(hm(f.momento))}`
     : `Ficheiro do OE 2027 ainda não publicado · verificado: ${esc(hm(f.momento))}`) +
-  linhaFonte('Página de pesquisa de PA (verificação cruzada)', EF.pesquisa, f => f.disponivel
-    ? `${fmtN(f.registos||0)} registos listados · recuperados nesta verificação: ${fmtN(f.recuperados||0)} · por recuperar: <b>${fmtN(f.por_recuperar||0)}</b> · verificado: ${esc(hm(f.momento))}`
-    : `Página ainda não criada pela AR · verificado: ${esc(hm(f.momento))}`);
+  linhaFonte('Portal da AR, página de cada proposta (reserva)', EF.portal, f =>
+    `PA novas nesta verificação: ${fmtN(f.novos||0)} · atualizadas: ${fmtN(f.relidos||0)} · identificadores verificados: ${esc(f.primeiro_id_testado)}–${esc(f.ultimo_id_testado)}${f.erro?` · <b>erro: ${esc(f.erro)}</b>`:''} · verificado: ${esc(hm(f.momento))}`);
 
 // ----- tabela de PA
 const opts = (id, vals) => { const s=$(id); for (const v of vals) { const o=document.createElement('option'); o.value=v; o.textContent=v; s.appendChild(o);} };

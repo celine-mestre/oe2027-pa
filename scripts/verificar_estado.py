@@ -5,8 +5,7 @@ quando a captura não está a funcionar durante o processo de apreciação.
 
 Condições de alerta:
   1. Prazo de inserção aberto há mais de 3 horas e nenhuma PA na base.
-  2. A página de pesquisa da AR lista mais de 50 PA que não foi possível recuperar para a base.
-  3. Página de pesquisa com erro que não seja «página ainda não criada».
+  2. Erros repetidos na leitura do portal da AR (páginas de detalhe das PA).
 """
 from __future__ import annotations
 
@@ -32,11 +31,9 @@ def main() -> int:
     if not pa:
         alertas.append("o prazo de inserção abriu há mais de 3 horas e a base continua sem propostas: "
                        "verificar se a AR mudou a publicação (nova aplicação)")
-    pesq = estado.get("pesquisa", {})
-    if pesq.get("disponivel") and pesq.get("por_recuperar", 0) > 50:
-        alertas.append(f"a página de pesquisa da AR lista {pesq['por_recuperar']} propostas que não estão na base")
-    if pesq.get("erro"):
-        alertas.append(f"erro na página de pesquisa da AR: {pesq['erro']}")
+    portal = estado.get("portal", {})
+    if portal.get("erro"):
+        alertas.append(f"erros repetidos na leitura do portal da AR: {portal['erro']}")
     for a in alertas:
         print(f"::error::{a}")
     return 1 if alertas else 0
