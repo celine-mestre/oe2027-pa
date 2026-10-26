@@ -15,7 +15,8 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
-DATA = RAIZ / "data"
+CONFIG = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
+DATA = RAIZ / CONFIG["edicoes"][CONFIG["edicao_ativa"]]["pasta"]
 ABERTURA = dt.datetime(2026, 10, 29, 9, 0, tzinfo=dt.timezone.utc)  # 9h00 em Lisboa (UTC+0)
 FIM = dt.datetime(2026, 12, 10, tzinfo=dt.timezone.utc)
 

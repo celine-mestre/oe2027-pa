@@ -11,14 +11,15 @@ tokens no parâmetro «path»).
 Reserva — página de pesquisa de PA da PPL e páginas de detalhe de cada PA.
 
 Comandos:
-  python scripts/fetch_pa.py opendata              # localiza o ficheiro do ano em config.json e extrai
+  python scripts/fetch_pa.py opendata              # localiza o ficheiro da edição ativa e extrai
+  python scripts/fetch_pa.py opendata --ano 2026   # idem para o OE 2026 (processo concluído, base de comparação)
   python scripts/fetch_pa.py scrape                # lê todas as PA da página de pesquisa (lento: cerca de 1 minuto por página)
   python scripts/fetch_pa.py verificar             # reserva incremental pelo portal: PA novas pelo identificador e releitura das existentes
   python scripts/fetch_pa.py documentos            # documentos de votação na página da COFAP (guiões, resultados, textos)
   python scripts/fetch_pa.py normalize FICHEIRO    # extrai a partir de um JSON local (.json ou .json.gz)
   python scripts/fetch_pa.py listar                # lista os ficheiros da pasta XVII dos dados abertos
 
-Saídas (por defeito em data/):
+Saídas (por defeito em data/oe<ano>/, a pasta da edição em config.json):
   raw/AAAA-MM-DD_HHMM_<fonte>.json.gz   cópia do que a AR publicou em cada captura
   pa.json / pa.csv                      um registo por PA (ou parte de PA), última versão publicada
   historico.csv                         eventos entre capturas: nova, estado alterado, votada, ausente da fonte
@@ -52,6 +53,17 @@ from urllib.parse import urljoin
 RAIZ = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
 TAX = json.loads((RAIZ / "data" / "taxonomia.json").read_text(encoding="utf-8"))
+
+
+def edicao(ano: int | str | None = None) -> dict:
+    """Configuração da edição do OE (2027 em curso, 2026 concluída): designação, ligações, pasta e calendário."""
+    chave = str(ano or CONFIG["edicao_ativa"])
+    if chave not in CONFIG["edicoes"]:
+        raise SystemExit(f"edição {chave} não configurada em config.json (edições: {', '.join(CONFIG['edicoes'])})")
+    return CONFIG["edicoes"][chave]
+
+
+CONFIG["ppl"] = edicao()  # compatibilidade: a edição ativa é a PPL em curso
 
 # Campos: apenas informação publicada pela AR, mais metadados de captura.
 CAMPOS = [
@@ -216,7 +228,7 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
         n = (p.get("Numero") or "").strip()
         m = re.match(r"^(.*?)(?:-(\d+))?$", n)
         props = como_lista((p.get("Proponentes") or {}).get("Proponente"))
-        gps = [sigla(x.get("GP_Partido", "")) for x in props if x.get("GP_Partido")]
+        gps = [sigla(x) for pr in props for x in re.split(r",\s*", pr.get("GP_Partido") or "") if x]
         if not gps:
             gps = [sigla(x) for x in re.split(r",\s*", p.get("GrupoParlamentar_Partido") or "") if x]
         deps = [x.get("Deputado", "") for x in props if x.get("Deputado")]
@@ -449,11 +461,13 @@ def main(argv=None) -> int:
     ap.add_argument("--reler", type=int, default=300, help="verificar: n.º de PA do portal a reler para atualizar estado e votações")
     ap.add_argument("--so-novos", action="store_true", help="verificar: só procurar PA novas")
     ap.add_argument("ficheiro", nargs="?")
-    ap.add_argument("--ano", type=int, default=CONFIG["ppl"]["ano_oe"])
-    ap.add_argument("--saida", default=str(RAIZ / "data"))
+    ap.add_argument("--ano", type=int, default=int(CONFIG["edicao_ativa"]), help="edição do OE (2027 em curso, 2026 concluída)")
+    ap.add_argument("--saida", default="", help="pasta de saída (por defeito, a da edição em config.json)")
     ap.add_argument("--max", type=int, default=0, help="scrape: limitar o n.º de detalhes (teste)")
     a = ap.parse_args(argv)
-    pasta = Path(a.saida)
+    ed = edicao(a.ano)
+    CONFIG["ppl"] = ed
+    pasta = Path(a.saida) if a.saida else RAIZ / ed["pasta"]
     raw = pasta / "raw"
     raw.mkdir(parents=True, exist_ok=True)
     momento = agora()

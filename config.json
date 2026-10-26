@@ -1,13 +1,94 @@
 {
  "_comentario": "Configuração do pipeline de PA à PPL 110/XVII/2.ª (OE 2027). Só fontes da Assembleia da República.",
- "ppl": {
-  "designacao": "Proposta de Lei n.º 110/XVII/2.ª",
-  "ano_oe": 2027,
-  "bid_iniciativa": "377352",
-  "url_iniciativa": "https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377352",
-  "url_texto_ppl": "https://app.parlamento.pt/OE2027/HTML/OrcamentoEstado2027.html",
-  "url_calendario": "https://www.parlamento.pt/Documents/2026/outubro/calendario-OE2027.pdf",
-  "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2027.aspx"
+ "edicao_ativa": "2027",
+ "edicoes": {
+  "2027": {
+   "designacao": "Proposta de Lei n.º 110/XVII/2.ª",
+   "ano_oe": 2027,
+   "bid_iniciativa": "377352",
+   "url_iniciativa": "https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377352",
+   "url_texto_ppl": "https://app.parlamento.pt/OE2027/HTML/OrcamentoEstado2027.html",
+   "url_calendario": "https://www.parlamento.pt/Documents/2026/outubro/calendario-OE2027.pdf",
+   "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2027.aspx",
+   "pasta": "data/oe2027",
+   "estado": "em curso",
+   "_calendario_fonte": "Calendário de apreciação do OE 2027 publicado pela Assembleia da República, em url_calendario. Datas, horas e designações transcritas do documento.",
+   "calendario": [
+    {
+     "data": "2026-10-23",
+     "momento": "10h00 · COFAP · generalidade · audição do Ministro de Estado e das Finanças"
+    },
+    {
+     "data": "2026-10-26",
+     "momento": "15h00 · COFAP · generalidade · audição da Ministra do Trabalho, Solidariedade e Segurança Social · 18h00 prazo para pareceres CPP"
+    },
+    {
+     "data": "2026-10-27",
+     "momento": "11h00 · COFAP · parecer final · 15h00 · Plenário · debate na generalidade"
+    },
+    {
+     "data": "2026-10-28",
+     "momento": "10h00 e 15h00 · Plenário · encerramento e votação na generalidade"
+    },
+    {
+     "data": "2026-10-29",
+     "momento": "9h00 · início do prazo para inserção de PA (nova aplicação) · início das audições na especialidade"
+    },
+    {
+     "data": "2026-11-06",
+     "momento": "15h00 · audição do Ministro de Estado e das Finanças · prazo para PA (nova aplicação)"
+    },
+    {
+     "data": "2026-11-11",
+     "momento": "18h00 · distribuição e análise do 1.º guião de votação (*)"
+    },
+    {
+     "data": "2026-11-12",
+     "momento": "13h00 · 2.º guião de votação · 18h00 · 3.º guião de votação (*)"
+    },
+    {
+     "data": "2026-11-13",
+     "momento": "13h00 · 4.º guião de votação · 16h00 · reunião COFAP M&C (*)"
+    },
+    {
+     "data": "2026-11-18",
+     "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
+    },
+    {
+     "data": "2026-11-19",
+     "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
+    },
+    {
+     "data": "2026-11-20",
+     "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
+    },
+    {
+     "data": "2026-11-23",
+     "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
+    },
+    {
+     "data": "2026-11-24",
+     "momento": "10h00 · Plenário · debate, encerramento e votação final global"
+    },
+    {
+     "data": "2026-12-09",
+     "momento": "Prazo da redação final"
+    }
+   ],
+   "calendario_nota": "(*) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
+   "inicio_registo": "2026-10-29T09:00"
+  },
+  "2026": {
+   "designacao": "Proposta de Lei n.º 37/XVII/1.ª",
+   "ano_oe": 2026,
+   "pasta": "data/oe2026",
+   "estado": "concluído",
+   "url_texto_ppl": "https://app.parlamento.pt/OE2026/HTML/OrcamentoEstado2026.html",
+   "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2026.aspx",
+   "_nota": "Processo concluído (votação final global a 27 de novembro de 2025). Serve de base de comparação e de calibração da classificação. O calendário mostrado é o derivado dos próprios dados da AR (entradas e votações).",
+   "calendario": [],
+   "calendario_nota": ""
+  }
  },
  "fontes": {
   "dados_abertos_pagina_oe": "https://www.parlamento.pt/Cidadania/Paginas/DAOE.aspx",
@@ -17,70 +98,6 @@
   "id_ar_inicial": 25391,
   "_id_ar_inicial": "Identificador (BID) a partir do qual a reserva procura PA no portal enquanto a base estiver vazia. Os identificadores das PA são atribuídos pela AR por ordem de entrada; o valor corresponde ao seguinte ao último atribuído antes deste Orçamento."
  },
- "_calendario_fonte": "Calendário de apreciação do OE 2027 publicado pela Assembleia da República, em ppl.url_calendario. Datas, horas e designações transcritas do documento.",
- "calendario": [
-  {
-   "data": "2026-10-23",
-   "momento": "10h00 · COFAP · generalidade · audição do Ministro de Estado e das Finanças"
-  },
-  {
-   "data": "2026-10-26",
-   "momento": "15h00 · COFAP · generalidade · audição da Ministra do Trabalho, Solidariedade e Segurança Social · 18h00 prazo para pareceres CPP"
-  },
-  {
-   "data": "2026-10-27",
-   "momento": "11h00 · COFAP · parecer final · 15h00 · Plenário · debate na generalidade"
-  },
-  {
-   "data": "2026-10-28",
-   "momento": "10h00 e 15h00 · Plenário · encerramento e votação na generalidade"
-  },
-  {
-   "data": "2026-10-29",
-   "momento": "9h00 · início do prazo para inserção de PA (nova aplicação) · início das audições na especialidade"
-  },
-  {
-   "data": "2026-11-06",
-   "momento": "15h00 · audição do Ministro de Estado e das Finanças · prazo para PA (nova aplicação)"
-  },
-  {
-   "data": "2026-11-11",
-   "momento": "18h00 · distribuição e análise do 1.º guião de votação (*)"
-  },
-  {
-   "data": "2026-11-12",
-   "momento": "13h00 · 2.º guião de votação · 18h00 · 3.º guião de votação (*)"
-  },
-  {
-   "data": "2026-11-13",
-   "momento": "13h00 · 4.º guião de votação · 16h00 · reunião COFAP M&C (*)"
-  },
-  {
-   "data": "2026-11-18",
-   "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
-  },
-  {
-   "data": "2026-11-19",
-   "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
-  },
-  {
-   "data": "2026-11-20",
-   "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
-  },
-  {
-   "data": "2026-11-23",
-   "momento": "10h00 · Plenário · debate na especialidade · 15h00 · COFAP · votações"
-  },
-  {
-   "data": "2026-11-24",
-   "momento": "10h00 · Plenário · debate, encerramento e votação final global"
-  },
-  {
-   "data": "2026-12-09",
-   "momento": "Prazo da redação final"
-  }
- ],
- "calendario_nota": "(*) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
  "http": {
   "user_agent": "SGGov-DSSD-UPE/1.0 (levantamento PA OE2027; contacto institucional)",
   "timeout": 180,

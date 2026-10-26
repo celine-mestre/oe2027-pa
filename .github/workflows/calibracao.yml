@@ -1,27 +1,76 @@
-name: Descoberta e calibração (dados de referência)
+name: Calibração e carga do OE 2026
+
+# Manual. Faz o que não precisa de correr em cada captura:
+#   1. lista a pasta XVII dos dados abertos e descarrega o calendário e o texto das propostas de lei;
+#   2. carrega (ou atualiza) a base do OE 2026, processo concluído, a partir dos dados abertos da AR;
+#   3. constrói o índice dos artigos de cada PPL e a sugestão de área por artigo (a validar pela DACDP);
+#   4. reclassifica, exporta os Excel e publica o painel.
 
 on:
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar-pa
+  cancel-in-progress: false
 
 jobs:
-  descobrir:
+  calibrar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python scripts/descobrir.py
-      - name: Guardar resultados
+
+      - name: Pasta XVII, calendário e texto das propostas de lei
+        continue-on-error: true
+        run: python scripts/descobrir.py
+
+      - name: OE 2026 — dados abertos (processo concluído)
+        continue-on-error: true
+        run: python scripts/fetch_pa.py opendata --ano 2026
+
+      - name: OE 2026 — documentos da página da COFAP
+        continue-on-error: true
+        run: python scripts/fetch_pa.py documentos --ano 2026
+
+      - name: Índice dos artigos e sugestão de área por artigo
+        continue-on-error: true
+        run: |
+          python scripts/indice_ppl.py --ano 2026
+          python scripts/indice_ppl.py --ano 2027
+
+      - name: Classificação, Excel e painel
+        run: |
+          python scripts/classificar.py --ano 2026
+          python scripts/classificar.py --ano 2027
+          python scripts/exportar_excel.py --ano 2026
+          python scripts/exportar_excel.py --ano 2027
+          python scripts/build_painel.py
+
+      - name: Guardar no repositório
         run: |
           git config user.name "upe-sggov-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/calibracao
+          git add data docs
           git diff --cached --quiet || git commit -m "calibração $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs && git push && exit 0
+            echo "envio recusado (tentativa $i); nova tentativa em 10 s"; sleep 10
+          done
+          exit 1
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4

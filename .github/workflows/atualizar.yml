@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/**", "config.json", "data/taxonomia.json", "requirements.txt", ".github/workflows/atualizar.yml"]
+    paths: ["scripts/**", "config.json", "data/taxonomia.json", "data/areas_governativas.json", "data/*/classificacao_artigos.csv", "data/*/analise.csv", "requirements.txt", ".github/workflows/atualizar.yml"]
   schedule:
     # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao calendário oficial do OE 2027:
     # mais capturas no último dia do prazo e nos dias de votação.
@@ -55,8 +55,12 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_pa.py documentos
 
-      - name: Gerar painel
-        run: python scripts/build_painel.py
+      - name: Classificação por área governativa, Excel no modelo da DACDP e painel
+        run: |
+          python scripts/classificar.py --ano 2027
+          python scripts/exportar_excel.py --ano 2027
+          if [ -s data/oe2026/pa.json ]; then python scripts/classificar.py --ano 2026 && python scripts/exportar_excel.py --ano 2026; fi
+          python scripts/build_painel.py
 
       - name: Guardar dados e painel no repositório
         run: |
