@@ -113,7 +113,15 @@ def http_get(url: str, s=None):
             r.raise_for_status()
             time.sleep(CONFIG["http"].get("pausa_entre_pedidos_seg", 1.0))
             return r
+        except requests.HTTPError as e:
+            # 4xx (ex.: 404, página ainda não criada pela AR) não se resolve a repetir
+            if e.response is not None and 400 <= e.response.status_code < 500:
+                raise
+            if i == len(esperas) - 1:
+                raise
+            print(f"... falhou: {e}", file=sys.stderr)
         except requests.RequestException as e:
+            # falhas de rede, tempo esgotado: nova tentativa
             if i == len(esperas) - 1:
                 raise
             print(f"... falhou: {e}", file=sys.stderr)
