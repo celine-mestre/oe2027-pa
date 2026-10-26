@@ -1,15 +1,10 @@
 {
- "momento": "2026-10-26T03:56:16Z",
- "comando": "scrape",
+ "momento": "2026-10-26T04:19:12Z",
+ "comando": "opendata",
  "ano": 2027,
  "erros": [
-  "pesquisa: 404 Client Error: Not Found for url: https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx"
+  "o ficheiro OEPropostasAlteracao2027 ainda não consta da pasta XVII dos dados abertos da AR"
  ],
- "url": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx",
- "listados": 0,
- "capturados": 0,
- "falhas": [],
- "eventos": 0,
  "resumo": {
   "registos": 0,
   "pa": 0,
