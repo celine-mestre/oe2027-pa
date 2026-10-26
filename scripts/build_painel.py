@@ -247,7 +247,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
     <div class="card"><h3>Resultado por proponente</h3><div class="tabela-wrap"><table class="matriz" id="m-resultado"></table></div></div>
     <div class="card"><h3>Sentido de voto por grupo parlamentar (PA votadas)</h3><div class="tabela-wrap"><table class="matriz" id="m-sentido"></table></div><div class="legenda">Tal como publicado pela AR. Inclui os deputados únicos representantes de partido.</div></div>
   </div>
-  <div class="card" style="margin-top:12px"><h3>Documentos de votação publicados pela COFAP</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões, resultados de votações, textos finais e relatórios publicados na página do OE 2027 da Comissão de Orçamento, Finanças e Administração Pública.</div></div>
+  <div class="card" style="margin-top:12px"><h3>Documentos publicados pela COFAP sobre o OE 2027</h3><div class="tabela-wrap"><table id="tab-docs"><thead><tr><th>Documento</th><th>Registado no painel</th></tr></thead><tbody></tbody></table></div><div class="legenda">Guiões e resultados de votações, textos finais, relatórios e pareceres (por exemplo, da UTAO e do Conselho das Finanças Públicas) publicados na página do OE 2027 da Comissão de Orçamento, Finanças e Administração Pública. Não inclui os contributos de entidades e cidadãos.</div></div>
   <div class="card" style="margin-top:12px"><h3>PA aprovadas</h3><div class="tabela-wrap"><table id="tab-aprov"><thead><tr><th>N.º</th><th>Proponente</th><th>Artigo</th><th>Objeto</th><th>Tema</th><th>Data</th><th>Sentido de voto por grupo parlamentar</th><th>Avocação</th></tr></thead><tbody></tbody></table></div></div>
 </section>
 
@@ -407,7 +407,7 @@ $('#m-sentido').innerHTML = Object.keys(sent).length ? `<tr><th>Grupo parlamenta
 $('#tab-aprov tbody').innerHTML = PA.filter(r=>r.estado==='aprovada'||r.estado==='aprovada parcialmente').map(r => `<tr><td class="num"><b>${esc(r.n_pa)}</b></td><td>${esc(r.proponente)}</td><td>${esc(r.artigo)}</td><td class="obj">${esc(r.objeto)}</td><td class="mini">${esc(temaDe(r))}</td><td class="num">${esc(fmtData(r.data_votacao))}</td><td class="mini">${esc(r.votos_por_partido)}</td><td>${r.avocacao==='S'?'S':''}</td></tr>`).join('') || '<tr><td colspan="8" class="mini">Ainda sem PA aprovadas.</td></tr>';
 
 // ----- documentos
-$('#tab-docs tbody').innerHTML = (D.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos de votação publicados.</td></tr>';
+$('#tab-docs tbody').innerHTML = (D.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos publicados.</td></tr>';
 
 // ----- histórico
 $('#tab-hist tbody').innerHTML = D.historico.map(h => `<tr><td class="num">${esc((h.momento||'').replace('T',' ').slice(0,16))}</td><td class="num"><b>${esc(h.n_pa)}</b></td><td><span class="chip ${({nova:'ok','ausente da fonte':'ret'})[h.evento]||''}">${esc(h.evento)}</span></td><td>${esc(h.detalhe)}</td><td class="mini">${esc(h.fonte)}</td></tr>`).join('') || '<tr><td colspan="5" class="mini">Sem eventos.</td></tr>';

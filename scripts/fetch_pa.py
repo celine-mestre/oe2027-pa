@@ -407,19 +407,25 @@ def atualizar_estado(pasta: Path, fonte: str, dados: dict) -> None:
     f.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def chave_documento(d: dict) -> str:
+    """O URL da AR muda a cada visita (token no parâmetro path); identifica-se o documento pelo título e pelo nome do ficheiro."""
+    m = re.search(r"fich=([^&]+)", d.get("url", ""), re.I)
+    return f"{d.get('titulo', '').strip().lower()}|{(m.group(1) if m else '').lower()}"
+
+
 def ler_documentos(url: str, s=None) -> list[dict]:
     """Ligações a documentos de votação na página do OE na COFAP (guiões, resultados, textos finais, relatórios)."""
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(http_get(url, s).text, "html.parser")
     corpo = soup.find(id="contentBox") or soup
-    padrao = re.compile(r"gui[ãa]o|vota[çc]|s[úu]mula|texto final|relat[óo]rio|reda[çc][ãa]o final|avoca", re.I)
+    padrao = re.compile(r"gui[ãa]o|vota[çc]|s[úu]mula|texto final|relat[óo]rio|parecer|reda[çc][ãa]o final|avoca", re.I)
     docs = []
     for a in corpo.find_all("a", href=True):
         titulo = _texto(a)
-        if titulo and padrao.search(titulo) and re.search(r"doc\.pdf|\.pdf|webutils", a["href"], re.I):
+        if titulo and padrao.search(titulo) and not re.search(r"contributo", titulo, re.I) and re.search(r"doc\.pdf|\.pdf|webutils", a["href"], re.I):
             docs.append({"titulo": titulo, "url": urljoin(url, a["href"])})
-    return list({d["url"]: d for d in docs}.values())
+    return list({chave_documento(d): d for d in docs}.values())
 
 
 def resumo(bd: dict[str, dict]) -> dict:
@@ -536,15 +542,22 @@ def main(argv=None) -> int:
     if a.comando == "documentos":
         s = sessao()
         f = pasta / "documentos.json"
-        antigos = {d["url"]: d for d in json.loads(f.read_text(encoding="utf-8"))} if f.exists() else {}
+        antigos: dict[str, dict] = {}
+        for d in (json.loads(f.read_text(encoding="utf-8")) if f.exists() else []):
+            k = chave_documento(d)
+            if k not in antigos or d["primeira_captura"] < antigos[k]["primeira_captura"]:
+                antigos[k] = d
         try:
             docs = ler_documentos(CONFIG["ppl"]["url_cofap"], s)
         except Exception as e:  # noqa: BLE001
             print(f"página da COFAP indisponível: {e}", file=sys.stderr)
             return 0
         for d in docs:
-            if d["url"] not in antigos:
-                antigos[d["url"]] = d | {"primeira_captura": momento}
+            k = chave_documento(d)
+            if k not in antigos:
+                antigos[k] = d | {"primeira_captura": momento}
+            else:
+                antigos[k]["url"] = d["url"]  # guarda a ligação mais recente
         f.write_text(json.dumps(sorted(antigos.values(), key=lambda d: d["primeira_captura"], reverse=True),
                                 ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"{len(docs)} documentos de votação na página da COFAP ({len(antigos)} registados)")
