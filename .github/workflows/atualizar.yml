@@ -10,6 +10,8 @@ on:
     # mais capturas no último dia do prazo e nos dias de votação.
     # Prazo de entrega (29 out. – 6 nov.): 2 capturas por dia; 5 nov. de 2 em 2 horas; 6 nov. de hora a hora
     - cron: "15 7,19 29-31 10 *"
+    # 29 out., primeiro dia na «nova aplicação» da AR: de hora a hora entre as 10h e as 18h para confirmar cedo que a captura funciona
+    - cron: "15 10-18 29 10 *"
     - cron: "15 7,19 1-4 11 *"
     - cron: "0 8-22/2 5 11 *"
     - cron: "5 7-23 6 11 *"
