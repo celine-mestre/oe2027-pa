@@ -30,10 +30,6 @@ O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há c
 
 Os scripts `classificar.py` e `indice_ppl.py` e o ficheiro `data/areas_governativas.json` são material preparatório que não corre nos workflows nem entra no painel.
 
-## Coligações de aprovação
-
-O separador «Coligações» mostra quem aprova o quê e com quem: PA aprovadas sem o voto favorável do Governo, coligações de aprovação (por exemplo, CH + PS sem o Governo), grupo decisivo em cada aprovação, afinidade de voto entre grupos e votações renhidas. Cada grupo parlamentar pesa o seu número de deputados, tal como a AR o publica na página dos grupos parlamentares (`config.json` → `composicao_ar`). Com estes pesos, o cálculo reproduz o resultado publicado pela AR em 2 143 de 2 147 votações do OE 2026; as 4 restantes são aprovações parciais. «Voto do Governo» = sentido de voto da maioria dos deputados do PSD e do CDS-PP. Se a composição da Assembleia mudar, atualizar `composicao_ar`.
-
 ## Registo no modelo da DACDP e sincronização do ficheiro mestre
 
 `scripts/exportar_excel.py` gera, em cada captura, `docs/Registo_PA_OE<ano>.xlsx` com a estrutura do modelo da DACDP (folhas «Propostas de Alteração», «Medidas Anunciadas», «Ponto de Situação», «Listas», «Instruções», «Registo de Consultas», «Calendário e Documentos») e uma folha «Resposta UPE» que diz, coluna a coluna, o que a captura assegura, o que exige desenvolvimento e o que não tem fonte na AR. Nas colunas A–W do modelo, a UPE preenche as que vêm da AR (B, C, E, F, G, L, S, T, U, V e as ligações em W); as colunas X em diante são informação adicional publicada pela AR (tema, incidência, natureza e estado, avocação, identificadores e ligações).
