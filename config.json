@@ -102,5 +102,26 @@
   "user_agent": "SGGov-DSSD-UPE/1.0 (levantamento PA OE2027; contacto institucional)",
   "timeout": 180,
   "pausa_entre_pedidos_seg": 1.0
+ },
+ "composicao_ar": {
+  "_comentario": "Número de deputados de cada grupo parlamentar (XVII Legislatura), tal como publicado pela AR na página dos grupos parlamentares. Usado para ponderar os sentidos de voto no separador «Coligações». Confirmar se houver alterações na composição.",
+  "fonte": "https://www.parlamento.pt/DeputadoGP/Paginas/GruposParlamentaresI.aspx",
+  "consultado": "2026-10-27",
+  "lugares": {
+   "PSD": 89,
+   "CH": 60,
+   "PS": 58,
+   "IL": 9,
+   "L": 6,
+   "PCP": 3,
+   "CDS-PP": 2,
+   "BE": 1,
+   "PAN": 1,
+   "JPP": 1
+  },
+  "partidos_governo": [
+   "PSD",
+   "CDS-PP"
+  ]
  }
 }
