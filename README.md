@@ -1,12 +1,12 @@
 # PA ao Orçamento do Estado
 
-Extração automática, base de dados, registo no modelo da DACDP e painel das propostas de alteração (PA) às propostas de lei do Orçamento do Estado, a partir da informação publicada pela Assembleia da República (AR):
+Extração automática, base de dados, Excel e painel das propostas de alteração (PA) às propostas de lei do Orçamento do Estado, a partir da informação publicada pela Assembleia da República (AR):
 
 - **OE 2027** — Proposta de Lei n.º 110/XVII/2.ª, em curso (PA a partir de 29 de outubro de 2026, 9h00).
 - **OE 2026** — Proposta de Lei n.º 37/XVII/1.ª, processo concluído. Base de comparação: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar.
 
 - Painel: https://upe-sggov.github.io/oe2027-pa/ (seletor de edição no canto superior direito)
-- Registo no modelo da DACDP (Excel, gerado em cada captura): https://upe-sggov.github.io/oe2027-pa/Registo_PA_OE2027.xlsx
+- Base completa em Excel, só com dados da AR (gerada em cada captura): https://upe-sggov.github.io/oe2027-pa/PA_OE2027_dados_AR.xlsx
 - Repositório: https://github.com/upe-sggov/oe2027-pa
 
 ## Fontes
@@ -30,15 +30,11 @@ O painel e o Excel usam exclusivamente variáveis publicadas pela AR. Não há c
 
 Os scripts `classificar.py` e `indice_ppl.py` e o ficheiro `data/areas_governativas.json` são material preparatório que não corre nos workflows nem entra no painel.
 
-## Registo no modelo da DACDP e sincronização do ficheiro mestre
+## Excel
 
-`scripts/exportar_excel.py` gera, em cada captura, `docs/Registo_PA_OE<ano>.xlsx` com a estrutura do modelo da DACDP (folhas «Propostas de Alteração», «Medidas Anunciadas», «Ponto de Situação», «Listas», «Instruções», «Registo de Consultas», «Calendário e Documentos») e uma folha «Resposta UPE» que diz, coluna a coluna, o que a captura assegura, o que exige desenvolvimento e o que não tem fonte na AR. Nas colunas A–W do modelo, a UPE preenche as que vêm da AR (B, C, E, F, G, L, S, T, U, V e as ligações em W); as colunas X em diante são informação adicional publicada pela AR (tema, incidência, natureza e estado, avocação, identificadores e ligações).
+`scripts/exportar_dados.py` gera, em cada captura, `docs/PA_OE<ano>_dados_AR.xlsx`: uma linha por registo publicado pela AR, com as mesmas colunas da exportação feita no painel, e uma folha «Sobre este ficheiro» (fonte, data dos dados, número de registos). No painel, o botão «Exportar para Excel» descarrega as propostas visíveis com os filtros escolhidos; se a biblioteca de Excel não carregar, descarrega a base completa.
 
-
-```
-python scripts/sincronizar_mestre.py "C:/…/Registo_PA_OE2027.xlsx" --ensaio   # mostra o que faria
-python scripts/sincronizar_mestre.py "C:/…/Registo_PA_OE2027.xlsx"            # sincroniza e exporta analise.csv
-```
+Os scripts `exportar_excel.py` e `sincronizar_mestre.py` são auxiliares e não correm nos workflows.
 
 ## Como funciona
 
@@ -47,7 +43,7 @@ python scripts/fetch_pa.py opendata              # fonte principal (edição ati
 python scripts/fetch_pa.py opendata --ano 2026   # OE 2026, processo concluído
 python scripts/fetch_pa.py verificar             # reserva incremental pelo portal
 python scripts/fetch_pa.py documentos            # documentos da página da COFAP
-python scripts/exportar_excel.py --ano 2027      # docs/Registo_PA_OE2027.xlsx
+python scripts/exportar_dados.py --ano 2027      # docs/PA_OE2027_dados_AR.xlsx
 python scripts/build_painel.py                   # docs/index.html (todas as edições)
 python scripts/fetch_pa.py listar                # lista os ficheiros publicados na pasta XVII
 ```
@@ -57,14 +53,14 @@ A página de pesquisa de PA (`PesquisaPropAlteracao110XVII.aspx`) não é usada 
 Se, durante o processo, a captura não estiver a funcionar (nenhuma PA três horas depois de abrir o prazo, ou erros repetidos no portal), o último passo do workflow termina a vermelho e o GitHub envia um aviso por e-mail.
 
 Workflows:
-- `atualizar.yml` — corre segundo o calendário (de hora a hora no último dia do prazo e nos dias de votação): captura o OE 2027, exporta os Excel, publica o painel. Guarda em `data/oe2027/raw/` uma cópia de cada captura.
+- `atualizar.yml` — corre segundo o calendário (de hora a hora no último dia do prazo e nos dias de votação): captura o OE 2027, gera o Excel com os dados da AR e publica o painel. Guarda em `data/oe2027/raw/` uma cópia de cada captura.
 - `calibracao.yml` — manual (ou ao alterar o próprio ficheiro): lista a pasta dos dados abertos, descarrega o calendário e o texto das PPL, carrega o OE 2026 e publica.
 
 ## Base de dados (`data/oe<ano>/`)
 
 `pa.csv` (separador «;»): `n_pa`, `pa_base`, `parte`, `id_ar`, `data_entrada`, `proponente`, `proponente_deputados`, `apresentada`, `incide`, `artigo`, `artigo_epigrafe`, `diplomas`, `tipo_ar`, `objeto`, `tema_ar`, `estado_ar`, `estado`, `data_votacao`, `sede_votacao`, `resultado_votacao`, `votos_por_partido`, `avocacao`, `requerimentos`, `parecer_ra`, `ministerio_ar`, `n_votacoes`, `url_detalhe`, `url_pdf`, `primeira_captura`, `ultima_captura`, `fonte`, `ausente_da_fonte`. Todos os campos vêm da AR, exceto os de captura. `estado` agrupa o `estado_ar` publicado (por exemplo, «Rejeitado(a) em Comissão» → rejeitada).
 
-`analise.csv` (quando existir): classificações da DACDP vindas do mestre. `historico.csv`: eventos entre capturas (PA novas, alterações de estado, votações, PA que deixam de constar da publicação). `consultas.csv`: registo das verificações de fontes. `estado_fontes.json`, `documentos.json`, `ultima_execucao.json`: estado da última captura.
+`historico.csv`: eventos entre capturas (PA novas, alterações de estado, votações, PA que deixam de constar da publicação). `consultas.csv`: registo das verificações de fontes. `estado_fontes.json`, `documentos.json`, `ultima_execucao.json`: estado da última captura.
 
 ## Pontos a confirmar a partir de 29 de outubro
 

@@ -57,7 +57,7 @@ def carregar_edicao(ano: str, ed: dict, pasta: Path) -> dict:
         "historico_24h": [h for h in historico if h.get("momento", "") >= (agora - dt.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M")],
         "estado_fontes": ler_json(pasta / "estado_fontes.json", {}),
         "documentos": ler_json(pasta / "documentos.json", []),
-        "excel": f"Registo_PA_OE{ano}.xlsx" if (DOCS / f"Registo_PA_OE{ano}.xlsx").exists() else "",
+        "excel": f"PA_OE{ano}_dados_AR.xlsx" if (DOCS / f"PA_OE{ano}_dados_AR.xlsx").exists() else "",
     }
 
 
@@ -328,8 +328,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
       <select id="f-estado"><option value="">Estado</option></select>
       <select id="f-extra"><option value="">Outros critérios</option><option value="avocacao">Avocadas a Plenário</option><option value="req">Com requerimento publicado</option><option value="ra">Com pedido de parecer às Regiões Autónomas</option><option value="diplomas">Alteram diplomas identificados pela AR</option><option value="partes">Com partes (-1, -2, …)</option><option value="semvoto">Decididas sem sentido de voto publicado</option></select>
       <span class="n" id="f-n"></span>
-      <button class="btn" id="b-exp" onclick="exportarExcel()" title="Descarrega em Excel as propostas que estão visíveis com os filtros escolhidos">Exportar seleção para Excel</button>
-      <a class="btn" id="b-excel" hidden download title="Registo completo no modelo da DACDP, gerado em cada captura">Registo completo (modelo DACDP)</a>
+      <button class="btn" id="b-exp" onclick="exportarExcel()" title="Descarrega em Excel as propostas visíveis com os filtros escolhidos (sem filtros, todas as propostas)">Exportar para Excel</button>
     </div>
     <div class="tabela-wrap"><table id="tab-pa"><thead><tr>
       <th data-k="n_pa">N.º</th><th data-k="data_entrada">Entrada</th><th data-k="proponente">Proponente</th><th data-k="artigo">Artigo / mapa</th><th data-k="tipo_ar">Tipo</th><th>Objeto</th><th data-k="tema_ar">Tema (AR)</th><th data-k="estado">Estado</th><th>Votação</th><th>Outros dados da AR</th><th>Ligações</th>
@@ -571,7 +570,6 @@ function montar() {
   opts('#f-incide', cont(PA, r=>[r.incide||'']).map(p=>p[0]).filter(Boolean));
   opts('#f-estado', cont(PA, r=>[r.estado||'']).map(p=>p[0]).filter(Boolean));
   $('#f-q').value = ''; ['#f-partido','#f-tema','#f-tipo','#f-incide','#f-estado','#f-extra'].forEach(s=>$(s).value='');
-  const bx = $('#b-excel'); bx.hidden = !E.excel; if (E.excel) bx.href = E.excel;
   render();
 
   // ----- por tema
@@ -597,7 +595,7 @@ function montar() {
   $('#tab-docs tbody').innerHTML = (E.documentos||[]).map(d => `<tr><td><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a></td><td class="num">${esc(hm(d.primeira_captura))}</td></tr>`).join('') || '<tr><td colspan="2" class="mini">Ainda sem documentos publicados.</td></tr>';
   $('#tab-hist tbody').innerHTML = E.historico.map(h => `<tr><td class="num">${esc((h.momento||'').replace('T',' ').slice(0,16))}</td><td class="num"><b>${esc(h.n_pa)}</b></td><td><span class="chip ${({nova:'ok','ausente da fonte':'ret'})[h.evento]||''}">${esc(h.evento)}</span></td><td>${esc(h.detalhe)}</td><td class="mini">${esc(h.fonte)}</td></tr>`).join('') || '<tr><td colspan="5" class="mini">Sem eventos.</td></tr>';
   const nomes = {pesquisa_pa:'Pesquisa de propostas de alteração', url_iniciativa:`${E.designacao} — detalhe da iniciativa`, url_texto_ppl:'Texto da proposta de lei com legislação citada', url_calendario:`Calendário de apreciação do OE ${ANO} (COFAP)`, url_cofap:`Página do OE ${ANO} na Comissão de Orçamento, Finanças e Administração Pública`, dados_abertos_pagina_oe:'Dados abertos — categoria Orçamento do Estado', dados_abertos_pasta_xvii:'Dados abertos — pasta XVII Legislatura'};
-  $('#lista-fontes').innerHTML = `<li><b>Fonte principal:</b> ${ligDA}.</li>` + Object.entries({...D.fontes, ...E.urls}).filter(([k,v])=>nomes[k] && String(v).startsWith('http')).map(([k,v])=>`<li><a href="${esc(v)}" target="_blank" rel="noopener">${esc(nomes[k])}</a></li>`).join('') + (E.excel ? `<li><a href="${esc(E.excel)}" download>Registo das PA no modelo da DACDP (Excel), gerado em cada captura</a></li>` : '');
+  $('#lista-fontes').innerHTML = `<li><b>Fonte principal:</b> ${ligDA}.</li>` + Object.entries({...D.fontes, ...E.urls}).filter(([k,v])=>nomes[k] && String(v).startsWith('http')).map(([k,v])=>`<li><a href="${esc(v)}" target="_blank" rel="noopener">${esc(nomes[k])}</a></li>`).join('') + (E.excel ? `<li><a href="${esc(E.excel)}" download>Base completa em Excel (dados da AR), gerada em cada captura</a></li>` : '');
 }
 
 function filtrar() {
@@ -667,7 +665,8 @@ async function exportarExcel() {
     XLSX.utils.book_append_sheet(wb, info, 'Sobre esta exportação');
     XLSX.writeFile(wb, `PA_OE${ANO}_${filtros.length ? 'selecao' : 'todas'}_${new Date().toISOString().slice(0,10)}.xlsx`);
   } catch (e) {
-    alert('Não foi possível gerar o Excel neste momento. Use o «Registo completo (modelo DACDP)».');
+    if (E.excel) { const a = document.createElement('a'); a.href = E.excel; a.download = ''; a.click(); alert('Não foi possível gerar a seleção neste momento: foi descarregada a base completa em Excel.'); }
+    else alert('Não foi possível gerar o Excel neste momento.');
   } finally { b.disabled = false; b.textContent = txt; }
 }
 function renderPosicao() {

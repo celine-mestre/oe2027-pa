@@ -59,10 +59,10 @@ jobs:
         continue-on-error: true
         run: python scripts/fetch_pa.py documentos
 
-      - name: Excel no modelo da DACDP e painel
+      - name: Excel (dados da AR) e painel
         run: |
-          python scripts/exportar_excel.py --ano 2027
-          if [ -s data/oe2026/pa.json ]; then python scripts/exportar_excel.py --ano 2026; fi
+          python scripts/exportar_dados.py --ano 2027
+          if [ -s data/oe2026/pa.json ]; then python scripts/exportar_dados.py --ano 2026; fi
           python scripts/build_painel.py
 
       - name: Guardar dados e painel no repositório

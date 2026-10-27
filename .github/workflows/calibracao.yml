@@ -47,8 +47,8 @@ jobs:
 
       - name: Excel e painel
         run: |
-          python scripts/exportar_excel.py --ano 2026
-          python scripts/exportar_excel.py --ano 2027
+          python scripts/exportar_dados.py --ano 2026
+          python scripts/exportar_dados.py --ano 2027
           python scripts/build_painel.py
 
       - name: Guardar no repositório
