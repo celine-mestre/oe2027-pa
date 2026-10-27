@@ -328,8 +328,8 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
       <select id="f-estado"><option value="">Estado</option></select>
       <select id="f-extra"><option value="">Outros critérios</option><option value="avocacao">Avocadas a Plenário</option><option value="req">Com requerimento publicado</option><option value="ra">Com pedido de parecer às Regiões Autónomas</option><option value="diplomas">Alteram diplomas identificados pela AR</option><option value="partes">Com partes (-1, -2, …)</option><option value="semvoto">Decididas sem sentido de voto publicado</option></select>
       <span class="n" id="f-n"></span>
-      <button class="btn" onclick="exportarCSV()">Exportar CSV</button>
-      <a class="btn" id="b-excel" hidden download>Excel (modelo DACDP)</a>
+      <button class="btn" id="b-exp" onclick="exportarExcel()" title="Descarrega em Excel as propostas que estão visíveis com os filtros escolhidos">Exportar seleção para Excel</button>
+      <a class="btn" id="b-excel" hidden download title="Registo completo no modelo da DACDP, gerado em cada captura">Registo completo (modelo DACDP)</a>
     </div>
     <div class="tabela-wrap"><table id="tab-pa"><thead><tr>
       <th data-k="n_pa">N.º</th><th data-k="data_entrada">Entrada</th><th data-k="proponente">Proponente</th><th data-k="artigo">Artigo / mapa</th><th data-k="tipo_ar">Tipo</th><th>Objeto</th><th data-k="tema_ar">Tema (AR)</th><th data-k="estado">Estado</th><th>Votação</th><th>Outros dados da AR</th><th>Ligações</th>
@@ -627,11 +627,48 @@ function render() {
 }
 document.querySelectorAll('#t-pa .filtros select, #t-pa .filtros input').forEach(el => el.addEventListener('input', render));
 document.querySelectorAll('#tab-pa th[data-k]').forEach(th => th.addEventListener('click', () => { const k=th.dataset.k; ordem = {k, asc: ordem.k===k ? !ordem.asc : true}; render(); }));
-function exportarCSV() {
-  const cols = ['n_pa','pa_base','parte','id_ar','data_entrada','proponente','proponente_deputados','apresentada','incide','artigo','artigo_epigrafe','diplomas','tipo_ar','objeto','tema_ar','estado','estado_ar','data_votacao','sede_votacao','resultado_votacao','votos_por_partido','avocacao','requerimentos','parecer_ra','ministerio_ar','n_votacoes','url_detalhe','url_pdf','primeira_captura','ultima_captura','fonte','ausente_da_fonte'];
-  const linhas = [cols.join(';')].concat(filtrar().map(r => cols.map(c => '"'+String(r[c]??'').replace(/"/g,'""')+'"').join(';')));
-  const blob = new Blob(['﻿'+linhas.join('\r\n')], {type:'text/csv;charset=utf-8'});
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `PA_OE${ANO}_${D.gerado_em.slice(0,10)}.csv`; a.click();
+const COLS_EXP = [['n_pa','N.º PA'],['pa_base','N.º base'],['parte','Parte'],['id_ar','ID AR'],['data_entrada','Data e hora de entrada'],['proponente','Proponente'],['proponente_deputados','Deputados'],['apresentada','Apresentada'],['incide','Incide'],['artigo','Artigo / mapa'],['artigo_epigrafe','Epígrafe do artigo'],['diplomas','Diplomas alterados'],['tipo_ar','Tipo'],['objeto','Objeto'],['tema_ar','Tema (AR)'],['estado','Estado'],['estado_ar','Estado (AR)'],['data_votacao','Data da votação'],['sede_votacao','Sede da votação'],['resultado_votacao','Resultado da votação'],['votos_por_partido','Sentido de voto por grupo parlamentar'],['avocacao','Avocação'],['requerimentos','Requerimentos'],['parecer_ra','Parecer Regiões Autónomas'],['ministerio_ar','Ministério (AR)'],['n_votacoes','N.º de votações'],['url_detalhe','Ligação AR'],['url_pdf','PDF'],['primeira_captura','Primeira captura'],['ultima_captura','Última captura'],['fonte','Fonte'],['ausente_da_fonte','Ausente da fonte']];
+function carregarXLSX() {
+  return new Promise((ok, falha) => {
+    if (window.XLSX) return ok();
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+    s.onload = () => ok(); s.onerror = () => falha(new Error('biblioteca Excel indisponível'));
+    document.head.appendChild(s);
+  });
+}
+async function exportarExcel() {
+  const b = $('#b-exp'), txt = b.textContent;
+  b.disabled = true; b.textContent = 'A preparar o Excel…';
+  try {
+    await carregarXLSX();
+    const linhas = filtrar().sort(ordemPA).map(r => Object.fromEntries(COLS_EXP.map(([k,l]) => {
+      let v = r[k] ?? '';
+      if (['data_entrada','primeira_captura','ultima_captura'].includes(k) && v) v = v.replace('T',' ').replace('Z','').slice(0,16);
+      if (['parte','n_votacoes','id_ar'].includes(k) && v !== '' && !isNaN(+v)) v = +v;
+      return [l, v];
+    })));
+    const ws = XLSX.utils.json_to_sheet(linhas, {header: COLS_EXP.map(c=>c[1])});
+    ws['!cols'] = COLS_EXP.map(([k]) => ({wch: {objeto:60, votos_por_partido:50, proponente_deputados:30, tema_ar:30, artigo_epigrafe:35, diplomas:35, requerimentos:35, url_detalhe:30, url_pdf:30}[k] || 14}));
+    ws['!autofilter'] = {ref: ws['!ref']};
+    const filtros = [['Pesquisa', $('#f-q').value], ['Proponente', $('#f-partido').value], ['Tema (AR)', $('#f-tema').value], ['Tipo', $('#f-tipo').value], ['Incide', $('#f-incide').value], ['Estado', $('#f-estado').value], ['Outros critérios', $('#f-extra').selectedOptions[0]?.value ? $('#f-extra').selectedOptions[0].textContent : '']].filter(f => f[1]);
+    const info = XLSX.utils.aoa_to_sheet([
+      [`Propostas de alteração ao Orçamento do Estado para ${ANO} — ${E.designacao}`],
+      ['Fonte', 'Assembleia da República, dados abertos (categoria «Orçamento do Estado», XVII Legislatura)'],
+      ['Exportado em', new Date().toLocaleString('pt-PT')],
+      ['Dados de', (E.execucao||{}).momento ? E.execucao.momento.replace('T',' ').slice(0,16)+' UTC' : '—'],
+      ['Registos exportados', linhas.length],
+      ['Filtros aplicados', filtros.length ? filtros.map(f => f.join(': ')).join(' · ') : 'nenhum (todas as propostas)'],
+      ['Tratamento', 'Área de Suporte à Decisão, Secretaria-Geral do Governo']
+    ]);
+    info['!cols'] = [{wch: 22}, {wch: 110}];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Propostas');
+    XLSX.utils.book_append_sheet(wb, info, 'Sobre esta exportação');
+    XLSX.writeFile(wb, `PA_OE${ANO}_${filtros.length ? 'selecao' : 'todas'}_${new Date().toISOString().slice(0,10)}.xlsx`);
+  } catch (e) {
+    alert('Não foi possível gerar o Excel neste momento. Use o «Registo completo (modelo DACDP)».');
+  } finally { b.disabled = false; b.textContent = txt; }
 }
 function renderPosicao() {
   const p = $('#f-pos-prop').value;
