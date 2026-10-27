@@ -1,9 +1,11 @@
 {
- "momento": "2026-10-26T22:15:24Z",
- "comando": "normalize",
+ "momento": "2026-10-27T10:58:17Z",
+ "comando": "opendata",
  "ano": 2026,
  "erros": [],
- "ficheiro_local": "data/oe2026/raw/2026-10-26_2202_opendata.json.gz",
+ "ficheiro_ar": "OEPropostasAlteracao2026Or_json.txt",
+ "url": "https://app.parlamento.pt/webutils/docs/doc.txt?path=dO%2f6nUIHaKn4i3l0fl1kG56NXMktzspwRpoKH5vMbfXwNVmzOzGwudR3y74%2bJIj45bJNuh%2f291%2fCHombAOHEoL9N1%2fpRQDA%2bYcGthQSBT8ADEoHFTzEA%2f0HIeatmp4XZtieonQbk05fhWdzndsh4ML8P2kqFPOS%2b6gixEmSoMhU2B%2f9p06I3gRp9DpRs342DWmP6vx%2fzwnOpd2qZju%2fAtMlY8Md3KqLU0zGoHImJUWcTM1J%2feTJo75KV1MHMozuo9gK2SVGCWtKPhykN7uKzpZmGBbmN7qV0eSIDixCoB9apYRCYWuHCsLSA3ITZSZPO51ZEQrCoVsByUTzxszT8FpMUNS8bIVKkycZ%2bN4NJH7kjmm4sMGHQtfUjmeqTYnl4Qwba3Y1StkBg7%2btVcrhWpBruWBjTLBshKma%2bmApB5Oo%3d&fich=OEPropostasAlteracao2026Or_json.txt&Inline=true",
+ "ultima_modificacao_ar": "",
  "capturados": 2193,
  "eventos": 0,
  "resumo": {
