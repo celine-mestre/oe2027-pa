@@ -22,7 +22,7 @@ Só informação publicada pela AR, tal como publicada (títulos, temas e estado
 | Página do OE na Comissão de Orçamento, Finanças e Administração Pública (COFAP) | Guiões e resultados de votações, textos finais, relatórios e pareceres | Lista de documentos no separador «Votações» (sem os contributos de entidades e cidadãos). |
 | Calendário de apreciação do OE 2027 (PDF da AR, cópia em `data/calibracao/`) | Datas e horas oficiais | Transcrito em `config.json` e mostrado na Síntese. |
 
-A página de pesquisa de PA do portal não é usada nas capturas automáticas. O endereço `PesquisaPropAlteracao110XVII.aspx` não existe na nova aplicação da AR (29 out. 2026); o painel só mostra a ligação quando `url_pesquisa_pa` estiver confirmado na edição, em `config.json`. A agenda parlamentar tem as reuniões (audições, votações, debates), mas não as PA.
+A [pesquisa de PA ao OE 2027](https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropostasAlteracaoPPL110XVII.aspx) (ligada a partir da página «Orçamento do Estado» da AR) aparece no painel como fonte de consulta, mas não é usada nas capturas automáticas. A 29 out. 2026, às 14h30, mostrava 90 registos, os mesmos do ficheiro dos dados abertos. As ligações de cada PA nessa pesquisa (`DetalhePropostaAlteracao.aspx?BID=…`) dão «página não encontrada». A agenda parlamentar tem as reuniões (audições, votações, debates), mas não as PA.
 
 ## Contagens
 

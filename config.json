@@ -7,6 +7,7 @@
    "ano_oe": 2027,
    "bid_iniciativa": "377352",
    "url_iniciativa": "https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377352",
+   "url_pesquisa_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropostasAlteracaoPPL110XVII.aspx",
    "url_texto_ppl": "https://app.parlamento.pt/OE2027/HTML/OrcamentoEstado2027.html",
    "url_calendario": "https://www.parlamento.pt/Documents/2026/outubro/calendario-OE2027.pdf",
    "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2027.aspx",
@@ -98,7 +99,7 @@
  "fontes": {
   "dados_abertos_pagina_oe": "https://www.parlamento.pt/Cidadania/Paginas/DAOE.aspx",
   "dados_abertos_pasta_xvii": "https://www.parlamento.pt/Cidadania/Paginas/DAOE.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=FczuwLUwGj%2FcIKv74%2F2UJrK1XjyhWUGFPnVdydZ%2FV8AIyO7HX1E3UBBhXVXxza%2FSSL%2BUWl%2FWZnHYGxvaHqbKiiR5Iq2OWPzV1Qz8g6QH03ShI94HbSyOQve6B48Qxn95H%2FETQ7ws763DbzTHtheZTfUPxukQo1Ef0YI1yyqMdglztMw4pDpY8SThqFGHrI2chDaT6mnu3h9PL4tiwDW9vEaqjwevnEDffYhzpwGKscV%2Bbg2YsUnYgF1e7u2Hbyg1x7C50z8vtGF3PkpBIzUtX9cA%2F3REe5FbObNI6US%2FF8gPH6T1iheJ35uBtnBgP4iDg5HUFOkmEfJA5ur8jQrphcPGjnRcLoIUZQBY%2Fz0arvM%3D",
-  "pesquisa_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropAlteracao110XVII.aspx",
+  "pesquisa_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/PesquisaPropostasAlteracaoPPL110XVII.aspx",
   "detalhe_pa": "https://www.parlamento.pt/OrcamentoEstado/Paginas/DetalhePropostaAlteracao.aspx?BID={bid}",
   "id_ar_inicial": 25391,
   "_id_ar_inicial": "Identificador (BID) a partir do qual a reserva procura PA no portal enquanto a base estiver vazia. Os identificadores das PA são atribuídos pela AR por ordem de entrada; o valor corresponde ao seguinte ao último atribuído antes deste Orçamento."
