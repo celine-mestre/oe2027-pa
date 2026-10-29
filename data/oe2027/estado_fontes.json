@@ -1,11 +1,11 @@
 {
  "dados_abertos": {
-  "momento": "2026-10-29T15:26:36Z",
+  "momento": "2026-10-29T16:25:18Z",
   "disponivel": true,
   "ficheiro": "OEPropostasAlteracao2027Or_json.txt",
-  "registos": 90,
-  "pa": 90,
-  "ultima_entrada": "2026-10-29T11:07",
+  "registos": 93,
+  "pa": 93,
+  "ultima_entrada": "2026-10-29T15:39",
   "ultima_modificacao_ar": ""
  },
  "pesquisa": {
@@ -14,7 +14,7 @@
   "erro": ""
  },
  "portal": {
-  "momento": "2026-10-29T15:26:42Z",
+  "momento": "2026-10-29T16:25:23Z",
   "desativada": true,
   "nota": "Desativada a 29/10/2026: na «nova aplicação» de inserção de PA da AR, os identificadores das PA recomeçam em 1 e coincidem com os de propostas de anos anteriores na página DetalhePropostaAlteracao.aspx (por exemplo, BID=1 abre a PA 1581C ao OE 2025). Os dados abertos da AR já publicam o ficheiro do OE 2027 (primeira versão com as PA entradas até às 9h59 de 29/10); o painel liga ao PDF de cada PA."
  }
