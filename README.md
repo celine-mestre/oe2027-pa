@@ -111,4 +111,5 @@ Os scripts `classificar.py`, `indice_ppl.py`, `exportar_excel.py` e `sincronizar
 1. O calendário indica que as PA ao OE 2027 serão inseridas numa «nova aplicação». Se a publicação mudar de formato, a primeira captura assinala-o.
 2. Não se sabe com que frequência a AR atualiza o ficheiro dos dados abertos durante o prazo. Se não acompanhar o portal, a reserva passa a fonte principal.
 3. A lista de temas da AR pode diferir da de 2026.
-4. O campo «Ministerio» dos dados abertos veio vazio em 2026; fica registado caso a AR o preencha em 2027.
+4. Artigo: na nova aplicação, algumas PA chegam ligadas a artigos de Orçamentos anteriores (ex.: «Artigo 1.º – Aprovação» do OE 2006, «Artigo 6.º – Transferências orçamentais»). `fetch_pa.py` só aceita o artigo associado quando o número e a epígrafe coincidem com o índice do texto da proposta de lei (`data/oe2027/ppl.html`); caso contrário, fica em branco.
+5. O campo «Ministerio» dos dados abertos veio vazio em 2026; fica registado caso a AR o preencha em 2027.

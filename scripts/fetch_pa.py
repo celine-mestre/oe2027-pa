@@ -229,6 +229,42 @@ def modelo_detalhe() -> str:
     return CONFIG["ppl"].get("detalhe_pa", CONFIG["fontes"]["detalhe_pa"])
 
 
+_INDICE_PPL: dict | None = None
+
+
+def indice_ppl() -> dict:
+    """Artigos da proposta de lei da edição (número → epígrafe), lidos do índice do texto publicado pela AR (ppl.html)."""
+    global _INDICE_PPL
+    if _INDICE_PPL is None:
+        _INDICE_PPL = {}
+        f = RAIZ / CONFIG["ppl"].get("pasta", "") / "ppl.html"
+        if CONFIG["ppl"].get("pasta") and f.exists():
+            import html as _html
+            t = _html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", f.read_text(encoding="utf-8", errors="ignore"))))
+            for n, e in re.findall(r"Artigo (\d+\.º(?:-[A-Z])?) - (.+?)(?= Artigo \d|\s+Capítulo|\s+Secção|\s+Subsecção|$)", t):
+                _INDICE_PPL.setdefault(f"Artigo {n}", e.strip())
+    return _INDICE_PPL
+
+
+def _sem_acentos(x: str) -> str:
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", x or "") if unicodedata.category(c) != "Mn").lower().strip()
+
+
+def artigo_de_outro_ano(a: dict) -> bool:
+    """True quando o artigo associado pela AR não é desta proposta de lei.
+    Na nova aplicação da AR (OE 2027) os identificadores recomeçam em 1 e há PA ligadas a artigos de Orçamentos
+    anteriores (ex.: «Artigo 1.º Aprovação — Orçamento do Estado para o ano de 2006»). Verifica-se o número e a epígrafe
+    contra o índice do texto da proposta de lei; sem índice, verifica-se o ano da norma de aprovação."""
+    ind = indice_ppl()
+    if ind:
+        e = ind.get((a.get("Artigo") or "").strip())
+        return e is None or _sem_acentos(e) != _sem_acentos(limpo(a.get("Titulo")))
+    ano = str(CONFIG["ppl"].get("ano_oe", ""))
+    m = re.search(r"aprovado pela presente lei o Orçamento do Estado para (?:o ano de )?(\d{4})", json.dumps(a, ensure_ascii=False))
+    return bool(ano and m and m.group(1) != ano)
+
+
 def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
     lista = bruto.get("PropostaDeAlteracao") if isinstance(bruto, dict) else None
     if lista is None:
@@ -243,6 +279,9 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
             gps = [sigla(x) for x in re.split(r",\s*", p.get("GrupoParlamentar_Partido") or "") if x]
         deps = [x.get("Deputado", "") for x in props if x.get("Deputado")]
         inic = [a for a in como_lista((p.get("Iniciativas_Artigos") or {}).get("Iniciativa_Artigo")) if a]
+        # Na nova aplicação da AR (OE 2027) os identificadores recomeçam em 1 e alguns registos chegam ligados a artigos
+        # de Orçamentos de anos anteriores (ex.: «Orçamento do Estado para o ano de 2006»). Esses artigos não são usados.
+        inic = [a for a in inic if not artigo_de_outro_ano(a)]
         artigos = [a.get("Artigo", "") for a in inic]
         epigrafes = [limpo(a.get("Titulo")) for a in inic if a.get("Titulo")]
         diplomas = [limpo(d.get("Titulo")) for d in como_lista((p.get("DiplomasMedidas") or {}).get("DiplomaMedida")) if d and d.get("Titulo")]
