@@ -224,6 +224,11 @@ def localizar_ficheiro_pa(ano: int, s=None) -> dict | None:
     return None
 
 
+def modelo_detalhe() -> str:
+    """Endereço da página de detalhe de cada PA na edição em causa (vazio quando a AR não tem página fiável)."""
+    return CONFIG["ppl"].get("detalhe_pa", CONFIG["fontes"]["detalhe_pa"])
+
+
 def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
     lista = bruto.get("PropostaDeAlteracao") if isinstance(bruto, dict) else None
     if lista is None:
@@ -282,7 +287,7 @@ def normalizar_opendata(bruto: dict, momento: str) -> list[dict]:
             "parecer_ra": ", ".join(ra),
             "ministerio_ar": limpo(p.get("Ministerio")) if isinstance(p.get("Ministerio"), str) else "",
             "n_votacoes": str(len(votacoes)),
-            "url_detalhe": CONFIG["fontes"]["detalhe_pa"].format(bid=bid) if bid else "",
+            "url_detalhe": modelo_detalhe().format(bid=bid) if bid and modelo_detalhe() else "",
             "url_pdf": (p.get("Ficheiro") or "").replace("http://", "https://"),
             "primeira_captura": momento,
             "ultima_captura": momento,
@@ -538,6 +543,11 @@ def main(argv=None) -> int:
                 "ultima_modificacao_ar": meta.get("ultima_modificacao_ar", ""),
             })
         print(json.dumps({k: v for k, v in meta.items() if k != "resumo"} | {"pa": meta["resumo"]["pa"]}, ensure_ascii=False))
+        return 0
+
+    if a.comando == "verificar" and ed.get("reserva_portal") is False:
+        atualizar_estado(pasta, "portal", {"momento": momento, "desativada": True, "nota": ed.get("_reserva_portal", "")})
+        print("reserva pelo portal desativada para esta edição (config.json)")
         return 0
 
     if a.comando == "verificar":
