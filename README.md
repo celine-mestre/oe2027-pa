@@ -22,7 +22,7 @@ Só informação publicada pela AR, tal como publicada (títulos, temas e estado
 | Página do OE na Comissão de Orçamento, Finanças e Administração Pública (COFAP) | Guiões e resultados de votações, textos finais, relatórios e pareceres | Lista de documentos no separador «Votações» (sem os contributos de entidades e cidadãos). |
 | Calendário de apreciação do OE 2027 (PDF da AR, cópia em `data/calibracao/`) | Datas e horas oficiais | Transcrito em `config.json` e mostrado na Síntese. |
 
-A página de pesquisa de PA (`PesquisaPropAlteracao110XVII.aspx`) não é usada nas capturas automáticas: demora cerca de um minuto por página de 20 resultados. A agenda parlamentar tem as reuniões (audições, votações, debates), mas não as PA.
+A página de pesquisa de PA do portal não é usada nas capturas automáticas. O endereço `PesquisaPropAlteracao110XVII.aspx` não existe na nova aplicação da AR (29 out. 2026); o painel só mostra a ligação quando `url_pesquisa_pa` estiver confirmado na edição, em `config.json`. A agenda parlamentar tem as reuniões (audições, votações, debates), mas não as PA.
 
 ## Contagens
 
