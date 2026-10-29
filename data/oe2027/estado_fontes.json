@@ -1,6 +1,6 @@
 {
  "dados_abertos": {
-  "momento": "2026-10-29T10:04:17Z",
+  "momento": "2026-10-29T10:08:01Z",
   "disponivel": true,
   "ficheiro": "OEPropostasAlteracao2027Or_json.txt",
   "registos": 67,
@@ -14,7 +14,7 @@
   "erro": ""
  },
  "portal": {
-  "momento": "2026-10-29T10:07:19Z",
+  "momento": "2026-10-29T10:08:06Z",
   "desativada": true,
   "nota": "Desativada a 29/10/2026: na «nova aplicação» de inserção de PA da AR, os identificadores das PA recomeçam em 1 e coincidem com os de propostas de anos anteriores na página DetalhePropostaAlteracao.aspx (por exemplo, BID=1 abre a PA 1581C ao OE 2025). Os dados abertos da AR estão publicados e atualizados ao minuto; o painel liga ao PDF de cada PA."
  }
