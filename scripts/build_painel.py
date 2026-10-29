@@ -21,6 +21,8 @@ import datetime as dt
 import json
 from pathlib import Path
 
+import capa_painel  # capa de abertura (CSS, HTML e JS)
+
 RAIZ = Path(__file__).resolve().parents[1]
 DOCS = RAIZ / "docs"
 CONFIG = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
@@ -50,6 +52,8 @@ def carregar_edicao(ano: str, ed: dict, pasta: Path) -> dict:
         "inicio_registo": ed.get("inicio_registo", ""),
         "urls": {k: v for k, v in ed.items() if k.startswith("url_")},
         "calendario": ed.get("calendario", []),
+        "fim_prazo": ed.get("fim_prazo", ""),
+        "marcos_capa": ed.get("marcos_capa", []),
         "calendario_nota": ed.get("calendario_nota", ""),
         "execucao": ler_json(pasta / "ultima_execucao.json", {}),
         "pa": pa,
@@ -83,7 +87,9 @@ def main(argv=None) -> int:
         "partidos": list(TAX["partidos"].keys()),
         "cores": TAX.get("cores", {}),
     }
-    html = TEMPLATE.replace("__LOGO__", logo_b64).replace("__DADOS__", json.dumps(payload, ensure_ascii=False).replace("</", "<\\/"))
+    html = (TEMPLATE.replace("/*__CAPA_CSS__*/", capa_painel.CSS).replace("<!--__CAPA_HTML__-->", capa_painel.HTML)
+            .replace("//__CAPA_JS__", capa_painel.JS))
+    html = html.replace("__LOGO__", logo_b64).replace("__DADOS__", json.dumps(payload, ensure_ascii=False).replace("</", "<\\/"))
     Path(args.saida).parent.mkdir(parents=True, exist_ok=True)
     Path(args.saida).write_text(html, encoding="utf-8")
     print(f"{args.saida}: " + " · ".join(f"OE {a}: {len(e['pa'])} registos" for a, e in edicoes.items()))
@@ -253,10 +259,12 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
   a{text-decoration:none;color:inherit}
   footer{page-break-before:avoid}
 }
+/*__CAPA_CSS__*/
 @media (max-width:760px){.topo .dir{margin-left:0;align-items:flex-start}.topo .meta{text-align:left}.hero{grid-template-columns:1fr}.hero .big{font-size:34px}.barras .k{max-width:150px}nav.tabs .ed{display:none}}
 </style>
 </head>
 <body>
+<!--__CAPA_HTML__-->
 <header class="topo"><div class="in">
   <div class="pastilha"><img src="data:image/png;base64,__LOGO__" alt="Secretaria-Geral do Governo"></div>
   <div class="tit">
@@ -385,6 +393,7 @@ footer .filete{height:3px;background:linear-gradient(90deg,var(--azul),var(--tea
 <script id="dados" type="application/json">__DADOS__</script>
 <script>
 const D = JSON.parse(document.getElementById('dados').textContent);
+const HASH_INICIAL = location.hash;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmtN = n => Number(n).toLocaleString('pt-PT');
@@ -703,6 +712,7 @@ function renderRes() {
 montar();
 const alvoHash = hash[1]==='temas' ? 'pa' : hash[1];
 if (alvoHash && document.querySelector(`nav.tabs button[data-t="${alvoHash}"]:not([hidden])`)) irPara(alvoHash); else atualizarHash();
+//__CAPA_JS__
 </script>
 </body>
 </html>

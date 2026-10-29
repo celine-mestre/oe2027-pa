@@ -77,6 +77,35 @@
     }
    ],
    "calendario_nota": "(*) De acordo com o plano de contingência para introdução de PA, este prazo poderá ser adiado em 24 horas úteis, se necessário.",
+   "fim_prazo": "2026-11-06",
+   "marcos_capa": [
+    {
+     "data": "2026-10-29",
+     "rotulo": "29 out.",
+     "texto": "Início do prazo de entrega"
+    },
+    {
+     "data": "2026-11-06",
+     "rotulo": "6 nov.",
+     "texto": "Fim do prazo de entrega"
+    },
+    {
+     "data": "2026-11-11",
+     "rotulo": "11–13 nov.",
+     "texto": "Guiões de votação"
+    },
+    {
+     "data": "2026-11-18",
+     "rotulo": "18–23 nov.",
+     "texto": "Votações na especialidade"
+    },
+    {
+     "data": "2026-11-24",
+     "rotulo": "24 nov.",
+     "texto": "Votação final global"
+    }
+   ],
+   "_marcos_capa": "Marcos da capa, resumidos do calendário de apreciação da AR (url_calendario). fim_prazo: só a data, porque o calendário não fixa a hora.",
    "inicio_registo": "2026-10-29T09:00",
    "reserva_portal": false,
    "detalhe_pa": "",
