@@ -1,5 +1,5 @@
 {
- "momento": "2026-10-29T12:44:43Z",
+ "momento": "2026-10-29T13:50:16Z",
  "comando": "opendata",
  "ano": 2027,
  "erros": [],
@@ -7,7 +7,7 @@
  "url": "https://app.parlamento.pt/webutils/docs/doc.txt?path=t9%2f0SoZp71GyTifGDR7cWuJsDFeTy%2blMTFr3M4KCmLytLvo9fbWCvIPJGleDuRe%2fI%2frbxbOi2%2fnRp5MjRj8EXB6TEIcCznbnmSjUZTHtMh6mTMRaM8Fwn9psE97H12ZXJ6aqbdONbgpN7Nqyo3G47MBhpLsZ%2f6u%2bfEJl6eJqyremkl4bcDzKzas1D80efS7ZY91LkzhkjE88j%2bZBWcBAlmSFhEYPVKRYAFWGKlI39EoSeXSt5yepaHNPhoJGDaLyEN%2fuxkeSh%2bhe%2fQ72Fwk5UkBrTnjkxq1Cmc1IsPRAITIY6vyKkck8p%2f7qlHBVWcZABZg7cELei9Agw3tTHPI7svArIe51%2b7QSHA1XMnfa63XdRs%2fPDWv5GL2YnYaodgooCnLZobTZ5lspuTqrHF3yUzi9MyXJKZJzEBpzColuNSrSBTJiHP8B2JiL6E01TKKY&fich=OEPropostasAlteracao2027Or_json.txt&Inline=true",
  "ultima_modificacao_ar": "",
  "capturados": 90,
- "eventos": 0,
+ "eventos": 6,
  "resumo": {
   "registos": 90,
   "pa": 90,
@@ -18,7 +18,8 @@
    "CDS-PP": 2
   },
   "por_estado": {
-   "em apreciação": 90
+   "em apreciação": 89,
+   "não admitida": 1
   }
  }
 }
