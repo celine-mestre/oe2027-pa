@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/**", "config.json", "data/taxonomia.json", "requirements.txt", ".github/workflows/atualizar.yml"]
+    paths: ["scripts/**", "config.json", "data/taxonomia.json", "requirements.txt", ".github/workflows/atualizar.yml", "disparar.txt"]
+    # disparar.txt: alterar este ficheiro lança uma captura (alternativa ao botão «Run workflow» se o agendamento falhar)
   schedule:
     # Horas em UTC (= hora de Lisboa até março). Cadência ajustada ao calendário oficial do OE 2027:
     # mais capturas no último dia do prazo e nos dias de votação.
