@@ -6,6 +6,8 @@ quando a captura não está a funcionar durante o processo de apreciação.
 Condições de alerta:
   1. Prazo de inserção aberto há mais de 3 horas e nenhuma PA na base.
   2. Erros repetidos na leitura do portal da AR (páginas de detalhe das PA).
+
+Corre no fim de cada captura do workflow «atualizar.yml».
 """
 from __future__ import annotations
 
