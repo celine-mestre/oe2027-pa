@@ -445,8 +445,12 @@ def fundir(bd: dict[str, dict], novos: list[dict], momento: str, fonte: str, mar
             eventos.append({"momento": momento, "n_pa": k, "evento": "votada",
                             "detalhe": f"{r['resultado_votacao']} · {r['votos_por_partido']}", "fonte": fonte})
         for c in CAMPOS:
-            if c != "primeira_captura" and r.get(c) not in (None, ""):
-                antigo[c] = r[c]
+            # Os dados abertos são a publicação de referência: os campos que a AR esvazia também são esvaziados
+            # (exceto os de captura). Na reserva pelo portal só se acrescenta o que vem preenchido.
+            if c == "primeira_captura":
+                continue
+            if r.get(c) not in (None, "") or (fonte == "opendata" and c in r):
+                antigo[c] = r.get(c) or ""
             antigo.setdefault(c, "")  # campos acrescentados em versões posteriores do extrator
         antigo["ultima_captura"] = momento
         antigo.pop("ausente_da_fonte", None)
