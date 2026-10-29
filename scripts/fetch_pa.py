@@ -537,6 +537,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     ed = edicao(a.ano)
     CONFIG["ppl"] = ed
+    if ed.get("congelada") and a.comando != "listar" and not a.saida:
+        print(f"OE {a.ano}: edição congelada em config.json — os dados não são alterados"); return 0
     pasta = Path(a.saida) if a.saida else RAIZ / ed["pasta"]
     raw = pasta / "raw"
     raw.mkdir(parents=True, exist_ok=True)

@@ -122,6 +122,8 @@ def main(argv=None) -> int:
     ap.add_argument("--pasta", default="", help="outra pasta de dados (testes)")
     a = ap.parse_args(argv)
     saida = Path(a.saida) if a.saida else RAIZ / "docs" / f"PA_OE{a.ano}_dados_AR.xlsx"
+    if CONFIG["edicoes"][str(a.ano)].get("congelada") and saida.exists() and not a.saida:
+        print(f"OE {a.ano}: edição congelada — mantém-se {saida.name}"); return 0
     print(json.dumps(construir(str(a.ano), saida, Path(a.pasta) if a.pasta else None), ensure_ascii=False))
     return 0
 

@@ -40,7 +40,7 @@ def main() -> int:
             print(f"calendário indisponível: {e}", file=sys.stderr)
     for ano, ed in fp.CONFIG["edicoes"].items():
         url = ed.get("url_texto_ppl")
-        if not url:
+        if not url or ed.get("congelada"):
             continue
         try:
             r = s.get(url, timeout=180)

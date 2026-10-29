@@ -1,9 +1,9 @@
-name: Calibração e carga do OE 2026
+name: Calibração (OE 2027)
 
 # Manual, ou ao alterar este ficheiro. Faz o que não precisa de correr em cada captura:
 #   1. lista a pasta XVII dos dados abertos e descarrega o calendário e o texto das propostas de lei;
-#   2. carrega (ou atualiza) a base do OE 2026, processo concluído, a partir dos dados abertos da AR;
-#   3. exporta os Excel e publica o painel.
+#   2. exporta o Excel do OE 2027 e publica o painel.
+# O OE 2026 está congelado (config.json, "congelada": true): nenhum workflow volta a escrever nos seus dados.
 
 on:
   workflow_dispatch:
@@ -37,17 +37,8 @@ jobs:
         continue-on-error: true
         run: python scripts/descobrir.py
 
-      - name: OE 2026 — dados abertos (processo concluído)
-        continue-on-error: true
-        run: python scripts/fetch_pa.py opendata --ano 2026
-
-      - name: OE 2026 — documentos da página da COFAP
-        continue-on-error: true
-        run: python scripts/fetch_pa.py documentos --ano 2026
-
       - name: Excel e painel
         run: |
-          python scripts/exportar_dados.py --ano 2026
           python scripts/exportar_dados.py --ano 2027
           python scripts/build_painel.py
 

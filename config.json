@@ -86,6 +86,8 @@
    "ano_oe": 2026,
    "pasta": "data/oe2026",
    "estado": "concluído",
+   "congelada": true,
+   "_congelada": "Dados fixados a 27 out. 2026 (ficheiro final dos dados abertos da AR, 2 193 registos). Os scripts não voltam a escrever nesta edição.",
    "url_texto_ppl": "https://app.parlamento.pt/OE2026/HTML/corpo.html",
    "url_cofap": "https://www.parlamento.pt/sites/COM/XVIILeg/5COFAP/Paginas/OE2026.aspx",
    "_nota": "Processo concluído (votação final global a 27 de novembro de 2025). Serve de base de comparação: é a única edição completa da XVII Legislatura, com a mesma composição parlamentar. O calendário mostrado é o derivado dos próprios dados da AR (entradas e votações).",

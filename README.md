@@ -5,7 +5,7 @@ Extração automática, base de dados, painel e Excel das propostas de alteraç�
 | Edição | Proposta de lei | Situação |
 |---|---|---|
 | OE 2027 | Proposta de Lei n.º 110/XVII/2.ª | Em curso. PA registadas a partir de 29 de outubro de 2026, às 9h00 (início do prazo de inserção, segundo o calendário da AR). |
-| OE 2026 | Proposta de Lei n.º 37/XVII/1.ª | Concluída. Base de comparação: única edição completa da XVII Legislatura, com a mesma composição parlamentar. |
+| OE 2026 | Proposta de Lei n.º 37/XVII/1.ª | Concluída e congelada: dados fixados a 27 out. 2026 (ficheiro final dos dados abertos, 2 193 registos). Nenhum script ou workflow volta a escrever nesta edição (`"congelada": true` em `config.json`). |
 
 - Painel: https://upe-sggov.github.io/oe2027-pa/ (seletor de edição no canto superior direito)
 - Base completa em Excel: https://upe-sggov.github.io/oe2027-pa/PA_OE2027_dados_AR.xlsx (e `PA_OE2026_dados_AR.xlsx`)
@@ -13,7 +13,7 @@ Extração automática, base de dados, painel e Excel das propostas de alteraç�
 
 ## Fontes
 
-Só informação publicada pela AR. Não há classificações próprias.
+Só informação publicada pela AR, tal como publicada (títulos, temas e estados sem reescrita). Não há classificações próprias. Em cada edição só entram registos dessa edição: no OE 2027 todas as PA entraram a partir de 29 out. 2026, e os artigos que a AR associa a Orçamentos anteriores não são usados (ver ponto 4 abaixo).
 
 | Fonte | O que dá | Uso |
 |---|---|---|
@@ -72,13 +72,12 @@ No painel, o botão «Exportar para Excel» descarrega as propostas visíveis co
 
 O workflow corre também quando o código é alterado. Se, durante o processo, a captura não estiver a funcionar (nenhuma PA três horas depois de abrir o prazo, ou erros repetidos no portal), o último passo termina a vermelho e o GitHub envia um aviso por e-mail.
 
-`.github/workflows/calibracao.yml` (manual, ou quando o próprio ficheiro é alterado): lista a pasta dos dados abertos, descarrega o calendário e o texto das propostas de lei, recarrega o OE 2026, gera os Excel e publica o painel.
+`.github/workflows/calibracao.yml` (manual, ou quando o próprio ficheiro é alterado): lista a pasta dos dados abertos, descarrega o calendário e o texto da proposta de lei do OE 2027, gera o Excel e publica o painel. Não mexe no OE 2026.
 
 ## Comandos
 
 ```
 python scripts/fetch_pa.py opendata              # dados abertos, edição ativa (2027)
-python scripts/fetch_pa.py opendata --ano 2026   # OE 2026
 python scripts/fetch_pa.py verificar             # reserva incremental pelo portal
 python scripts/fetch_pa.py documentos            # documentos da página da COFAP
 python scripts/fetch_pa.py listar                # ficheiros publicados na pasta XVII dos dados abertos
