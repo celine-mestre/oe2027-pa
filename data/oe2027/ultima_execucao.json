@@ -1,14 +1,24 @@
 {
- "momento": "2026-10-27T10:59:30Z",
+ "momento": "2026-10-29T10:04:17Z",
  "comando": "opendata",
  "ano": 2027,
- "erros": [
-  "o ficheiro OEPropostasAlteracao2027 ainda não consta da pasta XVII dos dados abertos da AR"
- ],
+ "erros": [],
+ "ficheiro_ar": "OEPropostasAlteracao2027Or_json.txt",
+ "url": "https://app.parlamento.pt/webutils/docs/doc.txt?path=E3if%2fl5BR6s50SmSPB0Xk6XYQIMPC4I1UOSlpxguQDeMZw29HvLbZVLPwU9waftox%2fZWlTG4vuWVk50%2f%2fwFKDILwnUtdOM9F%2bk%2bqRcWgnwORQXc0HG2%2bCkUWrfLJB8neHLGaUSovlmvR7tA0h537lmIs9uAK4X4UVGkUgLNaWY67S79MOhsWpYVpuTYlAGb1vzle5WeFeCs%2bJaGYL1X8m98V2v%2bpkSXFqoGdaUUVE7Xr0pjg%2fyXzMJ0rwqR3X5UzB91VwYXk%2bdILbZfdVLwD7ArU0DygBH06uFBSfBjwinamur8MFnojzYWeRDvrVNwQGaGMxnZL3JMJJS5r%2baZsz62q2IyuvuoC01i65wDBijLe3l5%2fVudHzQmwL4MBN2RkeDrkVx3qCHqWHBqOvS5q92dfx6xWrvoTYyYJDCGkqmA%3d&fich=OEPropostasAlteracao2027Or_json.txt&Inline=true",
+ "ultima_modificacao_ar": "",
+ "capturados": 67,
+ "eventos": 67,
  "resumo": {
-  "registos": 0,
-  "pa": 0,
-  "por_proponente": {},
-  "por_estado": {}
+  "registos": 67,
+  "pa": 67,
+  "por_proponente": {
+   "L": 34,
+   "PAN": 31,
+   "PSD": 2,
+   "CDS-PP": 2
+  },
+  "por_estado": {
+   "em apreciação": 67
+  }
  }
 }

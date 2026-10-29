@@ -1,7 +1,12 @@
 {
  "dados_abertos": {
-  "momento": "2026-10-27T10:59:30Z",
-  "disponivel": false
+  "momento": "2026-10-29T10:04:17Z",
+  "disponivel": true,
+  "ficheiro": "OEPropostasAlteracao2027Or_json.txt",
+  "registos": 67,
+  "pa": 67,
+  "ultima_entrada": "2026-10-29T09:59",
+  "ultima_modificacao_ar": ""
  },
  "pesquisa": {
   "momento": "2026-10-26T04:39:05Z",
@@ -9,10 +14,10 @@
   "erro": ""
  },
  "portal": {
-  "momento": "2026-10-27T10:59:51Z",
-  "primeiro_id_testado": 25391,
-  "ultimo_id_testado": 25415,
-  "novos": 0,
+  "momento": "2026-10-29T10:04:24Z",
+  "primeiro_id_testado": 68,
+  "ultimo_id_testado": 100,
+  "novos": 2,
   "relidos": 0,
   "falhas": 0,
   "erro": ""
