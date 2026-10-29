@@ -1,8 +1,8 @@
 {
- "momento": "2026-10-27T10:58:12Z",
+ "momento": "2026-10-29T12:45:54Z",
  "ficheiros_xvii": [
-  "OE_Tutorial.pdf",
   "OEPropostasAlteracao_Tutorial.pdf",
+  "OE_Tutorial.pdf",
   "OE2026Or.xml",
   "OE2026Or.xsd",
   "OE2026Or_json.txt",
@@ -11,16 +11,15 @@
   "OEPropostasAlteracao2026Or_json.txt",
   "OE2027Or.xml",
   "OE2027Or.xsd",
-  "OE2027Or_json.txt"
+  "OE2027Or_json.txt",
+  "OEPropostasAlteracao2027Or.xml",
+  "OEPropostasAlteracao2027Or.xsd",
+  "OEPropostasAlteracao2027Or_json.txt"
  ],
  "ppl": {
   "2027": {
    "url": "https://app.parlamento.pt/OE2027/HTML/OrcamentoEstado2027.html",
    "bytes": 4031729
-  },
-  "2026": {
-   "url": "https://app.parlamento.pt/OE2026/HTML/corpo.html",
-   "bytes": 4723422
   }
  }
 }
