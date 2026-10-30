@@ -1,6 +1,6 @@
 """
 Capa de abertura do painel (ecrã inteiro, com movimento), na linha da capa do Radar de Notícias.
-Mostra só dados da AR da edição ativa: número de PA, estados, proponentes, mosaico por ordem de entrada,
+Mostra só dados da AR da edição ativa: número de PA, estados, proponentes, € formado pelas PA (sempre cheio; os pontos encolhem à medida que entram),
 últimas entradas e marcos do calendário. Não aparece quando se chega por uma ligação direta (#oe2027/…).
 Importado por build_painel.py: CSS, HTML e JS são inseridos no TEMPLATE.
 """
@@ -54,7 +54,10 @@ body.cp-aberta{overflow:hidden}
 .cp-btn:focus-visible{outline:3px solid #FFD200;outline-offset:2px}
 .cp-cartao{min-width:0;background:rgba(9,32,44,.28);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:1.2rem 1.25rem 1.1rem;box-shadow:0 18px 50px rgba(0,0,0,.18)}
 .cp-cartao h2{margin:0 0 .2rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.9;color:#fff}
-.cp-nota{font-size:.76rem;opacity:.75;margin:0 0 .9rem;font-weight:300}
+.cp-nota{font-size:.76rem;opacity:.8;margin:0 0 .7rem;font-weight:300;line-height:1.5}.cp-nota b{font-weight:600}
+.cp-euro-wrap{position:relative}
+#cp-euro{display:block;width:100%;max-width:460px;margin:0 auto;cursor:crosshair}
+.cp-dica{position:absolute;z-index:3;width:260px;background:rgba(9,32,44,.92);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:.5rem .65rem;font-size:.72rem;line-height:1.4;pointer-events:none}
 .cp-mosaico{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--q,20px),1fr));gap:var(--g,4px)}
 .cp-q{aspect-ratio:1;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.38);opacity:0;transform:scale(.3);transition:opacity .35s,transform .35s cubic-bezier(.3,1.6,.5,1);position:relative}
 .cp-q.on{opacity:1;transform:none}
@@ -145,9 +148,9 @@ HTML = r"""
         </div>
       </div>
       <div class="cp-cartao cp-e" style="animation-delay:.4s">
-        <h2>Cada quadrado é uma proposta</h2>
-        <p class="cp-nota">Por ordem de entrada, com a cor do proponente. As mais recentes piscam.</p>
-        <div class="cp-mosaico" id="cp-mosaico"></div>
+        <h2>Cada ponto é uma proposta</h2>
+        <p class="cp-nota" id="cp-nota"></p>
+        <div class="cp-euro-wrap"><canvas id="cp-euro" aria-label="€ formado pelas propostas de alteração"></canvas><div class="cp-dica" id="cp-dica" hidden></div></div>
         <div class="cp-leg2" id="cp-leg2"></div>
         <div class="cp-ult"><h3>Últimas entradas</h3><div class="cp-fita"><ul id="cp-fita"></ul></div></div>
       </div>
@@ -215,21 +218,70 @@ JS = r"""
   $('#cp-leg').innerHTML = est.map(([n,l,c]) => `<span><i style="background:${c}"></i><b>${fmtN(n)}</b> ${l}</span>`).join('');
   setTimeout(() => document.querySelectorAll('#cp-barra span').forEach(s => s.style.width = s.dataset.w + '%'), reduzir ? 0 : 900);
 
-  // mosaico: um quadrado por registo, por ordem de entrada
-  const M = $('#cp-mosaico');
-  M.style.setProperty('--q', N > 1500 ? '7px' : N > 700 ? '9px' : N > 300 ? '13px' : '20px');
-  M.style.setProperty('--g', N > 700 ? '2px' : '4px');
-  if (!N) M.innerHTML = '<div class="cp-vazio">A capa mostra as propostas à medida que a AR as publica.</div>';
+  // o € feito de propostas: cada ponto é um registo; o € está sempre cheio e os pontos encolhem à medida que entram PA
+  const CAP = Math.max(N, 40);   // abaixo de 40 pontos o € deixaria de se reconhecer: os lugares a mais ficam por acender
+  $('#cp-nota').innerHTML = `Cada ponto é uma proposta, por ordem de entrada e com a cor do proponente. O € está sempre cheio: os pontos encolhem à medida que a AR publica mais propostas.`;
+  const cv = $('#cp-euro'), dpr = Math.min(2, window.devicePixelRatio || 1);
   const recentes = new Set(PAc.slice(-3).map(r => r.n_pa));
-  const passo = Math.min(18, 1800 / Math.max(N,1));
-  PAc.forEach((r,i) => {
-    const q = document.createElement('div');
-    q.className = 'cp-q' + (r.estado_ar === 'Não Admitida' ? ' na' : '') + (recentes.has(r.n_pa) ? ' nova' : '');
-    q.style.background = corP(r.proponente);
-    q.title = `${r.n_pa} · ${nomeP(r.proponente)} · ${dia(r.data_entrada||'')} ${hora(r.data_entrada||'')} · ${r.estado_ar||''}\n${r.objeto||''}`;
-    M.appendChild(q);
-    if (reduzir) q.classList.add('on'); else setTimeout(() => q.classList.add('on'), 700 + i * passo);
+  let celulas = [], lado = 6, acesos = 0, tAnim = 0;
+  function corDe(p){ return String(p||'').split(/;\s*/).filter(Boolean).map(x => (D.cores||{})[x] || '#9aa7b0'); }
+  function geometria(){
+    const W = cv.clientWidth, H = Math.round(W * 0.6);
+    cv.style.height = H + 'px'; cv.width = W * dpr; cv.height = H * dpr;
+    // desenha o € numa tela escondida e mede a área ocupada
+    const o = document.createElement('canvas'); o.width = W; o.height = H; const x = o.getContext('2d');
+    x.fillStyle = '#000'; x.textAlign = 'left'; x.textBaseline = 'alphabetic';
+    // ajusta o tamanho do € para ocupar ~92% da altura (ou da largura) da tela
+    x.font = `700 100px Lexend, Arial, sans-serif`;
+    const mt = x.measureText('€'), gw = mt.actualBoundingBoxLeft + mt.actualBoundingBoxRight, gh = mt.actualBoundingBoxAscent + mt.actualBoundingBoxDescent;
+    const fs = 100 * Math.min(H * 0.94 / gh, W * 0.9 / gw);
+    x.font = `700 ${fs}px Lexend, Arial, sans-serif`;
+    const m2 = x.measureText('€');
+    x.fillText('€', W/2 - (m2.actualBoundingBoxRight - m2.actualBoundingBoxLeft)/2, H/2 + (m2.actualBoundingBoxAscent - m2.actualBoundingBoxDescent)/2);
+    const px = x.getImageData(0, 0, W, H).data; const dentro = (a,b) => px[((b|0)*W + (a|0))*4 + 3] > 128;
+    let area = 0; for (let k = 3; k < px.length; k += 4) if (px[k] > 128) area++;
+    // espaçamento que dá o número de lugares mais próximo de CAP (pesquisa binária), para o € ficar cheio e sem falhas
+    const grelha = sp => { const r = []; for (let b = sp/2; b < H; b += sp) for (let a = sp/2; a < W; a += sp) if (dentro(a,b)) r.push([a,b]); return r; };
+    let lo = Math.sqrt(area / CAP) * 0.5, hi = Math.sqrt(area / CAP) * 1.6, pts = grelha(lo), s = lo;
+    for (let it = 0; it < 28; it++) { const md = (lo + hi) / 2, g = grelha(md); if (g.length >= CAP) { lo = md; pts = g; s = md; } else hi = md; }
+    // de baixo para cima, da esquerda para a direita; se a grelha tiver lugares a mais, retiram-se espaçados
+    pts.sort((p,q) => (q[1] - p[1]) || (p[0] - q[0]));
+    const M = pts.length; celulas = []; for (let i = 0; i < CAP; i++) celulas.push(pts[Math.floor(i * M / CAP)]); lado = s;
+  }
+  function desenhar(t){
+    const c = cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,cv.width,cv.height);
+    const q = Math.max(2, lado * 0.78), r = Math.min(3, q * 0.22), pisca = 0.5 + 0.5*Math.sin(t/260);
+    celulas.forEach(([a,b], i) => {
+      const x = a - q/2, y = b - q/2;
+      if (i >= acesos) { c.fillStyle = 'rgba(255,255,255,.16)'; c.beginPath(); c.roundRect(x,y,q,q,r); c.fill(); return; }
+      const reg = PAc[i], cores = corDe(reg.proponente), na = reg.estado_ar === 'Não Admitida';
+      c.globalAlpha = na ? 0.45 : 1;
+      if (cores.length > 1) { c.save(); c.beginPath(); c.roundRect(x,y,q,q,r); c.clip(); c.fillStyle = cores[0]; c.fillRect(x,y,q,q);
+        c.fillStyle = cores[1]; c.beginPath(); c.moveTo(x+q,y); c.lineTo(x+q,y+q); c.lineTo(x,y+q); c.closePath(); c.fill(); c.restore(); }
+      else { c.fillStyle = cores[0]; c.beginPath(); c.roundRect(x,y,q,q,r); c.fill(); }
+      c.globalAlpha = 1;
+      if (q >= 6) { c.strokeStyle = 'rgba(255,255,255,.35)'; c.lineWidth = 1; c.beginPath(); c.roundRect(x+.5,y+.5,q-1,q-1,r); c.stroke(); }
+      if (recentes.has(reg.n_pa)) { c.strokeStyle = `rgba(255,210,0,${0.25 + 0.75*pisca})`; c.lineWidth = 2; c.beginPath(); c.roundRect(x-3,y-3,q+6,q+6,r+2); c.stroke(); }
+    });
+  }
+  function ciclo(t){ if (C.hidden) return;
+    if (!tAnim) tAnim = t;
+    acesos = reduzir ? N : Math.min(N, Math.round(N * Math.min(1, Math.max(0, (t - tAnim - 700) / 1800))));
+    desenhar(t); requestAnimationFrame(ciclo); }
+  const arrancar = () => { geometria(); requestAnimationFrame(ciclo); };
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(arrancar);
+  window.addEventListener('resize', () => { if (!C.hidden) geometria(); });
+  // ao passar o rato: número, proponente e título da PA
+  const dica = $('#cp-dica');
+  cv.addEventListener('mousemove', e => {
+    const b = cv.getBoundingClientRect(), mx = e.clientX - b.left, my = e.clientY - b.top;
+    let k = -1, dm = 1e9; celulas.forEach(([a,c],i) => { const d2 = (a-mx)**2 + (c-my)**2; if (d2 < dm) { dm = d2; k = i; } });
+    if (k < 0 || k >= acesos || dm > lado*lado) { dica.hidden = true; return; }
+    const r = PAc[k]; dica.hidden = false;
+    dica.innerHTML = `<b>${esc(r.n_pa)}</b> · ${esc(nomeP(r.proponente))} · ${esc(dia(r.data_entrada||''))} ${esc(hora(r.data_entrada||''))} · ${esc(r.estado_ar||'')}<br>${esc(r.objeto||'')}`;
+    dica.style.left = Math.min(b.width - 260, Math.max(0, mx - 130)) + 'px'; dica.style.top = (my + 16) + 'px';
   });
+  cv.addEventListener('mouseleave', () => dica.hidden = true);
   const porP = {}; PAc.forEach(r => porP[r.proponente||'—'] = (porP[r.proponente||'—']||0) + 1);
   $('#cp-leg2').innerHTML = Object.entries(porP).sort((a,b) => b[1]-a[1]).map(([p,n]) => `<span><i style="background:${corP(p)}"></i>${esc(nomeP(p))} <b>${fmtN(n)}</b></span>`).join('')
     + (cont['Não Admitida'] ? '<span><i style="background:repeating-linear-gradient(135deg,#fff 0 2px,transparent 2px 4px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)"></i>não admitida</span>' : '');
