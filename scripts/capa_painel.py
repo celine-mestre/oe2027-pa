@@ -256,11 +256,18 @@ JS = r"""
       const x = a - q/2, y = b - q/2;
       if (i >= acesos) { c.fillStyle = 'rgba(255,255,255,.16)'; c.beginPath(); c.roundRect(x,y,q,q,r); c.fill(); return; }
       const reg = PAc[i], cores = corDe(reg.proponente), na = reg.estado_ar === 'Não Admitida';
-      c.globalAlpha = na ? 0.45 : 1;
+      c.globalAlpha = na ? 0.6 : 1;
       if (cores.length > 1) { c.save(); c.beginPath(); c.roundRect(x,y,q,q,r); c.clip(); c.fillStyle = cores[0]; c.fillRect(x,y,q,q);
         c.fillStyle = cores[1]; c.beginPath(); c.moveTo(x+q,y); c.lineTo(x+q,y+q); c.lineTo(x,y+q); c.closePath(); c.fill(); c.restore(); }
       else { c.fillStyle = cores[0]; c.beginPath(); c.roundRect(x,y,q,q,r); c.fill(); }
       c.globalAlpha = 1;
+      if (na) {   // não admitida: tracejado branco por cima da cor (como na legenda)
+        c.save(); c.beginPath(); c.roundRect(x,y,q,q,r); c.clip();
+        c.strokeStyle = 'rgba(255,255,255,.9)'; c.lineWidth = Math.max(1, q/9);
+        const passo = Math.max(2.5, q/3.2); c.beginPath();
+        for (let k = -q; k < q; k += passo) { c.moveTo(x + k, y + q); c.lineTo(x + k + q, y); }
+        c.stroke(); c.restore();
+      }
       if (q >= 6) { c.strokeStyle = 'rgba(255,255,255,.35)'; c.lineWidth = 1; c.beginPath(); c.roundRect(x+.5,y+.5,q-1,q-1,r); c.stroke(); }
       if (recentes.has(reg.n_pa)) { c.strokeStyle = `rgba(255,210,0,${0.25 + 0.75*pisca})`; c.lineWidth = 2; c.beginPath(); c.roundRect(x-3,y-3,q+6,q+6,r+2); c.stroke(); }
     });
