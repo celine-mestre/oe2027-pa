@@ -244,8 +244,9 @@ JS = r"""
     const grelha = sp => { const r = []; for (let b = sp/2; b < H; b += sp) for (let a = sp/2; a < W; a += sp) if (dentro(a,b)) r.push([a,b]); return r; };
     let lo = Math.sqrt(area / CAP) * 0.5, hi = Math.sqrt(area / CAP) * 1.6, pts = grelha(lo), s = lo;
     for (let it = 0; it < 28; it++) { const md = (lo + hi) / 2, g = grelha(md); if (g.length >= CAP) { lo = md; pts = g; s = md; } else hi = md; }
-    // de baixo para cima, da esquerda para a direita; se a grelha tiver lugares a mais, retiram-se espaçados
-    pts.sort((p,q) => (q[1] - p[1]) || (p[0] - q[0]));
+    // ordem de leitura: as primeiras PA em cima, da esquerda para a direita; as mais recentes em baixo, à direita.
+    // Se a grelha tiver lugares a mais, retiram-se espaçados.
+    pts.sort((p,q) => (p[1] - q[1]) || (p[0] - q[0]));
     const M = pts.length; celulas = []; for (let i = 0; i < CAP; i++) celulas.push(pts[Math.floor(i * M / CAP)]); lado = s;
   }
   function desenhar(t){
